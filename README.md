@@ -25,6 +25,7 @@
 - keep colors clean / slight accents
 - frozen ramen special pricing
 - waiting list as teaser
+- test
 
 ## externals and co working
 
