@@ -6,6 +6,23 @@
 - comment out / delete all unwanted elements
 - scrolling text in navbar fading out on border
 
+## name spacing
+
+### components
+
+- ProductRamenKit
+- ProductMenu
+- ProductGallery
+- ProductFeedback
+- ProductQandA
+- CompanyAbout
+- CompanyLocation
+
+### utilities
+
+- NavbarMain
+- FooterMain
+
 ## Backlog
 
 - element transition smoother (tbd)
@@ -25,7 +42,6 @@
 - keep colors clean / slight accents
 - frozen ramen special pricing
 - waiting list as teaser
-- test
 
 ## externals and co working
 
@@ -48,3 +64,4 @@
 
 - www.mochi-ramen.com
 - www.genji.no
+- www.momiji-ramen.de
