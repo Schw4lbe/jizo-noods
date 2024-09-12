@@ -12,7 +12,6 @@ export default createStore({
   mutations: {
     updateLanguage(state, newLanguage) {
       state.language = newLanguage;
-      console.log(state.language);
     },
   },
 

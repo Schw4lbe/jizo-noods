@@ -25,8 +25,27 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import { useStore } from "vuex";
+import { computed } from "vue";
+import contentData from "../../public/content.json";
 
 export default defineComponent({
   name: "ProductRamenKit",
+  setup() {
+    const store = useStore();
+
+    const selectedLanguage = computed(() => store.getters.selectedLanguage);
+
+    const content = computed(() => {
+      return (
+        (contentData as Record<string, any>)[selectedLanguage.value] ||
+        contentData["en"]
+      );
+    });
+
+    console.log(content.value.companyContact);
+
+    return { content };
+  },
 });
 </script>
