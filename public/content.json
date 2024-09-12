@@ -1,0 +1,129 @@
+{
+    "en": {
+        "locationData": {
+            "currency": "kr"
+        },
+        "productRamenKit": {
+            "header": "Ramen Kits",
+            "teaser": "Ramen Kits Info Teaser get in contanct!",
+            "subHeader": "Instructions",
+            "instructions": [
+                "step 1",
+                "step 2",
+                "step 3"
+            ],
+            "media": ""
+        },
+        "productMenu": {
+            "header": "Menu",
+            "starters": {
+                "header": "Starters",
+                "teaser": "Come visit us > link to location"
+            },
+            "soups": {
+                "header": "Soups",
+                "teaser": "Enjoy our delicious Ramen",
+                "items": [
+                    {
+                        "name": "Ramen Soupename 1",
+                        "indicator": {
+                            "hasIcons": true,
+                            "icons": [
+                                1,
+                                2
+                            ]
+                        },
+                        "ingredients": [
+                            "Ingredient 1",
+                            "Ingredient 2",
+                            "Ingredient 3",
+                            "Ingredient 4",
+                            "Ingredient 5"
+                        ],
+                        "allergenLable": "Allergens",
+                        "allergenId": [
+                            "a",
+                            "b",
+                            "c"
+                        ],
+                        "price": "395"
+                    },
+                    {
+                        "name": "Ramen Soupename 2",
+                        "indicator": {
+                            "hasIcons": true,
+                            "icons": [
+                                1
+                            ]
+                        },
+                        "ingredients": [
+                            "Ingredient 1",
+                            "Ingredient 2",
+                            "Ingredient 3"
+                        ],
+                        "allergenLable": "Allergens",
+                        "allergensId": [
+                            "a",
+                            "b",
+                            "c",
+                            "d",
+                            "e"
+                        ],
+                        "price": "285"
+                    },
+                    {
+                        "name": "Ramen Soupename 3",
+                        "indicator": {
+                            "hasIcons": true,
+                            "icons": [
+                                2
+                            ]
+                        },
+                        "ingredients": [
+                            "Ingredient 1",
+                            "Ingredient 2",
+                            "Ingredient 3",
+                            "Ingredient 4",
+                            "Ingredient 5",
+                            "Ingredient 6"
+                        ],
+                        "allergenLable": "Allergens",
+                        "allergensId": [
+                            "a",
+                            "b",
+                            "c"
+                        ],
+                        "price": "335"
+                    }
+                ],
+                "allergens": [
+                    {
+                        "id": "a",
+                        "label": "Allergen a"
+                    },
+                    {
+                        "id": "b",
+                        "label": "Allergen b"
+                    },
+                    {
+                        "id": "c",
+                        "label": "Allergen c"
+                    },
+                    {
+                        "id": "d",
+                        "label": "Allergen d"
+                    },
+                    {
+                        "id": "e",
+                        "label": "Allergen e"
+                    }
+                ]
+            }
+        },
+        "companyContact": {
+            "phone": "01234 - 55 66 77 88 99",
+            "email": "some@one.de"
+        }
+    },
+    "no": {}
+}

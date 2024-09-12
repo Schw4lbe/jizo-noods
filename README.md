@@ -17,6 +17,7 @@
 - ProductQandA
 - CompanyAbout
 - CompanyLocation
+- CompanyContact
 
 ### utilities
 
@@ -59,6 +60,12 @@
 
 - what font-family was used to create the logo?
 - get video for webpage using my guideline image
+
+#### Questions
+
+- how many different ramen kits?
+- possibility of more kits in the future?
+- info structure simular like menu ramen items?
 
 ## dev references
 
