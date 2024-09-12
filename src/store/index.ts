@@ -2,28 +2,34 @@ import { createStore } from "vuex";
 
 export default createStore({
   state: {
-    selectedLanguage: "en",
+    language: "en",
   },
 
   getters: {
-    getSelectedLanguage: (state) => state.selectedLanguage,
+    selectedLanguage: (state) => state.language,
   },
 
   mutations: {
-    setLanguage(state, language) {
-      state.selectedLanguage = language;
+    updateLanguage(state, newLanguage) {
+      state.language = newLanguage;
+      console.log(state.language);
     },
   },
 
   actions: {
-    // for later usecases switch to NO
-    setLanguageNO({ commit }) {
-      localStorage.setItem("selectedLanguage", "no");
-      commit("setLanguage", "no");
+    isLanguageSet({ commit }) {
+      const selectedLanguage = localStorage.getItem("selectedLanguage");
+
+      // set default language to english
+      if (!selectedLanguage) {
+        localStorage.setItem("selectedLanguage", "en");
+        commit("updateLanguage", "en");
+      }
     },
-    loadSelectedLanguage({ commit }) {
-      const language = localStorage.getItem("selectedLanguage") || "en";
-      commit("setLanguage", language);
+
+    setLanguage({ commit }, language) {
+      localStorage.setItem("selectedLanguage", language);
+      commit("updateLanguage", language);
     },
   },
   modules: {},
