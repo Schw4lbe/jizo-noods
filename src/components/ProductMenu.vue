@@ -29,10 +29,10 @@
         <div class="allergens">
           <span class="allergen-label">{{ item.allergenLabel }}: </span>
           <span
-            v-for="(allergenId, allIndex) in item.allergenIds"
+            v-for="(allergen, allIndex) in item.allergens"
             :key="allIndex"
             class="allergen-id"
-            >{{ allergenId }}</span
+            >{{ allergen }}</span
           >
         </div>
         <div class="price">
@@ -58,7 +58,7 @@ interface SoupItem {
   };
   ingredients: string[];
   allergenLabel: string;
-  allergenIds: string[];
+  allergens: string[];
   price: string;
 }
 

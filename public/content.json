@@ -38,7 +38,7 @@
                             "Ingredient 5"
                         ],
                         "allergenLabel": "Allergens",
-                        "allergenIds": [
+                        "allergens": [
                             "a",
                             "b",
                             "c"
@@ -58,8 +58,8 @@
                             "Ingredient 2",
                             "Ingredient 3"
                         ],
-                        "allergenLable": "Allergens",
-                        "allergensIds": [
+                        "allergenLabel": "Allergens",
+                        "allergens": [
                             "a",
                             "b",
                             "c",
@@ -84,8 +84,8 @@
                             "Ingredient 5",
                             "Ingredient 6"
                         ],
-                        "allergenLable": "Allergens",
-                        "allergensIds": [
+                        "allergenLabel": "Allergens",
+                        "allergens": [
                             "a",
                             "b",
                             "c"
