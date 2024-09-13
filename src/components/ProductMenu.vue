@@ -1,8 +1,8 @@
 <template>
-  <section class="prod-menu-container">
+  <section class="prod-menu-main">
     <h3 class="section-header">{{ content.productMenu.header }}</h3>
     <!-- outsource starters if they are getting more complex -->
-    <div class="starter-container">
+    <div class="menu-starter-container">
       <h4 class="starter-header">{{ content.productMenu.starters.header }}</h4>
       <p class="starter-teaser">{{ content.productMenu.starters.teaser }}</p>
     </div>

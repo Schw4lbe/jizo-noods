@@ -1,16 +1,12 @@
 <template>
   <!-- later on should be a pop open area containing all infos on click when needed -->
-  <div class="allergen-container">
+  <div class="menu-allergen-container">
     <h4 class="allergen-header">{{ content.productMenu.allergens.header }}</h4>
     <div class="allergen-collapse-container">
       <p class="allergen-description">
         {{ content.productMenu.allergens.description }}
       </p>
-      <div
-        v-for="item in allergenItems"
-        :key="item.id"
-        class="allergen-info-container"
-      >
+      <div v-for="item in allergenItems" :key="item.id" class="allergen-info">
         <span class="allergen-id">{{ item.id }}: </span
         ><span class="allergen-label">{{ item.label }}</span>
       </div>

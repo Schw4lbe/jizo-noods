@@ -1,11 +1,10 @@
 <template>
-  <section class="prod-ramen-kit-container">
+  <section class="prod-ramen-kit-main">
     <h3 class="section-header">{{ content.productRamenKit.header }}</h3>
     <div class="prod-ramen-kit-teaser">
-      <p class="teaser">{{ content.productRamenKit.teaser }}</p>
+      {{ content.productRamenKit.teaser }}
     </div>
     <div class="prod-ramen-kit-contact">
-      <!-- take phone and email out of different content area then ramenkit -->
       <p class="phone">{{ content.companyContact.phone }}</p>
       <p class="email">{{ content.companyContact.email }}</p>
     </div>

@@ -1,18 +1,14 @@
 <template>
-  <div class="soups-container">
-    <h4 class="soups-header">{{ content.productMenu.soups.header }}</h4>
-    <p class="soups-teaser">{{ content.productMenu.soups.teaser }}</p>
-    <div
-      v-for="(item, index) in soupItems"
-      :key="index"
-      class="menu-item-container"
-    >
-      <p class="name">
+  <div class="menu-soup-container">
+    <h4 class="soup-header">{{ content.productMenu.soups.header }}</h4>
+    <p class="soup-teaser">{{ content.productMenu.soups.teaser }}</p>
+    <div v-for="(item, index) in soupItems" :key="index" class="soup-item">
+      <p class="item-name">
         {{ item.name }}
       </p>
       <!-- placeholder for fontawesome icons -->
       <span>(i)</span>
-      <div class="ingredients">
+      <div class="item-ingredients">
         <span
           v-for="(ing, ingIndex) in item.ingredients"
           :key="ingIndex"
@@ -20,16 +16,16 @@
           >{{ ing }}</span
         >
       </div>
-      <div class="allergens">
-        <span class="allergen-label">{{ item.allergenLabel }}: </span>
+      <div class="item-allergens">
+        <span class="item-allergen-label">{{ item.allergenLabel }}: </span>
         <span
           v-for="(allergen, allIndex) in item.allergens"
           :key="allIndex"
-          class="allergen-id"
+          class="item-allergen-id"
           >{{ allergen }}</span
         >
       </div>
-      <div class="price">
+      <div class="item-price">
         <span class="currency">kr </span
         ><span class="price">{{ item.price }}</span>
       </div>
