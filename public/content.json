@@ -155,6 +155,36 @@
             "header": "Q and A",
             "description": "DESCRIPTION / TBD"
         },
+        "sectionLocation": {
+            "header": "Location",
+            "googleMapsUrl": "",
+            "urlText": "google maps link",
+            "address": {
+                "header": "Address",
+                "street": "Example Street",
+                "houseNumber": "22",
+                "zipCode": "01234",
+                "city": "Oslo"
+            },
+            "socialMediaHeader": "Follow us on Social Media",
+            "socialMedia": [
+                {
+                    "name": "Facebook",
+                    "icon": "",
+                    "url": "https://www.facebook.com"
+                },
+                {
+                    "name": "Instagram",
+                    "icon": "",
+                    "url": "https://www.instagram.com"
+                },
+                {
+                    "name": "TikTok",
+                    "icon": "",
+                    "url": "https://www.tiktok.com"
+                }
+            ]
+        },
         "companyContact": {
             "phone": "01234 - 55 66 77 88 99",
             "email": "some@one.de"
