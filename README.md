@@ -15,11 +15,11 @@
   -> MenuStarters
   -> MenuSoups
   -> MenuAllergens
-
 - SectionGallery
+- SectionAboutUs
+
 - SectionFeedback
 - SectionQandA
-- SectionAboutUs
 - SectionLocation
 - SectionContact
 
@@ -69,7 +69,8 @@
 
 - how many different ramen kits?
 - possibility of more kits in the future?
-- info structure simular like menu ramen items?
+- possibility of starters on page directly in the future?
+- about us with images and video?
 
 ## dev references
 

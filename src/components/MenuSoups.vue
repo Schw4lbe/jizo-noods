@@ -1,7 +1,7 @@
 <template>
   <div class="menu-soup-container">
-    <h4 class="soup-header">{{ content.productMenu.soups.header }}</h4>
-    <p class="soup-teaser">{{ content.productMenu.soups.teaser }}</p>
+    <h4 class="soup-header">{{ content.sectionMenu.soups.header }}</h4>
+    <p class="soup-teaser">{{ content.sectionMenu.soups.teaser }}</p>
     <div v-for="(item, index) in soupItems" :key="index" class="soup-item">
       <p class="item-name">
         {{ item.name }}
@@ -64,7 +64,7 @@ export default defineComponent({
     });
 
     const soupItems = computed(
-      () => content.value.productMenu.soups.items as SoupItem[]
+      () => content.value.sectionMenu.soups.items as SoupItem[]
     );
 
     return { content, soupItems };

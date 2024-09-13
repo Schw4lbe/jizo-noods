@@ -1,10 +1,10 @@
 <template>
   <section class="section-menu-main">
-    <h3 class="section-header">{{ content.productMenu.header }}</h3>
+    <h3 class="section-header">{{ content.sectionMenu.header }}</h3>
     <!-- outsource starters if they are getting more complex -->
     <div class="menu-starter-container">
-      <h4 class="starter-header">{{ content.productMenu.starters.header }}</h4>
-      <p class="starter-teaser">{{ content.productMenu.starters.teaser }}</p>
+      <h4 class="starter-header">{{ content.sectionMenu.starters.header }}</h4>
+      <p class="starter-teaser">{{ content.sectionMenu.starters.teaser }}</p>
     </div>
     <MenuSoups />
     <MenuAllergens />

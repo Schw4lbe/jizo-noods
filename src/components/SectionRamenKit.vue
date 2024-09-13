@@ -1,19 +1,19 @@
 <template>
   <section class="section-ramen-kit-main">
-    <h3 class="section-header">{{ content.productRamenKit.header }}</h3>
+    <h3 class="section-header">{{ content.sectionRamenKit.header }}</h3>
     <div class="ramen-kit-teaser">
-      {{ content.productRamenKit.teaser }}
+      {{ content.sectionRamenKit.teaser }}
     </div>
     <div class="ramen-kit-contact">
       <p class="phone">{{ content.companyContact.phone }}</p>
       <p class="email">{{ content.companyContact.email }}</p>
     </div>
     <div class="ramen-kit-instructions">
-      <h4 class="subheader">{{ content.productRamenKit.subHeader }}</h4>
+      <h4 class="subheader">{{ content.sectionRamenKit.subHeader }}</h4>
       <div class="instruction-container">
         <ul>
           <li
-            v-for="(step, index) in content.productRamenKit.instructions"
+            v-for="(step, index) in content.sectionRamenKit.instructions"
             :key="index"
             class="instruction"
           >

@@ -1,7 +1,7 @@
 <template>
   <section class="section-gallery-main">
-    <h3 class="section-header">{{ content.productGallery.header }}</h3>
-    <p class="gallery-description">{{ content.productGallery.description }}</p>
+    <h3 class="section-header">{{ content.sectionGallery.header }}</h3>
+    <p class="gallery-description">{{ content.sectionGallery.description }}</p>
     <div class="gallery-container">
       <!-- bootstrap gallery here later on -->
       images here soon...

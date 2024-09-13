@@ -1,10 +1,10 @@
 <template>
   <!-- later on should be a pop open area containing all infos on click when needed -->
   <div class="menu-allergen-container">
-    <h4 class="allergen-header">{{ content.productMenu.allergens.header }}</h4>
+    <h4 class="allergen-header">{{ content.sectionMenu.allergens.header }}</h4>
     <div class="allergen-collapse-container">
       <p class="allergen-description">
-        {{ content.productMenu.allergens.description }}
+        {{ content.sectionMenu.allergens.description }}
       </p>
       <div v-for="item in allergenItems" :key="item.id" class="allergen-info">
         <span class="allergen-id">{{ item.id }}: </span
@@ -38,7 +38,7 @@ export default defineComponent({
     });
 
     const allergenItems = computed(
-      () => content.value.productMenu.allergens.items as AllergenItem[]
+      () => content.value.sectionMenu.allergens.items as AllergenItem[]
     );
 
     return { content, allergenItems };
