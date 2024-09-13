@@ -1,35 +1,43 @@
 <template>
   <section class="prod-menu-container">
-    <h3 class="section-header">header</h3>
+    <h3 class="section-header">{{ content.productMenu.header }}</h3>
     <div class="starter-container">
-      <h4 class="header">starters</h4>
-      <p class="teaser">teaser</p>
+      <h4 class="header">{{ content.productMenu.starters.header }}</h4>
+      <p class="teaser">{{ content.productMenu.starters.teaser }}</p>
     </div>
     <div class="menu-container">
-      <h4 class="header">soups</h4>
-      <p class="teaser">teaser</p>
-      <div class="menu-item-container">
-        <p class="name">name</p>
+      <h4 class="header">{{ content.productMenu.soups.header }}</h4>
+      <p class="teaser">{{ content.productMenu.soups.teaser }}</p>
+      <div
+        v-for="(item, index) in soupItems"
+        :key="index"
+        class="menu-item-container"
+      >
+        <p class="name">
+          {{ item.name }}
+        </p>
         <!-- placeholder for fontawesome icons -->
         <span>(i)</span>
         <div class="ingredients">
-          <span>Ingredient 1</span>
-          <span>Ingredient 2</span>
-          <span>Ingredient 3</span>
-          <span>Ingredient 4</span>
-          <span>Ingredient 5</span>
+          <span
+            v-for="(ing, ingIndex) in item.ingredients"
+            :key="ingIndex"
+            class="ingredient"
+            >{{ ing }}</span
+          >
         </div>
         <div class="allergens">
-          <span class="allergen-label">Allergens: </span>
-          <span class="allergen-id">a</span>
-          <span class="allergen-id">b</span>
-          <span class="allergen-id">c</span>
-          <span class="allergen-id">d</span>
-          <span class="allergen-id">e</span>
+          <span class="allergen-label">{{ item.allergenLabel }}: </span>
+          <span
+            v-for="(allergenId, allIndex) in item.allergenIds"
+            :key="allIndex"
+            class="allergen-id"
+            >{{ allergenId }}</span
+          >
         </div>
         <div class="price">
-          <!-- currency in locationData -->
-          <span class="currency">kr </span><span class="price">395</span>
+          <span class="currency">kr </span
+          ><span class="price">{{ item.price }}</span>
         </div>
       </div>
     </div>
@@ -38,8 +46,39 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import { useStore } from "vuex";
+import { computed } from "vue";
+import contentData from "../../public/content.json";
+
+interface SoupItem {
+  name: string;
+  indicator: {
+    hasIcons: boolean;
+    icons: number[];
+  };
+  ingredients: string[];
+  allergenLabel: string;
+  allergenIds: string[];
+  price: string;
+}
 
 export default defineComponent({
   name: "ProductMenu",
+  setup() {
+    const store = useStore();
+    const selectedLanguage = computed(() => store.getters.selectedLanguage);
+    const content = computed(() => {
+      return (
+        (contentData as Record<string, any>)[selectedLanguage.value] ||
+        contentData["en"]
+      );
+    });
+
+    const soupItems = computed(
+      () => content.value.productMenu.soups.items as SoupItem[]
+    );
+
+    return { content, soupItems };
+  },
 });
 </script>

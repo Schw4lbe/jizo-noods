@@ -1,8 +1,5 @@
 {
     "en": {
-        "locationData": {
-            "currency": "kr"
-        },
         "productRamenKit": {
             "header": "Ramen Kits",
             "teaser": "Ramen Kits Info Teaser get in contanct!",
@@ -40,8 +37,8 @@
                             "Ingredient 4",
                             "Ingredient 5"
                         ],
-                        "allergenLable": "Allergens",
-                        "allergenId": [
+                        "allergenLabel": "Allergens",
+                        "allergenIds": [
                             "a",
                             "b",
                             "c"
@@ -62,7 +59,7 @@
                             "Ingredient 3"
                         ],
                         "allergenLable": "Allergens",
-                        "allergensId": [
+                        "allergensIds": [
                             "a",
                             "b",
                             "c",
@@ -88,7 +85,7 @@
                             "Ingredient 6"
                         ],
                         "allergenLable": "Allergens",
-                        "allergensId": [
+                        "allergensIds": [
                             "a",
                             "b",
                             "c"
