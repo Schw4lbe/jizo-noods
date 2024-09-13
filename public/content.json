@@ -121,6 +121,11 @@
                 ]
             }
         },
+        "productGallery": {
+            "header": "Gallery",
+            "description": "Gallery Description",
+            "items": {}
+        },
         "companyContact": {
             "phone": "01234 - 55 66 77 88 99",
             "email": "some@one.de"

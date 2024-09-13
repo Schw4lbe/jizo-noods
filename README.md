@@ -12,7 +12,9 @@
 
 - ProductRamenKit
 - ProductMenu
+- ProductMenuSoups
 - ProductMenuAllergens
+
 - ProductGallery
 - ProductFeedback
 - ProductQandA

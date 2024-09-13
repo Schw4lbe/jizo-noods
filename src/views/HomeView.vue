@@ -3,6 +3,8 @@
     <ProductRamenKit />
     <hr />
     <ProductMenu />
+    <hr />
+    <ProductGallery />
   </div>
 </template>
 
@@ -10,12 +12,14 @@
 import { defineComponent } from "vue";
 import ProductRamenKit from "@/components/ProductRamenKit.vue";
 import ProductMenu from "@/components/ProductMenu.vue";
+import ProductGallery from "@/components/ProductGallery.vue";
 
 export default defineComponent({
   name: "HomeView",
   components: {
     ProductRamenKit,
     ProductMenu,
+    ProductGallery,
   },
 });
 </script>
