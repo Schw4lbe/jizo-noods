@@ -92,8 +92,12 @@
                         ],
                         "price": "335"
                     }
-                ],
-                "allergens": [
+                ]
+            },
+            "allergens": {
+                "header": "Allergens",
+                "description": "for more details open this section",
+                "items": [
                     {
                         "id": "a",
                         "label": "Allergen a"
