@@ -26,7 +26,7 @@ interface AllergenItem {
 }
 
 export default defineComponent({
-  name: "ProductMenuAllergens",
+  name: "MenuAllergens",
   setup() {
     const store = useStore();
     const selectedLanguage = computed(() => store.getters.selectedLanguage);

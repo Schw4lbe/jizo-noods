@@ -1,8 +1,8 @@
 <template>
-  <section class="prod-gallery-main">
+  <section class="section-gallery-main">
     <h3 class="section-header">{{ content.productGallery.header }}</h3>
     <p class="gallery-description">{{ content.productGallery.description }}</p>
-    <div class="prod-gallery-container">
+    <div class="gallery-container">
       <!-- bootstrap gallery here later on -->
       images here soon...
     </div>
@@ -16,7 +16,7 @@ import { computed } from "vue";
 import contentData from "../../public/content.json";
 
 export default defineComponent({
-  name: "ProductGallery",
+  name: "SectionGallery",
   setup() {
     const store = useStore();
     const selectedLanguage = computed(() => store.getters.selectedLanguage);

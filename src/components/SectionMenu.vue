@@ -1,13 +1,13 @@
 <template>
-  <section class="prod-menu-main">
+  <section class="section-menu-main">
     <h3 class="section-header">{{ content.productMenu.header }}</h3>
     <!-- outsource starters if they are getting more complex -->
     <div class="menu-starter-container">
       <h4 class="starter-header">{{ content.productMenu.starters.header }}</h4>
       <p class="starter-teaser">{{ content.productMenu.starters.teaser }}</p>
     </div>
-    <ProductMenuSoups />
-    <ProductMenuAllergens />
+    <MenuSoups />
+    <MenuAllergens />
   </section>
 </template>
 
@@ -16,14 +16,14 @@ import { defineComponent } from "vue";
 import { useStore } from "vuex";
 import { computed } from "vue";
 import contentData from "../../public/content.json";
-import ProductMenuAllergens from "@/components/ProductMenuAllergens.vue";
-import ProductMenuSoups from "./ProductMenuSoups.vue";
+import MenuAllergens from "@/components/MenuAllergens.vue";
+import MenuSoups from "./MenuSoups.vue";
 
 export default defineComponent({
-  name: "ProductMenu",
+  name: "SectionMenu",
   components: {
-    ProductMenuAllergens,
-    ProductMenuSoups,
+    MenuAllergens,
+    MenuSoups,
   },
   setup() {
     const store = useStore();

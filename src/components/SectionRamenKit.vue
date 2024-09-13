@@ -1,14 +1,14 @@
 <template>
-  <section class="prod-ramen-kit-main">
+  <section class="section-ramen-kit-main">
     <h3 class="section-header">{{ content.productRamenKit.header }}</h3>
-    <div class="prod-ramen-kit-teaser">
+    <div class="ramen-kit-teaser">
       {{ content.productRamenKit.teaser }}
     </div>
-    <div class="prod-ramen-kit-contact">
+    <div class="ramen-kit-contact">
       <p class="phone">{{ content.companyContact.phone }}</p>
       <p class="email">{{ content.companyContact.email }}</p>
     </div>
-    <div class="prod-ramen-kit-instructions">
+    <div class="ramen-kit-instructions">
       <h4 class="subheader">{{ content.productRamenKit.subHeader }}</h4>
       <div class="instruction-container">
         <ul>
@@ -33,7 +33,7 @@ import { computed } from "vue";
 import contentData from "../../public/content.json";
 
 export default defineComponent({
-  name: "ProductRamenKit",
+  name: "SectionRamenKit",
   setup() {
     const store = useStore();
     const selectedLanguage = computed(() => store.getters.selectedLanguage);

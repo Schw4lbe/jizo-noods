@@ -52,7 +52,7 @@ interface SoupItem {
 }
 
 export default defineComponent({
-  name: "ProductMenuSoups",
+  name: "MenuSoups",
   setup() {
     const store = useStore();
     const selectedLanguage = computed(() => store.getters.selectedLanguage);

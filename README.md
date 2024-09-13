@@ -10,17 +10,18 @@
 
 ### components
 
-- ProductRamenKit
-- ProductMenu
-- ProductMenuSoups
-- ProductMenuAllergens
+- SectionRamenKit
+- SectionMenu
+  -> MenuStarters
+  -> MenuSoups
+  -> MenuAllergens
 
-- ProductGallery
-- ProductFeedback
-- ProductQandA
-- CompanyAbout
-- CompanyLocation
-- CompanyContact
+- SectionGallery
+- SectionFeedback
+- SectionQandA
+- SectionAboutUs
+- SectionLocation
+- SectionContact
 
 ### utilities
 
