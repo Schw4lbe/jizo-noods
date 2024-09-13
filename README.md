@@ -17,9 +17,9 @@
   -> MenuAllergens
 - SectionGallery
 - SectionAboutUs
-
 - SectionFeedback
 - SectionQandA
+
 - SectionLocation
 - SectionContact
 

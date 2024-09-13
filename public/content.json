@@ -151,6 +151,10 @@
             "urlText": "Link to Feedback Page",
             "media": ""
         },
+        "sectionQandA": {
+            "header": "Q and A",
+            "description": "DESCRIPTION / TBD"
+        },
         "companyContact": {
             "phone": "01234 - 55 66 77 88 99",
             "email": "some@one.de"

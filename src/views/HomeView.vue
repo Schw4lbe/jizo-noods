@@ -9,6 +9,8 @@
     <SectionAboutUs />
     <hr />
     <SectionFeedback />
+    <hr />
+    <SectionQandA />
   </div>
 </template>
 
@@ -19,6 +21,7 @@ import SectionMenu from "@/components/SectionMenu.vue";
 import SectionGallery from "@/components/SectionGallery.vue";
 import SectionAboutUs from "@/components/SectionAboutUs.vue";
 import SectionFeedback from "@/components/SectionFeedback.vue";
+import SectionQandA from "@/components/SectionQandA.vue";
 
 export default defineComponent({
   name: "HomeView",
@@ -28,6 +31,7 @@ export default defineComponent({
     SectionGallery,
     SectionAboutUs,
     SectionFeedback,
+    SectionQandA,
   },
 });
 </script>
