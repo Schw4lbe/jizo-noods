@@ -7,6 +7,8 @@
     <SectionGallery />
     <hr />
     <SectionAboutUs />
+    <hr />
+    <SectionFeedback />
   </div>
 </template>
 
@@ -16,6 +18,7 @@ import SectionRamenKit from "@/components/SectionRamenKit.vue";
 import SectionMenu from "@/components/SectionMenu.vue";
 import SectionGallery from "@/components/SectionGallery.vue";
 import SectionAboutUs from "@/components/SectionAboutUs.vue";
+import SectionFeedback from "@/components/SectionFeedback.vue";
 
 export default defineComponent({
   name: "HomeView",
@@ -24,6 +27,7 @@ export default defineComponent({
     SectionMenu,
     SectionGallery,
     SectionAboutUs,
+    SectionFeedback,
   },
 });
 </script>

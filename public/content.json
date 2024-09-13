@@ -144,6 +144,13 @@
                 }
             ]
         },
+        "sectionFeedback": {
+            "header": "Feedback",
+            "description": "Feedback Description Lorem ipsum dolor sit amet consectetur adipisicing elit. labore atque libero.",
+            "url": "",
+            "urlText": "Link to Feedback Page",
+            "media": ""
+        },
         "companyContact": {
             "phone": "01234 - 55 66 77 88 99",
             "email": "some@one.de"

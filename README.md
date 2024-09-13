@@ -70,7 +70,7 @@
 - how many different ramen kits?
 - possibility of more kits in the future?
 - possibility of starters on page directly in the future?
-- about us with images and video?
+- about us with images and video?d
 
 ## dev references
 

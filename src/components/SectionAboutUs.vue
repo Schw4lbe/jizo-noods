@@ -13,9 +13,8 @@
   </section>
 </template>
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, computed } from "vue";
 import { useStore } from "vuex";
-import { computed } from "vue";
 import contentData from "../../public/content.json";
 
 interface AboutItem {
