@@ -27,4 +27,8 @@ export default defineComponent({
   color: beige;
   background: #333;
 }
+
+.section-header {
+  color: tomato;
+}
 </style>
