@@ -8,7 +8,11 @@
       <a :href="content.sectionFeedback.url" class="feedback-url">
         <span class="url-text">{{ content.sectionFeedback.urlText }}</span>
       </a>
-      <div class="feedback-qr">QR Code here...</div>
+      <img
+        src="../../public/img/feedback/qr-dummy.png"
+        alt="dummy"
+        class="feedback-qr"
+      />
     </div>
   </section>
 </template>
