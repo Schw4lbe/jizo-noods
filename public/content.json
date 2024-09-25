@@ -127,7 +127,28 @@
         "sectionGallery": {
             "header": "Gallery",
             "description": "Gallery Description",
-            "items": {}
+            "items": [
+                {
+                    "label": "Ramen Sample 01",
+                    "description": "Ramen Sample Description 01",
+                    "url": "https://dummyimage.com/450x300/4d0f18/fff"
+                },
+                {
+                    "label": "Ramen Sample 02",
+                    "description": "Ramen Sample Description 02",
+                    "url": "https://dummyimage.com/450x300/7a1f2c/fff"
+                },
+                {
+                    "label": "Ramen Sample 03",
+                    "description": "Ramen Sample Description 03",
+                    "url": "https://dummyimage.com/450x300/a83445/fff"
+                },
+                {
+                    "label": "Ramen Sample 04",
+                    "description": "Ramen Sample Description 04",
+                    "url": "https://dummyimage.com/450x300/c94c5f/fff"
+                }
+            ]
         },
         "sectionAboutUs": {
             "header": "About Us",
