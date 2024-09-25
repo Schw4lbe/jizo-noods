@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-md bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <button
         class="navbar-toggler"
@@ -10,21 +10,20 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="icon"><i class="fa-sharp fa-solid fa-bars"></i></span>
       </button>
+      <div class="scrolling-wrapper">
+        <div class="marquee">
+          <p>{{ content.navbarMain.scrollingText }}</p>
+          <p>{{ content.navbarMain.scrollingText }}</p>
+        </div>
+      </div>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li v-for="(item, index) in navItems" :key="index">
             <a class="nav-item" :href="item.url">{{ item.lable }}</a>
           </li>
         </ul>
-      </div>
-
-      <div class="wrapper">
-        <div class="marquee">
-          <p>{{ content.navbarMain.scrollingText }}</p>
-          <p>{{ content.navbarMain.scrollingText }}</p>
-        </div>
       </div>
     </div>
   </nav>
@@ -61,7 +60,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.wrapper {
+.scrolling-wrapper {
   max-width: 100%;
   overflow: hidden;
 }
