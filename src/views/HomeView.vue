@@ -1,5 +1,7 @@
 <template>
   <div class="home-view-wrapper">
+    <IntroScene />
+    <hr />
     <SectionRamenKit />
     <hr />
     <SectionMenu />
@@ -18,6 +20,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import IntroScene from "@/components/IntroScene.vue";
 import SectionRamenKit from "@/components/SectionRamenKit.vue";
 import SectionMenu from "@/components/SectionMenu.vue";
 import SectionGallery from "@/components/SectionGallery.vue";
@@ -29,6 +32,7 @@ import SectionLocation from "@/components/SectionLocation.vue";
 export default defineComponent({
   name: "HomeView",
   components: {
+    IntroScene,
     SectionRamenKit,
     SectionMenu,
     SectionGallery,
