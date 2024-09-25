@@ -2,9 +2,16 @@
   <section class="section-location-main">
     <h3 class="section-header">{{ content.sectionLocation.header }}</h3>
     <div class="location-map-container">
-      <a :href="content.sectionLocation.googleMapsUrl" class="map-link">{{
-        content.sectionLocation.urlText
-      }}</a>
+      <a
+        :href="content.sectionLocation.googleMapsUrl"
+        class="map-link"
+        target="blank"
+      >
+        <img
+          src="../../public/img/location/gmaps-dummy-screenshot.jpg"
+          alt="dummy"
+        />
+      </a>
     </div>
     <div class="location-address-container">
       <h4 class="address-header">
@@ -25,13 +32,14 @@
       <h4 class="social-media-header">
         {{ content.sectionLocation.socialMediaHeader }}
       </h4>
-      <div class="icon-wrapper">
+      <div class="social-media-wrapper">
         <div
-          v-for="(icon, index) in socialMediaItems"
+          v-for="(item, index) in socialMediaItems"
           :key="index"
-          class="icon"
+          class="social-media-item"
         >
-          <a :href="icon.url" class="url">(i)</a>
+          <i :class="item.icon"></i>
+          <a :href="item.url" class="url">{{ item.name }}</a>
         </div>
       </div>
     </div>

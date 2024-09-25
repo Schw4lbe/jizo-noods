@@ -181,8 +181,7 @@
         },
         "sectionLocation": {
             "header": "Location",
-            "googleMapsUrl": "",
-            "urlText": "google maps link",
+            "googleMapsUrl": "https://google.com/maps/?q=Oslo%2C%20Oslo%2C%20Norway",
             "address": {
                 "header": "Address",
                 "street": "Example Street",
@@ -194,17 +193,17 @@
             "socialMedia": [
                 {
                     "name": "Facebook",
-                    "icon": "",
+                    "icon": "fa-brands fa-square-facebook",
                     "url": "https://www.facebook.com"
                 },
                 {
                     "name": "Instagram",
-                    "icon": "",
+                    "icon": "fa-brands fa-instagram",
                     "url": "https://www.instagram.com"
                 },
                 {
                     "name": "TikTok",
-                    "icon": "",
+                    "icon": "fa-brands fa-tiktok",
                     "url": "https://www.tiktok.com"
                 }
             ]
