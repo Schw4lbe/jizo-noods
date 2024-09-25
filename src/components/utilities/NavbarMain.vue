@@ -1,7 +1,6 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-md bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -15,19 +14,17 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          <li v-for="(item, index) in navItems" :key="index">
+            <a class="nav-item" :href="item.url">{{ item.lable }}</a>
           </li>
         </ul>
+      </div>
+
+      <div class="wrapper">
+        <div class="marquee">
+          <p>{{ content.navbarMain.scrollingText }}</p>
+          <p>{{ content.navbarMain.scrollingText }}</p>
+        </div>
       </div>
     </div>
   </nav>
@@ -36,6 +33,11 @@
 import { computed, defineComponent } from "vue";
 import { useStore } from "vuex";
 import contentData from "../../../public/content.json";
+
+interface NavItem {
+  lable: string;
+  url: string;
+}
 
 export default defineComponent({
   name: "NavbarMain",
@@ -49,7 +51,38 @@ export default defineComponent({
       );
     });
 
-    return { content };
+    const navItems = computed(
+      () => content.value.navbarMain.items as NavItem[]
+    );
+
+    return { content, navItems };
   },
 });
 </script>
+
+<style scoped>
+.wrapper {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee p {
+  display: inline-block;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+</style>
