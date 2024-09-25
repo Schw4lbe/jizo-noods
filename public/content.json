@@ -71,10 +71,8 @@
                     {
                         "name": "Ramen Soupename 3",
                         "indicator": {
-                            "hasIcons": true,
-                            "icons": [
-                                2
-                            ]
+                            "hasIcons": false,
+                            "icons": []
                         },
                         "ingredients": [
                             "Ingredient 1",
@@ -96,27 +94,32 @@
             },
             "allergens": {
                 "header": "Allergens",
-                "description": "for more details open this section",
+                "description": "for more details open a segment below.",
                 "items": [
                     {
                         "id": "a",
-                        "label": "Allergen a"
+                        "label": "Allergen name",
+                        "description": "put allergen description here."
                     },
                     {
                         "id": "b",
-                        "label": "Allergen b"
+                        "label": "Allergen name",
+                        "description": "put allergen description here."
                     },
                     {
                         "id": "c",
-                        "label": "Allergen c"
+                        "label": "Allergen name",
+                        "description": "put allergen description here."
                     },
                     {
                         "id": "d",
-                        "label": "Allergen d"
+                        "label": "Allergen name",
+                        "description": "put allergen description here."
                     },
                     {
                         "id": "e",
-                        "label": "Allergen e"
+                        "label": "Allergen name",
+                        "description": "put allergen description here."
                     }
                 ]
             }
@@ -184,6 +187,10 @@
                     "url": "https://www.tiktok.com"
                 }
             ]
+        },
+        "sectionContact": {
+            "header": "Contact",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. labore atque libero."
         },
         "companyContact": {
             "phone": "01234 - 55 66 77 88 99",

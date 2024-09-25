@@ -62,7 +62,7 @@ export default defineComponent({
     });
 
     const socialMediaItems = computed(
-      () => content.value.sectionLocation.socialMedia as SocialMediaItem
+      () => content.value.sectionLocation.socialMedia as SocialMediaItem[]
     );
 
     return { content, socialMediaItems };

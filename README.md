@@ -20,7 +20,6 @@
 - SectionFeedback
 - SectionQandA
 - SectionLocation
-
 - SectionContact
 
 ### utilities
@@ -70,7 +69,8 @@
 - how many different ramen kits?
 - possibility of more kits in the future?
 - possibility of starters on page directly in the future?
-- about us with images and video?d
+- icons on soups needed? (hot, contains garlic etc.)
+- about us with images and video?
 
 ## dev references
 

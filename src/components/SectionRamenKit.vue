@@ -5,8 +5,12 @@
       {{ content.sectionRamenKit.teaser }}
     </div>
     <div class="ramen-kit-contact">
-      <p class="phone">{{ content.companyContact.phone }}</p>
-      <p class="email">{{ content.companyContact.email }}</p>
+      <p class="phone">
+        <i class="fa-solid fa-phone"></i>{{ content.companyContact.phone }}
+      </p>
+      <p class="email">
+        <i class="fa-solid fa-envelope"></i>{{ content.companyContact.email }}
+      </p>
     </div>
     <div class="ramen-kit-instructions">
       <h4 class="subheader">{{ content.sectionRamenKit.subHeader }}</h4>
@@ -20,7 +24,11 @@
             {{ step }}
           </li>
         </ul>
-        <div class="image">replace with image tag later</div>
+        <img
+          class="ramen-kit-instruction-image"
+          src="https://dummyimage.com/300x200/555/fff"
+          alt="dummy"
+        />
       </div>
     </div>
   </section>

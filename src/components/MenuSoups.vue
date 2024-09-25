@@ -3,11 +3,15 @@
     <h4 class="soup-header">{{ content.sectionMenu.soups.header }}</h4>
     <p class="soup-teaser">{{ content.sectionMenu.soups.teaser }}</p>
     <div v-for="(item, index) in soupItems" :key="index" class="soup-item">
-      <p class="item-name">
-        {{ item.name }}
-      </p>
-      <!-- placeholder for fontawesome icons -->
-      <span>(i)</span>
+      <div class="item-name-container">
+        <p class="item-name">
+          {{ item.name }}
+        </p>
+        <!-- temp only hot icon tbd if more is wanted -->
+        <span v-if="item.indicator.hasIcons === true"
+          ><i class="fa-solid fa-pepper-hot"></i
+        ></span>
+      </div>
       <div class="item-ingredients">
         <span
           v-for="(ing, ingIndex) in item.ingredients"

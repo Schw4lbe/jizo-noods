@@ -35,7 +35,7 @@ export default defineComponent({
     });
 
     const items = computed(
-      () => content.value.sectionAboutUs.items as AboutItem
+      () => content.value.sectionAboutUs.items as AboutItem[]
     );
 
     return { content, items };
