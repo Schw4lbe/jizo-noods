@@ -4,6 +4,7 @@
       <NavbarMain />
     </div>
     <div class="page-wrapper">
+      <div class="background-filler"></div>
       <div class="content-wrapper">
         <router-view />
       </div>
