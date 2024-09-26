@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: nowrap;
   padding: 0;
-  background: $clr-primary !important;
+  background: rgba($color: $clr-primary-dark-1, $alpha: 0.8) !important;
 
   .container-fluid {
     width: max-content;
@@ -23,8 +23,25 @@
     }
   }
 
+  .offcanvas {
+    background: rgba($color: $clr-primary-dark-1, $alpha: 0.8);
+    .offcanvas-title {
+      color: $clr-secondary-light-1;
+    }
+
+    .offcanvas-body {
+      .navbar-nav {
+        li .nav-item {
+          text-decoration: none;
+          color: $clr-secondary;
+        }
+      }
+    }
+  }
+
   .scrolling-wrapper {
     color: $clr-accent;
+    text-transform: uppercase;
     align-items: center;
     padding: 0.5rem 0;
     .marquee {
