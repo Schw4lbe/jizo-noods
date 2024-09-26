@@ -5,6 +5,10 @@
 - initial only one view -> home view
 - comment out / delete all unwanted elements
 - scrolling text in navbar fading out on border
+- create opening cookie message
+  -> idea: "We don't sell your privacy, only quality delicacy."
+- after cookie check in local storage state start loading sequence
+- after fully loading videofile start autoplay
 
 ## name spacing
 
