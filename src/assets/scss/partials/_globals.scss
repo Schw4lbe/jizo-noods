@@ -1,13 +1,15 @@
 @use "../abstracts/" as *;
 
 .navbar-wrapper {
-  background: $clr-primary-dark-1;
+  width: 100%;
+  position: fixed;
+  background: rgba($color: $clr-primary-dark-1, $alpha: 0.9);
   display: flex;
   justify-content: center;
+  z-index: 99;
 }
 
 .page-wrapper {
-  background: $clr-primary;
   color: $clr-secondary;
   display: flex;
   justify-content: center;

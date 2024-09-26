@@ -5,8 +5,10 @@
       src="../../public/img/intro/intro-sample.jpg"
       alt="dummy"
     />
-    <img src="../../public/img/logo.png" alt="dummy" />
-    <h3 class="intro-slogan">Slogan Text Dummy</h3>
+    <div class="logo-slogan-container">
+      <img class="logo" src="../../public/img/logo.png" alt="dummy" />
+      <h3 class="slogan">Slogan Text Dummy</h3>
+    </div>
   </section>
 </template>
 

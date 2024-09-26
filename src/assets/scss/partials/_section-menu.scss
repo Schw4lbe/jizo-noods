@@ -1,6 +1,7 @@
 @use "../abstracts/" as *;
 
 .section-menu-main {
+  background: $clr-primary;
   padding: 3rem 1rem;
 
   .menu-starter-container {

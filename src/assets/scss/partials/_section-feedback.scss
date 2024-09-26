@@ -1,6 +1,7 @@
 @use "../abstracts/" as *;
 
 .section-feedback-main {
+  background: $clr-primary;
   padding: 3rem 1rem;
 
   .feedback-redirect {

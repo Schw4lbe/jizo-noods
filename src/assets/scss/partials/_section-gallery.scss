@@ -1,6 +1,7 @@
 @use "../abstracts/" as *;
 
 .section-gallery-main {
+  background: $clr-primary;
   width: 100%;
   padding: 3rem 1rem;
   display: flex;
