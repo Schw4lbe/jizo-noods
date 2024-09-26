@@ -18,14 +18,16 @@
         {{ content.sectionLocation.address.header }}
       </h4>
       <div class="location-address">
-        <span class="street">{{ content.sectionLocation.address.street }}</span>
-        <span class="house-number">{{
-          content.sectionLocation.address.houseNumber
-        }}</span>
-        <span class="zip-code">{{
-          content.sectionLocation.address.zipCode
-        }}</span>
-        <span class="city">{{ content.sectionLocation.address.city }}</span>
+        <p class="street">
+          {{ content.sectionLocation.address.street }}
+          <span class="house-number">{{
+            content.sectionLocation.address.houseNumber
+          }}</span>
+        </p>
+        <p class="zip-code">
+          {{ content.sectionLocation.address.zipCode }}
+          <span class="city">{{ content.sectionLocation.address.city }}</span>
+        </p>
       </div>
     </div>
     <div class="social-media-container">
@@ -38,8 +40,9 @@
           :key="index"
           class="social-media-item"
         >
-          <i :class="item.icon"></i>
-          <a :href="item.url" class="url">{{ item.name }}</a>
+          <a :href="item.url" class="url"
+            ><i :class="item.icon"></i>{{ item.name }}</a
+          >
         </div>
       </div>
     </div>

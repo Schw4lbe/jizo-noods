@@ -1,0 +1,30 @@
+@use "../abstracts/" as *;
+
+.section-about-main {
+  background: $clr-primary;
+  color: $clr-secondary;
+  text-align: center;
+  padding: 3rem 0;
+
+  .about-description {
+    font-size: 20px;
+  }
+
+  .about-content-container {
+    padding-top: 2rem;
+
+    .about-item {
+      padding-bottom: 2rem;
+
+      .content-header {
+        color: $clr-accent-a;
+      }
+
+      // temp:
+      .media {
+        font-size: 12px;
+        color: $clr-error;
+      }
+    }
+  }
+}

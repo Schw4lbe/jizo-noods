@@ -1,0 +1,17 @@
+@use "../abstracts/" as *;
+
+.section-feedback-main {
+  background: $clr-primary;
+  color: $clr-secondary;
+  text-align: center;
+  padding: 3rem 0;
+
+  .feedback-url {
+    text-decoration: none;
+    color: $clr-accent;
+  }
+
+  .feedback-qr {
+    padding: 1rem;
+  }
+}

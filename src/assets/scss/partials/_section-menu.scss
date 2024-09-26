@@ -69,6 +69,10 @@
   }
 
   .menu-allergen-container {
+    .allergen-header {
+      font-size: 18px;
+    }
+
     .accordion {
       // bs css variable overwrite:
       --bs-accordion-btn-bg: #333;

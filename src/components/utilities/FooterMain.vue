@@ -1,9 +1,10 @@
 <template>
   <footer>
     <div class="footer-item-container">
-      <a v-for="(item, index) in footerItems" :key="index" :href="item.url">{{
-        item.lable
-      }}</a>
+      <a v-for="(item, index) in footerItems" :key="index" :href="item.url"
+        >{{ item.lable
+        }}<span v-if="index < footerItems.length - 1"> | </span></a
+      >
     </div>
   </footer>
 </template>

@@ -1,0 +1,8 @@
+@use "../abstracts/" as *;
+
+.section-gallery-main {
+  background: $clr-primary;
+  color: $clr-secondary;
+  text-align: center;
+  padding: 3rem 0;
+}

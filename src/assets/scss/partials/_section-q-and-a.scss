@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+
+.section-qa-main {
+  background: $clr-primary;
+  color: $clr-secondary;
+  text-align: center;
+  padding: 3rem 0;
+
+  // temp:
+  .qa-content-container {
+    font-size: 12px;
+    color: $clr-error;
+  }
+}

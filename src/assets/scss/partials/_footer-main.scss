@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+
+.footer-item-container {
+  text-align: center;
+  background: $clr-primary-dark-1;
+  border-top: 1px solid $clr-primary-light-1;
+  padding: 1rem;
+  a {
+    text-decoration: none;
+    color: $clr-accent-a;
+    font-size: 14px;
+    font-weight: 200;
+  }
+}
