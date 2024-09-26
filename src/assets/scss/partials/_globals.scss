@@ -1,5 +1,28 @@
 @use "../abstracts/" as *;
 
+.navbar-wrapper {
+  background: $clr-primary-dark-1;
+  display: flex;
+  justify-content: center;
+}
+
+.page-wrapper {
+  background: $clr-primary;
+  color: $clr-secondary;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .content-wrapper {
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
 .section-header {
   width: 100%;
   padding: 1rem 0 0.5rem 0;

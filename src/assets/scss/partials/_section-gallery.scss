@@ -1,8 +1,14 @@
 @use "../abstracts/" as *;
 
 .section-gallery-main {
-  background: $clr-primary;
-  color: $clr-secondary;
-  text-align: center;
-  padding: 3rem 0;
+  width: 100%;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .carousel {
+    width: 100%;
+    max-width: 650px;
+  }
 }

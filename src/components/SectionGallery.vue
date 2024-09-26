@@ -25,7 +25,7 @@
           :class="{ active: index === 0 }"
         >
           <img class="d-block w-100" :src="image.url" alt="dummy" />
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-none d-sm-block">
             <h5>{{ image.label }}</h5>
             <p>{{ image.description }}</p>
           </div>

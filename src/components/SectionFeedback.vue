@@ -8,11 +8,13 @@
       <a :href="content.sectionFeedback.url" class="feedback-url">
         <span class="url-text">{{ content.sectionFeedback.urlText }}</span>
       </a>
-      <img
-        src="../../public/img/feedback/qr-dummy.png"
-        alt="dummy"
-        class="feedback-qr"
-      />
+      <div class="qr-container">
+        <img
+          src="../../public/img/feedback/qr-dummy.png"
+          alt="dummy"
+          class="feedback-qr"
+        />
+      </div>
     </div>
   </section>
 </template>

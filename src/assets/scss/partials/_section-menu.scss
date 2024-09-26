@@ -1,10 +1,7 @@
 @use "../abstracts/" as *;
 
 .section-menu-main {
-  background: $clr-primary;
-  color: $clr-secondary;
-  text-align: center;
-  padding: 3rem 0;
+  padding: 3rem 1rem;
 
   .menu-starter-container {
     padding: 1rem;
@@ -73,42 +70,49 @@
       font-size: 18px;
     }
 
-    .accordion {
-      // bs css variable overwrite:
-      --bs-accordion-btn-bg: #333;
-      --bs-accordion-active-bg: #555;
-      --bs-accordion-active-color: #fdd088;
-      --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem
-        rgba(253, 208, 136, 0.25);
-      --bs-accordion-btn-color: #ddd;
-      --bs-accordion-bg: #222;
-      --bs-accordion-color: #ccc;
-      --bs-accordion-border-color: none;
-      --bs-accordion-border-radius: none;
-      --bs-accordion-inner-border-radius: none;
+    .accordion-wrapper {
+      display: flex;
+      justify-content: center;
 
-      padding: 0 3rem;
+      .accordion {
+        // bs css variable overwrite:
+        --bs-accordion-btn-bg: #333;
+        --bs-accordion-active-bg: #555;
+        --bs-accordion-active-color: #fdd088;
+        --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem
+          rgba(253, 208, 136, 0.25);
+        --bs-accordion-btn-color: #ddd;
+        --bs-accordion-bg: #222;
+        --bs-accordion-color: #ccc;
+        --bs-accordion-border-color: none;
+        --bs-accordion-border-radius: none;
+        --bs-accordion-inner-border-radius: none;
 
-      .accordion-item {
-        .accordion-header {
-          .accordion-button {
-            padding: 0.5rem;
-            font-size: 14px;
-            font-weight: 200;
-            border-bottom: 1px solid $clr-primary-light-3;
-            &:focus {
-              font-weight: 500;
-              border-bottom: none;
-            }
-            &::after {
-              filter: invert(100%);
+        max-width: 700px;
+        min-width: 325px;
+        padding: 0 3rem;
+
+        .accordion-item {
+          .accordion-header {
+            .accordion-button {
+              padding: 0.5rem;
+              font-size: 14px;
+              font-weight: 200;
+              border-bottom: 1px solid $clr-primary-light-3;
+              &:focus {
+                font-weight: 500;
+                border-bottom: none;
+              }
+              &::after {
+                filter: invert(100%);
+              }
             }
           }
-        }
 
-        .accordion-body {
-          font-size: 12px;
-          padding: 1.5rem;
+          .accordion-body {
+            font-size: 12px;
+            padding: 1.5rem;
+          }
         }
       }
     }

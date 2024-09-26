@@ -1,17 +1,27 @@
 @use "../abstracts/" as *;
 
 .section-feedback-main {
-  background: $clr-primary;
-  color: $clr-secondary;
-  text-align: center;
-  padding: 3rem 0;
+  padding: 3rem 1rem;
 
-  .feedback-url {
-    text-decoration: none;
-    color: $clr-accent;
-  }
+  .feedback-redirect {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
-  .feedback-qr {
-    padding: 1rem;
+    .feedback-url {
+      text-decoration: none;
+      color: $clr-accent;
+    }
+
+    .qr-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      .feedback-qr {
+        max-width: 300px;
+        padding: 1rem;
+      }
+    }
   }
 }

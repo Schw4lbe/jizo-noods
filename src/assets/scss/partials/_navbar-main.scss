@@ -1,10 +1,11 @@
 @use "../abstracts/" as *;
-
 .navbar {
+  background: transparent !important;
+  width: 100%;
+  max-width: 1400px;
   display: flex;
   flex-wrap: nowrap;
   padding: 0;
-  background: rgba($color: $clr-primary-dark-1, $alpha: 0.9) !important;
 
   .container-fluid {
     width: max-content;

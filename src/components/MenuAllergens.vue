@@ -4,28 +4,33 @@
     <p class="allergen-description">
       {{ content.sectionMenu.allergens.description }}
     </p>
-
-    <div class="accordion" id="allergensAccordion">
-      <div v-for="item in allergenItems" :key="item.id" class="accordion-item">
-        <h5 class="accordion-header">
-          <button
-            class="accordion-button collapsed"
-            type="button"
-            data-bs-toggle="collapse"
-            :data-bs-target="`#collapse-allergen-${item.id}`"
-            aria-expanded="false"
-            :aria-controls="`#collapse-allergen-${item.id}`"
-          >
-            <span class="allergen-id">{{ item.id + ") " + item.label }}</span>
-          </button>
-        </h5>
+    <div class="accordion-wrapper">
+      <div class="accordion" id="allergensAccordion">
         <div
-          :id="`collapse-allergen-${item.id}`"
-          class="accordion-collapse collapse"
-          data-bs-parent="#allergensAccordion"
-          style=""
+          v-for="item in allergenItems"
+          :key="item.id"
+          class="accordion-item"
         >
-          <div class="accordion-body">{{ item.description }}</div>
+          <h5 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              :data-bs-target="`#collapse-allergen-${item.id}`"
+              aria-expanded="false"
+              :aria-controls="`#collapse-allergen-${item.id}`"
+            >
+              <span class="allergen-id">{{ item.id + ") " + item.label }}</span>
+            </button>
+          </h5>
+          <div
+            :id="`collapse-allergen-${item.id}`"
+            class="accordion-collapse collapse"
+            data-bs-parent="#allergensAccordion"
+            style=""
+          >
+            <div class="accordion-body">{{ item.description }}</div>
+          </div>
         </div>
       </div>
     </div>
