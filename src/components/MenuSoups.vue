@@ -8,7 +8,7 @@
           {{ item.name }}
         </p>
         <!-- temp only hot icon tbd if more is wanted -->
-        <span v-if="item.indicator.hasIcons === true"
+        <span v-if="item.indicator.hasIcons === true" class="item-icon"
           ><i class="fa-solid fa-pepper-hot"></i
         ></span>
       </div>
@@ -17,7 +17,8 @@
           v-for="(ing, ingIndex) in item.ingredients"
           :key="ingIndex"
           class="ingredient"
-          >{{ ing }}</span
+          >{{ ing
+          }}<span v-if="ingIndex < item.ingredients.length - 1"> | </span></span
         >
       </div>
       <div class="item-allergens">
@@ -26,7 +27,8 @@
           v-for="(allergen, allIndex) in item.allergens"
           :key="allIndex"
           class="item-allergen-id"
-          >{{ allergen }}</span
+          >{{ allergen
+          }}<span v-if="allIndex < item.allergens.length - 1"> , </span></span
         >
       </div>
       <div class="item-price">

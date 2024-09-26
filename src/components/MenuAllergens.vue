@@ -7,7 +7,7 @@
 
     <div class="accordion" id="allergensAccordion">
       <div v-for="item in allergenItems" :key="item.id" class="accordion-item">
-        <h2 class="accordion-header">
+        <h5 class="accordion-header">
           <button
             class="accordion-button collapsed"
             type="button"
@@ -18,7 +18,7 @@
           >
             <span class="allergen-id">{{ item.id + ") " + item.label }}</span>
           </button>
-        </h2>
+        </h5>
         <div
           :id="`collapse-allergen-${item.id}`"
           class="accordion-collapse collapse"

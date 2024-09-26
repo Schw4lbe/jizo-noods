@@ -1,19 +1,12 @@
 <template>
   <div class="home-view-wrapper">
     <IntroScene />
-    <hr />
     <SectionRamenKit />
-    <hr />
     <SectionMenu />
-    <hr />
     <SectionGallery />
-    <hr />
     <SectionAboutUs />
-    <hr />
     <SectionFeedback />
-    <hr />
     <SectionQandA />
-    <hr />
     <SectionLocation />
   </div>
 </template>

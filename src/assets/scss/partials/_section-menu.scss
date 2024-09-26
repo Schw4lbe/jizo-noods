@@ -1,0 +1,112 @@
+@use "../abstracts/" as *;
+
+.section-menu-main {
+  background: $clr-primary;
+  color: $clr-secondary;
+  text-align: center;
+  padding: 3rem 0;
+
+  .menu-starter-container {
+    padding: 1rem;
+    .starter-header {
+      text-transform: uppercase;
+      color: $clr-accent-a;
+    }
+  }
+
+  .menu-soup-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+
+    .soup-header {
+      text-transform: uppercase;
+      color: $clr-accent-a;
+    }
+
+    .soup-item {
+      padding: 1.5rem 0;
+
+      .item-name-container {
+        display: flex;
+        justify-content: center;
+
+        .item-name {
+          color: $clr-accent-a;
+          font-size: 1.2rem;
+        }
+
+        .item-icon {
+          padding: 5px;
+          font-size: 0.7rem;
+          color: tomato;
+        }
+      }
+
+      .item-ingredients {
+        padding: 1rem 2rem;
+
+        .ingredient {
+          color: $clr-secondary-light-1;
+          font-size: 1rem;
+          font-weight: 300;
+        }
+      }
+
+      .item-allergens {
+        color: $clr-secondary-dark-3;
+        font-size: 0.9rem;
+        font-weight: 200;
+      }
+
+      .item-price {
+        font-size: 1.3rem;
+        font-weight: 200;
+        padding: 1rem;
+      }
+    }
+  }
+
+  .menu-allergen-container {
+    .accordion {
+      // bs css variable overwrite:
+      --bs-accordion-btn-bg: #333;
+      --bs-accordion-active-bg: #555;
+      --bs-accordion-active-color: #fdd088;
+      --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem
+        rgba(253, 208, 136, 0.25);
+      --bs-accordion-btn-color: #ddd;
+      --bs-accordion-bg: #222;
+      --bs-accordion-color: #ccc;
+      --bs-accordion-border-color: none;
+      --bs-accordion-border-radius: none;
+      --bs-accordion-inner-border-radius: none;
+
+      padding: 0 3rem;
+
+      .accordion-item {
+        .accordion-header {
+          .accordion-button {
+            padding: 0.5rem;
+            font-size: 14px;
+            font-weight: 200;
+            border-bottom: 1px solid $clr-primary-light-3;
+            &:focus {
+              font-weight: 500;
+              border-bottom: none;
+            }
+            &::after {
+              filter: invert(100%);
+            }
+          }
+        }
+
+        .accordion-body {
+          font-size: 12px;
+          padding: 1.5rem;
+        }
+      }
+    }
+  }
+}
