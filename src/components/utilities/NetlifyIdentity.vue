@@ -35,3 +35,12 @@ export default {
   },
 };
 </script>
+<style scoped>
+.netlify-container {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  z-index: 999;
+  background: tomato;
+}
+</style>
