@@ -1,6 +1,5 @@
 <template>
   <div class="netlify-container">
-    <!-- Custom buttons for login and logout -->
     <button v-if="!user" @click="openLogin">Login with Netlify Identity</button>
     <button v-if="user" @click="logout">Logout</button>
   </div>
@@ -12,16 +11,20 @@ export default {
   name: "NetlifyIdentity",
   data() {
     return {
-      user: null, // Track the user's login status
+      user: null,
     };
   },
   mounted() {
     // Initialize Netlify Identity
     netlifyIdentity.init();
 
+    // Set initial user state from localStorage if available
+    this.updateUserFromLocalStorage();
+
     // Set up event listeners
     netlifyIdentity.on("init", (user) => {
       this.user = user; // Set user state
+      this.emitUserStatus(); // Emit user status to the parent
       if (!user) {
         this.openLogin(); // Open login widget if not logged in
       }
@@ -29,14 +32,13 @@ export default {
 
     netlifyIdentity.on("login", (user) => {
       this.user = user; // Update user state
+      this.emitUserStatus(); // Emit user status to the parent
       console.log("User logged in");
-      window.location.reload(); // Reload the page to show the app content
     });
 
     netlifyIdentity.on("logout", () => {
       this.user = null; // Clear user state
       console.log("User logged out");
-      window.location.reload(); // Reload the page to enforce login
     });
   },
   methods: {
@@ -45,6 +47,14 @@ export default {
     },
     logout() {
       netlifyIdentity.logout(); // Manually trigger logout
+    },
+    updateUserFromLocalStorage() {
+      const storedUser = localStorage.getItem("gotrue.user");
+      this.user = storedUser ? JSON.parse(storedUser) : null;
+      this.emitUserStatus(); // Emit user status to the parent
+    },
+    emitUserStatus() {
+      this.$emit("user-status-changed", !!this.user); // Emit boolean to the parent
     },
   },
 };

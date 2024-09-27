@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <NetlifyIdentity />
-    <div class="render-on-login-dev">
+    <NetlifyIdentity @user-status-changed="handleUserStatusChange" />
+    <div v-if="isUserLoggedIn" class="render-on-login-dev">
       <div class="navbar-wrapper">
         <NavbarMain />
       </div>
@@ -17,7 +17,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from "vue";
+import { defineComponent, onMounted, ref } from "vue";
 import { useStore } from "vuex";
 import NavbarMain from "./components/utilities/NavbarMain.vue";
 import FooterMain from "./components/utilities/FooterMain.vue";
@@ -34,12 +34,19 @@ export default defineComponent({
 
   setup() {
     const store = useStore();
-
     onMounted(() => {
       store.dispatch("isLanguageSet");
     });
 
-    return {};
+    // Define a ref to track the login status
+    const isUserLoggedIn = ref(false);
+
+    // Method to handle the 'user-status-changed' event
+    const handleUserStatusChange = (status: boolean) => {
+      isUserLoggedIn.value = status;
+    };
+
+    return { isUserLoggedIn, handleUserStatusChange };
   },
 });
 </script>
