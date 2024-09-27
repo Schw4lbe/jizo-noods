@@ -38,10 +38,8 @@ export default defineComponent({
       store.dispatch("isLanguageSet");
     });
 
-    // Define a ref to track the login status
     const isUserLoggedIn = ref(false);
 
-    // Method to handle the 'user-status-changed' event
     const handleUserStatusChange = (status: boolean) => {
       isUserLoggedIn.value = status;
     };

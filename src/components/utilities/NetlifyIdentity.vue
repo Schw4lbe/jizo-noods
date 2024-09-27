@@ -1,11 +1,14 @@
 <template>
-  <div class="netlify-container">
-    <button v-if="!user" @click="openLogin">Login with Netlify Identity</button>
-    <button v-if="user" @click="logout">Logout</button>
+  <div v-if="!user" class="netlify-login-ui">
+    <img src="../../../public/img/logo.png" alt="logo" class="login-logo" />
+    <h3 class="login-header">Jizo Noods Website Preview</h3>
+    <button @click="openLogin" class="netlify-login-btn">Login</button>
   </div>
+  <button v-if="user" @click="logout" class="netlify-logout-btn">Logout</button>
 </template>
+
 <script>
-import netlifyIdentity from "netlify-identity-widget"; // Import the widget
+import netlifyIdentity from "netlify-identity-widget";
 
 export default {
   name: "NetlifyIdentity",
@@ -15,61 +18,45 @@ export default {
     };
   },
   mounted() {
-    // Initialize Netlify Identity
     netlifyIdentity.init();
 
-    // Set initial user state from localStorage if available
     this.updateUserFromLocalStorage();
 
-    // Set up event listeners
     netlifyIdentity.on("init", (user) => {
-      this.user = user; // Set user state
-      this.emitUserStatus(); // Emit user status to the parent
+      this.user = user;
+      this.emitUserStatus();
       if (!user) {
-        this.openLogin(); // Open login widget if not logged in
+        this.openLogin();
       }
     });
 
     netlifyIdentity.on("login", (user) => {
-      this.user = user; // Update user state
-      this.emitUserStatus(); // Emit user status to the parent
+      this.user = user;
+      this.emitUserStatus();
       console.log("User logged in");
     });
 
     netlifyIdentity.on("logout", () => {
-      this.user = null; // Clear user state
+      this.user = null;
       console.log("User logged out");
       window.location.reload();
     });
   },
   methods: {
     openLogin() {
-      netlifyIdentity.open(); // Manually open the login widget
+      netlifyIdentity.open();
     },
     logout() {
-      netlifyIdentity.logout(); // Manually trigger logout
+      netlifyIdentity.logout();
     },
     updateUserFromLocalStorage() {
       const storedUser = localStorage.getItem("gotrue.user");
       this.user = storedUser ? JSON.parse(storedUser) : null;
-      this.emitUserStatus(); // Emit user status to the parent
+      this.emitUserStatus();
     },
     emitUserStatus() {
-      this.$emit("user-status-changed", !!this.user); // Emit boolean to the parent
+      this.$emit("user-status-changed", !!this.user);
     },
   },
 };
 </script>
-<style scoped>
-.netlify-container {
-  position: fixed;
-  top: 0px;
-  right: 0;
-  z-index: 999;
-  padding: 0.5rem;
-}
-
-button {
-  background: tomato;
-}
-</style>
