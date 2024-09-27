@@ -10,6 +10,7 @@ export default {
 
   mounted() {
     if (window.netlifyIdentity) {
+      // Initialize the Netlify Identity widget if it hasn't been initialized
       window.netlifyIdentity.on("init", (user) => {
         if (!user) {
           // If not logged in, show the login widget
@@ -29,8 +30,10 @@ export default {
         window.location.reload(); // Reload the page to enforce login
       });
 
-      // Initialize the Netlify Identity widget
-      window.netlifyIdentity.init();
+      // Initialize Netlify Identity only if not already initialized
+      if (!window.netlifyIdentity.currentUser()) {
+        window.netlifyIdentity.init();
+      }
     }
   },
 };
