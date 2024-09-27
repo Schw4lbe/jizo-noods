@@ -22,82 +22,93 @@
 </template>
 
 <script lang="ts">
-export default {
+import { defineComponent, onMounted, onUpdated, ref, nextTick } from "vue";
+
+export default defineComponent({
   name: "PrivacyPopup",
   props: {
-    // Temporary for development
+    //temp for dev
     loginSuccess: Boolean,
   },
-  data() {
-    return {
-      privacyAccepted: false,
-      htmlBody: document.querySelector("body"),
-    };
-  },
-  methods: {
-    privacyCheckDisableScroll() {
-      this.htmlBody?.classList.add("scroll-disabled");
-    },
-    privacyCheckedEnableScroll() {
-      this.htmlBody?.classList.remove("scroll-disabled");
-    },
-    triggerPopupSlideIn() {
+  setup() {
+    const htmlBody = document.querySelector("body");
+    const privacyAccepted = ref(false);
+
+    // const privacyCheckDisableScroll = () => {
+    //   htmlBody?.classList.add("scroll-disabled");
+    // };
+
+    const triggerPopupSlideIn = () => {
       const popup = document.querySelector(".privacy-content");
-      this.$nextTick(() => {
+      nextTick(() => {
         if (popup && !popup.classList.contains("popup-slide-in")) {
           popup.classList.add("popup-slide-in");
         }
       });
-    },
-    triggerPopupSlideOut() {
+    };
+
+    const triggerPopupSlideOut = () => {
       const popup = document.querySelector(".privacy-content");
       const popupContainer = document.querySelector(".privacy-popup-container");
       if (popup?.classList.contains("popup-slide-in")) {
-        popup.classList.remove("popup-slide-in");
-        popup.classList.add("popup-slide-out");
+        popup?.classList.remove("popup-slide-in");
+        popup?.classList.add("popup-slide-out");
         popupContainer?.classList.add("background-lighten");
       }
-    },
-    onClickSetPrivacyAccepted() {
-      this.privacyCheckedEnableScroll();
-      this.triggerPopupSlideOut();
-      this.unblurIntroScene();
-      this.slideDownLogo();
+    };
+
+    const onClickSetPrivacyAccepted = () => {
+      //   privacyCheckedEnableScroll();
+      triggerPopupSlideOut();
+      unblurIntroScene();
+      slideDownLogo();
       setTimeout(() => {
-        this.privacyAccepted = true;
+        privacyAccepted.value = true;
       }, 1500);
-    },
-    blurIntroScene() {
+    };
+
+    const blurIntroScene = () => {
       const introScene = document.querySelector(".intro-background");
-      introScene?.classList.add("before-load-blur");
-    },
-    unblurIntroScene() {
+      introScene?.classList.add(".before-load-blur");
+    };
+
+    const unblurIntroScene = () => {
       const introScene = document.querySelector(".intro-background");
       introScene?.classList.add("unblur-animation");
-    },
-    slideDownLogo() {
+    };
+
+    const slideDownLogo = () => {
       const logo = document.querySelector(".logo-slogan-container");
       logo?.classList.add("slide-down-logo");
-    },
+    };
+
+    // const privacyCheckedEnableScroll = () => {
+    //   htmlBody?.classList.remove("scroll-disabled");
+    // };
+
+    onUpdated(() => {
+      setTimeout(() => {
+        if (!privacyAccepted.value) {
+          //   privacyCheckDisableScroll();
+          triggerPopupSlideIn();
+          blurIntroScene();
+        }
+      }, 50);
+    });
+
+    onMounted(() => {
+      console.log("Mounted:", document.querySelector(".privacy-content"));
+
+      setTimeout(() => {
+        if (!privacyAccepted.value) {
+          //   privacyCheckDisableScroll();
+          triggerPopupSlideIn();
+          blurIntroScene();
+        }
+      }, 50);
+    });
+
+    return { privacyAccepted, onClickSetPrivacyAccepted };
   },
-  mounted() {
-    console.log("Mounted:", document.querySelector(".privacy-content"));
-    setTimeout(() => {
-      if (!this.privacyAccepted) {
-        this.privacyCheckDisableScroll();
-        this.triggerPopupSlideIn();
-        this.blurIntroScene();
-      }
-    }, 50);
-  },
-  updated() {
-    setTimeout(() => {
-      if (!this.privacyAccepted && this.loginSuccess) {
-        this.privacyCheckDisableScroll();
-        this.triggerPopupSlideIn();
-        this.blurIntroScene();
-      }
-    }, 50);
-  },
-};
+});
 </script>
