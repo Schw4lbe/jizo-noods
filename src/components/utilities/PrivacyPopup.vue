@@ -85,11 +85,13 @@ export default defineComponent({
     };
 
     onUpdated(() => {
-      if (!privacyAccepted.value) {
-        privacyCheckDisableScroll();
-        triggerPopupSlideIn();
-        blurIntroScene();
-      }
+      setTimeout(() => {
+        if (!privacyAccepted.value) {
+          privacyCheckDisableScroll();
+          triggerPopupSlideIn();
+          blurIntroScene();
+        }
+      }, 50);
     });
 
     return { privacyAccepted, onClickSetPrivacyAccepted };
