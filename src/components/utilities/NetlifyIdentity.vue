@@ -39,6 +39,7 @@ export default {
     netlifyIdentity.on("logout", () => {
       this.user = null; // Clear user state
       console.log("User logged out");
+      window.location.reload();
     });
   },
   methods: {
@@ -61,10 +62,14 @@ export default {
 </script>
 <style scoped>
 .netlify-container {
-  position: absolute;
-  top: 100px;
-  left: 0;
+  position: fixed;
+  top: 0px;
+  right: 0;
   z-index: 999;
+  padding: 0.5rem;
+}
+
+button {
   background: tomato;
 }
 </style>
