@@ -22,55 +22,37 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, ref, watch } from "vue";
+import { defineComponent, onMounted, onUpdated, ref } from "vue";
 
 export default defineComponent({
   name: "PrivacyPopup",
   props: {
+    //temp for dev
     loginSuccess: Boolean,
   },
-  setup(props) {
+  setup() {
     const htmlBody = document.querySelector("body");
     const privacyAccepted = ref(false);
-
-    // Cache elements for reuse
-    let popup: HTMLElement | null = null;
-    let popupContainer: HTMLElement | null = null;
-    let introScene: HTMLElement | null = null;
-    let logo: HTMLElement | null = null;
 
     const privacyCheckDisableScroll = () => {
       htmlBody?.classList.add("scroll-disabled");
     };
 
-    const privacyCheckedEnableScroll = () => {
-      htmlBody?.classList.remove("scroll-disabled");
-    };
-
     const triggerPopupSlideIn = () => {
-      if (popup && !popup.classList.contains("popup-slide-in")) {
-        popup.classList.add("popup-slide-in");
+      const popup = document.querySelector(".privacy-content");
+      if (!popup?.classList.contains("popup-slide-in")) {
+        popup?.classList.add("popup-slide-in");
       }
     };
 
     const triggerPopupSlideOut = () => {
-      if (popup && popup.classList.contains("popup-slide-in")) {
-        popup.classList.remove("popup-slide-in");
-        popup.classList.add("popup-slide-out");
+      const popup = document.querySelector(".privacy-content");
+      const popupContainer = document.querySelector(".privacy-popup-container");
+      if (popup?.classList.contains("popup-slide-in")) {
+        popup?.classList.remove("popup-slide-in");
+        popup?.classList.add("popup-slide-out");
         popupContainer?.classList.add("background-lighten");
       }
-    };
-
-    const blurIntroScene = () => {
-      introScene?.classList.add("before-load-blur");
-    };
-
-    const unblurIntroScene = () => {
-      introScene?.classList.add("unblur-animation");
-    };
-
-    const slideDownLogo = () => {
-      logo?.classList.add("slide-down-logo");
     };
 
     const onClickSetPrivacyAccepted = () => {
@@ -78,36 +60,48 @@ export default defineComponent({
       triggerPopupSlideOut();
       unblurIntroScene();
       slideDownLogo();
-
       setTimeout(() => {
         privacyAccepted.value = true;
       }, 1500);
     };
 
-    onMounted(() => {
-      // Cache elements when the component is mounted
-      popup = document.querySelector(".privacy-content");
-      popupContainer = document.querySelector(".privacy-popup-container");
-      introScene = document.querySelector(".intro-background");
-      logo = document.querySelector(".logo-slogan-container");
+    const blurIntroScene = () => {
+      const introScene = document.querySelector(".intro-background");
+      introScene?.classList.add(".before-load-blur");
+    };
 
-      // Initial check
-      if (!privacyAccepted.value) {
-        privacyCheckDisableScroll();
-        triggerPopupSlideIn();
-        blurIntroScene();
-      }
+    const unblurIntroScene = () => {
+      const introScene = document.querySelector(".intro-background");
+      introScene?.classList.add("unblur-animation");
+    };
+
+    const slideDownLogo = () => {
+      const logo = document.querySelector(".logo-slogan-container");
+      logo?.classList.add("slide-down-logo");
+    };
+
+    const privacyCheckedEnableScroll = () => {
+      htmlBody?.classList.remove("scroll-disabled");
+    };
+
+    onUpdated(() => {
+      setTimeout(() => {
+        if (!privacyAccepted.value) {
+          privacyCheckDisableScroll();
+          triggerPopupSlideIn();
+          blurIntroScene();
+        }
+      }, 50);
     });
 
-    // Watch for changes in `privacyAccepted`
-    watch(privacyAccepted, (newVal) => {
-      if (!newVal) {
-        triggerPopupSlideIn();
-        blurIntroScene();
-        privacyCheckDisableScroll();
-      } else {
-        privacyCheckedEnableScroll();
-      }
+    onMounted(() => {
+      setTimeout(() => {
+        if (!privacyAccepted.value) {
+          privacyCheckDisableScroll();
+          triggerPopupSlideIn();
+          blurIntroScene();
+        }
+      }, 50);
     });
 
     return { privacyAccepted, onClickSetPrivacyAccepted };
