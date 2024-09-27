@@ -1,14 +1,14 @@
 <template>
   <div class="netlify-container">
-    <!-- <div data-netlify-identity-menu></div>
-    <div data-netlify-identity-button>Login with Netlify Identity</div> -->
+    <div data-netlify-identity-menu></div>
+    <div data-netlify-identity-button>Login with Netlify Identity</div>
   </div>
 </template>
 <script>
 export default {
   name: "NetlifyIdentity",
 
-  mounted() {
+  created() {
     if (window.netlifyIdentity) {
       // Initialize the Netlify Identity widget if it hasn't been initialized
       window.netlifyIdentity.on("init", (user) => {
