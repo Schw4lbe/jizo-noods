@@ -1,16 +1,18 @@
 <template>
   <div id="app">
     <NetlifyIdentity />
-    <div class="navbar-wrapper">
-      <NavbarMain />
-    </div>
-    <div class="page-wrapper">
-      <div class="background-filler"></div>
-      <div class="content-wrapper">
-        <router-view />
+    <div class="render-on-login-dev">
+      <div class="navbar-wrapper">
+        <NavbarMain />
       </div>
+      <div class="page-wrapper">
+        <div class="background-filler"></div>
+        <div class="content-wrapper">
+          <router-view />
+        </div>
+      </div>
+      <FooterMain />
     </div>
-    <FooterMain />
   </div>
 </template>
 
