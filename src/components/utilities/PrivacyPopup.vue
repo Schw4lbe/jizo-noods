@@ -94,6 +94,16 @@ export default defineComponent({
       }, 50);
     });
 
+    onMounted(() => {
+      setTimeout(() => {
+        if (!privacyAccepted.value) {
+          privacyCheckDisableScroll();
+          triggerPopupSlideIn();
+          blurIntroScene();
+        }
+      }, 50);
+    });
+
     return { privacyAccepted, onClickSetPrivacyAccepted };
   },
 });
