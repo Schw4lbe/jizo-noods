@@ -1,40 +1,51 @@
 <template>
   <div class="netlify-container">
-    <div data-netlify-identity-menu></div>
-    <div data-netlify-identity-button>Login with Netlify Identity</div>
+    <!-- Custom buttons for login and logout -->
+    <button v-if="!user" @click="openLogin">Login with Netlify Identity</button>
+    <button v-if="user" @click="logout">Logout</button>
   </div>
 </template>
 <script>
+import netlifyIdentity from "netlify-identity-widget"; // Import the widget
+
 export default {
   name: "NetlifyIdentity",
+  data() {
+    return {
+      user: null, // Track the user's login status
+    };
+  },
+  mounted() {
+    // Initialize Netlify Identity
+    netlifyIdentity.init();
 
-  created() {
-    if (window.netlifyIdentity) {
-      // Initialize the Netlify Identity widget if it hasn't been initialized
-      window.netlifyIdentity.on("init", (user) => {
-        if (!user) {
-          // If not logged in, show the login widget
-          window.netlifyIdentity.open();
-        }
-      });
-
-      // Listen for login events
-      window.netlifyIdentity.on("login", () => {
-        console.log("User logged in");
-        window.location.reload(); // Reload the page to show the app content
-      });
-
-      // Listen for logout events
-      window.netlifyIdentity.on("logout", () => {
-        console.log("User logged out");
-        window.location.reload(); // Reload the page to enforce login
-      });
-
-      // Initialize Netlify Identity only if not already initialized
-      if (!window.netlifyIdentity.currentUser()) {
-        window.netlifyIdentity.init();
+    // Set up event listeners
+    netlifyIdentity.on("init", (user) => {
+      this.user = user; // Set user state
+      if (!user) {
+        this.openLogin(); // Open login widget if not logged in
       }
-    }
+    });
+
+    netlifyIdentity.on("login", (user) => {
+      this.user = user; // Update user state
+      console.log("User logged in");
+      window.location.reload(); // Reload the page to show the app content
+    });
+
+    netlifyIdentity.on("logout", () => {
+      this.user = null; // Clear user state
+      console.log("User logged out");
+      window.location.reload(); // Reload the page to enforce login
+    });
+  },
+  methods: {
+    openLogin() {
+      netlifyIdentity.open(); // Manually open the login widget
+    },
+    logout() {
+      netlifyIdentity.logout(); // Manually trigger logout
+    },
   },
 };
 </script>
