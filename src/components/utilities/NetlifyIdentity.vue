@@ -12,6 +12,8 @@ import netlifyIdentity from "netlify-identity-widget";
 
 export default {
   name: "NetlifyIdentity",
+  emits: ["user-status-changed"],
+
   data() {
     return {
       user: null,
@@ -33,12 +35,10 @@ export default {
     netlifyIdentity.on("login", (user) => {
       this.user = user;
       this.emitUserStatus();
-      console.log("User logged in");
     });
 
     netlifyIdentity.on("logout", () => {
       this.user = null;
-      console.log("User logged out");
       window.location.reload();
     });
   },

@@ -3,7 +3,7 @@
 .navbar-wrapper {
   width: 100%;
   position: fixed;
-  background: rgba($color: $clr-primary-dark-1, $alpha: 0.9);
+  background: $clr-primary-dark-1;
   display: flex;
   justify-content: center;
   z-index: 99;

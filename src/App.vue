@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <NetlifyIdentity @user-status-changed="handleUserStatusChange" />
+    <PrivacyPopup :loginSuccess="isUserLoggedIn" />
     <div v-if="isUserLoggedIn" class="render-on-login-dev">
       <div class="navbar-wrapper">
         <NavbarMain />
@@ -22,6 +23,7 @@ import { useStore } from "vuex";
 import NavbarMain from "./components/utilities/NavbarMain.vue";
 import FooterMain from "./components/utilities/FooterMain.vue";
 import NetlifyIdentity from "./components/utilities/NetlifyIdentity.vue";
+import PrivacyPopup from "./components/utilities/PrivacyPopup.vue";
 
 export default defineComponent({
   name: "App",
@@ -30,6 +32,7 @@ export default defineComponent({
     NavbarMain,
     FooterMain,
     NetlifyIdentity,
+    PrivacyPopup,
   },
 
   setup() {
