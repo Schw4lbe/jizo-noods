@@ -22,7 +22,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, ref } from "vue";
+import { defineComponent, onMounted, onUpdated, ref } from "vue";
 
 export default defineComponent({
   name: "PrivacyPopup",
@@ -38,18 +38,57 @@ export default defineComponent({
       htmlBody?.classList.add("scroll-disabled");
     };
 
+    const triggerPopupSlideIn = () => {
+      const popup = document.querySelector(".privacy-content");
+      if (!popup?.classList.contains("popup-slide-in")) {
+        popup?.classList.add("popup-slide-in");
+      }
+    };
+
+    const triggerPopupSlideOut = () => {
+      const popup = document.querySelector(".privacy-content");
+      const popupContainer = document.querySelector(".privacy-popup-container");
+      if (popup?.classList.contains("popup-slide-in")) {
+        popup?.classList.remove("popup-slide-in");
+        popup?.classList.add("popup-slide-out");
+        popupContainer?.classList.add("background-lighten");
+      }
+    };
+
     const onClickSetPrivacyAccepted = () => {
       privacyCheckedEnableScroll();
-      privacyAccepted.value = true;
+      triggerPopupSlideOut();
+      unblurIntroScene();
+      slideDownLogo();
+      setTimeout(() => {
+        privacyAccepted.value = true;
+      }, 1500);
+    };
+
+    const blurIntroScene = () => {
+      const introScene = document.querySelector(".intro-background");
+      introScene?.classList.add(".before-load-blur");
+    };
+
+    const unblurIntroScene = () => {
+      const introScene = document.querySelector(".intro-background");
+      introScene?.classList.add("unblur-animation");
+    };
+
+    const slideDownLogo = () => {
+      const logo = document.querySelector(".logo-slogan-container");
+      logo?.classList.add("slide-down-logo");
     };
 
     const privacyCheckedEnableScroll = () => {
       htmlBody?.classList.remove("scroll-disabled");
     };
 
-    onMounted(() => {
+    onUpdated(() => {
       if (!privacyAccepted.value) {
         privacyCheckDisableScroll();
+        triggerPopupSlideIn();
+        blurIntroScene();
       }
     });
 
