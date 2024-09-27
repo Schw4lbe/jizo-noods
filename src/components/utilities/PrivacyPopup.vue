@@ -22,7 +22,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, onUpdated, ref } from "vue";
+import { defineComponent, onMounted, onUpdated, ref, nextTick } from "vue";
 
 export default defineComponent({
   name: "PrivacyPopup",
@@ -40,9 +40,11 @@ export default defineComponent({
 
     const triggerPopupSlideIn = () => {
       const popup = document.querySelector(".privacy-content");
-      if (!popup?.classList.contains("popup-slide-in")) {
-        popup?.classList.add("popup-slide-in");
-      }
+      nextTick(() => {
+        if (popup && !popup.classList.contains("popup-slide-in")) {
+          popup.classList.add("popup-slide-in");
+        }
+      });
     };
 
     const triggerPopupSlideOut = () => {
@@ -95,6 +97,8 @@ export default defineComponent({
     });
 
     onMounted(() => {
+      console.log("Mounted:", document.querySelector(".privacy-content"));
+
       setTimeout(() => {
         if (!privacyAccepted.value) {
           privacyCheckDisableScroll();
