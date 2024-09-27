@@ -4,9 +4,17 @@ const webpack = require("webpack");
 module.exports = defineConfig({
   transpileDependencies: true,
 
-  // Combine compilerOptions
-  compilerOptions: {
-    isCustomElement: (tag) => tag === "navbar-main",
+  // Use chainWebpack to define compilerOptions
+  chainWebpack: (config) => {
+    config.module
+      .rule("vue")
+      .use("vue-loader")
+      .tap((options) => {
+        options.compilerOptions = {
+          isCustomElement: (tag) => tag === "navbar-main",
+        };
+        return options;
+      });
   },
 
   // Add the Webpack configuration
