@@ -29,24 +29,28 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         if (netlifyIdentity) {
+          // Initialize the Netlify Identity Widget
+          netlifyIdentity.init();
+
+          // Check if the user is logged in
           netlifyIdentity.on("init", (user) => {
-            if (user) {
-              console.log("User logged in: ", user);
-            } else {
-              console.log("User logged out");
+            if (!user) {
+              // If not logged in, show the login widget
+              netlifyIdentity.open();
             }
           });
 
+          // Listen for login events
           netlifyIdentity.on("login", () => {
-            console.log("login");
+            console.log("User logged in");
+            window.location.reload(); // Reload the page to show the app content
           });
 
+          // Listen for logout events
           netlifyIdentity.on("logout", () => {
-            console.log("logout");
-            window.location.reload();
+            console.log("User logged out");
+            window.location.reload(); // Reload the page to enforce login
           });
-
-          netlifyIdentity.init();
         }
       });
     </script>
