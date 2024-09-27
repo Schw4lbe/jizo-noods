@@ -85,5 +85,19 @@
 ## notes
 
 - textzeile lauftext größer
-- adresse direkt unter logo
+- adresse in extra banner direkt unter logo
+  -> adresse popup öffnungszeiten
 - menü dann ramen kits
+- menu/starters link zu location section
+- social media kommt schriftlich von raphi
+- Popup Trekanten + adresse + Öffnungszeiten
+
+## cms
+
+- banner lauftext
+- slogan
+- adresse location section
+- adresse top section
+- soups
+- allergens
+- about us
