@@ -26,42 +26,6 @@
     ></script>
   </head>
   <body>
-    <script>
-      // Initialize Netlify Identity immediately
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", (user) => {
-          if (!user) {
-            // If not logged in, show the login widget
-            window.netlifyIdentity.open();
-          }
-        });
-
-        // Listen for login events
-        window.netlifyIdentity.on("login", () => {
-          console.log("User logged in");
-          window.location.reload(); // Reload the page to show the app content
-        });
-
-        // Listen for logout events
-        window.netlifyIdentity.on("logout", () => {
-          console.log("User logged out");
-          window.location.reload(); // Reload the page to enforce login
-        });
-
-        // Initialize the Netlify Identity widget
-        window.netlifyIdentity.init();
-      }
-    </script>
-    <!-- Add a menu:
-   Log in / Sign up - when the user is not logged in
-   Username / Log out - when the user is logged in
-  -->
-    <div data-netlify-identity-menu></div>
-
-    <!-- Add a simpler button:
-    Simple button that will open the modal.
-  -->
-    <div data-netlify-identity-button>Login with Netlify Identity</div>
     <noscript>
       <strong
         >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work

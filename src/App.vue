@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <NetlifyIdentity />
     <div class="navbar-wrapper">
       <NavbarMain />
     </div>
@@ -18,6 +19,7 @@ import { defineComponent, onMounted } from "vue";
 import { useStore } from "vuex";
 import NavbarMain from "./components/utilities/NavbarMain.vue";
 import FooterMain from "./components/utilities/FooterMain.vue";
+import NetlifyIdentity from "./components/utilities/NetlifyIdentity.vue";
 
 export default defineComponent({
   name: "App",
@@ -25,6 +27,7 @@ export default defineComponent({
   components: {
     NavbarMain,
     FooterMain,
+    NetlifyIdentity,
   },
 
   setup() {
