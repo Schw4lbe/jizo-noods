@@ -1,6 +1,6 @@
 <template>
   <div v-if="!privacyAccepted && loginSuccess" class="privacy-popup-container">
-    <div class="privacy-content">
+    <div class="privacy-popup-content popup-slide-in">
       <h4 class="cookie-header">
         Where are the Cookies? <i class="fa-solid fa-cookie-bite"></i>
       </h4>
@@ -22,93 +22,52 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, onUpdated, ref, nextTick } from "vue";
+import { mapActions, mapGetters } from "vuex";
 
-export default defineComponent({
+export default {
   name: "PrivacyPopup",
   props: {
-    //temp for dev
     loginSuccess: Boolean,
   },
-  setup() {
-    const htmlBody = document.querySelector("body");
-    const privacyAccepted = ref(false);
 
-    const privacyCheckDisableScroll = () => {
-      htmlBody?.classList.add("scroll-disabled");
-    };
-
-    const triggerPopupSlideIn = () => {
-      const popup = document.querySelector(".privacy-content");
-      nextTick(() => {
-        if (popup && !popup.classList.contains("popup-slide-in")) {
-          popup.classList.add("popup-slide-in");
-        }
-      });
-    };
-
-    const triggerPopupSlideOut = () => {
-      const popup = document.querySelector(".privacy-content");
-      const popupContainer = document.querySelector(".privacy-popup-container");
-      if (popup?.classList.contains("popup-slide-in")) {
-        popup?.classList.remove("popup-slide-in");
-        popup?.classList.add("popup-slide-out");
-        popupContainer?.classList.add("background-lighten");
-      }
-    };
-
-    const onClickSetPrivacyAccepted = () => {
-      privacyCheckedEnableScroll();
-      triggerPopupSlideOut();
-      unblurIntroScene();
-      slideDownLogo();
-      setTimeout(() => {
-        privacyAccepted.value = true;
-      }, 1500);
-    };
-
-    const blurIntroScene = () => {
-      const introScene = document.querySelector(".intro-background");
-      introScene?.classList.add(".before-load-blur");
-    };
-
-    const unblurIntroScene = () => {
-      const introScene = document.querySelector(".intro-background");
-      introScene?.classList.add("unblur-animation");
-    };
-
-    const slideDownLogo = () => {
-      const logo = document.querySelector(".logo-slogan-container");
-      logo?.classList.add("slide-down-logo");
-    };
-
-    const privacyCheckedEnableScroll = () => {
-      htmlBody?.classList.remove("scroll-disabled");
-    };
-
-    onUpdated(() => {
-      setTimeout(() => {
-        if (!privacyAccepted.value) {
-          privacyCheckDisableScroll();
-          triggerPopupSlideIn();
-          blurIntroScene();
-        }
-      }, 50);
-    });
-
-    onMounted(() => {
-      console.log("Mounted:", document.querySelector(".privacy-content"));
-
-      setTimeout(() => {
-        if (!privacyAccepted.value) {
-          privacyCheckDisableScroll();
-          triggerPopupSlideIn();
-          blurIntroScene();
-        }
-      }, 50);
-    });
-
-    return { privacyAccepted, onClickSetPrivacyAccepted };
+  created() {
+    if (!this.privacyAccepted) {
+      this.disableScroll();
+    }
   },
-});
+
+  computed: {
+    ...mapGetters({ privacyAccepted: "privacyIsAccepted" }),
+  },
+
+  methods: {
+    ...mapActions(["setPrivacyAccepted"]),
+
+    disableScroll() {
+      const body = document.querySelector("body");
+      body?.classList.add("scroll-disabled");
+    },
+
+    enableScroll() {
+      const body = document.querySelector("body");
+      body?.classList.remove("scroll-disabled");
+    },
+
+    onClickSetPrivacyAccepted() {
+      this.triggerCloseAnimation();
+      this.enableScroll();
+      setTimeout(() => {
+        this.setPrivacyAccepted(true);
+      }, 1000);
+    },
+
+    triggerCloseAnimation() {
+      const content = document.querySelector(".privacy-popup-content");
+      const container = document.querySelector(".privacy-popup-container");
+      content?.classList.remove("popup-slide-in");
+      content?.classList.add("popup-slide-out");
+      container?.classList.add("background-lighten");
+    },
+  },
+};
 </script>

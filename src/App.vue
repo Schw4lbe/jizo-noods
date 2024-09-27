@@ -39,6 +39,7 @@ export default defineComponent({
     const store = useStore();
     onMounted(() => {
       store.dispatch("isLanguageSet");
+      store.dispatch("isPrivacyAccepted");
     });
 
     const isUserLoggedIn = ref(false);

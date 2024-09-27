@@ -12,8 +12,9 @@
     max-width: 1400px;
     z-index: -2;
     object-fit: cover;
-    transform: translate(-55%, -55%) scale(1.2);
+    transform: translate(-50%, -50%) scale(1);
     transform-origin: center;
+    animation: demoEndlessMovement 40s ease-in-out infinite;
   }
 
   .logo-slogan-container {
@@ -22,7 +23,7 @@
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    padding-bottom: 400px;
+    padding-bottom: 10%;
 
     .logo {
       width: 120px;
@@ -36,48 +37,16 @@
   }
 }
 
-.before-load-blur {
-  filter: blur(5px);
-  transform: translate(-55%, -55%) scale(1.2);
-}
-
-.unblur-animation {
-  animation: introMediaUnblur 4s linear 0.5s forwards;
-}
-
-.slide-down-logo {
-  animation: slideDownLogo 2s ease-out 0.5s forwards;
-}
-
-@keyframes introMediaUnblur {
+@keyframes demoEndlessMovement {
   0% {
-    filter: blur(5px);
-    transform: translate(-55%, -55%) scale(1.2);
-  }
-  70% {
-    filter: blur(0px);
-    transform: translate(-50%, -50%) scale(1.02);
-  }
-  80% {
-    filter: blur(0px);
-    transform: translate(-50%, -50%) scale(1.01);
-  }
-  100% {
-    filter: blur(0px);
     transform: translate(-50%, -50%) scale(1);
   }
-}
 
-@keyframes slideDownLogo {
-  0% {
-    padding-bottom: 400px;
-    opacity: 1;
+  50% {
+    transform: translate(-55%, -65%) scale(1.4);
   }
-  35% {
-    padding-bottom: 75px;
-  }
+
   100% {
-    padding-bottom: 50px;
-    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
   }
 }

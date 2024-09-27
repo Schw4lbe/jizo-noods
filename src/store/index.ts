@@ -3,15 +3,20 @@ import { createStore } from "vuex";
 export default createStore({
   state: {
     language: "en",
+    privacyAccepted: localStorage.getItem("privacyIsAccepted") === "true", // Ensure correct parsing of the string value
   },
 
   getters: {
     selectedLanguage: (state) => state.language,
+    privacyIsAccepted: (state) => state.privacyAccepted,
   },
 
   mutations: {
     updateLanguage(state, newLanguage) {
       state.language = newLanguage;
+    },
+    updatePrivacy(state, bool) {
+      state.privacyAccepted = bool;
     },
   },
 
@@ -29,6 +34,21 @@ export default createStore({
     setLanguage({ commit }, language) {
       localStorage.setItem("selectedLanguage", language);
       commit("updateLanguage", language);
+    },
+
+    isPrivacyAccepted({ commit }) {
+      const privacyIsAccepted = localStorage.getItem("privacyIsAccepted");
+
+      // set default privacy setting to false
+      if (!privacyIsAccepted) {
+        localStorage.setItem("privacyIsAccepted", "false");
+        commit("updatePrivacy", false);
+      }
+    },
+
+    setPrivacyAccepted({ commit }, bool) {
+      localStorage.setItem("privacyIsAccepted", bool);
+      commit("updatePrivacy", bool);
     },
   },
   modules: {},
