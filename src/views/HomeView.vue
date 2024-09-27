@@ -1,13 +1,13 @@
 <template>
   <div class="home-view-wrapper">
     <IntroScene />
-    <SectionRamenKit />
+    <SectionLocation />
     <SectionMenu />
+    <SectionRamenKit />
     <SectionGallery />
     <SectionAboutUs />
     <SectionFeedback />
     <SectionQandA />
-    <SectionLocation />
   </div>
 </template>
 

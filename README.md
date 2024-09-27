@@ -81,3 +81,9 @@
 - www.mochi-ramen.com
 - www.genji.no
 - www.momiji-ramen.de
+
+## notes
+
+- textzeile lauftext größer
+- adresse direkt unter logo
+- menü dann ramen kits
