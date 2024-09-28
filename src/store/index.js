@@ -3,7 +3,7 @@ import { createStore } from "vuex";
 export default createStore({
   state: {
     language: "en",
-    privacyAccepted: localStorage.getItem("privacyIsAccepted") === "true", // Ensure correct parsing of the string value
+    privacyAccepted: localStorage.getItem("privacyIsAccepted") === "true",
   },
 
   getters: {
