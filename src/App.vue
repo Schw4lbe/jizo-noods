@@ -1,8 +1,10 @@
 <template>
   <div id="app">
-    <NetlifyIdentity @user-status-changed="handleUserStatusChange" />
-    <PrivacyPopup :loginSuccess="isUserLoggedIn" />
-    <div v-if="isUserLoggedIn" class="render-on-login-dev">
+    <!-- <NetlifyIdentity @user-status-changed="handleUserStatusChange" /> -->
+    <!-- <PrivacyPopup :loginSuccess="isUserLoggedIn" /> -->
+    <PrivacyPopup />
+    <!-- <div v-if="isUserLoggedIn" class="render-on-login-dev"> -->
+    <div class="render-on-login-dev">
       <div class="navbar-wrapper">
         <NavbarMain />
       </div>
@@ -22,7 +24,7 @@ import { defineComponent, onMounted, ref } from "vue";
 import { useStore } from "vuex";
 import NavbarMain from "./components/utilities/NavbarMain.vue";
 import FooterMain from "./components/utilities/FooterMain.vue";
-import NetlifyIdentity from "./components/utilities/NetlifyIdentity.vue";
+// import NetlifyIdentity from "./components/utilities/NetlifyIdentity.vue";
 import PrivacyPopup from "./components/utilities/PrivacyPopup.vue";
 
 export default defineComponent({
@@ -31,7 +33,7 @@ export default defineComponent({
   components: {
     NavbarMain,
     FooterMain,
-    NetlifyIdentity,
+    // NetlifyIdentity,
     PrivacyPopup,
   },
 
@@ -42,13 +44,14 @@ export default defineComponent({
       store.dispatch("isPrivacyAccepted");
     });
 
-    const isUserLoggedIn = ref(false);
+    // const isUserLoggedIn = ref(false);
 
-    const handleUserStatusChange = (status: boolean) => {
-      isUserLoggedIn.value = status;
-    };
+    // const handleUserStatusChange = (status: boolean) => {
+    //   isUserLoggedIn.value = status;
+    // };
 
-    return { isUserLoggedIn, handleUserStatusChange };
+    // return { isUserLoggedIn, handleUserStatusChange };
+    return {};
   },
 });
 </script>
