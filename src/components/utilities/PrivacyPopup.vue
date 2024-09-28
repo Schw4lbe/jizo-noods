@@ -1,5 +1,5 @@
 <template>
-  <div v-if="!privacyAccepted && loginSuccess" class="privacy-popup-container">
+  <div v-if="!privacyAccepted" class="privacy-popup-container">
     <div class="privacy-popup-content popup-slide-in">
       <h4 class="cookie-header">
         Where are the Cookies? <i class="fa-solid fa-cookie-bite"></i>
@@ -26,9 +26,6 @@ import { mapActions, mapGetters } from "vuex";
 
 export default {
   name: "PrivacyPopup",
-  props: {
-    loginSuccess: Boolean,
-  },
 
   created() {
     if (!this.privacyAccepted) {

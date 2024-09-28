@@ -1,38 +1,46 @@
 <template>
-  <div class="home-view-wrapper">
-    <IntroScene />
+  <IntroScene />
+  <div class="section-wrapper">
     <SectionMenu />
-    <!-- <SectionRamenKit /> -->
+  </div>
+  <div class="section-wrapper">
     <SectionGallery />
+  </div>
+  <div class="section-wrapper">
     <SectionAboutUs />
-    <!-- <SectionFeedback /> -->
-    <!-- <SectionQandA /> -->
+  </div>
+  <div class="section-wrapper">
     <SectionLocation />
   </div>
+
+  <!-- commented out for later use. -->
+  <!-- <SectionRamenKit /> -->
+  <!-- <SectionFeedback /> -->
+  <!-- <SectionQandA /> -->
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import IntroScene from "@/components/IntroScene.vue";
-// import SectionRamenKit from "@/components/SectionRamenKit.vue";
 import SectionMenu from "@/components/SectionMenu.vue";
 import SectionGallery from "@/components/SectionGallery.vue";
 import SectionAboutUs from "@/components/SectionAboutUs.vue";
+import SectionLocation from "@/components/SectionLocation.vue";
+// import SectionRamenKit from "@/components/SectionRamenKit.vue";
 // import SectionFeedback from "@/components/SectionFeedback.vue";
 // import SectionQandA from "@/components/SectionQandA.vue";
-import SectionLocation from "@/components/SectionLocation.vue";
 
 export default defineComponent({
   name: "HomeView",
   components: {
     IntroScene,
-    // SectionRamenKit,
     SectionMenu,
     SectionGallery,
     SectionAboutUs,
+    SectionLocation,
+    // SectionRamenKit,
     // SectionFeedback,
     // SectionQandA,
-    SectionLocation,
   },
 });
 </script>

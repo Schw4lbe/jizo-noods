@@ -1,8 +1,9 @@
 @use "../abstracts/" as *;
 
 .section-location-main {
-  background: $clr-primary;
+  color: $clr-secondary;
   padding: 3rem 1rem;
+  text-align: center;
 
   .location-map-container {
     padding: 1rem 2rem 2rem 2rem;

@@ -86,12 +86,9 @@
 
 ## notes
 
-- textzeile lauftext größer
-- adresse in extra banner direkt unter logo
-  -> adresse popup öffnungszeiten
-- menü dann ramen kits
 - menu/starters link zu location section
 - social media kommt schriftlich von raphi
+- adresse in extra banner direkt unter logo
 - Popup Trekanten + adresse + Öffnungszeiten
 - icon chili raus
 - zusatz zu suppe "vegan, spicy"

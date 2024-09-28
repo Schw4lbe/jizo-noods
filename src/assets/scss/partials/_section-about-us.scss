@@ -1,8 +1,9 @@
 @use "../abstracts/" as *;
 
 .section-about-main {
-  background: $clr-primary;
+  color: $clr-secondary;
   padding: 3rem 1rem;
+  text-align: center;
 
   .about-description {
     font-size: 20px;

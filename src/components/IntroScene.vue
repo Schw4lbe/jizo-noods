@@ -7,7 +7,6 @@
     />
     <div class="logo-slogan-container">
       <img class="logo" src="../../public/img/logo.png" alt="dummy" />
-      <h3 class="slogan">Slogan Text Dummy</h3>
     </div>
   </section>
 </template>
