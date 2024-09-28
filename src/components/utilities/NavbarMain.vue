@@ -28,7 +28,7 @@
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li v-for="(item, index) in navItems" :key="index">
+            <li v-for="(item, index) in navContent.items" :key="index">
               <a class="nav-item" :href="item.url">{{ item.lable }}</a>
             </li>
           </ul>
@@ -37,66 +37,38 @@
     </div>
     <div class="scrolling-wrapper">
       <div class="marquee">
-        <p>{{ content.navbarMain.scrollingText }}</p>
-        <p>{{ content.navbarMain.scrollingText }}</p>
+        <p>{{ navContent.scrollingText }}</p>
+        <p>{{ navContent.scrollingText }}</p>
       </div>
     </div>
   </nav>
 </template>
-<script lang="ts">
-import { computed, defineComponent } from "vue";
-import { useStore } from "vuex";
-import contentData from "../../../public/content.json";
 
-interface NavItem {
-  lable: string;
-  url: string;
-}
+<script>
+import { mapGetters } from "vuex";
+import content from "../../../public/content.json";
 
-export default defineComponent({
+export default {
   name: "NavbarMain",
-  setup() {
-    const store = useStore();
-    const selectedLanguage = computed(() => store.getters.selectedLanguage);
-    const content = computed(() => {
-      return (
-        (contentData as Record<string, any>)[selectedLanguage.value] ||
-        contentData["en"]
-      );
-    });
 
-    const navItems = computed(
-      () => content.value.navbarMain.items as NavItem[]
-    );
-
-    return { content, navItems };
+  data() {
+    return {
+      navContent: null,
+    };
   },
-});
+
+  created() {
+    this.setContent();
+  },
+
+  computed: {
+    ...mapGetters(["selectedLanguage"]),
+  },
+
+  methods: {
+    setContent() {
+      this.navContent = content[this.selectedLanguage].navbarMain;
+    },
+  },
+};
 </script>
-
-<style scoped>
-.scrolling-wrapper {
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.marquee {
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
-  animation: marquee 20s linear infinite;
-}
-
-.marquee p {
-  display: inline-block;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-50%, 0, 0);
-  }
-}
-</style>

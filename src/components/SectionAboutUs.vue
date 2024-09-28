@@ -1,18 +1,51 @@
 <template>
   <section class="section-about-main">
-    <h3 class="section-header">{{ content.sectionAboutUs.header }}</h3>
-    <p class="about-description">{{ content.sectionAboutUs.description }}</p>
+    <h3 class="section-header">{{ sectionContent.header }}</h3>
+    <p class="about-description">{{ sectionContent.description }}</p>
     <div class="about-content-container">
-      <div v-for="(item, index) in items" :key="index" class="about-item">
+      <div
+        v-for="(item, index) in sectionContent.items"
+        :key="index"
+        class="about-item"
+      >
         <h4 class="content-header">{{ item.header }}</h4>
         <p class="description">{{ item.description }}</p>
-        <!-- tbd video / image in about us possible? -->
         <div class="media">could place media in here...</div>
       </div>
     </div>
   </section>
 </template>
-<script lang="ts">
+
+<script>
+import { mapGetters } from "vuex";
+import content from "../../public/content.json";
+
+export default {
+  name: "SectionAboutUs",
+
+  data() {
+    return {
+      sectionContent: null,
+    };
+  },
+
+  created() {
+    this.setContent();
+  },
+
+  computed: {
+    ...mapGetters(["selectedLanguage"]),
+  },
+
+  methods: {
+    setContent() {
+      this.sectionContent = content[this.selectedLanguage].sectionAboutUs;
+    },
+  },
+};
+</script>
+
+<!-- <script lang="ts">
 import { defineComponent, computed } from "vue";
 import { useStore } from "vuex";
 import contentData from "../../public/content.json";
@@ -41,4 +74,4 @@ export default defineComponent({
     return { content, items };
   },
 });
-</script>
+</script> -->

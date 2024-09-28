@@ -1,13 +1,13 @@
 <template>
   <div class="menu-allergen-container">
-    <h4 class="allergen-header">{{ content.sectionMenu.allergens.header }}</h4>
+    <h4 class="allergen-header">{{ allergenContent.header }}</h4>
     <p class="allergen-description">
-      {{ content.sectionMenu.allergens.description }}
+      {{ allergenContent.description }}
     </p>
     <div class="accordion-wrapper">
       <div class="accordion" id="allergensAccordion">
         <div
-          v-for="item in allergenItems"
+          v-for="item in allergenContent.items"
           :key="item.id"
           class="accordion-item"
         >
@@ -37,34 +37,11 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent, computed } from "vue";
-import { useStore } from "vuex";
-import contentData from "../../public/content.json";
-
-interface AllergenItem {
-  id: string;
-  label: string;
-  description: string;
-}
-
-export default defineComponent({
+<script>
+export default {
   name: "MenuAllergens",
-  setup() {
-    const store = useStore();
-    const selectedLanguage = computed(() => store.getters.selectedLanguage);
-    const content = computed(() => {
-      return (
-        (contentData as Record<string, any>)[selectedLanguage.value] ||
-        contentData["en"]
-      );
-    });
-
-    const allergenItems = computed(
-      () => content.value.sectionMenu.allergens.items as AllergenItem[]
-    );
-
-    return { content, allergenItems };
+  props: {
+    allergenContent: Object,
   },
-});
+};
 </script>

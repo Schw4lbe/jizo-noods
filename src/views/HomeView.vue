@@ -14,13 +14,18 @@
   </div>
 
   <!-- commented out for later use. -->
-  <!-- <SectionRamenKit /> -->
-  <!-- <SectionFeedback /> -->
-  <!-- <SectionQandA /> -->
+  <!-- <div class="section-wrapper">
+    <SectionRamenKit />
+  </div> -->
+  <!-- <div class="section-wrapper">
+    <SectionFeedback />
+  </div> -->
+  <!-- <div class="section-wrapper">
+    <SectionQandA />
+  </div> -->
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
+<script>
 import IntroScene from "@/components/IntroScene.vue";
 import SectionMenu from "@/components/SectionMenu.vue";
 import SectionGallery from "@/components/SectionGallery.vue";
@@ -30,7 +35,7 @@ import SectionLocation from "@/components/SectionLocation.vue";
 // import SectionFeedback from "@/components/SectionFeedback.vue";
 // import SectionQandA from "@/components/SectionQandA.vue";
 
-export default defineComponent({
+export default {
   name: "HomeView",
   components: {
     IntroScene,
@@ -42,5 +47,5 @@ export default defineComponent({
     // SectionFeedback,
     // SectionQandA,
   },
-});
+};
 </script>

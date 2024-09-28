@@ -57,7 +57,7 @@
                     {
                         "name": "Ramen Soupename 1",
                         "indicator": {
-                            "hasIcons": true,
+                            "hasIcons": false,
                             "icons": [
                                 1,
                                 2
@@ -81,7 +81,7 @@
                     {
                         "name": "Ramen Soupename 2",
                         "indicator": {
-                            "hasIcons": true,
+                            "hasIcons": false,
                             "icons": [
                                 1
                             ]
@@ -241,9 +241,8 @@
                 }
             ]
         },
-        "sectionContact": {
-            "header": "Contact",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. labore atque libero."
+        "locationBanner": {
+            "header": "Contact"
         },
         "companyContact": {
             "phone": "01234 - 55 66 77 88 99",

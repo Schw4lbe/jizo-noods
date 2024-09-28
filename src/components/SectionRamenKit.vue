@@ -1,23 +1,23 @@
 <template>
   <section class="section-ramen-kit-main">
-    <h3 class="section-header">{{ content.sectionRamenKit.header }}</h3>
+    <h3 class="section-header">{{ sectionContent.header }}</h3>
     <div class="ramen-kit-teaser">
-      {{ content.sectionRamenKit.teaser }}
+      {{ sectionContent.teaser }}
     </div>
     <div class="ramen-kit-contact">
       <p class="phone">
-        <i class="fa-solid fa-phone"></i>{{ content.companyContact.phone }}
+        <i class="fa-solid fa-phone"></i>{{ contactContent.phone }}
       </p>
       <p class="email">
-        <i class="fa-solid fa-envelope"></i>{{ content.companyContact.email }}
+        <i class="fa-solid fa-envelope"></i>{{ contactContent.email }}
       </p>
     </div>
     <div class="ramen-kit-instructions">
-      <h4 class="subheader">{{ content.sectionRamenKit.subHeader }}</h4>
+      <h4 class="subheader">{{ sectionContent.subHeader }}</h4>
       <div class="instruction-container">
         <ul>
           <li
-            v-for="(step, index) in content.sectionRamenKit.instructions"
+            v-for="(step, index) in sectionContent.instructions"
             :key="index"
             class="instruction"
           >
@@ -34,24 +34,33 @@
   </section>
 </template>
 
-<script lang="ts">
-import { defineComponent, computed } from "vue";
-import { useStore } from "vuex";
-import contentData from "../../public/content.json";
+<script>
+import { mapGetters } from "vuex";
+import content from "../../public/content.json";
 
-export default defineComponent({
+export default {
   name: "SectionRamenKit",
-  setup() {
-    const store = useStore();
-    const selectedLanguage = computed(() => store.getters.selectedLanguage);
-    const content = computed(() => {
-      return (
-        (contentData as Record<string, any>)[selectedLanguage.value] ||
-        contentData["en"]
-      );
-    });
 
-    return { content };
+  data() {
+    return {
+      sectionContent: null,
+      contactContent: null,
+    };
   },
-});
+
+  created() {
+    this.setContent();
+  },
+
+  computed: {
+    ...mapGetters(["selectedLanguage"]),
+  },
+
+  methods: {
+    setContent() {
+      this.sectionContent = content[this.selectedLanguage].sectionRamenKit;
+      this.contactContent = content[this.selectedLanguage].companyContact;
+    },
+  },
+};
 </script>

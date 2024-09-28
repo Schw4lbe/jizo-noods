@@ -1,13 +1,16 @@
 <template>
   <div class="menu-soup-container">
-    <h4 class="soup-header">{{ content.sectionMenu.soups.header }}</h4>
-    <p class="soup-teaser">{{ content.sectionMenu.soups.teaser }}</p>
-    <div v-for="(item, index) in soupItems" :key="index" class="soup-item">
+    <h4 class="soup-header">{{ soupsContent.header }}</h4>
+    <p class="soup-teaser">{{ soupsContent.teaser }}</p>
+    <div
+      v-for="(item, index) in soupsContent.items"
+      :key="index"
+      class="soup-item"
+    >
       <div class="item-name-container">
         <p class="item-name">
           {{ item.name }}
         </p>
-        <!-- temp only hot icon tbd if more is wanted -->
         <span v-if="item.indicator.hasIcons === true" class="item-icon"
           ><i class="fa-solid fa-pepper-hot"></i
         ></span>
@@ -39,40 +42,11 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent, computed } from "vue";
-import { useStore } from "vuex";
-import contentData from "../../public/content.json";
-
-interface SoupItem {
-  name: string;
-  indicator: {
-    hasIcons: boolean;
-    icons: number[];
-  };
-  ingredients: string[];
-  allergenLabel: string;
-  allergens: string[];
-  price: string;
-}
-
-export default defineComponent({
+<script>
+export default {
   name: "MenuSoups",
-  setup() {
-    const store = useStore();
-    const selectedLanguage = computed(() => store.getters.selectedLanguage);
-    const content = computed(() => {
-      return (
-        (contentData as Record<string, any>)[selectedLanguage.value] ||
-        contentData["en"]
-      );
-    });
-
-    const soupItems = computed(
-      () => content.value.sectionMenu.soups.items as SoupItem[]
-    );
-
-    return { content, soupItems };
+  props: {
+    soupsContent: Object,
   },
-});
+};
 </script>

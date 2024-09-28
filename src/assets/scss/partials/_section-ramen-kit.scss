@@ -1,9 +1,9 @@
 @use "../abstracts/" as *;
 
 .section-ramen-kit-main {
-  background: $clr-primary;
-  // margin-top: 100vh;
+  color: $clr-secondary;
   padding: 3rem 1rem;
+  text-align: center;
 
   .ramen-kit-teaser {
     font-size: 18px;

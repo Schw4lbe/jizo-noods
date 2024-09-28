@@ -1,8 +1,9 @@
 @use "../abstracts/" as *;
 
 .section-feedback-main {
-  background: $clr-primary;
+  color: $clr-secondary;
   padding: 3rem 1rem;
+  text-align: center;
 
   .feedback-redirect {
     display: flex;

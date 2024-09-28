@@ -1,8 +1,9 @@
 @use "../abstracts/" as *;
 
 .section-qa-main {
-  background: $clr-primary;
+  color: $clr-secondary;
   padding: 3rem 1rem;
+  text-align: center;
 
   // temp:
   .qa-content-container {

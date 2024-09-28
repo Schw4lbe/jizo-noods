@@ -1,41 +1,42 @@
 <template>
   <footer>
     <div class="footer-item-container">
-      <a v-for="(item, index) in footerItems" :key="index" :href="item.url"
+      <a
+        v-for="(item, index) in footerContent.items"
+        :key="index"
+        :href="item.url"
         >{{ item.lable
-        }}<span v-if="index < footerItems.length - 1"> | </span></a
+        }}<span v-if="index < footerContent.items.length - 1"> | </span></a
       >
     </div>
   </footer>
 </template>
 
-<script lang="ts">
-import { computed, defineComponent } from "vue";
-import { useStore } from "vuex";
-import contentData from "../../../public/content.json";
+<script>
+import { mapGetters } from "vuex";
+import content from "../../../public/content.json";
 
-interface FooterItem {
-  lable: string;
-  url: string;
-}
-
-export default defineComponent({
+export default {
   name: "FooterMain",
-  setup() {
-    const store = useStore();
-    const selectedLanguage = computed(() => store.getters.selectedLanguage);
-    const content = computed(() => {
-      return (
-        (contentData as Record<string, any>)[selectedLanguage.value] ||
-        contentData["en"]
-      );
-    });
 
-    const footerItems = computed(
-      () => content.value.footerMain.items as FooterItem[]
-    );
-
-    return { content, footerItems };
+  data() {
+    return {
+      footerContent: null,
+    };
   },
-});
+
+  created() {
+    this.setContent();
+  },
+
+  computed: {
+    ...mapGetters(["selectedLanguage"]),
+  },
+
+  methods: {
+    setContent() {
+      this.footerContent = content[this.selectedLanguage].footerMain;
+    },
+  },
+};
 </script>

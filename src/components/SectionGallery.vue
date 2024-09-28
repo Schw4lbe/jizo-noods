@@ -1,12 +1,12 @@
 <template>
   <section class="section-gallery-main">
-    <h3 class="section-header">{{ content.sectionGallery.header }}</h3>
-    <p class="gallery-description">{{ content.sectionGallery.description }}</p>
+    <h3 class="section-header">{{ sectionContent.header }}</h3>
+    <p class="gallery-description">{{ sectionContent.description }}</p>
 
     <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
         <button
-          v-for="count in galleryItemCount"
+          v-for="count in itemCount"
           :key="count"
           type="button"
           data-bs-target="#carouselExampleCaptions"
@@ -19,15 +19,15 @@
 
       <div class="carousel-inner">
         <div
-          v-for="(image, index) in galleryData"
+          v-for="(item, index) in sectionContent.items"
           :key="index"
           class="carousel-item"
           :class="{ active: index === 0 }"
         >
-          <img class="d-block w-100" :src="image.url" alt="dummy" />
+          <img class="d-block w-100" :src="item.url" alt="dummy" />
           <div class="carousel-caption d-none d-sm-block">
-            <h5>{{ image.label }}</h5>
-            <p>{{ image.description }}</p>
+            <h5>{{ item.label }}</h5>
+            <p>{{ item.description }}</p>
           </div>
         </div>
       </div>
@@ -53,36 +53,37 @@
   </section>
 </template>
 
-<script lang="ts">
-import { defineComponent, computed } from "vue";
-import { useStore } from "vuex";
-import contentData from "../../public/content.json";
+<script>
+import { mapGetters } from "vuex";
+import content from "../../public/content.json";
 
-interface ImageData {
-  label: string;
-  description: string;
-  url: string;
-}
-
-export default defineComponent({
+export default {
   name: "SectionGallery",
-  setup() {
-    const store = useStore();
-    const selectedLanguage = computed(() => store.getters.selectedLanguage);
-    const content = computed(() => {
-      return (
-        (contentData as Record<string, any>)[selectedLanguage.value] ||
-        contentData["en"]
-      );
-    });
 
-    const galleryData = computed(
-      () => content.value.sectionGallery.items as ImageData[]
-    );
-
-    const galleryItemCount = galleryData.value.length;
-
-    return { content, galleryData, galleryItemCount };
+  data() {
+    return {
+      sectionContent: null,
+      itemCount: null,
+    };
   },
-});
+
+  created() {
+    this.setContent();
+    this.setGalleryItemCount();
+  },
+
+  computed: {
+    ...mapGetters(["selectedLanguage"]),
+  },
+
+  methods: {
+    setContent() {
+      this.sectionContent = content[this.selectedLanguage].sectionGallery;
+    },
+
+    setGalleryItemCount() {
+      this.itemCount = this.sectionContent.items.length;
+    },
+  },
+};
 </script>

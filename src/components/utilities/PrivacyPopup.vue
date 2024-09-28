@@ -59,11 +59,11 @@ export default {
     },
 
     triggerCloseAnimation() {
-      const content = document.querySelector(".privacy-popup-content");
-      const container = document.querySelector(".privacy-popup-container");
-      content?.classList.remove("popup-slide-in");
-      content?.classList.add("popup-slide-out");
-      container?.classList.add("background-lighten");
+      const popup = document.querySelector(".privacy-popup-content");
+      const background = document.querySelector(".privacy-popup-container");
+      popup?.classList.remove("popup-slide-in");
+      popup?.classList.add("popup-slide-out");
+      background?.classList.add("background-lighten");
     },
   },
 };
