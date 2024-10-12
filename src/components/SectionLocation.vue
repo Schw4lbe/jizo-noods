@@ -36,7 +36,7 @@
           :key="index"
           class="social-media-item"
         >
-          <a :href="item.url" class="url"
+          <a :href="item.url" class="url" target="blank"
             ><i :class="item.icon"></i>{{ item.name }}</a
           >
         </div>

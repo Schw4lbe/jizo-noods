@@ -242,7 +242,9 @@
             ]
         },
         "locationBanner": {
-            "header": "Contact"
+            "name": "Popup Trekanten",
+            "address": "Pilestredet 24, Oslo",
+            "businessHours": "every Thursday & Friday"
         },
         "companyContact": {
             "phone": "01234 - 55 66 77 88 99",

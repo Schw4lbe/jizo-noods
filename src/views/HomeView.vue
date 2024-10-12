@@ -1,5 +1,6 @@
 <template>
   <IntroScene />
+  <LocationBanner />
   <div class="section-wrapper">
     <SectionMenu />
   </div>
@@ -27,6 +28,7 @@
 
 <script>
 import IntroScene from "@/components/IntroScene.vue";
+import LocationBanner from "@/components/utilities/LocationBanner.vue";
 import SectionMenu from "@/components/SectionMenu.vue";
 import SectionGallery from "@/components/SectionGallery.vue";
 import SectionAboutUs from "@/components/SectionAboutUs.vue";
@@ -39,6 +41,7 @@ export default {
   name: "HomeView",
   components: {
     IntroScene,
+    LocationBanner,
     SectionMenu,
     SectionGallery,
     SectionAboutUs,

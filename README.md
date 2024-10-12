@@ -2,42 +2,14 @@
 
 ## dev-log to-dos:
 
-- initial only one view -> home view
-- comment out / delete all unwanted elements
-- scrolling text in navbar fading out on border
-- create opening cookie message
-  -> idea: "We don't sell your privacy, only quality delicacy."
 - after cookie check in local storage state start loading sequence
 - after fully loading videofile start autoplay
-- BUG scrolling disabled after moving to different webpage
-- scroll-dissabled helper class is reassigne even though user is logged in and privacy is checked
-
-## name spacing
-
-### components
-
-- SectionRamenKit
-- SectionMenu
-  -> MenuStarters
-  -> MenuSoups
-  -> MenuAllergens
-- SectionGallery
-- SectionAboutUs
-- SectionFeedback
-- SectionQandA
-- SectionLocation
-- SectionContact
-
-### utilities
-
-- NavbarMain
-- FooterMain
 
 ## Backlog
 
 - element transition smoother (tbd)
 - replace dummy img on opening with actuall video content
-- cms integration is planned
+- cms integration is planned ()
 - check social media account connections on webpage (what is possible)
 - tiktok / instagram content via click open in app
 - google maps verknüpfung straight forward oder über api? -> api
@@ -95,8 +67,6 @@
 - navbar top right globe to change language
 
 ## cms
-
-16 Uhr go live
 
 - banner lauftext
 - slogan

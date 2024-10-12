@@ -1,0 +1,51 @@
+@use "../abstracts/" as *;
+
+.section-location-banner-main {
+  background-color: $clr-primary;
+  display: flex;
+  justify-content: center;
+  .location-banner-container {
+    // max-width: 1400px;
+    width: 100%;
+    position: relative;
+    top: -75px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: $clr-secondary-light-2;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    .background-img {
+      position: relative;
+      min-height: 200px;
+      width: 100%;
+      object-fit: cover;
+    }
+    .banner-content {
+      position: absolute;
+      z-index: 2;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: center;
+      span {
+        padding: 3px 0.5rem;
+        animation: BannerPulse 2s ease-in-out infinite;
+      }
+    }
+
+    @keyframes BannerPulse {
+      0% {
+        color: $clr-secondary-light-2;
+      }
+      50% {
+        color: $clr-accent;
+      }
+      100% {
+        color: $clr-secondary-light-2;
+      }
+    }
+  }
+}
