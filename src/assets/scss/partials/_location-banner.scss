@@ -5,23 +5,22 @@
   display: flex;
   justify-content: center;
   .location-banner-container {
-    // max-width: 1400px;
     width: 100%;
     position: relative;
-    top: -75px;
+    top: -100px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     color: $clr-secondary-light-2;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 500;
     text-transform: uppercase;
 
     .background-img {
       position: relative;
       min-height: 200px;
       width: 100%;
-      object-fit: cover;
+      //   object-fit: contain;
     }
     .banner-content {
       position: absolute;
@@ -30,21 +29,39 @@
       justify-content: space-evenly;
       flex-direction: column;
       align-items: center;
+
+      &:hover span {
+        color: $clr-accent !important;
+        font-weight: 900;
+      }
+
       span {
-        padding: 3px 0.5rem;
+        cursor: pointer;
+        animation: BannerPulse 2s ease-in-out infinite;
+        transition: all 0.5s;
+      }
+
+      .location-name,
+      .location-business-hours {
         animation: BannerPulse 2s ease-in-out infinite;
       }
     }
 
     @keyframes BannerPulse {
       0% {
-        color: $clr-secondary-light-2;
+        color: $clr-secondary;
+        font-weight: 500;
+        letter-spacing: 0px;
       }
-      50% {
+      25% {
         color: $clr-accent;
+        font-weight: 900;
+        letter-spacing: 1px;
       }
       100% {
-        color: $clr-secondary-light-2;
+        color: $clr-secondary;
+        font-weight: 500;
+        letter-spacing: 0px;
       }
     }
   }

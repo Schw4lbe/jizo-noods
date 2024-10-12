@@ -6,8 +6,10 @@
         alt="dummy"
         class="background-img"
       />
-      <div class="banner-content">
-        <span class="location-name">{{ bannerContent.name }}</span>
+      <div @click="scrollToLocation" class="banner-content">
+        <span class="location-name">
+          {{ bannerContent.name }}
+        </span>
         <span class="location-address">{{ bannerContent.address }}</span>
         <span class="location-business-hours">{{
           bannerContent.businessHours
@@ -41,6 +43,11 @@ export default {
   methods: {
     setContent() {
       this.bannerContent = content[this.selectedLanguage].locationBanner;
+    },
+
+    scrollToLocation() {
+      const section = document.querySelector("#location");
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
     },
   },
 };

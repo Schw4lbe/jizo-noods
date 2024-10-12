@@ -62,7 +62,6 @@
 - Popup Trekanten + adresse + Öffnungszeiten
 - menu/starters link zu location section
 - social media kommt schriftlich von raphi
-- icon chili raus
 - zusatz zu suppe "vegan, spicy"
 - navbar top right globe to change language
 

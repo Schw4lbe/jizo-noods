@@ -1,5 +1,5 @@
 <template>
-  <section class="section-location-main">
+  <section class="section-location-main" id="location">
     <h3 class="section-header">{{ sectionContent.header }}</h3>
     <div class="location-map-container">
       <a :href="sectionContent.googleMapsUrl" class="map-link" target="blank">
