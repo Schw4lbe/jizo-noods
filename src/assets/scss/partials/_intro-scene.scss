@@ -5,7 +5,7 @@
   justify-content: center;
   position: relative;
   z-index: -3;
-  background: $clr-primary;
+  // background: $clr-primary-dark-2;
   height: 90vh;
 
   .intro-background {
@@ -13,7 +13,7 @@
     top: 50%;
     left: 50%;
     height: 100%;
-    max-width: 1400px;
+    // max-width: 1400px;
     z-index: -2;
     object-fit: cover;
     transform: translate(-50%, -50%) scale(1);
@@ -47,7 +47,7 @@
   }
 
   50% {
-    transform: translate(-55%, -65%) scale(1.4);
+    transform: translate(-50%, -50%) scale(1.4);
   }
 
   100% {

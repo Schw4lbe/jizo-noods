@@ -5,11 +5,12 @@
   display: flex;
   justify-content: center;
   .location-banner-container {
+    // max-width: 1400px;
     width: 100%;
     position: relative;
-    top: -100px;
+    top: -50px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     color: $clr-secondary-light-2;
     font-size: 22px;
@@ -18,17 +19,17 @@
 
     .background-img {
       position: relative;
-      min-height: 200px;
+      height: 100px;
       width: 100%;
-      //   object-fit: contain;
     }
     .banner-content {
+      max-width: 1400px;
+      width: 100%;
       position: absolute;
       z-index: 2;
-      display: flex;
-      justify-content: space-evenly;
-      flex-direction: column;
-      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      text-align: center;
 
       &:hover span {
         color: $clr-accent !important;
@@ -36,6 +37,7 @@
       }
 
       span {
+        padding: 2rem;
         cursor: pointer;
         animation: BannerPulse 2s ease-in-out infinite;
         transition: all 0.5s;
