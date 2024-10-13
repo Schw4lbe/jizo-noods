@@ -214,12 +214,12 @@
         },
         "sectionLocation": {
             "header": "Location",
-            "googleMapsUrl": "https://google.com/maps/?q=Oslo%2C%20Oslo%2C%20Norway",
+            "googleMapsUrl": "https://g.co/kgs/k95yiQK",
             "address": {
                 "header": "Address",
-                "street": "Example Street",
-                "houseNumber": "22",
-                "zipCode": "01234",
+                "street": " Pilestredet",
+                "houseNumber": "24",
+                "zipCode": "0165",
                 "city": "Oslo"
             },
             "socialMediaHeader": "Follow us on Social Media",
@@ -232,12 +232,12 @@
                 {
                     "name": "Instagram",
                     "icon": "fa-brands fa-instagram",
-                    "url": "https://www.instagram.com"
+                    "url": "https://www.instagram.com/jizo_noods/"
                 },
                 {
                     "name": "TikTok",
                     "icon": "fa-brands fa-tiktok",
-                    "url": "https://www.tiktok.com"
+                    "url": "https://www.tiktok.com/@jizo.noods"
                 }
             ]
         },

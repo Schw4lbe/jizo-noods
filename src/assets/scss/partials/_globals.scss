@@ -22,35 +22,11 @@
   background: linear-gradient(
     0deg,
     rgba(34, 34, 34, 0.95) 0%,
-    rgba(0, 0, 0, 1) 95%
+    rgba(17, 17, 17, 0.95) 30%,
+    rgba(0, 0, 0, 0.95) 70%,
+    rgba(0, 0, 0, 1) 100%
   );
 }
-
-// .page-wrapper {
-//   color: $clr-secondary;
-//   display: flex;
-//   justify-content: center;
-//   flex-direction: column;
-//   align-items: center;
-//   text-align: center;
-
-//   .background-filler {
-//     position: fixed;
-//     top: 0;
-//     background: $clr-primary;
-//     height: 100%;
-//     width: 100vw;
-//     z-index: -3;
-//   }
-
-//   .content-wrapper {
-//     max-width: 1400px;
-//     width: 100%;
-//     display: flex;
-//     justify-content: center;
-//     flex-direction: column;
-//   }
-// }
 
 .section-header {
   width: 100%;
