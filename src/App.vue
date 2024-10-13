@@ -2,6 +2,11 @@
   <div id="app">
     <PrivacyPopup />
     <div class="navbar-wrapper">
+      <img
+        src="../public/img/paint-stroke.png"
+        alt="dummy"
+        class="background-img"
+      />
       <NavbarMain />
     </div>
     <router-view />

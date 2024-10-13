@@ -1,8 +1,9 @@
 @use "../abstracts/" as *;
 
 .section-menu-main {
-  color: $clr-secondary;
-  padding: 3rem 1rem;
+  margin-top: 3rem;
+  color: $clr-primary-dark-2;
+  padding: 5rem 1rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -13,7 +14,7 @@
     padding: 1rem;
     .starter-header {
       text-transform: uppercase;
-      color: $clr-accent-a;
+      color: $clr-accent-b;
     }
   }
 
@@ -25,7 +26,7 @@
 
     .soup-header {
       text-transform: uppercase;
-      color: $clr-accent-a;
+      color: $clr-accent-b;
     }
 
     .soup-item {
@@ -36,38 +37,38 @@
         justify-content: center;
 
         .item-name {
-          color: $clr-accent-a;
+          color: $clr-accent-b;
           font-size: 1.2rem;
         }
 
-        .item-icon {
-          padding: 5px;
-          font-size: 0.7rem;
-          color: tomato;
-        }
+        // .item-icon {
+        //   padding: 5px;
+        //   font-size: 0.7rem;
+        //   color: tomato;
+        // }
       }
 
       .item-ingredients {
         padding: 1rem 2rem;
 
         .ingredient {
-          color: $clr-secondary-light-1;
+          color: $clr-primary-dark-2;
           font-size: 1rem;
           font-weight: 300;
         }
       }
 
       .item-allergens {
-        color: $clr-secondary-dark-3;
+        color: $clr-primary-light-1;
         font-size: 0.9rem;
         font-weight: 200;
       }
 
       .item-price {
-        font-size: 1.3rem;
+        font-size: 1.6rem;
         font-weight: 200;
-        padding: 1rem;
-        color: $clr-secondary-light-2;
+        padding: 1.8rem;
+        color: $clr-accent-b;
       }
     }
   }
@@ -83,14 +84,14 @@
 
       .accordion {
         // bs css variable overwrite:
-        --bs-accordion-btn-bg: #222;
-        --bs-accordion-active-bg: #555;
-        --bs-accordion-active-color: #fdd088;
+        --bs-accordion-btn-bg: #f2f1f0;
+        --bs-accordion-active-bg: #f2f1f0;
+        --bs-accordion-active-color: #591e08;
         --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem
-          rgba(253, 208, 136, 0.25);
-        --bs-accordion-btn-color: #ddd;
-        --bs-accordion-bg: #333;
-        --bs-accordion-color: #ccc;
+          rgba(255, 255, 255, 0);
+        --bs-accordion-btn-color: #591e08;
+        --bs-accordion-bg: #f2f1f0;
+        --bs-accordion-color: #a63c4f;
         --bs-accordion-border-color: none;
         --bs-accordion-border-radius: none;
         --bs-accordion-inner-border-radius: none;
@@ -105,7 +106,7 @@
               padding: 0.5rem;
               font-size: 14px;
               font-weight: 200;
-              border-bottom: 1px solid $clr-primary-light-3;
+              border-bottom: 1px solid $clr-secondary-dark-1;
               &:focus {
                 font-weight: 500;
                 border-bottom: none;

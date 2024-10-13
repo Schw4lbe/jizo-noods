@@ -1,7 +1,7 @@
 @use "../abstracts/" as *;
 
 .section-about-main {
-  color: $clr-secondary;
+  color: $clr-primary;
   padding: 3rem 1rem;
   text-align: center;
 
@@ -16,7 +16,7 @@
       padding-bottom: 2rem;
 
       .content-header {
-        color: $clr-accent-a;
+        color: $clr-accent-b;
       }
 
       // temp:

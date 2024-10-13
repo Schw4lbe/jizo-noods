@@ -1,70 +1,72 @@
 @use "../abstracts/" as *;
-.navbar {
-  background: transparent !important;
-  width: 100%;
-  max-width: 1400px;
-  display: flex;
-  flex-wrap: nowrap;
-  padding: 0;
-
-  .container-fluid {
-    width: max-content;
-    padding: 0;
+.navbar-wrapper {
+  .navbar {
+    background: transparent !important;
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
     flex-wrap: nowrap;
-    align-items: center;
-  }
+    padding: 0;
 
-  .navbar-toggler {
-    padding: 0.5rem 1rem;
-    border: none;
-    box-shadow: none;
-    .navbar-toggler-button {
-      font-size: 1.6rem;
-      color: $clr-secondary;
-    }
-  }
-
-  .offcanvas {
-    background: rgba($color: $clr-primary-dark-1, $alpha: 0.8);
-    .offcanvas-title {
-      color: $clr-secondary-light-1;
+    .container-fluid {
+      width: max-content;
+      padding: 0;
+      flex-wrap: nowrap;
+      align-items: center;
     }
 
-    .offcanvas-body {
-      .navbar-nav {
-        li .nav-item {
-          text-decoration: none;
-          color: $clr-secondary;
+    .navbar-toggler {
+      padding: 0.5rem 2rem;
+      border: none;
+      box-shadow: none;
+      .navbar-toggler-button {
+        font-size: 1.6rem;
+        color: $clr-secondary;
+      }
+    }
+
+    .offcanvas {
+      background: rgba($color: $clr-primary-dark-1, $alpha: 0.8);
+      .offcanvas-title {
+        color: $clr-secondary-light-1;
+      }
+
+      .offcanvas-body {
+        .navbar-nav {
+          li .nav-item {
+            text-decoration: none;
+            color: $clr-secondary;
+          }
         }
       }
     }
-  }
 
-  .scrolling-wrapper {
-    color: $clr-accent;
-    text-transform: uppercase;
-    align-items: center;
-    padding: 0.5rem 0;
-    .marquee {
-      p {
-        margin: 0;
-        padding-top: 2px;
-        font-size: 18px;
+    .scrolling-wrapper {
+      color: $clr-secondary-light-1;
+      text-transform: uppercase;
+      align-items: center;
+      padding: 8px 0 5px 0;
+      .marquee {
+        p {
+          margin: 0;
+          padding-top: 2px;
+          font-size: 18px;
+        }
       }
     }
-  }
 
-  .scrolling-wrapper {
-    max-width: 100%;
-    overflow: hidden;
-
-    .marquee {
-      white-space: nowrap;
+    .scrolling-wrapper {
+      max-width: 100%;
       overflow: hidden;
-      display: inline-block;
-      animation: marquee 20s linear infinite;
-      p {
+
+      .marquee {
+        white-space: nowrap;
+        overflow: hidden;
         display: inline-block;
+        animation: marquee 20s linear infinite;
+        p {
+          display: inline-block;
+        }
       }
     }
   }

@@ -1,16 +1,21 @@
 <template>
   <IntroScene />
   <LocationBanner />
-  <div class="section-wrapper section-wrapper-variant">
+  <div class="section-wrapper section-wrapper-variant-a">
     <SectionMenu />
   </div>
-  <div class="section-wrapper">
+  <div class="section-wrapper section-wrapper-variant-b">
     <SectionGallery />
   </div>
-  <div class="section-wrapper">
+  <div class="section-wrapper section-wrapper-variant-b">
     <SectionAboutUs />
   </div>
-  <div class="section-wrapper">
+  <div class="section-wrapper section-wrapper-variant-c">
+    <img
+      src="../../public/img/paint-stroke-2.png"
+      alt="dummy"
+      class="background-img"
+    />
     <SectionLocation />
   </div>
 
