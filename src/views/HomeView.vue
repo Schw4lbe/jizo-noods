@@ -1,7 +1,7 @@
 <template>
   <IntroScene />
   <LocationBanner />
-  <div class="section-wrapper">
+  <div class="section-wrapper section-wrapper-variant">
     <SectionMenu />
   </div>
   <div class="section-wrapper">

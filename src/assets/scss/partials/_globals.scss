@@ -15,7 +15,15 @@
   align-items: center;
 
   width: 100%;
-  background: $clr-primary;
+  background: rgba($color: $clr-primary, $alpha: 0.95);
+}
+
+.section-wrapper-variant {
+  background: linear-gradient(
+    0deg,
+    rgba(34, 34, 34, 0.95) 0%,
+    rgba(0, 0, 0, 1) 95%
+  );
 }
 
 // .page-wrapper {

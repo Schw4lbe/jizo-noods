@@ -11,5 +11,10 @@
   .carousel {
     width: 100%;
     max-width: 650px;
+
+    .carousel-inner {
+      border-radius: 0.375rem;
+      filter: drop-shadow(5px 5px 5px $clr-primary-dark-1);
+    }
   }
 }

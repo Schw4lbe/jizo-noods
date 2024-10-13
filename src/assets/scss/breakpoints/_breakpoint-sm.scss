@@ -1,17 +1,19 @@
 @use "../abstracts/" as *;
 
-.section-location-banner-main {
-  .location-banner-container {
-    .background-img {
-      height: 150px;
-      object-fit: cover;
-    }
+@media (max-width: 576px) {
+  .section-location-banner-main {
+    .location-banner-container {
+      .background-img {
+        height: 150px;
+        object-fit: cover;
+      }
 
-    .banner-content {
-      grid-template-columns: 1fr;
-      span {
-        padding: 0;
-        font-size: 18px;
+      .banner-content {
+        grid-template-columns: 1fr;
+        span {
+          padding: 0;
+          font-size: 18px;
+        }
       }
     }
   }

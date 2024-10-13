@@ -1,14 +1,15 @@
 @use "../abstracts/" as *;
 
 .section-location-banner-main {
-  background-color: $clr-primary;
+  background-color: $clr-primary-dark-2;
   display: flex;
   justify-content: center;
+  height: 50px;
   .location-banner-container {
     // max-width: 1400px;
     width: 100%;
     position: relative;
-    top: -50px;
+    top: -25px;
     display: flex;
     justify-content: center;
     align-items: center;
