@@ -67,7 +67,7 @@
       .item-price {
         font-size: 1.6rem;
         font-weight: 200;
-        padding: 1.8rem;
+        padding: 1rem;
         color: $clr-accent-b;
       }
     }
@@ -76,6 +76,7 @@
   .menu-allergen-container {
     .allergen-header {
       font-size: 18px;
+      font-weight: 400;
     }
 
     .accordion-wrapper {
@@ -98,28 +99,68 @@
 
         max-width: 700px;
         min-width: 325px;
-        padding: 0 3rem;
+        border-radius: 0.375rem;
 
         .accordion-item {
+          border-radius: 0.375rem;
+
           .accordion-header {
+            border-radius: 0.375rem;
+
             .accordion-button {
-              padding: 0.5rem;
+              border-radius: 0.375rem;
+
               font-size: 14px;
-              font-weight: 200;
-              border-bottom: 1px solid $clr-secondary-dark-1;
+              font-weight: 300;
+              text-align: center;
+              padding: 0.5rem 1rem;
               &:focus {
                 font-weight: 500;
                 border-bottom: none;
               }
               &::after {
-                filter: invert(100%);
+                filter: invert(50%);
+              }
+
+              .allergen-description {
+                font-size: 1rem;
+                // padding: 0.5rem;
               }
             }
           }
 
           .accordion-body {
+            border-radius: 0.375rem;
+
             font-size: 12px;
-            padding: 1.5rem;
+            padding: 1rem;
+            width: 100%;
+            max-width: 650px;
+
+            .allergens-list {
+              list-style: none;
+              padding-left: 0;
+              margin: 0;
+
+              .allergen-item {
+                text-align: left;
+                padding-bottom: 0.5rem;
+
+                .item-id {
+                  font-weight: 900;
+                }
+
+                .item-label {
+                  font-weight: 500;
+                  font-size: 14px;
+                  text-transform: uppercase;
+                }
+
+                .item-description {
+                  font-style: italic;
+                }
+              }
+            }
           }
         }
       }
