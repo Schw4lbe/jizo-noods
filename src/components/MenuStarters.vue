@@ -1,11 +1,11 @@
 <template>
-  <div class="menu-soup-container">
-    <h4 class="soup-header">{{ soupsContent.header }}</h4>
-    <p class="soup-teaser">{{ soupsContent.teaser }}</p>
+  <div class="menu-starters-container">
+    <h4 class="starters-header">{{ startersContent.header }}</h4>
+    <p class="starters-teaser">{{ startersContent.teaser }}</p>
     <div
-      v-for="(item, index) in soupsContent.items"
+      v-for="(item, index) in startersContent.items"
       :key="index"
-      class="soup-item"
+      class="starter-item"
     >
       <div class="item-name-container">
         <p class="item-name">
@@ -44,9 +44,9 @@
 
 <script>
 export default {
-  name: "MenuSoups",
+  name: "MenuStarters",
   props: {
-    soupsContent: Object,
+    startersContent: Object,
   },
 };
 </script>

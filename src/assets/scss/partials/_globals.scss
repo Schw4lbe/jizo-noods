@@ -2,15 +2,15 @@
 
 .navbar-wrapper {
   width: 100%;
-  position: fixed;
+  position: absolute;
   // background: $clr-primary-dark-1;
   display: flex;
   justify-content: center;
   z-index: 99;
 
   .background-img {
-    position: fixed;
-    top: -30px;
+    position: absolute;
+    top: -25px;
     z-index: -1;
     height: 100px;
     width: 100%;

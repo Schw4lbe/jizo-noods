@@ -48,80 +48,121 @@
             "header": "Menu",
             "starters": {
                 "header": "Starters",
-                "teaser": "Come visit us > link to location"
+                "teaser": "Come visit our Popups at Trekanten Oslo",
+                "items": [
+                    {
+                        "name": "Kimchi",
+                        "ingredients": [
+                            "Jizo´s special homemade Kimchi"
+                        ],
+                        "allergenLabel": "Allergens",
+                        "allergens": [
+                            "3",
+                            "7"
+                        ],
+                        "price": "70"
+                    },
+                    {
+                        "name": "Edamame",
+                        "ingredients": [
+                            "Yuzu Ponzu"
+                        ],
+                        "allergenLabel": "Allergens",
+                        "allergens": [
+                            "10"
+                        ],
+                        "price": "70"
+                    },
+                    {
+                        "name": "Nasu Dengaku",
+                        "ingredients": [
+                            "Aubergine",
+                            "Miso",
+                            "Sesame"
+                        ],
+                        "allergenLabel": "Allergens",
+                        "allergens": [
+                            "1",
+                            "8"
+                        ],
+                        "price": "70"
+                    }
+                ]
             },
             "soups": {
-                "header": "Soups",
+                "header": "Noodles",
                 "teaser": "Enjoy our delicious Ramen",
                 "items": [
                     {
-                        "name": "Ramen Soupename 1",
-                        "indicator": {
-                            "hasIcons": false,
-                            "icons": [
-                                1,
-                                2
-                            ]
-                        },
-                        "ingredients": [
-                            "Ingredient1",
-                            "Ingredient2",
-                            "Ingredient3",
-                            "Ingredient4",
-                            "Ingredient5"
-                        ],
-                        "allergenLabel": "Allergens",
-                        "allergens": [
-                            "a",
-                            "b",
-                            "c"
-                        ],
-                        "price": "395"
-                    },
-                    {
-                        "name": "Ramen Soupename 2",
-                        "indicator": {
-                            "hasIcons": false,
-                            "icons": [
-                                1
-                            ]
-                        },
-                        "ingredients": [
-                            "Ingredient1",
-                            "Ingredient2",
-                            "Ingredient3"
-                        ],
-                        "allergenLabel": "Allergens",
-                        "allergens": [
-                            "a",
-                            "b",
-                            "c",
-                            "d",
-                            "e"
-                        ],
-                        "price": "285"
-                    },
-                    {
-                        "name": "Ramen Soupename 3",
+                        "name": "Signature Shoyu Ramen",
                         "indicator": {
                             "hasIcons": false,
                             "icons": []
                         },
                         "ingredients": [
-                            "Ingredient1",
-                            "Ingredient2",
-                            "Ingredient3",
-                            "Ingredient4",
-                            "Ingredient5",
-                            "Ingredient6"
+                            "handmade Hakata style noodles",
+                            "Chashu-pork",
+                            "Chicken-broth",
+                            "Ajitsuke-egg",
+                            "pickled bean-sprouts",
+                            "slow cooked Tomato",
+                            "Scallion"
                         ],
                         "allergenLabel": "Allergens",
                         "allergens": [
-                            "a",
-                            "b",
-                            "c"
+                            "1",
+                            "2",
+                            "3"
                         ],
-                        "price": "335"
+                        "price": "245"
+                    },
+                    {
+                        "name": "\"Thomas\" Shio Ramen",
+                        "indicator": {
+                            "hasIcons": false,
+                            "icons": []
+                        },
+                        "ingredients": [
+                            "handmade Hakata style noodles",
+                            "chicken koji breast",
+                            "Ajitsuke-egg",
+                            "pickled Red Onion",
+                            "slow cooked Tomato",
+                            "Scallion",
+                            "Black Garlic"
+                        ],
+                        "allergenLabel": "Allergens",
+                        "allergens": [
+                            "1",
+                            "2",
+                            "3",
+                            "6"
+                        ],
+                        "price": "245"
+                    },
+                    {
+                        "name": "Umami Mushroom Ramen",
+                        "indicator": {
+                            "hasIcons": false,
+                            "icons": []
+                        },
+                        "ingredients": [
+                            "handmade tokyo style noodles",
+                            "Miso Tempeh",
+                            "pickled beans sprouts",
+                            "Enoki",
+                            "Scallion",
+                            "Green Aroma Oil"
+                        ],
+                        "allergenLabel": "Allergens",
+                        "allergens": [
+                            "1",
+                            "2",
+                            "4",
+                            "5",
+                            "6"
+                        ],
+                        "price": "235"
                     }
                 ]
             },

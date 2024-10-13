@@ -16,6 +16,7 @@
 - workarround google maps screenshot with animation transition to googlemaps with lat long coords
 - unicode check for japanese / chinese
 - research for table booking software / api
+- combine starters and soups component only difference is category
 
 ## project notes
 
