@@ -251,19 +251,28 @@
         },
         "sectionAboutUs": {
             "header": "About Us",
-            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. labore atque libero",
             "items": [
                 {
-                    "header": "Header 1",
-                    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. labore atque libero"
-                },
-                {
-                    "header": "Header 2",
-                    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. labore atque libero"
-                },
-                {
-                    "header": "Header 3",
-                    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. labore atque libero"
+                    "header": "Our Story",
+                    "content": [
+                        {
+                            "isHighlighted": true,
+                            "text": "Jizo Noods "
+                        },
+                        {
+                            "isHighlighted": false,
+                            "text": "is all about celebrating the art of slurpin’ delicious noodle soups from Japan & South Korea. Since 2024 kicked off, we've been cooperating with folks across Oslo like, Trekanten Sigurd Ramen & Fuglen Cafe for pop-ups, bringing the magic of homemade Ramen to the people. And now, guess what? We’re hyped to announce that we’re taking it up a notch! Thanks to our friends at Trekanten, we’ll be dishing out our soups and tasty plates "
+                        },
+                        {
+                            "isHighlighted": true,
+                            "text": "every Thursday and Friday. "
+                        },
+                        {
+                            "isHighlighted": false,
+                            "text": "So Oslo, get your chopsticks ready—it’s time to dive into noodle heaven. See ya there, slurp fam!"
+                        }
+                    ],
+                    "media": "/img/about-us/dummy.jpeg"
                 }
             ]
         },

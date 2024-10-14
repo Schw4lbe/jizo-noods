@@ -1,7 +1,6 @@
 <template>
   <section class="section-about-main">
     <h3 class="section-header">{{ sectionContent.header }}</h3>
-    <p class="about-description">{{ sectionContent.description }}</p>
     <div class="about-content-container">
       <div
         v-for="(item, index) in sectionContent.items"
@@ -9,8 +8,18 @@
         class="about-item"
       >
         <h4 class="content-header">{{ item.header }}</h4>
-        <p class="description">{{ item.description }}</p>
-        <div class="media">could place media in here...</div>
+        <div class="content-text">
+          <span
+            v-for="(item, index) in item.content"
+            :key="index"
+            class="text"
+            :class="{ highlighted: item.isHighlighted }"
+            >{{ item.text }}</span
+          >
+        </div>
+        <div class="media-container">
+          <img :src="item.media" alt="dummy" class="media" />
+        </div>
       </div>
     </div>
   </section>
