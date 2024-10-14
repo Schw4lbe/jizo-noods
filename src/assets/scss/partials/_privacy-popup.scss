@@ -31,22 +31,22 @@
     transform: translateY(1000px);
 
     .cookie-header {
-      color: $clr-accent;
+      color: lighten($clr-accent-b, 20%);
       padding-bottom: 2rem;
       font-size: 1.4rem;
     }
 
     .cookie-description {
-      color: $clr-secondary-light-1;
+      color: $clr-secondary-light-2;
 
       .cookie-privacy-link {
         text-decoration: none;
         font-weight: 800;
         letter-spacing: 1px;
-        color: $clr-accent-a;
+        color: lighten($clr-accent-b, 20%);
         transition: all 0.5s;
         &:hover {
-          color: $clr-accent;
+          color: lighten($clr-accent-b, 10%);
         }
       }
     }
@@ -61,7 +61,7 @@
       margin-top: 1rem;
       &:hover {
         color: $clr-primary-dark-2;
-        background: $clr-accent;
+        color: lighten($clr-accent-b, 30%);
       }
     }
   }
