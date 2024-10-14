@@ -1,13 +1,13 @@
 @use "../abstracts/" as *;
 
 .section-about-main {
-  max-width: 1400px;
+  max-width: 1200px;
   color: $clr-primary;
   padding: 5rem 1rem;
   text-align: center;
 
   .about-content-container {
-    padding-top: 2rem;
+    // padding-top: 2rem;
 
     .about-item {
       // padding: 1rem;
@@ -16,11 +16,14 @@
       .content-header {
         color: $clr-accent-b;
         padding: 1rem 0;
+        font-size: 28px;
+        margin: 0;
       }
 
       .content-text {
         font-weight: 600;
-        padding: 1rem 0;
+        line-height: 1.8;
+        // padding: 1rem 0;
       }
 
       .highlighted {
