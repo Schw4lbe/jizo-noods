@@ -35,12 +35,13 @@ export default {
     netlifyIdentity.on("login", (user) => {
       this.user = user;
       this.emitUserStatus();
-      window.location.reload();
+      // window.location.reload();
     });
 
     netlifyIdentity.on("logout", () => {
       this.user = null;
-      window.location.reload();
+      this.emitUserStatus();
+      // window.location.reload();
     });
   },
   methods: {
@@ -50,9 +51,8 @@ export default {
     logout() {
       netlifyIdentity.logout();
     },
-    updateUserFromLocalStorage() {
-      const storedUser = localStorage.getItem("gotrue.user");
-      this.user = storedUser ? JSON.parse(storedUser) : null;
+    updateUserFromIdentity() {
+      this.user = netlifyIdentity.currentUser();
       this.emitUserStatus();
     },
     emitUserStatus() {

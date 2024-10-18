@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <NetlifyIdentity />
+    <NetlifyIdentity v-if="!isUserLoggedIn" />
     <PrivacyPopup />
     <div class="navbar-wrapper">
       <img
@@ -31,13 +31,25 @@ export default {
     PrivacyPopup,
   },
 
+  data() {
+    return {
+      isUserLoggedIn: false,
+    };
+  },
+
   created() {
+    this.checkUserStatus();
     this.isPrivacyAccepted();
     this.isLanguageSet();
   },
 
   methods: {
     ...mapActions(["isPrivacyAccepted", "isLanguageSet"]),
+    checkUserStatus() {
+      const user = localStorage.getItem("gotrue.user");
+      // double !! converts value to bool
+      this.isUserLoggedIn = !!user;
+    },
   },
 };
 </script>
