@@ -5,10 +5,8 @@
 - add service hours to popup banner on top
 - after cookie check in local storage state start loading sequence
 - after fully loading videofile start autoplay
-- rethink allergens section and data struture
 - create printview for menu out of database for easy transition to location
 - cms integration
-- combine starters and soups component only difference is category/type
 - BUG: if page is scrolled down a certain amount popup not vissible always in center of screen -> leads to user not beeing able to accept cookies and therefore cant navigate on page
 
 ## Backlog
