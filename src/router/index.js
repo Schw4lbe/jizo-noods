@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import AdminView from "@/views/AdminView.vue";
+// import AdminView from "@/views/AdminView.vue";
 
 const routes = [
   {
@@ -8,11 +8,11 @@ const routes = [
     name: "home",
     component: HomeView,
   },
-  {
-    path: "/admin",
-    name: "admin",
-    component: AdminView,
-  },
+  // {
+  //   path: "/admin",
+  //   name: "admin",
+  //   component: AdminView,
+  // },
 ];
 
 const router = createRouter({

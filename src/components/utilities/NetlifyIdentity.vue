@@ -1,5 +1,3 @@
-<!-- currently not in use due to open payment questions -->
-
 <template>
   <div v-if="!user" class="netlify-login-ui">
     <img src="../../../public/img/logo.png" alt="logo" class="login-logo" />

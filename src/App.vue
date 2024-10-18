@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <NetlifyIdentity />
     <PrivacyPopup />
     <div class="navbar-wrapper">
       <img
@@ -16,6 +17,7 @@
 
 <script>
 import { mapActions } from "vuex";
+import NetlifyIdentity from "./components/utilities/NetlifyIdentity.vue";
 import NavbarMain from "@/components/utilities/NavbarMain.vue";
 import FooterMain from "./components/utilities/FooterMain.vue";
 import PrivacyPopup from "./components/utilities/PrivacyPopup.vue";
@@ -23,6 +25,7 @@ import PrivacyPopup from "./components/utilities/PrivacyPopup.vue";
 export default {
   name: "App",
   components: {
+    NetlifyIdentity,
     NavbarMain,
     FooterMain,
     PrivacyPopup,
