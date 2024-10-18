@@ -22,7 +22,7 @@ export default {
   mounted() {
     netlifyIdentity.init();
 
-    this.updateUserFromLocalStorage();
+    // this.updateUserFromLocalStorage();
 
     netlifyIdentity.on("init", (user) => {
       this.user = user;
