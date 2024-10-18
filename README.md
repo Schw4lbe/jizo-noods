@@ -2,7 +2,6 @@
 
 ## dev-log to-dos:
 
-- add service hours to popup banner on top
 - after cookie check in local storage state start loading sequence
 - after fully loading videofile start autoplay
 - create printview for menu out of database for easy transition to location
