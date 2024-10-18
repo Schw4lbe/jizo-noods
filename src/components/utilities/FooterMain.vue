@@ -5,7 +5,7 @@
         v-for="(item, index) in footerContent.items"
         :key="index"
         :href="item.url"
-        >{{ item.lable
+        >{{ item.label
         }}<span v-if="index < footerContent.items.length - 1"> | </span></a
       >
     </div>

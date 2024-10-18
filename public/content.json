@@ -3,15 +3,15 @@
         "navbarMain": {
             "items": [
                 {
-                    "lable": "navItem 01",
+                    "label": "navItem 01",
                     "url": "#"
                 },
                 {
-                    "lable": "navItem 02",
+                    "label": "navItem 02",
                     "url": "#"
                 },
                 {
-                    "lable": "navItem 03",
+                    "label": "navItem 03",
                     "url": "#"
                 }
             ],
@@ -20,15 +20,15 @@
         "footerMain": {
             "items": [
                 {
-                    "lable": "Privacy",
+                    "label": "Privacy",
                     "url": "#"
                 },
                 {
-                    "lable": "Imprint",
+                    "label": "Imprint",
                     "url": "#"
                 },
                 {
-                    "lable": "Terms of Service",
+                    "label": "Terms of Service",
                     "url": "#"
                 }
             ]
@@ -49,16 +49,16 @@
             "starters": {
                 "header": "Starters",
                 "teaser": "Come visit our Popups at Trekanten Oslo",
+                "allergenLabel": "Allergens",
                 "items": [
                     {
                         "name": "Kimchi",
                         "ingredients": [
                             "Jizo´s special homemade Kimchi"
                         ],
-                        "allergenLabel": "Allergens",
                         "allergens": [
-                            "3",
-                            "7"
+                            3,
+                            7
                         ],
                         "price": "70"
                     },
@@ -67,9 +67,8 @@
                         "ingredients": [
                             "Yuzu Ponzu"
                         ],
-                        "allergenLabel": "Allergens",
                         "allergens": [
-                            "10"
+                            10
                         ],
                         "price": "70"
                     },
@@ -80,10 +79,9 @@
                             "Miso",
                             "Sesame"
                         ],
-                        "allergenLabel": "Allergens",
                         "allergens": [
-                            "1",
-                            "8"
+                            1,
+                            8
                         ],
                         "price": "70"
                     }
@@ -92,6 +90,7 @@
             "soups": {
                 "header": "Noodles",
                 "teaser": "Enjoy our delicious Ramen",
+                "allergenLabel": "Allergens",
                 "items": [
                     {
                         "name": "Signature Shoyu Ramen",
@@ -108,11 +107,10 @@
                             "slow cooked Tomato",
                             "Scallion"
                         ],
-                        "allergenLabel": "Allergens",
                         "allergens": [
-                            "1",
-                            "2",
-                            "3"
+                            1,
+                            2,
+                            3
                         ],
                         "price": "245"
                     },
@@ -131,12 +129,11 @@
                             "Scallion",
                             "Black Garlic"
                         ],
-                        "allergenLabel": "Allergens",
                         "allergens": [
-                            "1",
-                            "2",
-                            "3",
-                            "6"
+                            1,
+                            2,
+                            3,
+                            6
                         ],
                         "price": "245"
                     },
@@ -154,13 +151,12 @@
                             "Scallion",
                             "Green Aroma Oil"
                         ],
-                        "allergenLabel": "Allergens",
                         "allergens": [
-                            "1",
-                            "2",
-                            "4",
-                            "5",
-                            "6"
+                            1,
+                            2,
+                            4,
+                            5,
+                            6
                         ],
                         "price": "235"
                     }
