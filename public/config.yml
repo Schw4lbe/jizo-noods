@@ -1,0 +1,34 @@
+local_backend: false
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/img"
+public_folder: "/img"
+
+collections:
+  - label: "Navigation Settings"
+    name: "navigation"
+    files:
+      - label: "English Navbar Content"
+        name: "navbar_en"
+        file: "public/content.json"
+        fields:
+          - label: "Navbar Items"
+            name: "navbarMain"
+            widget: "object"
+            fields:
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - label: "Item Label"
+                    name: "label"
+                    widget: "string"
+                  - label: "Item URL"
+                    name: "url"
+                    widget: "string"
+              - label: "Scrolling Text"
+                name: "scrollingText"
+                widget: "text"
