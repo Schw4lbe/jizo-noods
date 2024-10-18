@@ -29,7 +29,7 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li v-for="(item, index) in navContent.items" :key="index">
-              <a class="nav-item" :href="item.url">{{ item.lable }}</a>
+              <a class="nav-item" :href="item.url">{{ item.label }}</a>
             </li>
           </ul>
         </div>

@@ -2,28 +2,25 @@
 
 ## dev-log to-dos:
 
+- add service hours to popup banner on top
 - after cookie check in local storage state start loading sequence
 - after fully loading videofile start autoplay
+- rethink allergens section and data struture
+- create printview for menu out of database for easy transition to location
+- cms integration
+- combine starters and soups component only difference is category/type
+- BUG: if page is scrolled down a certain amount popup not vissible always in center of screen -> leads to user not beeing able to accept cookies and therefore cant navigate on page
 
 ## Backlog
 
-- element transition smoother (tbd)
 - replace dummy img on opening with actuall video content
-- cms integration is planned ()
-- check social media account connections on webpage (what is possible)
+- check social media account connections for statistics
 - tiktok / instagram content via click open in app
-- google maps verknüpfung straight forward oder über api? -> api
-- workarround google maps screenshot with animation transition to googlemaps with lat long coords
 - unicode check for japanese / chinese
 - research for table booking software / api
-- combine starters and soups component only difference is category
 
 ## project notes
 
-- logo stays the same for now
-- logo could be replaced / updated later on
-- keep colors clean / slight accents
-- frozen ramen special pricing
 - waiting list as teaser
 
 ## externals and co working
@@ -45,10 +42,8 @@
 
 #### Questions
 
-- how many different ramen kits?
+- how many different ramen kits (onhold)
 - possibility of more kits in the future?
-- possibility of starters on page directly in the future? answer: yes
-- icons on soups needed? (hot, contains garlic etc.)
 - about us with images and video?
 
 ## dev references
@@ -59,11 +54,8 @@
 
 ## notes
 
-- adresse in extra banner direkt unter logo
-- Popup Trekanten + adresse + Öffnungszeiten
 - menu/starters link zu location section
-- social media kommt schriftlich von raphi
-- zusatz zu suppe "vegan, spicy"
+- social media kommt schriftlich von raphi -mit raphi gemeinsam angehen
 - navbar top right globe to change language
 
 ## cms
@@ -72,6 +64,6 @@
 - slogan
 - adresse location section
 - adresse top section
-- soups
+- soups / starters
 - allergens
 - about us

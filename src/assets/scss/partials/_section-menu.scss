@@ -10,49 +10,31 @@
   align-items: center;
   text-align: center;
 
-  // .menu-starters-container {
-  //   padding: 1rem;
-  //   .starters-header {
-  //     text-transform: uppercase;
-  //     color: $clr-accent-b;
-  //   }
-  // }
-
-  .menu-starters-container {
+  .menu-product-group-container:nth-of-type(1) {
     border-bottom: 1px solid $clr-accent-b;
   }
 
-  .menu-soup-container {
-    margin-top: 3rem;
-  }
-
-  .menu-soup-container,
-  .menu-starters-container {
+  .menu-product-group-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 1rem;
+    padding: 2rem 0;
+    width: 100%;
 
-    .soup-header,
-    .starters-header {
+    .product-group-header {
       text-transform: uppercase;
       color: $clr-accent;
       font-weight: 700;
     }
 
-    .soup-teaser,
-    .starters-teaser {
+    .product-group-teaser {
       font-weight: 300;
       color: $clr-accent-b;
     }
 
-    .soup-item,
-    .starter-item {
-      padding: 2rem 0;
-
-      .item-name-container {
-        display: flex;
-        justify-content: center;
+    .items-container {
+      .item {
+        padding: 2rem 0;
 
         .item-name {
           color: $clr-accent-b;
@@ -61,36 +43,27 @@
           margin: 0;
         }
 
-        // .item-icon {
-        //   padding: 5px;
-        //   font-size: 0.7rem;
-        //   color: tomato;
-        // }
-      }
-
-      .item-ingredients {
-        // padding: 1rem 0 0 0;
-
-        .ingredient {
-          max-width: 600px;
-          color: $clr-primary-dark-2;
-          font-size: 1rem;
-          font-weight: 400;
+        .item-ingredients {
+          .ingredient {
+            max-width: 600px;
+            color: $clr-primary-dark-2;
+            font-size: 1rem;
+            font-weight: 400;
+          }
         }
-      }
 
-      .item-allergens {
-        color: $clr-primary-light-1;
-        font-size: 0.9rem;
-        font-weight: 200;
-        padding: 0.5rem;
-      }
+        .item-allergens {
+          color: $clr-primary-light-1;
+          font-size: 0.9rem;
+          font-weight: 200;
+          padding: 0.5rem;
+        }
 
-      .item-price {
-        font-size: 1.6rem;
-        font-weight: 200;
-        // padding: 1rem;
-        color: $clr-accent-b;
+        .item-price {
+          font-size: 1.6rem;
+          font-weight: 200;
+          color: $clr-accent-b;
+        }
       }
     }
   }
@@ -146,7 +119,6 @@
 
               .allergen-description {
                 font-size: 1rem;
-                // padding: 0.5rem;
               }
             }
           }
