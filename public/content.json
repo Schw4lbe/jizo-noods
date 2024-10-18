@@ -1,330 +1,321 @@
 {
-  "en": {
-    "locationBanner": {
-      "name": "Popup Trekanten",
-      "address": "Pilestredet 24, Oslo",
-      "businessHours": "Thursday & Friday 13:00 - 20:00"
-    },
-    "companyContact": {
-      "phone": "01234 - 55 66 77 88 99",
-      "email": "some@one.de"
-    },
-    "sectionMenu": {
-      "header": "Menu",
-      "starters": {
-        "header": "Starters",
-        "teaser": "Come visit our Popups at Trekanten Oslo",
-        "allergenLabel": "Allergens",
-        "items": [
-          {
-            "name": "Kimchi",
-            "ingredients": [
-              "Jizo´s special homemade Kimchi"
-            ],
-            "allergens": [
-              3,
-              7
-            ],
-            "price": "70"
-          },
-          {
-            "name": "Edamame",
-            "ingredients": [
-              "Yuzu Ponzu"
-            ],
-            "allergens": [
-              10
-            ],
-            "price": "70"
-          },
-          {
-            "name": "Nasu Dengaku",
-            "ingredients": [
-              "Aubergine",
-              "Miso",
-              "Sesame"
-            ],
-            "allergens": [
-              1,
-              8
-            ],
-            "price": "70"
-          }
-        ]
-      },
-      "soups": {
-        "header": "Noodles",
-        "teaser": "Enjoy our delicious Ramen",
-        "allergenLabel": "Allergens",
-        "items": [
-          {
-            "name": "Signature Shoyu Ramen",
-            "indicator": {
-              "hasIcons": false,
-              "icons": []
+    "en": {
+        "locationBanner": {
+            "name": "Popup Trekanten",
+            "address": "Pilestredet 24, Oslo",
+            "businessHours": "Thursday & Friday 13:00 - 20:00"
+        },
+        "companyContact": {
+            "phone": "01234 - 55 66 77 88 99",
+            "email": "some@one.de"
+        },
+        "sectionMenu": {
+            "header": "Menu",
+            "starters": {
+                "header": "Starters",
+                "teaser": "Come visit our Popups at Trekanten Oslo",
+                "allergenLabel": "Allergens",
+                "items": [
+                    {
+                        "name": "Kimchi",
+                        "ingredients": [
+                            "Jizo´s special homemade Kimchi"
+                        ],
+                        "allergens": [
+                            3,
+                            7
+                        ],
+                        "price": "70"
+                    },
+                    {
+                        "name": "Edamame",
+                        "ingredients": [
+                            "Yuzu Ponzu"
+                        ],
+                        "allergens": [
+                            10
+                        ],
+                        "price": "70"
+                    },
+                    {
+                        "name": "Nasu Dengaku",
+                        "ingredients": [
+                            "Aubergine",
+                            "Miso",
+                            "Sesame"
+                        ],
+                        "allergens": [
+                            1,
+                            8
+                        ],
+                        "price": "70"
+                    }
+                ]
             },
-            "ingredients": [
-              "handmade Hakata style noodles",
-              "Chashu-pork",
-              "Chicken-broth",
-              "Ajitsuke-egg",
-              "pickled bean-sprouts",
-              "slow cooked Tomato",
-              "Scallion"
-            ],
-            "allergens": [
-              1,
-              2,
-              3
-            ],
-            "price": "245"
-          },
-          {
-            "name": "\"Thomas\" Shio Ramen",
-            "indicator": {
-              "hasIcons": false,
-              "icons": []
+            "soups": {
+                "header": "Noodles",
+                "teaser": "Enjoy our delicious Ramen",
+                "allergenLabel": "Allergens",
+                "items": [
+                    {
+                        "name": "Signature Shoyu Ramen",
+                        "indicator": {
+                            "hasIcons": false,
+                            "icons": []
+                        },
+                        "ingredients": [
+                            "handmade Hakata style noodles",
+                            "Chashu-pork",
+                            "Chicken-broth",
+                            "Ajitsuke-egg",
+                            "pickled bean-sprouts",
+                            "slow cooked Tomato",
+                            "Scallion"
+                        ],
+                        "allergens": [
+                            1,
+                            2,
+                            3
+                        ],
+                        "price": "245"
+                    },
+                    {
+                        "name": "\"Thomas\" Shio Ramen",
+                        "indicator": {
+                            "hasIcons": false,
+                            "icons": []
+                        },
+                        "ingredients": [
+                            "handmade Hakata style noodles",
+                            "chicken koji breast",
+                            "Ajitsuke-egg",
+                            "pickled Red Onion",
+                            "slow cooked Tomato",
+                            "Scallion",
+                            "Black Garlic"
+                        ],
+                        "allergens": [
+                            1,
+                            2,
+                            3,
+                            6
+                        ],
+                        "price": "245"
+                    },
+                    {
+                        "name": "Umami Mushroom Ramen",
+                        "indicator": {
+                            "hasIcons": false,
+                            "icons": []
+                        },
+                        "ingredients": [
+                            "handmade tokyo style noodles",
+                            "Miso Tempeh",
+                            "pickled beans sprouts",
+                            "Enoki",
+                            "Scallion",
+                            "Green Aroma Oil"
+                        ],
+                        "allergens": [
+                            1,
+                            2,
+                            4,
+                            5,
+                            6
+                        ],
+                        "price": "235"
+                    }
+                ]
             },
-            "ingredients": [
-              "handmade Hakata style noodles",
-              "chicken koji breast",
-              "Ajitsuke-egg",
-              "pickled Red Onion",
-              "slow cooked Tomato",
-              "Scallion",
-              "Black Garlic"
-            ],
-            "allergens": [
-              1,
-              2,
-              3,
-              6
-            ],
-            "price": "245"
-          },
-          {
-            "name": "Umami Mushroom Ramen",
-            "indicator": {
-              "hasIcons": false,
-              "icons": []
-            },
-            "ingredients": [
-              "handmade tokyo style noodles",
-              "Miso Tempeh",
-              "pickled beans sprouts",
-              "Enoki",
-              "Scallion",
-              "Green Aroma Oil"
-            ],
-            "allergens": [
-              1,
-              2,
-              4,
-              5,
-              6
-            ],
-            "price": "235"
-          }
-        ]
-      },
-      "allergens": {
-        "header": "Allergens",
-        "description": "Open for details on allergens...",
-        "items": [
-          {
-            "id": "1",
-            "label": "Gluten",
-            "description": "Wheat, barley, rye, and other gluten-containing grains are present in these dishes."
-          },
-          {
-            "id": "2",
-            "label": "Soya",
-            "description": "Soy or soy-based ingredients are present in these dishes."
-          },
-          {
-            "id": "3",
-            "label": "Fish",
-            "description": "Fish or fish-based ingredients are present in these dishes."
-          },
-          {
-            "id": "4",
-            "label": "Onion",
-            "description": "Onion or onion-based ingredients are present in these dishes."
-          },
-          {
-            "id": "5",
-            "label": "Garlic",
-            "description": "Garlic or garlic-based ingredients are present in these dishes."
-          },
-          {
-            "id": "6",
-            "label": "Mushroom",
-            "description": "Mushrooms or mushroom-based ingredients are present in these dishes."
-          },
-          {
-            "id": "7",
-            "label": "Shellfish ",
-            "description": "Shellfish, Shrimp or shellfish-based ingredients are present in these dishes."
-          },
-          {
-            "id": "8",
-            "label": "Sesame",
-            "description": "Sesame seeds or sesame oil are present in these dishes."
-          },
-          {
-            "id": "9",
-            "label": "Nuts",
-            "description": "Nuts or nut-based ingredients are present in these dishes."
-          },
-          {
-            "id": "10",
-            "label": "Lemon",
-            "description": "Lime, Lemon or lemon-based ingredients are present in these dishes."
-          }
-        ]
-      }
-    },
-    "sectionAboutUs": {
-      "header": "About Us",
-      "items": [
-        {
-          "header": "Our Story",
-          "content": [
-            {
-              "isHighlighted": true,
-              "text": "Jizo Noods "
-            },
-            {
-              "isHighlighted": false,
-              "text": "is all about celebrating the art of slurpin’ delicious noodle soups from Japan & South Korea. Since 2024 kicked off, we've been cooperating with folks across Oslo like, Trekanten Sigurd Ramen & Fuglen Cafe for pop-ups, bringing the magic of homemade Ramen to the people. And now, guess what? We’re hyped to announce that we’re taking it up a notch! Thanks to our friends at Trekanten, we’ll be dishing out our soups and tasty plates "
-            },
-            {
-              "isHighlighted": true,
-              "text": "every Thursday and Friday. "
-            },
-            {
-              "isHighlighted": false,
-              "text": "So Oslo, get your chopsticks ready—it’s time to dive into noodle heaven. See ya there, slurp fam!"
+            "allergens": {
+                "header": "Allergens",
+                "description": "Open for details on allergens...",
+                "items": [
+                    {
+                        "id": "1",
+                        "label": "Gluten",
+                        "description": "Wheat, barley, rye, and other gluten-containing grains are present in these dishes."
+                    },
+                    {
+                        "id": "2",
+                        "label": "Soya",
+                        "description": "Soy or soy-based ingredients are present in these dishes."
+                    },
+                    {
+                        "id": "3",
+                        "label": "Fish",
+                        "description": "Fish or fish-based ingredients are present in these dishes."
+                    },
+                    {
+                        "id": "4",
+                        "label": "Onion",
+                        "description": "Onion or onion-based ingredients are present in these dishes."
+                    },
+                    {
+                        "id": "5",
+                        "label": "Garlic",
+                        "description": "Garlic or garlic-based ingredients are present in these dishes."
+                    },
+                    {
+                        "id": "6",
+                        "label": "Mushroom",
+                        "description": "Mushrooms or mushroom-based ingredients are present in these dishes."
+                    },
+                    {
+                        "id": "7",
+                        "label": "Shellfish ",
+                        "description": "Shellfish, Shrimp or shellfish-based ingredients are present in these dishes."
+                    },
+                    {
+                        "id": "8",
+                        "label": "Sesame",
+                        "description": "Sesame seeds or sesame oil are present in these dishes."
+                    },
+                    {
+                        "id": "9",
+                        "label": "Nuts",
+                        "description": "Nuts or nut-based ingredients are present in these dishes."
+                    },
+                    {
+                        "id": "10",
+                        "label": "Lemon",
+                        "description": "Lime, Lemon or lemon-based ingredients are present in these dishes."
+                    }
+                ]
             }
-          ],
-          "media": "/img/about-us/dummy.jpeg"
+        },
+        "sectionAboutUs": {
+            "header": "About Us",
+            "items": [
+                {
+                    "header": "Our Story",
+                    "content": [
+                        {
+                            "isHighlighted": true,
+                            "text": "Jizo Noods "
+                        },
+                        {
+                            "isHighlighted": false,
+                            "text": "is all about celebrating the art of slurpin’ delicious noodle soups from Japan & South Korea. Since 2024 kicked off, we've been cooperating with folks across Oslo like, Trekanten Sigurd Ramen & Fuglen Cafe for pop-ups, bringing the magic of homemade Ramen to the people. And now, guess what? We’re hyped to announce that we’re taking it up a notch! Thanks to our friends at Trekanten, we’ll be dishing out our soups and tasty plates "
+                        },
+                        {
+                            "isHighlighted": true,
+                            "text": "every Thursday and Friday. "
+                        },
+                        {
+                            "isHighlighted": false,
+                            "text": "So Oslo, get your chopsticks ready—it’s time to dive into noodle heaven. See ya there, slurp fam!"
+                        }
+                    ],
+                    "media": "/img/about-us/dummy.jpeg"
+                }
+            ]
+        },
+        "navbarMain": {
+            "items": [
+                {
+                    "label": "navItem 01",
+                    "url": "#"
+                },
+                {
+                    "label": "navItem 02",
+                    "url": "#"
+                },
+                {
+                    "label": "navItem 03",
+                    "url": "#"
+                }
+            ],
+            "scrollingText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat, ante eu bibendum tincidunt, sem lacus vehicula augue, utsuscipit."
+        },
+        "sectionFeedback": {
+            "header": "Feedback",
+            "description": "Feedback Description Lorem ipsum dolor sit amet consectetur adipisicing elit. labore atque libero.",
+            "url": "",
+            "urlText": "Link to Feedback Page",
+            "media": ""
+        },
+        "sectionGallery": {
+            "header": "Gallery",
+            "description": "Gallery Description",
+            "items": [
+                {
+                    "label": "Ramen Sample 01",
+                    "description": "Ramen Sample Description 01",
+                    "url": "/img/gallery/TW-JizoNoods-6.jpg"
+                },
+                {
+                    "label": "Ramen Sample 02",
+                    "description": "Ramen Sample Description 02",
+                    "url": "/img/gallery/TW-JizoNoods-11.jpg"
+                },
+                {
+                    "label": "Ramen Sample 03",
+                    "description": "Ramen Sample Description 03",
+                    "url": "/img/gallery/TW-JizoNoods-13.jpg"
+                }
+            ]
+        },
+        "footerMain": {
+            "items": [
+                {
+                    "label": "Privacy",
+                    "url": "#"
+                },
+                {
+                    "label": "Imprint",
+                    "url": "#"
+                },
+                {
+                    "label": "Terms of Service",
+                    "url": "#"
+                }
+            ]
+        },
+        "sectionRamenKit": {
+            "header": "Ramen Kits",
+            "teaser": "Ramen Kits Info Teaser get in contanct!",
+            "subHeader": "Instructions",
+            "instructions": [
+                "step 1",
+                "step 2",
+                "step 3"
+            ],
+            "media": ""
+        },
+        "sectionQandA": {
+            "header": "Q and A",
+            "description": "DESCRIPTION / TBD"
+        },
+        "sectionLocation": {
+            "header": "Location",
+            "googleMapsUrl": "https://g.co/kgs/k95yiQK",
+            "address": {
+                "header": "Address",
+                "street": " Pilestredet",
+                "houseNumber": "24",
+                "zipCode": "0165",
+                "city": "Oslo"
+            },
+            "socialMediaHeader": "Follow us on Social Media",
+            "socialMedia": [
+                {
+                    "name": "Facebook",
+                    "icon": "fa-brands fa-square-facebook",
+                    "url": "https://www.facebook.com"
+                },
+                {
+                    "name": "Instagram",
+                    "icon": "fa-brands fa-instagram",
+                    "url": "https://www.instagram.com/jizo_noods/"
+                },
+                {
+                    "name": "TikTok",
+                    "icon": "fa-brands fa-tiktok",
+                    "url": "https://www.tiktok.com/@jizo.noods"
+                }
+            ]
         }
-      ]
     },
-    "navbarMain": {
-      "items": [
-        {
-          "label": "navItem 01",
-          "url": "#"
-        },
-        {
-          "label": "navItem 02",
-          "url": "#"
-        },
-        {
-          "label": "navItem 03",
-          "url": "#"
-        }
-      ],
-      "scrollingText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat, ante eu bibendum tincidunt, sem lacus vehicula augue, utsuscipit."
-    },
-    "sectionFeedback": {
-      "header": "Feedback",
-      "description": "Feedback Description Lorem ipsum dolor sit amet consectetur adipisicing elit. labore atque libero.",
-      "url": "",
-      "urlText": "Link to Feedback Page",
-      "media": ""
-    },
-    "sectionGallery": {
-      "header": "Gallery",
-      "description": "Gallery Description",
-      "items": [
-        {
-          "label": "Ramen Sample 01",
-          "description": "Ramen Sample Description 01",
-          "url": "/img/gallery/TW-JizoNoods-6.jpg"
-        },
-        {
-          "label": "Ramen Sample 02",
-          "description": "Ramen Sample Description 02",
-          "url": "/img/gallery/TW-JizoNoods-11.jpg"
-        },
-        {
-          "label": "Ramen Sample 03",
-          "description": "Ramen Sample Description 03",
-          "url": "/img/gallery/TW-JizoNoods-13.jpg"
-        }
-      ]
-    },
-    "footerMain": {
-      "items": [
-        {
-          "label": "Privacy",
-          "url": "#"
-        },
-        {
-          "label": "Imprint",
-          "url": "#"
-        },
-        {
-          "label": "Terms of Service",
-          "url": "#"
-        }
-      ]
-    },
-    "sectionRamenKit": {
-      "header": "Ramen Kits",
-      "teaser": "Ramen Kits Info Teaser get in contanct!",
-      "subHeader": "Instructions",
-      "instructions": [
-        "step 1",
-        "step 2",
-        "step 3"
-      ],
-      "media": ""
-    },
-    "sectionQandA": {
-      "header": "Q and A",
-      "description": "DESCRIPTION / TBD"
-    },
-    "sectionLocation": {
-      "header": "Location",
-      "googleMapsUrl": "https://g.co/kgs/k95yiQK",
-      "address": {
-        "header": "Address",
-        "street": " Pilestredet",
-        "houseNumber": "24",
-        "zipCode": "0165",
-        "city": "Oslo"
-      },
-      "socialMediaHeader": "Follow us on Social Media",
-      "socialMedia": [
-        {
-          "name": "Facebook",
-          "icon": "fa-brands fa-square-facebook",
-          "url": "https://www.facebook.com"
-        },
-        {
-          "name": "Instagram",
-          "icon": "fa-brands fa-instagram",
-          "url": "https://www.instagram.com/jizo_noods/"
-        },
-        {
-          "name": "TikTok",
-          "icon": "fa-brands fa-tiktok",
-          "url": "https://www.tiktok.com/@jizo.noods"
-        }
-      ]
-    }
-  },
-  "no": {},
-  "navbarMain": {
-    "items": [
-      {
-        "label": "TESTING",
-        "url": "TESTING"
-      }
-    ],
-    "scrollingText": "TEST 123"
-  }
+    "no": {}
 }
