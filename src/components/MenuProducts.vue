@@ -14,12 +14,15 @@
             v-for="(ingItem, ingIndex) in item.ingredients"
             :key="ingIndex"
             class="ingredient"
-            >{{ ingItem }}</span
+            >{{ ingItem
+            }}<span v-if="ingIndex < item.ingredients.length - 1"
+              >,
+            </span></span
           >
         </div>
         <div class="item-allergens">
           <span class="item-allergen-label">{{
-            productConten.allergenLabel
+            productConten.allergenLabel + ": "
           }}</span>
           <span
             v-for="(allItem, allIndex) in item.allergens"
