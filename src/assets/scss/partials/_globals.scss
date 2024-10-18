@@ -3,7 +3,6 @@
 .navbar-wrapper {
   width: 100%;
   position: absolute;
-  // background: $clr-primary-dark-1;
   display: flex;
   justify-content: center;
   z-index: 99;
@@ -31,6 +30,7 @@
   }
 }
 
+// section color variants:
 .section-wrapper-variant-a {
   background: $clr-accent-a;
   margin-top: -60px;
