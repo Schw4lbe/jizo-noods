@@ -3,8 +3,6 @@
     <h3 class="section-header">{{ sectionContent.header }}</h3>
     <MenuProducts :productConten="startersContent" />
     <MenuProducts :productConten="soupsContent" />
-    <!-- <MenuStarters :startersContent="startersContent" />
-    <MenuSoups :soupsContent="soupsContent" /> -->
     <MenuAllergens :allergenContent="allergenContent" />
   </section>
 </template>
@@ -12,8 +10,6 @@
 <script>
 import { mapGetters } from "vuex";
 import MenuProducts from "./MenuProducts.vue";
-// import MenuStarters from "./MenuStarters.vue";
-// import MenuSoups from "./MenuSoups.vue";
 import MenuAllergens from "@/components/MenuAllergens.vue";
 import content from "../../public/content.json";
 
@@ -21,8 +17,6 @@ export default {
   name: "SectionMenu",
   components: {
     MenuProducts,
-    // MenuStarters,
-    // // MenuSoups,
     MenuAllergens,
   },
 
