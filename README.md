@@ -7,6 +7,7 @@
 - create printview for menu out of database for easy transition to location
 - cms integration
 - BUG: if page is scrolled down a certain amount popup not vissible always in center of screen -> leads to user not beeing able to accept cookies and therefore cant navigate on page
+- netlify login process shows unwanted behaviour due to non persistant user call on logout button as well as some strange bugs regarding credentials
 
 ## Backlog
 

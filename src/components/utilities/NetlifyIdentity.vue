@@ -19,6 +19,7 @@ export default {
       user: null,
     };
   },
+
   mounted() {
     netlifyIdentity.init();
 
