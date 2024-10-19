@@ -1,10 +1,5 @@
 {
     "en": {
-        "locationBanner": {
-            "name": "Popup Trekanten",
-            "address": "Pilestredet 24, Oslo",
-            "businessHours": "Thursday & Friday 13:00 - 20:00"
-        },
         "companyContact": {
             "phone": "01234 - 55 66 77 88 99",
             "email": "some@one.de"
@@ -52,7 +47,7 @@
                     }
                 ]
             },
-            "soups": {
+            "mains": {
                 "header": "Noodles",
                 "teaser": "Enjoy our delicious Ramen",
                 "allergenLabel": "Allergens",
@@ -211,23 +206,6 @@
                 }
             ]
         },
-        "navbarMain": {
-            "items": [
-                {
-                    "label": "navItem 01",
-                    "url": "#"
-                },
-                {
-                    "label": "navItem 02",
-                    "url": "#"
-                },
-                {
-                    "label": "navItem 03",
-                    "url": "#"
-                }
-            ],
-            "scrollingText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat, ante eu bibendum tincidunt, sem lacus vehicula augue, utsuscipit."
-        },
         "sectionFeedback": {
             "header": "Feedback",
             "description": "Feedback Description Lorem ipsum dolor sit amet consectetur adipisicing elit. labore atque libero.",
@@ -286,35 +264,6 @@
         "sectionQandA": {
             "header": "Q and A",
             "description": "DESCRIPTION / TBD"
-        },
-        "sectionLocation": {
-            "header": "Location",
-            "googleMapsUrl": "https://g.co/kgs/k95yiQK",
-            "address": {
-                "header": "Address",
-                "street": " Pilestredet",
-                "houseNumber": "24",
-                "zipCode": "0165",
-                "city": "Oslo"
-            },
-            "socialMediaHeader": "Follow us on Social Media",
-            "socialMedia": [
-                {
-                    "name": "Facebook",
-                    "icon": "fa-brands fa-square-facebook",
-                    "url": "https://www.facebook.com"
-                },
-                {
-                    "name": "Instagram",
-                    "icon": "fa-brands fa-instagram",
-                    "url": "https://www.instagram.com/jizo_noods/"
-                },
-                {
-                    "name": "TikTok",
-                    "icon": "fa-brands fa-tiktok",
-                    "url": "https://www.tiktok.com/@jizo.noods"
-                }
-            ]
         }
     },
     "no": {}

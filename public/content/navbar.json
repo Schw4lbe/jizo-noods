@@ -1,0 +1,36 @@
+{
+    "en": {
+        "scrollingText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat, ante eu bibendum tincidunt, sem lacus vehicula augue, utsuscipit.",
+        "items": [
+            {
+                "label": "navItem 01",
+                "url": "#"
+            },
+            {
+                "label": "navItem 02",
+                "url": "#"
+            },
+            {
+                "label": "navItem 03",
+                "url": "#"
+            }
+        ]
+    },
+    "no": {
+        "scrollingText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat, ante eu bibendum tincidunt, sem lacus vehicula augue, utsuscipit.",
+        "items": [
+            {
+                "label": "navItem 01",
+                "url": "#"
+            },
+            {
+                "label": "navItem 02",
+                "url": "#"
+            },
+            {
+                "label": "navItem 03",
+                "url": "#"
+            }
+        ]
+    }
+}

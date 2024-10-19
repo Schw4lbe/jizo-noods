@@ -47,7 +47,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import content from "../../public/content.json";
+import content from "../../public/content/location.json";
 
 export default {
   name: "SectionLocation",
@@ -68,7 +68,7 @@ export default {
 
   methods: {
     setContent() {
-      this.sectionContent = content[this.selectedLanguage].sectionLocation;
+      this.sectionContent = content[this.selectedLanguage];
     },
   },
 };

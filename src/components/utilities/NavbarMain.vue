@@ -46,7 +46,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import content from "../../../public/content.json";
+import content from "../../../public/content/navbar.json";
 
 export default {
   name: "NavbarMain",
@@ -67,7 +67,7 @@ export default {
 
   methods: {
     setContent() {
-      this.navContent = content[this.selectedLanguage].navbarMain;
+      this.navContent = content[this.selectedLanguage];
     },
   },
 };

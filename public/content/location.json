@@ -1,0 +1,60 @@
+{
+    "en": {
+        "header": "Location",
+        "googleMapsUrl": "https://g.co/kgs/k95yiQK",
+        "address": {
+            "header": "Address",
+            "street": " Pilestredet",
+            "houseNumber": "24",
+            "zipCode": "0165",
+            "city": "Oslo"
+        },
+        "socialMediaHeader": "Follow us on Social Media",
+        "socialMedia": [
+            {
+                "name": "Facebook",
+                "icon": "fa-brands fa-square-facebook",
+                "url": "https://www.facebook.com"
+            },
+            {
+                "name": "Instagram",
+                "icon": "fa-brands fa-instagram",
+                "url": "https://www.instagram.com/jizo_noods/"
+            },
+            {
+                "name": "TikTok",
+                "icon": "fa-brands fa-tiktok",
+                "url": "https://www.tiktok.com/@jizo.noods"
+            }
+        ]
+    },
+    "no": {
+        "header": "Sted",
+        "googleMapsUrl": "https://g.co/kgs/k95yiQK",
+        "address": {
+            "header": "Adresse",
+            "street": " Pilestredet",
+            "houseNumber": "24",
+            "zipCode": "0165",
+            "city": "Oslo"
+        },
+        "socialMediaHeader": "Følg oss på sosiale medier",
+        "socialMedia": [
+            {
+                "name": "Facebook",
+                "icon": "fa-brands fa-square-facebook",
+                "url": "https://www.facebook.com"
+            },
+            {
+                "name": "Instagram",
+                "icon": "fa-brands fa-instagram",
+                "url": "https://www.instagram.com/jizo_noods/"
+            },
+            {
+                "name": "TikTok",
+                "icon": "fa-brands fa-tiktok",
+                "url": "https://www.tiktok.com/@jizo.noods"
+            }
+        ]
+    }
+}

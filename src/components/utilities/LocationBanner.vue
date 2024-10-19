@@ -21,7 +21,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import content from "../../../public/content.json";
+import content from "../../../public/content/locationBanner.json";
 
 export default {
   name: "LocationBanner",
@@ -42,7 +42,7 @@ export default {
 
   methods: {
     setContent() {
-      this.bannerContent = content[this.selectedLanguage].locationBanner;
+      this.bannerContent = content[this.selectedLanguage];
     },
 
     scrollToLocation() {
