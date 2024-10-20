@@ -1,0 +1,76 @@
+@use "../abstracts/" as *;
+
+#a4-page {
+  margin-top: 3rem;
+  color: $clr-primary-dark-2;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .menu-product-group-container:nth-of-type(1) {
+    border-bottom: 1px solid $clr-accent-b;
+  }
+
+  .menu-product-group-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 0;
+    width: 100%;
+
+    .product-group-header {
+      text-transform: uppercase;
+      color: $clr-accent;
+      font-weight: 700;
+      font-size: 26px;
+      padding: 1rem;
+    }
+
+    .product-group-teaser {
+      font-weight: 300;
+      color: $clr-accent-b;
+    }
+
+    .items-container {
+      padding: 0.5rem 0;
+      .item {
+        .item-name {
+          color: $clr-accent-b;
+          font-size: 1.2rem;
+          font-weight: 700;
+          margin: 0;
+        }
+
+        .item-ingredients {
+          .ingredient {
+            color: $clr-primary-dark-2;
+            font-size: 1rem;
+            font-weight: 400;
+          }
+        }
+
+        .item-allergens {
+          color: $clr-primary-light-1;
+          font-size: 0.9rem;
+          font-weight: 200;
+          padding: 0.5rem;
+
+          .item-allergen-id {
+            span {
+              padding-right: 5px;
+            }
+          }
+        }
+
+        .item-price {
+          font-size: 1.6rem;
+          font-weight: 200;
+          color: $clr-accent-b;
+        }
+      }
+    }
+  }
+}

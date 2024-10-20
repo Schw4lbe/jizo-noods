@@ -1,7 +1,9 @@
 <template>
   <div class="menu-product-group-container">
     <div class="product-group-header">{{ productHeader }}</div>
-    <div class="product-group-teaser">{{ productTeaser }}</div>
+    <div v-if="productTeaser" class="product-group-teaser">
+      {{ productTeaser }}
+    </div>
     <div class="items-container">
       <div v-for="(item, index) in productContent" :key="index" class="item">
         <p class="item-name">{{ item.name }}</p>
@@ -17,23 +19,18 @@
           >
         </div>
         <div class="item-allergens">
-          <span class="item-allergen-label">{{
-            productContent.allergenLabel + ": "
-          }}</span>
+          <span
+            v-if="productContent.allergenLabel"
+            class="item-allergen-label"
+            >{{ productContent.allergenLabel + ": " }}</span
+          >
+          <span v-else>Allergens: </span>
           <span
             v-for="(allItem, allIndex) in Object.values(item.allergens)"
             :key="allIndex"
             class="item-allergen-id"
           >
             <span v-if="allItem">{{ allIndex + 1 }}</span>
-            <!-- need replacement for actuall number of allergens in object while iteration to propperly represent setting comma -->
-            <span
-              v-if="
-                allItem && allIndex < Object.values(item.allergens).length - 1
-              "
-            >
-              ,
-            </span>
           </span>
         </div>
         <div class="item-price">

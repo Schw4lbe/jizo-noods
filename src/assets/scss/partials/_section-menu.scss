@@ -33,8 +33,9 @@
     }
 
     .items-container {
+      padding: 0.5rem 0;
       .item {
-        padding: 2rem 0;
+        // padding: 2rem 0;
 
         .item-name {
           color: $clr-accent-b;
@@ -45,7 +46,6 @@
 
         .item-ingredients {
           .ingredient {
-            max-width: 600px;
             color: $clr-primary-dark-2;
             font-size: 1rem;
             font-weight: 400;
@@ -57,6 +57,12 @@
           font-size: 0.9rem;
           font-weight: 200;
           padding: 0.5rem;
+
+          .item-allergen-id {
+            span {
+              padding-right: 5px;
+            }
+          }
         }
 
         .item-price {
