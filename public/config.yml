@@ -1,4 +1,4 @@
-local_backend: false
+local_backend: true
 
 backend:
   name: git-gateway
@@ -317,16 +317,22 @@ collections:
             name: "en"
             widget: "object"
             fields:
+              - label: "Header"
+                name: "header"
+                widget: "string"
+              - label: "Description"
+                name: "description"
+                widget: "string"
               - label: "Allergens"
-                name: "allergens"
+                name: "items"
                 widget: "list"
                 fields:
-                  - label: "ID"
-                    name: "id"
-                    widget: "hidden"
                   - label: "Label"
                     name: "label"
                     widget: "string"
+                  - label: "ID"
+                    name: "id"
+                    widget: "hidden"
                   - label: "Description"
                     name: "description"
                     widget: "text"
@@ -334,16 +340,22 @@ collections:
             name: "no"
             widget: "object"
             fields:
+              - label: "Header"
+                name: "header"
+                widget: "string"
+              - label: "Description"
+                name: "description"
+                widget: "string"
               - label: "Allergens"
-                name: "allergens"
+                name: "items"
                 widget: "list"
                 fields:
-                  - label: "ID"
-                    name: "id"
-                    widget: "hidden"
                   - label: "Label"
                     name: "label"
                     widget: "string"
+                  - label: "ID"
+                    name: "id"
+                    widget: "hidden"
                   - label: "Description"
                     name: "description"
                     widget: "text"

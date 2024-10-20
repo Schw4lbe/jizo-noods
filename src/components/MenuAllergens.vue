@@ -1,9 +1,6 @@
 <template>
   <div class="menu-allergen-container">
     <h4 class="allergen-header">{{ allergenContent.header }}</h4>
-    <!-- <p class="allergen-description">
-      {{ allergenContent.description }}
-    </p> -->
     <div class="accordion-wrapper">
       <div class="accordion" id="allergensAccordion">
         <div class="accordion-item">
@@ -27,7 +24,6 @@
             data-bs-parent="#allergensAccordion"
           >
             <div class="accordion-body">
-              <!-- v-for loop here with all allergens in one info box -->
               <ul class="allergens-list">
                 <li
                   v-for="item in allergenContent.items"

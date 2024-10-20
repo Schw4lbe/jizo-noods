@@ -1,6 +1,8 @@
 {
     "en": {
-        "allergens": [
+        "header": "Allergens",
+        "description": "Open for details on allergens...",
+        "items": [
             {
                 "id": "1",
                 "label": "Gluten",
