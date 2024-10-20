@@ -1,18 +1,19 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-// import AdminView from "@/views/AdminView.vue";
+import PrintView from "@/views/PrintView.vue";
 
 const routes = [
   {
     path: "/",
     name: "home",
     component: HomeView,
+    PrintView,
   },
-  // {
-  //   path: "/admin",
-  //   name: "admin",
-  //   component: AdminView,
-  // },
+  {
+    path: "/print",
+    name: "print",
+    component: PrintView,
+  },
 ];
 
 const router = createRouter({

@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <NetlifyIdentity v-if="!isUserLoggedIn" />
-    <PrivacyPopup />
-    <div class="navbar-wrapper">
-      <img
-        src="../public/img/paint-stroke.png"
-        alt="dummy"
-        class="background-img"
-      />
-      <NavbarMain />
+    <div class="home-view-conditional" v-if="isHome">
+      <NetlifyIdentity v-if="!isUserLoggedIn" />
+      <PrivacyPopup />
+      <div class="navbar-wrapper">
+        <img
+          src="../public/img/paint-stroke.png"
+          alt="dummy"
+          class="background-img"
+        />
+        <NavbarMain />
+      </div>
+      <router-view />
+      <FooterMain />
     </div>
-    <router-view />
-    <FooterMain />
+
+    <div class="print-view-conditional" v-if="isPrint">
+      <router-view />
+    </div>
   </div>
 </template>
 
@@ -35,6 +41,15 @@ export default {
     return {
       isUserLoggedIn: false,
     };
+  },
+
+  computed: {
+    isHome() {
+      return this.$route.name === "home";
+    },
+    isPrint() {
+      return this.$route.name === "print";
+    },
   },
 
   created() {
