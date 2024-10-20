@@ -1,5 +1,10 @@
     {
         "en": {
+            "header01": "Starters",
+            "header02": "Noodles",
+            "teaser01": "Come visit our Popups at Trekanten Oslo",
+            "teaser02": "Enjoy our delicious Ramen",
+            "allergenLabel": "Allergens",
             "items": [
                 {
                     "cat": "starter",

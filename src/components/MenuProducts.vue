@@ -1,13 +1,9 @@
 <template>
   <div class="menu-product-group-container">
-    <div class="product-group-header">{{ productConten.header }}</div>
-    <div class="product-group-teaser">{{ productConten.teaser }}</div>
+    <div class="product-group-header">{{ productHeader }}</div>
+    <div class="product-group-teaser">{{ productTeaser }}</div>
     <div class="items-container">
-      <div
-        v-for="(item, index) in productConten.items"
-        :key="index"
-        class="item"
-      >
+      <div v-for="(item, index) in productContent" :key="index" class="item">
         <p class="item-name">{{ item.name }}</p>
         <div class="item-ingredients">
           <span
@@ -22,14 +18,22 @@
         </div>
         <div class="item-allergens">
           <span class="item-allergen-label">{{
-            productConten.allergenLabel + ": "
+            productContent.allergenLabel + ": "
           }}</span>
           <span
-            v-for="(allItem, allIndex) in item.allergens"
+            v-for="(allItem, allIndex) in Object.values(item.allergens)"
             :key="allIndex"
             class="item-allergen-id"
-            >{{ allItem
-            }}<span v-if="allIndex < item.allergens.length - 1"> , </span>
+          >
+            <span v-if="allItem">{{ allIndex + 1 }}</span>
+            <!-- need replacement for actuall number of allergens in object while iteration to propperly represent setting comma -->
+            <span
+              v-if="
+                allItem && allIndex < Object.values(item.allergens).length - 1
+              "
+            >
+              ,
+            </span>
           </span>
         </div>
         <div class="item-price">
@@ -45,7 +49,25 @@
 export default {
   name: "MenuProducts",
   props: {
-    productConten: Object,
+    productContent: Object,
+    productHeader: String,
+    productTeaser: String,
+  },
+
+  data() {
+    return {
+      contentData: this.productContent,
+    };
+  },
+
+  created() {
+    this.setAllergenIndicators(this.contentData);
+  },
+
+  methods: {
+    setAllergenIndicators(data) {
+      console.log(data);
+    },
   },
 };
 </script>
