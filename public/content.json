@@ -4,19 +4,6 @@
             "phone": "01234 - 55 66 77 88 99",
             "email": "some@one.de"
         },
-        "sectionMenu": {
-            "header": "Menu",
-            "starters": {
-                "header": "Starters",
-                "teaser": "Come visit our Popups at Trekanten Oslo",
-                "allergenLabel": "Allergens"
-            },
-            "mains": {
-                "header": "Noodles",
-                "teaser": "Enjoy our delicious Ramen",
-                "allergenLabel": "Allergens"
-            }
-        },
         "sectionAboutUs": {
             "header": "About Us",
             "items": [
