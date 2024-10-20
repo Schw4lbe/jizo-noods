@@ -11,10 +11,9 @@
                     "ingredients": [
                         "Jizo´s special homemade Kimchi"
                     ],
-                    "allergens": [
-                        3,
-                        7
-                    ],
+                    "allergens": {
+                        "containsGluten": false
+                    },
                     "price": "70"
                 },
                 {
@@ -39,81 +38,6 @@
                         8
                     ],
                     "price": "70"
-                }
-            ]
-        },
-        "mains": {
-            "header": "Noodles",
-            "teaser": "Enjoy our delicious Ramen",
-            "allergenLabel": "Allergens",
-            "items": [
-                {
-                    "name": "Signature Shoyu Ramen",
-                    "indicator": {
-                        "hasIcons": false,
-                        "icons": []
-                    },
-                    "ingredients": [
-                        "handmade Hakata style noodles",
-                        "Chashu-pork",
-                        "Chicken-broth",
-                        "Ajitsuke-egg",
-                        "pickled bean-sprouts",
-                        "slow cooked Tomato",
-                        "Scallion"
-                    ],
-                    "allergens": [
-                        1,
-                        2,
-                        3
-                    ],
-                    "price": "245"
-                },
-                {
-                    "name": "\"Thomas\" Shio Ramen",
-                    "indicator": {
-                        "hasIcons": false,
-                        "icons": []
-                    },
-                    "ingredients": [
-                        "handmade Hakata style noodles",
-                        "chicken koji breast",
-                        "Ajitsuke-egg",
-                        "pickled Red Onion",
-                        "slow cooked Tomato",
-                        "Scallion",
-                        "Black Garlic"
-                    ],
-                    "allergens": [
-                        1,
-                        2,
-                        3,
-                        6
-                    ],
-                    "price": "245"
-                },
-                {
-                    "name": "Umami Mushroom Ramen",
-                    "indicator": {
-                        "hasIcons": false,
-                        "icons": []
-                    },
-                    "ingredients": [
-                        "handmade tokyo style noodles",
-                        "Miso Tempeh",
-                        "pickled beans sprouts",
-                        "Enoki",
-                        "Scallion",
-                        "Green Aroma Oil"
-                    ],
-                    "allergens": [
-                        1,
-                        2,
-                        4,
-                        5,
-                        6
-                    ],
-                    "price": "235"
                 }
             ]
         },
