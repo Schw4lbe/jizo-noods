@@ -1,5 +1,38 @@
 @use "../abstracts/" as *;
 
+#control-panel {
+  align-items: center;
+
+  .btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+    button {
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  .select-products-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #starters-container,
+    #main-dishes-container {
+      padding: 1rem;
+      min-width: 250px;
+      width: max-content;
+
+      input {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
 #a4-page {
   width: 210mm;
   height: 297mm;

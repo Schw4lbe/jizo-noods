@@ -9,13 +9,13 @@
           :key="index"
           class="starter-item"
         >
-          <label :for="item.name">{{ item.name }}</label>
           <input
             :id="item.name"
             type="checkbox"
             v-model="selectedStarterNames"
             :value="item.name"
           />
+          <label :for="item.name">{{ item.name }}</label>
         </div>
       </div>
 
@@ -23,19 +23,21 @@
       <div id="main-dishes-container">
         <h5>Main Dishes</h5>
         <div v-for="(item, index) in mains" :key="index" class="main-item">
-          <label :for="item.name">{{ item.name }}</label>
           <input
             :id="item.name"
             type="checkbox"
             v-model="selectedMainNames"
             :value="item.name"
           />
+          <label :for="item.name">{{ item.name }}</label>
         </div>
       </div>
     </div>
-
     <!-- Button to create menu -->
-    <button @click="createMenu">Create Menu</button>
+    <div class="btn-container">
+      <button @click="createMenu">Create Menu</button>
+      <button @click="saveAsPDF">Save as PDF</button>
+    </div>
   </div>
 
   <!-- Display selected menu products -->
@@ -169,6 +171,10 @@ export default {
     setContent() {
       this.startersHeader = productData[this.selectedLanguage].header01;
       this.mainsHeader = productData[this.selectedLanguage].header02;
+    },
+
+    saveAsPDF() {
+      window.print();
     },
   },
 };
