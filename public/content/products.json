@@ -29,7 +29,7 @@
       {
         "cat": "starter",
         "name": "Edamame",
-        "price": 70,
+        "price": 76,
         "ingredients": [
           "Yuzu Ponzu"
         ],
@@ -49,7 +49,7 @@
       {
         "cat": "starter",
         "name": "Nasu Dengaku",
-        "price": 70,
+        "price": 75,
         "ingredients": [
           "Aubergine",
           "Miso",
