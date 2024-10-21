@@ -1,0 +1,36 @@
+@use "../abstracts/" as *;
+
+.section-privacy-main {
+  width: 100%;
+  height: max-content;
+  padding: 100px 1rem 1rem 1rem;
+  background: $clr-primary-light-1;
+  color: $clr-secondary;
+  text-align: center;
+
+  .section-header {
+    color: lighten($clr-accent-b, 20%);
+  }
+
+  .section-subheader {
+    color: lighten($clr-accent-b, 30%);
+    padding: 1rem;
+  }
+
+  p {
+    padding: 2rem 1rem;
+  }
+
+  .intro-content {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .list {
+    padding: 0;
+    list-style: none;
+    .item {
+      padding: 1rem;
+    }
+  }
+}

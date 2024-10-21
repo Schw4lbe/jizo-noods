@@ -1,6 +1,6 @@
 <template>
   <section class="section-menu-main">
-    <h3 class="section-header">Menu</h3>
+    <h3 class="section-header">{{ sectionHeader }}</h3>
     <MenuProducts
       :productContent="startersContent"
       :productHeader="startersHeader"
@@ -19,8 +19,10 @@
 import { mapGetters } from "vuex";
 import MenuProducts from "./MenuProducts.vue";
 import MenuAllergens from "@/components/MenuAllergens.vue";
-import allergenContent from "../../public/content/allergens.json";
+
 import productContent from "../../public/content/products.json";
+import allergenContent from "../../public/content/allergens.json";
+import content from "../../public/content/content.json";
 
 export default {
   name: "SectionMenu",
@@ -31,7 +33,7 @@ export default {
 
   data() {
     return {
-      sectionContent: null,
+      sectionHeader: null,
 
       startersContent: null,
       startersHeader: null,
@@ -56,6 +58,7 @@ export default {
   methods: {
     setContent() {
       this.setContentByCategory(productContent[this.selectedLanguage].items);
+      this.sectionHeader = content[this.selectedLanguage].sectionMenu.header;
       this.startersHeader = productContent[this.selectedLanguage].header01;
       this.startersTeaser = productContent[this.selectedLanguage].teaser01;
       this.mainsHeader = productContent[this.selectedLanguage].header02;

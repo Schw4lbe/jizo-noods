@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="home-view-conditional" v-if="isHome">
+    <div class="home-view-conditional" v-if="!isPrint">
       <NetlifyIdentity v-if="!isUserLoggedIn" />
       <PrivacyPopup />
       <div class="navbar-wrapper">
@@ -44,9 +44,6 @@ export default {
   },
 
   computed: {
-    isHome() {
-      return this.$route.name === "home";
-    },
     isPrint() {
       return this.$route.name === "print";
     },

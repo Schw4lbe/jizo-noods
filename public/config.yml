@@ -72,7 +72,7 @@ collections:
     files:
       - label: "Location Content"
         name: "location_content"
-        file: "public/content/location.json"
+        file: "public/content/company-info.json"
         fields:
           - label: "English Content"
             name: "en"

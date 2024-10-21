@@ -1,8 +1,5 @@
 <template>
   <section class="section-gallery-main">
-    <h3 class="section-header">{{ sectionContent.header }}</h3>
-    <p class="gallery-description">{{ sectionContent.description }}</p>
-
     <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
         <button
@@ -55,7 +52,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import content from "../../public/content.json";
+import content from "../../public/content/content.json";
 
 export default {
   name: "SectionGallery",
