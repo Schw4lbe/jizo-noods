@@ -18,6 +18,10 @@
     <div class="print-view-conditional" v-if="isPrint">
       <router-view />
     </div>
+
+    <div class="privacy-view-conditional" v-if="isPrivacy">
+      <router-view />
+    </div>
   </div>
 </template>
 
@@ -49,6 +53,9 @@ export default {
     },
     isPrint() {
       return this.$route.name === "print";
+    },
+    isPrivacy() {
+      return this.$route.name === "privacy";
     },
   },
 

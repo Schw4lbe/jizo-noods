@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import PrintView from "@/views/PrintView.vue";
+import PrivacyView from "@/views/PrivacyView.vue";
 
 const routes = [
   {
@@ -13,6 +14,11 @@ const routes = [
     path: "/print",
     name: "print",
     component: PrintView,
+  },
+  {
+    path: "/privacy",
+    name: "privacy",
+    component: PrivacyView,
   },
 ];
 
