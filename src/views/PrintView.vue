@@ -40,14 +40,18 @@
 
   <!-- Display selected menu products -->
   <div class="print-view-menu" id="a4-page">
-    <MenuProducts
-      :product-content="selectedStarters"
-      :productHeader="startersHeader"
-    />
-    <MenuProducts
-      :product-content="selectedMains"
-      :productHeader="mainsHeader"
-    />
+    <div class="starter-print-menu-container">
+      <MenuProducts
+        :product-content="selectedStarters"
+        :productHeader="startersHeader"
+      />
+    </div>
+    <div class="mains-print-menu-container">
+      <MenuProducts
+        :product-content="selectedMains"
+        :productHeader="mainsHeader"
+      />
+    </div>
   </div>
 </template>
 
@@ -125,7 +129,41 @@ export default {
         }
       });
 
-      console.log(this.selectedStarters, this.selectedMains);
+      // class assignment for layouting taking amount out of arrays
+      this.handleClassAssignment(this.selectedStarters);
+    },
+
+    handleClassAssignment(starters) {
+      const conStarters = document
+        .querySelector(".starter-print-menu-container")
+        .querySelector(".items-container");
+
+      // reset layout before reassigment
+      this.resetLayout(conStarters);
+
+      if (starters.length === 1) {
+        conStarters.classList.add("grid-layout-1");
+      } else if (starters.length === 2) {
+        conStarters.classList.add("grid-layout-2");
+      } else if (starters.length === 3) {
+        conStarters.classList.add("grid-layout-3");
+      } else {
+        return;
+      }
+    },
+
+    resetLayout(conSt) {
+      const classToKeep = "items-container";
+
+      // Create an array from the class list
+      const conStClasses = Array.from(conSt.classList);
+
+      // Iterate over the classes and remove those that are not the one to keep
+      conStClasses.forEach((cls) => {
+        if (cls !== classToKeep) {
+          conSt.classList.remove(cls);
+        }
+      });
     },
 
     setContent() {
