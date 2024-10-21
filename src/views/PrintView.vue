@@ -174,7 +174,13 @@ export default {
     },
 
     saveAsPDF() {
+      const currentDate = new Date().toISOString().split("T")[0];
+      // const originalTitle = document.title;
+      document.title = `Jizo-Noods-Menu-${currentDate}`;
       window.print();
+
+      // Restore the original title after printing
+      // document.title = originalTitle;
     },
   },
 };
