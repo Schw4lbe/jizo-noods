@@ -42,6 +42,11 @@
 
   <!-- Display selected menu products -->
   <div class="print-view-menu" id="a4-page">
+    <img
+      src="../../public/img/print/anime.png"
+      alt="anime background"
+      class="anime-background"
+    />
     <div class="print-menu-top-container">
       <img src="../../public/img/logo.png" alt="Jizo Noods Logo" />
       <h3 class="print-menu-header">Ramen Popup Menu</h3>
