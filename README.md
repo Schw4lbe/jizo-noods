@@ -7,6 +7,7 @@
 - cms integration (half way done but not that important atm)
 - BUG: if page is scrolled down a certain amount popup not vissible always in center of screen -> leads to user not beeing able to accept cookies and therefore cant navigate on page
 - netlify login process shows unwanted behaviour due to non persistant user call on logout button as well as some strange bugs regarding credentials
+- output fonts on phone raphi strangly thick -> check font weight
 
 ## Backlog
 

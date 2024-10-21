@@ -8,64 +8,64 @@
       collected. We want you to feel safe and informed while browsing our site.
     </p>
     <h5 class="section-subheader">Technologies Used</h5>
-    <ol>
-      <li>
-        Bootstrap (via CDN): We use Bootstrap to style our website and provide
-        you with a consistent and responsive experience. This is hosted
+    <ul class="list">
+      <li class="item">
+        <b>Bootstrap (via CDN):</b> We use Bootstrap to style our website and
+        provide you with a consistent and responsive experience. This is hosted
         externally via a Content Delivery Network (CDN).
       </li>
-      <li>
-        FontAwesome (via CDN): FontAwesome icons are used to visually enhance
-        our site and make navigation easier. These icons are also hosted
+      <li class="item">
+        <b>FontAwesome (via CDN): </b>FontAwesome icons are used to visually
+        enhance our site and make navigation easier. These icons are also hosted
         externally via a CDN.
       </li>
-      <li>
-        Google Fonts (locally embedded): We use Google Fonts, which are
+      <li class="item">
+        <b>Google Fonts (locally embedded): </b>We use Google Fonts, which are
         downloaded and embedded locally on our server. This helps in reducing
         data transmission to third-party servers and ensures better privacy.
       </li>
-      <li>
-        Hosting (Netlify): Our website is hosted via Netlify, a secure and
-        reliable hosting service, which also helps improve website performance.
-        The hosting is encrypted with a certificate to ensure secure data
-        transmission.
+      <li class="item">
+        <b>Hosting (Netlify): </b>Our website is hosted via Netlify, a secure
+        and reliable hosting service, which also helps improve website
+        performance. The hosting is encrypted with a certificate to ensure
+        secure data transmission.
       </li>
-    </ol>
+    </ul>
     <h5 class="section-subheader">Why We Use These Technologies</h5>
-    <ul>
-      <li>
+    <ul class="list">
+      <li class="item">
         Bootstrap and FontAwesome: To provide a visually appealing,
         user-friendly, and consistent design across devices.
       </li>
-      <li>
+      <li class="item">
         Google Fonts: To ensure that the website has a unique and consistent
         appearance, without relying on external servers for fonts.
       </li>
-      <li>
+      <li class="item">
         Netlify Hosting: To ensure our website remains fast, secure, and
         accessible.
       </li>
     </ul>
     <h5 class="section-subheader">Data Collection and Sharing</h5>
-    <ul>
-      <li>
+    <ul class="list">
+      <li class="item">
         Technical Data: When you visit our website, some technical data is
         automatically collected, such as your IP address, browser type, and
         device information. This data is collected solely to ensure our website
         functions properly and is optimized for all users.
       </li>
-      <li>
+      <li class="item">
         Third-Party CDNs: When using technologies like Bootstrap and FontAwesome
         through CDNs, there may be minimal data transferred to third-party
         servers (e.g., your IP address). We use these CDNs to ensure fast
         loading times for our visitors.
       </li>
-      <li>
+      <li class="item">
         Personal Data: We do not collect any personal data such as names, email
         addresses, or other identifying information from visitors, nor do we
         store such data on our servers.
       </li>
-      <li>
+      <li class="item">
         No Analytics: We do not use any data analysis or tracking tools on our
         website. Our goal is to provide a secure and privacy-focused experience.
       </li>
