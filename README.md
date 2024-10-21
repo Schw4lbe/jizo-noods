@@ -4,8 +4,7 @@
 
 - after cookie check in local storage state start loading sequence
 - after fully loading videofile start autoplay
-- create printview for menu out of database for easy transition to location
-- cms integration (current state stable but needs finetuning in build and structure)
+- cms integration (half way done but not that important atm)
 - BUG: if page is scrolled down a certain amount popup not vissible always in center of screen -> leads to user not beeing able to accept cookies and therefore cant navigate on page
 - netlify login process shows unwanted behaviour due to non persistant user call on logout button as well as some strange bugs regarding credentials
 
@@ -35,7 +34,6 @@
 
 #### Media
 
-- what font-family was used to create the logo?
 - get video for webpage using my guideline image
 
 #### Questions
@@ -52,14 +50,12 @@
 
 ## notes
 
-- menu/starters link zu location section
 - social media kommt schriftlich von raphi -mit raphi gemeinsam angehen
 - navbar top right globe to change language
 
 ## cms
 
 - banner lauftext
-- slogan
 - adresse location section
 - adresse top section
 - soups / starters
