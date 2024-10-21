@@ -188,6 +188,7 @@ collections:
               - label: "Teaser for Main Dishes"
                 name: "teaser02"
                 widget: "string"
+                required: false
               - label: "Allergen Label"
                 name: "allergenLabel"
                 widget: "string"
@@ -222,33 +223,43 @@ collections:
                       - label: "Has Gluten"
                         name: "hasGluten"
                         widget: "boolean"
+                        required: false
                       - label: "Has Soya"
                         name: "hasSoya"
                         widget: "boolean"
+                        required: false
                       - label: "Has Fish"
                         name: "hasFish"
                         widget: "boolean"
+                        required: false
                       - label: "Has Onion"
                         name: "hasOnion"
                         widget: "boolean"
+                        required: false
                       - label: "Has Garlic"
                         name: "hasGarlic"
                         widget: "boolean"
+                        required: false
                       - label: "Has Mushroom"
                         name: "hasMushroom"
                         widget: "boolean"
+                        required: false
                       - label: "Has Shellfish"
                         name: "hasShellfish"
                         widget: "boolean"
+                        required: false
                       - label: "Has Sesame"
                         name: "hasSesame"
                         widget: "boolean"
+                        required: false
                       - label: "Has Nuts"
                         name: "hasNuts"
                         widget: "boolean"
+                        required: false
                       - label: "Has Lemon"
                         name: "hasLemon"
                         widget: "boolean"
+                        required: false
           - label: "Norwegian Content"
             name: "no"
             widget: "object"
@@ -299,33 +310,43 @@ collections:
                       - label: "Has Gluten"
                         name: "hasGluten"
                         widget: "boolean"
+                        required: false
                       - label: "Has Soya"
                         name: "hasSoya"
                         widget: "boolean"
+                        required: false
                       - label: "Has Fish"
                         name: "hasFish"
                         widget: "boolean"
+                        required: false
                       - label: "Has Onion"
                         name: "hasOnion"
                         widget: "boolean"
+                        required: false
                       - label: "Has Garlic"
                         name: "hasGarlic"
                         widget: "boolean"
+                        required: false
                       - label: "Has Mushroom"
                         name: "hasMushroom"
                         widget: "boolean"
+                        required: false
                       - label: "Has Shellfish"
                         name: "hasShellfish"
                         widget: "boolean"
+                        required: false
                       - label: "Has Sesame"
                         name: "hasSesame"
                         widget: "boolean"
+                        required: false
                       - label: "Has Nuts"
                         name: "hasNuts"
                         widget: "boolean"
+                        required: false
                       - label: "Has Lemon"
                         name: "hasLemon"
                         widget: "boolean"
+                        required: false
 
   - label: "Allergens Information"
     name: "allergens_information"

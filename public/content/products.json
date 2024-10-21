@@ -208,16 +208,16 @@
           "Green Aroma Oil"
         ],
         "allergens": {
-          "hasGluten": true,
-          "hasSoya": true,
-          "hasFish": false,
-          "hasOnion": true,
-          "hasGarlic": true,
-          "hasMushroom": true,
-          "hasShellfish": false,
-          "hasSesame": false,
           "hasNuts": false,
-          "hasLemon": false
+          "hasGluten": true,
+          "hasGarlic": true,
+          "hasShellfish": false,
+          "hasOnion": true,
+          "hasFish": false,
+          "hasSesame": false,
+          "hasMushroom": true,
+          "hasLemon": false,
+          "hasSoya": true
         }
       }
     ]
