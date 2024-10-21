@@ -29,7 +29,7 @@
       {
         "cat": "starter",
         "name": "Edamame",
-        "price": 76,
+        "price": 75,
         "ingredients": [
           "Yuzu Ponzu"
         ],
@@ -193,6 +193,31 @@
           "hasMushroom": true,
           "hasLemon": false,
           "hasSoya": true
+        }
+      },
+      {
+        "cat": "main",
+        "name": "Umami Mushroom Ramen",
+        "price": 235,
+        "ingredients": [
+          "handmade tokyo style noodles",
+          "Miso Tempeh",
+          "pickled beans sprouts",
+          "Enoki",
+          "Scallion",
+          "Green Aroma Oil"
+        ],
+        "allergens": {
+          "hasGluten": true,
+          "hasSoya": true,
+          "hasFish": false,
+          "hasOnion": true,
+          "hasGarlic": true,
+          "hasMushroom": true,
+          "hasShellfish": false,
+          "hasSesame": false,
+          "hasNuts": false,
+          "hasLemon": false
         }
       }
     ]
