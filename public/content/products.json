@@ -1,151 +1,207 @@
-    {
-        "en": {
-            "header01": "Starters",
-            "header02": "Noodles",
-            "teaser01": "Come visit our Popups at Trekanten Oslo",
-            "teaser02": "Enjoy our delicious Ramen",
-            "allergenLabel": "Allergens",
-            "items": [
-                {
-                    "cat": "starter",
-                    "name": "Kimchi",
-                    "price": 70,
-                    "ingredients": [
-                        "Jizo´s special homemade Kimchi"
-                    ],
-                    "allergens": {
-                        "hasGluten": false,
-                        "hasSoya": false,
-                        "hasFish": true,
-                        "hasOnion": false,
-                        "hasGarlic": false,
-                        "hasMushroom": false,
-                        "hasShellfish": true,
-                        "hasSesame": false,
-                        "hasNuts": false,
-                        "hasLemon": false
-                    }
-                },
-                {
-                    "cat": "starter",
-                    "name": "Edamame",
-                    "price": 70,
-                    "ingredients": [
-                        "Yuzu Ponzu"
-                    ],
-                    "allergens": {
-                        "hasGluten": false,
-                        "hasSoya": false,
-                        "hasFish": false,
-                        "hasOnion": false,
-                        "hasGarlic": false,
-                        "hasMushroom": false,
-                        "hasShellfish": false,
-                        "hasSesame": false,
-                        "hasNuts": false,
-                        "hasLemon": true
-                    }
-                },
-                {
-                    "cat": "starter",
-                    "name": "Nasu Dengaku",
-                    "price": 70,
-                    "ingredients": [
-                        "Aubergine",
-                        "Miso",
-                        "Sesame"
-                    ],
-                    "allergens": {
-                        "hasGluten": true,
-                        "hasSoya": false,
-                        "hasFish": false,
-                        "hasOnion": false,
-                        "hasGarlic": false,
-                        "hasMushroom": false,
-                        "hasShellfish": false,
-                        "hasSesame": true,
-                        "hasNuts": false,
-                        "hasLemon": false
-                    }
-                },
-                {
-                    "cat": "main",
-                    "name": "Signature Shoyu Ramen",
-                    "price": 245,
-                    "ingredients": [
-                        "handmade Hakata style noodles",
-                        "Chashu-pork",
-                        "Chicken-broth",
-                        "Ajitsuke-egg",
-                        "pickled bean-sprouts",
-                        "slow cooked Tomato",
-                        "Scallion"
-                    ],
-                    "allergens": {
-                        "hasGluten": true,
-                        "hasSoya": true,
-                        "hasFish": true,
-                        "hasOnion": false,
-                        "hasGarlic": false,
-                        "hasMushroom": false,
-                        "hasShellfish": false,
-                        "hasSesame": false,
-                        "hasNuts": false,
-                        "hasLemon": false
-                    }
-                },
-                {
-                    "cat": "main",
-                    "name": "\"Thomas\" Shio Ramen",
-                    "price": 245,
-                    "ingredients": [
-                        "handmade Hakata style noodles",
-                        "chicken koji breast",
-                        "Ajitsuke-egg",
-                        "pickled Red Onion",
-                        "slow cooked Tomato",
-                        "Scallion",
-                        "Black Garlic"
-                    ],
-                    "allergens": {
-                        "hasGluten": true,
-                        "hasSoya": true,
-                        "hasFish": true,
-                        "hasOnion": false,
-                        "hasGarlic": false,
-                        "hasMushroom": true,
-                        "hasShellfish": false,
-                        "hasSesame": false,
-                        "hasNuts": false,
-                        "hasLemon": false
-                    }
-                },
-                {
-                    "cat": "main",
-                    "name": "Umami Mushroom Ramen",
-                    "price": 235,
-                    "ingredients": [
-                        "handmade tokyo style noodles",
-                        "Miso Tempeh",
-                        "pickled beans sprouts",
-                        "Enoki",
-                        "Scallion",
-                        "Green Aroma Oil"
-                    ],
-                    "allergens": {
-                        "hasGluten": true,
-                        "hasSoya": true,
-                        "hasFish": false,
-                        "hasOnion": true,
-                        "hasGarlic": true,
-                        "hasMushroom": true,
-                        "hasShellfish": false,
-                        "hasSesame": false,
-                        "hasNuts": false,
-                        "hasLemon": false
-                    }
-                }
-            ]
-        },
-        "no": {}
-    }
+{
+  "en": {
+    "header01": "Starters",
+    "header02": "Noodles",
+    "teaser01": "Come visit our Popups at Trekanten Oslo",
+    "teaser02": "Enjoy our delicious Noodles",
+    "allergenLabel": "Allergens",
+    "items": [
+      {
+        "cat": "starter",
+        "name": "Kimchi",
+        "price": 75,
+        "ingredients": [
+          "Jizo´s special homemade Kimchii"
+        ],
+        "allergens": {
+          "hasNuts": false,
+          "hasGluten": false,
+          "hasGarlic": true,
+          "hasShellfish": true,
+          "hasOnion": true,
+          "hasFish": true,
+          "hasSesame": false,
+          "hasMushroom": false,
+          "hasLemon": false,
+          "hasSoya": false
+        }
+      },
+      {
+        "cat": "starter",
+        "name": "Edamame",
+        "price": 70,
+        "ingredients": [
+          "Yuzu Ponzu"
+        ],
+        "allergens": {
+          "hasNuts": false,
+          "hasGluten": false,
+          "hasGarlic": false,
+          "hasShellfish": false,
+          "hasOnion": false,
+          "hasFish": false,
+          "hasSesame": false,
+          "hasMushroom": false,
+          "hasLemon": true,
+          "hasSoya": true
+        }
+      },
+      {
+        "cat": "starter",
+        "name": "Nasu Dengaku",
+        "price": 70,
+        "ingredients": [
+          "Aubergine",
+          "Miso",
+          "Sesame"
+        ],
+        "allergens": {
+          "hasNuts": false,
+          "hasGluten": true,
+          "hasGarlic": false,
+          "hasShellfish": false,
+          "hasOnion": false,
+          "hasFish": false,
+          "hasSesame": true,
+          "hasMushroom": false,
+          "hasLemon": false,
+          "hasSoya": true
+        }
+      },
+      {
+        "name": "\"Mazemen\" Udon",
+        "cat": "main",
+        "price": 245,
+        "ingredients": [
+          "Creamy Tonkotsu ",
+          "Pork Soboro",
+          "Egg yolk",
+          "Korn",
+          "Scallion",
+          "Pickle bean sprouts"
+        ],
+        "allergens": {
+          "hasNuts": true,
+          "hasGluten": true,
+          "hasGarlic": true,
+          "hasShellfish": true,
+          "hasOnion": true,
+          "hasFish": true,
+          "hasSesame": true,
+          "hasMushroom": true,
+          "hasLemon": true,
+          "hasSoya": true
+        }
+      },
+      {
+        "name": "Jizo Udon",
+        "cat": "main",
+        "price": 235,
+        "ingredients": [
+          "Slow cooked chicken Breast",
+          "Classic Dashi",
+          "Egg yolk",
+          "Pok Choi",
+          "Scallion",
+          "Katsuobushi"
+        ],
+        "allergens": {
+          "hasNuts": true,
+          "hasGluten": true,
+          "hasGarlic": true,
+          "hasShellfish": true,
+          "hasOnion": true,
+          "hasFish": true,
+          "hasSesame": true,
+          "hasMushroom": true,
+          "hasLemon": true,
+          "hasSoya": true
+        }
+      },
+      {
+        "name": "Umami Udon (Vegetarian) ",
+        "cat": "main",
+        "price": 235,
+        "ingredients": [
+          "Baked Tempeh",
+          "Mushroom Dashi",
+          "Egg yolk",
+          "Scallion",
+          "Pok Choi",
+          "Toasted Garlic Oil "
+        ],
+        "allergens": {
+          "hasNuts": true,
+          "hasGluten": true,
+          "hasGarlic": true,
+          "hasShellfish": true,
+          "hasOnion": true,
+          "hasFish": true,
+          "hasSesame": true,
+          "hasMushroom": true,
+          "hasLemon": true,
+          "hasSoya": true
+        }
+      },
+      {
+        "cat": "main",
+        "name": "\"Signature\" Shoyu Ramen",
+        "price": 245,
+        "ingredients": [
+          "Handmade Tokyo style noodles",
+          "Flamed Chicken Breast",
+          "Chicken-broth",
+          "Ajitsuke-egg",
+          "pickled bean-sprouts",
+          "slow cooked Tomato",
+          "Scallion"
+        ],
+        "allergens": {
+          "hasNuts": false,
+          "hasGluten": true,
+          "hasGarlic": true,
+          "hasShellfish": false,
+          "hasOnion": false,
+          "hasFish": true,
+          "hasSesame": false,
+          "hasMushroom": true,
+          "hasLemon": false,
+          "hasSoya": true
+        }
+      },
+      {
+        "cat": "main",
+        "name": "\"Thomas\" Shio Ramen",
+        "price": 235,
+        "ingredients": [
+          "Handmade Tokyo style noodles",
+          "Miso glazed Tempeh or Flamed Chicke breast ",
+          "Ajitsuke-egg",
+          "pickled Red Onion",
+          "slow cooked Tomato",
+          "Scallion",
+          "Aromatic Green Oil"
+        ],
+        "allergens": {
+          "hasNuts": false,
+          "hasGluten": true,
+          "hasGarlic": true,
+          "hasShellfish": false,
+          "hasOnion": false,
+          "hasFish": false,
+          "hasSesame": false,
+          "hasMushroom": true,
+          "hasLemon": false,
+          "hasSoya": true
+        }
+      }
+    ]
+  },
+  "no": {
+    "header01": "test",
+    "header02": "test",
+    "teaser01": "test",
+    "teaser02": "test",
+    "allergenLabel": "test"
+  }
+}
