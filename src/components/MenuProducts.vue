@@ -56,16 +56,5 @@ export default {
       contentData: this.productContent,
     };
   },
-
-  created() {
-    this.setAllergenIndicators(this.contentData);
-  },
-
-  methods: {
-    setAllergenIndicators(data) {
-      // maybe later on usefull to create count for objects set to true in item to define comma placement
-      console.log(data);
-    },
-  },
 };
 </script>

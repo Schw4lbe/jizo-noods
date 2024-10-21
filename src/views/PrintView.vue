@@ -42,6 +42,11 @@
 
   <!-- Display selected menu products -->
   <div class="print-view-menu" id="a4-page">
+    <div class="print-menu-top-container">
+      <img src="../../public/img/logo.png" alt="Jizo Noods Logo" />
+      <h3 class="print-menu-header">Ramen Popup Menu</h3>
+    </div>
+
     <div class="starter-print-menu-container">
       <MenuProducts
         :product-content="selectedStarters"
@@ -54,12 +59,31 @@
         :productHeader="mainsHeader"
       />
     </div>
+    <div class="allergens-print-container">
+      <h5 class="allergens-print-header">
+        {{ allergenData.header }}
+      </h5>
+      <div class="allergens-items-container">
+        <span
+          v-for="(item, index) in allergenData.items"
+          :key="item.id"
+          class="item"
+        >
+          <b>{{ item.id + ") " }}</b
+          >{{ item.label }}
+          <span class="separator" v-if="index < allergenData.items.length - 1">
+            |
+          </span>
+        </span>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import { mapGetters } from "vuex";
 import productData from "../../public/content/products.json";
+import allergenData from "../../public/content/allergens.json";
 import MenuProducts from "../components/MenuProducts.vue";
 
 export default {
@@ -71,6 +95,8 @@ export default {
   data() {
     return {
       productData: [],
+      allergenData: null,
+
       starters: [],
       mains: [],
       desserts: [],
@@ -171,16 +197,13 @@ export default {
     setContent() {
       this.startersHeader = productData[this.selectedLanguage].header01;
       this.mainsHeader = productData[this.selectedLanguage].header02;
+      this.allergenData = allergenData[this.selectedLanguage];
     },
 
     saveAsPDF() {
       const currentDate = new Date().toISOString().split("T")[0];
-      // const originalTitle = document.title;
       document.title = `Jizo-Noods-Menu-${currentDate}`;
       window.print();
-
-      // Restore the original title after printing
-      // document.title = originalTitle;
     },
   },
 };
