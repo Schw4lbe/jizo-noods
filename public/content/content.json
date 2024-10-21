@@ -1,9 +1,5 @@
 {
     "en": {
-        "companyContact": {
-            "phone": "01234 - 55 66 77 88 99",
-            "email": "some@one.de"
-        },
         "sectionAboutUs": {
             "header": "About Us",
             "items": [
@@ -38,6 +34,12 @@
             "urlText": "Link to Feedback Page",
             "media": ""
         },
+        "sectionMenu": {
+            "header": "Menu"
+        },
+        "sectionLocation": {
+            "header": "Location"
+        },
         "sectionGallery": {
             "header": "Gallery",
             "description": "Gallery Description",
@@ -67,11 +69,7 @@
                 },
                 {
                     "label": "Imprint",
-                    "url": "#"
-                },
-                {
-                    "label": "Terms of Service",
-                    "url": "#"
+                    "url": "/imprint"
                 }
             ]
         },
@@ -89,6 +87,15 @@
         "sectionQandA": {
             "header": "Q and A",
             "description": "DESCRIPTION / TBD"
+        },
+        "sectionImprint": {
+            "header": "Imprint and Company Information",
+            "subheader1": "Company Information",
+            "subheader2": "Legal Representation",
+            "subheader3": "Regulatory Authority",
+            "subheader4": "Disclaimer",
+            "subheader5": "Liability for Links",
+            "subheader6": "Copyright"
         }
     },
     "no": {}

@@ -2,6 +2,11 @@
 
 ## dev-log to-dos:
 
+- cms bug new article error soya required check yml config
+- remove login popup from first page
+- products in cms bool for is active
+- add netlify identity to print view
+- optimize print view for mobile
 - after cookie check in local storage state start loading sequence
 - after fully loading videofile start autoplay
 - cms integration (half way done but not that important atm)

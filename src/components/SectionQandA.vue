@@ -8,7 +8,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import content from "../../public/content.json";
+import content from "../../public/content/content.json";
 
 export default {
   name: "SectionQandA",

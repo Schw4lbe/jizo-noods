@@ -1,6 +1,6 @@
 <template>
   <section class="section-location-main" id="location">
-    <h3 class="section-header">{{ sectionContent.header }}</h3>
+    <h3 class="section-header">{{ sectionHeader }}</h3>
     <div class="location-map-container">
       <a :href="sectionContent.googleMapsUrl" class="map-link" target="blank">
         <img
@@ -47,7 +47,8 @@
 
 <script>
 import { mapGetters } from "vuex";
-import content from "../../public/content/location.json";
+import infoData from "../../public/content/company-info.json";
+import content from "../../public/content/content.json";
 
 export default {
   name: "SectionLocation",
@@ -55,6 +56,7 @@ export default {
   data() {
     return {
       sectionContent: null,
+      sectionHeader: null,
     };
   },
 
@@ -68,7 +70,9 @@ export default {
 
   methods: {
     setContent() {
-      this.sectionContent = content[this.selectedLanguage];
+      this.sectionContent = infoData[this.selectedLanguage];
+      this.sectionHeader =
+        content[this.selectedLanguage].sectionLocation.header;
     },
   },
 };

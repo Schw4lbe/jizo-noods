@@ -59,7 +59,7 @@ export default {
   methods: {
     setContent() {
       this.sectionContent = content[this.selectedLanguage].sectionRamenKit;
-      this.contactContent = content[this.selectedLanguage].companyContact;
+      this.contactContent = content[this.selectedLanguage].companyInfo;
     },
   },
 };
