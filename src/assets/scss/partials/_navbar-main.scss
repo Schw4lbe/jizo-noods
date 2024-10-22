@@ -16,7 +16,7 @@
     }
 
     .navbar-toggler {
-      padding: 0.5rem 2rem;
+      padding: 0.5rem 1rem;
       border: none;
       box-shadow: none;
       .navbar-toggler-button {
@@ -26,16 +26,30 @@
     }
 
     .offcanvas {
-      background: rgba($color: $clr-primary-dark-1, $alpha: 0.8);
-      .offcanvas-title {
-        color: $clr-secondary-light-1;
+      background: rgba($color: $clr-secondary-light-1, $alpha: 0.7);
+      .offcanvas-header {
+        .offcanvas-title {
+          color: $clr-accent-b;
+        }
+
+        .btn-close {
+          opacity: 1;
+          padding: 0.5rem 1rem;
+        }
       }
 
       .offcanvas-body {
         .navbar-nav {
+          height: 100%;
+          text-align: center;
+          line-height: 2.2;
           li .nav-item {
             text-decoration: none;
-            color: $clr-secondary;
+            color: $clr-accent;
+            font-size: 26px;
+            font-weight: 600;
+            padding: 1rem;
+            text-transform: uppercase;
           }
         }
       }

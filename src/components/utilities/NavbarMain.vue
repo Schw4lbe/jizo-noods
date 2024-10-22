@@ -1,5 +1,11 @@
 <template>
   <nav class="navbar">
+    <div class="scrolling-wrapper">
+      <div class="marquee">
+        <p>{{ navContent.scrollingText }}</p>
+        <p>{{ navContent.scrollingText }}</p>
+      </div>
+    </div>
     <div class="container-fluid">
       <button
         class="navbar-toggler"
@@ -18,7 +24,7 @@
         aria-labelledby="offcanvasNavbarLabel"
       >
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
           <button
             type="button"
             class="btn-close"
@@ -27,18 +33,12 @@
           ></button>
         </div>
         <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
             <li v-for="(item, index) in navContent.items" :key="index">
               <a class="nav-item" :href="item.url">{{ item.label }}</a>
             </li>
           </ul>
         </div>
-      </div>
-    </div>
-    <div class="scrolling-wrapper">
-      <div class="marquee">
-        <p>{{ navContent.scrollingText }}</p>
-        <p>{{ navContent.scrollingText }}</p>
       </div>
     </div>
   </nav>

@@ -2,7 +2,6 @@
 
 ## dev-log to-dos:
 
-- cms bug new article error soya required check yml config
 - remove login popup from first page
 - products in cms bool for is active
 - add netlify identity to print view

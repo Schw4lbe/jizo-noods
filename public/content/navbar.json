@@ -3,6 +3,35 @@
         "scrollingText": " *** Best Ramen in the street *** Popup Trekanten - Pilestredet 24, Oslo *** every Thursday & Friday 13:00 - 20:00",
         "items": [
             {
+                "label": "Home",
+                "url": "/"
+            },
+            {
+                "label": "Menu",
+                "url": "/"
+            },
+            {
+                "label": "About Us",
+                "url": "/"
+            },
+            {
+                "label": "Location",
+                "url": "/"
+            },
+            {
+                "label": "Privacy",
+                "url": "/privacy"
+            },
+            {
+                "label": "Imprint",
+                "url": "/imprint"
+            }
+        ]
+    },
+    "no": {
+        "scrollingText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat, ante eu bibendum tincidunt, sem lacus vehicula augue, utsuscipit.",
+        "items": [
+            {
                 "label": "navItem 01",
                 "url": "#"
             },
@@ -13,12 +42,7 @@
             {
                 "label": "navItem 03",
                 "url": "#"
-            }
-        ]
-    },
-    "no": {
-        "scrollingText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat, ante eu bibendum tincidunt, sem lacus vehicula augue, utsuscipit.",
-        "items": [
+            },
             {
                 "label": "navItem 01",
                 "url": "#"
