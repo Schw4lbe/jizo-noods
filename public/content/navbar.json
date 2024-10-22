@@ -4,27 +4,33 @@
         "items": [
             {
                 "label": "Home",
-                "url": "/"
+                "url": "/",
+                "isSection": false
             },
             {
                 "label": "Menu",
-                "url": "/"
+                "url": "section-menu",
+                "isSection": true
             },
             {
                 "label": "About Us",
-                "url": "/"
+                "url": "section-about-us",
+                "isSection": true
             },
             {
                 "label": "Location",
-                "url": "/"
+                "url": "location",
+                "isSection": true
             },
             {
                 "label": "Privacy",
-                "url": "/privacy"
+                "url": "/privacy",
+                "isSection": false
             },
             {
                 "label": "Imprint",
-                "url": "/imprint"
+                "url": "/imprint",
+                "isSection": false
             }
         ]
     },

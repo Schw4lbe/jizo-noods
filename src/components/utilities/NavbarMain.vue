@@ -35,7 +35,12 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
             <li v-for="(item, index) in navContent.items" :key="index">
-              <a class="nav-item" :href="item.url">{{ item.label }}</a>
+              <a
+                class="nav-item"
+                :class="{ 'nav-link': item.isSection }"
+                :href="item.url"
+                >{{ item.label }}</a
+              >
             </li>
           </ul>
         </div>
@@ -63,6 +68,35 @@ export default {
 
   computed: {
     ...mapGetters(["selectedLanguage"]),
+  },
+
+  mounted() {
+    this.$nextTick(() => {
+      const offcanvasElement = document.getElementById("offcanvasNavbar");
+      if (offcanvasElement) {
+        const offcanvas = new window.bootstrap.Offcanvas(offcanvasElement);
+        const menuItems = offcanvasElement.querySelectorAll(".nav-link");
+
+        menuItems.forEach((item) => {
+          item.addEventListener("click", (event) => {
+            event.preventDefault();
+
+            const targetId = item.getAttribute("href");
+            const targetElement = document.getElementById(targetId);
+            offcanvas.hide();
+
+            setTimeout(() => {
+              if (targetElement) {
+                targetElement.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start",
+                });
+              }
+            }, 300);
+          });
+        });
+      }
+    });
   },
 
   methods: {

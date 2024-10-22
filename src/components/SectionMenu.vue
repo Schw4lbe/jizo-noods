@@ -1,5 +1,5 @@
 <template>
-  <section class="section-menu-main">
+  <section class="section-menu-main" id="section-menu">
     <h3 class="section-header">{{ sectionHeader }}</h3>
     <MenuProducts
       :productContent="startersContent"

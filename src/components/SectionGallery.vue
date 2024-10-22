@@ -1,5 +1,5 @@
 <template>
-  <section class="section-gallery-main">
+  <section class="section-gallery-main" id="section-gallery">
     <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
         <button
