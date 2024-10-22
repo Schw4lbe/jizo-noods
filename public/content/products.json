@@ -99,7 +99,7 @@
         "price": 235,
         "ingredients": [
           "Homemade Noodles",
-          "Slow cooked chicken Breast",
+          "Flamed Chicken Breast ",
           "Classic Dashi",
           "Eggyolk",
           "Pok Choi",
@@ -125,7 +125,7 @@
         "price": 235,
         "ingredients": [
           "Homemade Noodles",
-          "Baked Tempeh",
+          "Miso glazed Tempeh",
           "Mushroom Dashi",
           "Eggyolk",
           "Pok Choi",
@@ -176,11 +176,11 @@
         "price": 235,
         "ingredients": [
           "Homemade Tokyo style Noodles",
-          "Flamed Chicken breast ",
-          "Chicken-pork broth",
+          "Flamed Chicken Breast ",
+          "Chicken-pork Broth",
           "Ajitsuke-egg",
-          "Scallion",
           "Pickled Bean Sprouts",
+          "Scallion",
           "Aromatic Green Oil"
         ],
         "allergens": {
@@ -196,7 +196,8 @@
           "hasSoya": true
         }
       }
-    ]
+    ],
+    "teaser01": "test"
   },
   "no": {
     "header01": "test",
