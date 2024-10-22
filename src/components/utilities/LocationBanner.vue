@@ -8,7 +8,7 @@
       />
       <div @click="scrollToLocation" class="banner-content">
         <p class="banner-text">
-          Craving delicious noodles? Join us at our
+          Craving delicious noodles? <br />Join us at our
           <span class="highlight">PopUp</span> in
           <span class="highlight">Trekanten</span> every
           <span class="highlight">Thursday</span> and
