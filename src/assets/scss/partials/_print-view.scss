@@ -116,16 +116,16 @@
       font-weight: 700;
       font-size: 26px;
       padding: 0 1rem;
-    }
-
-    .product-group-teaser {
-      font-weight: 300;
-      color: $clr-accent-b;
+      letter-spacing: 4px;
     }
 
     .items-container {
       padding: 0.5rem 0;
       .item {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
         .item-name {
           color: $clr-accent-b;
           font-size: 1.2rem;
@@ -135,6 +135,7 @@
         }
 
         .item-ingredients {
+          line-height: 1.2;
           .ingredient {
             color: $clr-primary-dark-2;
             font-size: 1rem;
@@ -146,7 +147,7 @@
           color: $clr-primary-light-1;
           font-size: 0.7rem;
           font-weight: 200;
-          padding: 0.5rem;
+          padding: 4px;
 
           .item-allergen-id {
             span {
@@ -159,7 +160,7 @@
           font-size: 1.6rem;
           font-weight: 200;
           color: $clr-accent-b;
-          margin-bottom: 1rem;
+          // margin-bottom: 1rem;
         }
       }
     }

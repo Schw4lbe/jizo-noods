@@ -73,7 +73,7 @@
         "cat": "main",
         "price": 245,
         "ingredients": [
-          "Homeade Noodles",
+          "Homemade Noodles",
           "Creamy Tonkotsu Tan Tan",
           "Pork Soboro",
           "Egg yolk",
@@ -150,7 +150,7 @@
         "name": "\"Signature\" Shoyu Ramen",
         "price": 245,
         "ingredients": [
-          "Handmade Tokyo style noodles",
+          "Homemade Tokyo style noodles",
           "Flamed Chicken Breast",
           "Chicken-broth",
           "Ajitsuke-egg",
@@ -176,7 +176,7 @@
         "name": "\"Thomas\" Shio Ramen",
         "price": 240,
         "ingredients": [
-          "Handmade Tokyo style noodles",
+          "Homemade Tokyo style noodles",
           "choose Flamed Chicken breast or Mizo glazed Tempeh",
           "Double chicken broth",
           "Ajitsuke-egg",
