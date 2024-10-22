@@ -1,0 +1,9 @@
+@use "../abstracts/" as *;
+
+@media (max-width: 1200px) {
+  .section-location-banner-main {
+    .banner-content {
+      font-size: 18px !important;
+    }
+  }
+}

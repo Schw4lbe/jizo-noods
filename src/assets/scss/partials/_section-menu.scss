@@ -1,6 +1,7 @@
 @use "../abstracts/" as *;
 
 .section-menu-main {
+  max-width: 1000px;
   margin-top: 3rem;
   color: $clr-primary-dark-2;
   padding: 5rem 1rem;
@@ -12,19 +13,33 @@
 
   .menu-product-group-container:nth-of-type(1) {
     border-bottom: 1px solid $clr-accent-b;
+
+    .items-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  .menu-product-group-container:nth-of-type(2) {
+    .item {
+      padding-bottom: 2rem;
+    }
   }
 
   .menu-product-group-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 2rem 0;
+    padding: 0 0 2rem 0;
     width: 100%;
 
     .product-group-header {
       text-transform: uppercase;
       color: $clr-accent;
-      font-weight: 700;
+      font-weight: 300;
+      padding: 1rem;
+      font-size: 24px;
+      letter-spacing: 4px;
     }
 
     .product-group-teaser {
@@ -39,6 +54,7 @@
 
         .item-name {
           color: $clr-accent-b;
+          text-transform: uppercase;
           font-size: 1.2rem;
           font-weight: 700;
           margin: 0;
@@ -54,7 +70,7 @@
 
         .item-allergens {
           color: $clr-primary-light-1;
-          font-size: 0.9rem;
+          font-size: 0.7rem;
           font-weight: 200;
           padding: 0.5rem;
 

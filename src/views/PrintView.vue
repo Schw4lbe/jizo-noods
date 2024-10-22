@@ -56,7 +56,7 @@
     />
     <div class="print-menu-top-container">
       <img src="../../public/img/logo.png" alt="Jizo Noods Logo" />
-      <h3 class="print-menu-header">Ramen Popup Menu</h3>
+      <h3 class="print-menu-header">Popup Menu</h3>
     </div>
 
     <div class="starter-print-menu-container">

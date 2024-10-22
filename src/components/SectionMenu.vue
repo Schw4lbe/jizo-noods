@@ -1,6 +1,7 @@
 <template>
   <section class="section-menu-main" id="section-menu">
     <h3 class="section-header">{{ sectionHeader }}</h3>
+    <p class="section-description"></p>
     <MenuProducts
       :productContent="startersContent"
       :productHeader="startersHeader"
