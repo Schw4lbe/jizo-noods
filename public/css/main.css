@@ -122,7 +122,7 @@
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
-  animation: marquee 20s linear infinite;
+  animation: marquee 15s linear infinite;
 }
 .navbar-wrapper .navbar .scrolling-wrapper .marquee p {
   display: inline-block;
@@ -218,15 +218,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 22px;
+  font-size: 18px;
   color: #fff;
-  font-weight: 900;
+  font-weight: 200;
   letter-spacing: 1px;
-  text-transform: uppercase;
 }
 .section-location-banner-main .location-banner-container .background-img {
   position: relative;
-  height: 120px;
+  height: 170px;
   width: 100%;
 }
 .section-location-banner-main .location-banner-container .banner-content {
@@ -236,32 +235,32 @@
   z-index: 2;
   text-align: center;
 }
-.section-location-banner-main .location-banner-container .banner-content span {
+.section-location-banner-main
+  .location-banner-container
+  .banner-content
+  .banner-text {
+  margin: 0;
+}
+.section-location-banner-main
+  .location-banner-container
+  .banner-content
+  .banner-text
+  .highlight {
+  font-weight: 700;
+  text-transform: uppercase;
   cursor: pointer;
-  animation: BannerPulse 4s ease-in-out infinite;
+  animation: BannerPulse 2s ease-in-out infinite;
   transition: all 0.5s;
-  padding: 1rem;
 }
 @keyframes BannerPulse {
   0% {
     color: #fff;
-    font-weight: 900;
-    letter-spacing: 1px;
   }
-  85% {
-    color: #fff;
-    font-weight: 900;
-    letter-spacing: 1px;
-  }
-  95% {
-    color: #8c675a;
-    font-weight: 500;
-    letter-spacing: 0px;
+  50% {
+    color: #a64350;
   }
   100% {
     color: #fff;
-    font-weight: 900;
-    letter-spacing: 1px;
   }
 }
 .section-intro-main {
@@ -347,12 +346,25 @@
   max-width: 1000px;
   margin-top: 3rem;
   color: #000;
-  padding: 5rem 1rem;
+  padding: 8rem 1rem 2rem 1rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+.section-menu-main .section-description {
+  font-size: 20px;
+  font-weight: 300;
+  padding: 0.5rem 1rem 2rem 1rem;
+}
+.section-menu-main .section-description .highlight {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #a64350;
+  display: block;
+  font-size: 22px;
+  padding: 0.5rem;
 }
 .section-menu-main .menu-product-group-container:nth-of-type(1) {
   border-bottom: 1px solid #a64350;
@@ -362,9 +374,6 @@
   .items-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-}
-.section-menu-main .menu-product-group-container:nth-of-type(2) .item {
-  padding-bottom: 2rem;
 }
 .section-menu-main .menu-product-group-container {
   display: flex;
@@ -611,7 +620,7 @@
 .section-about-main {
   max-width: 1200px;
   color: #222;
-  padding: 5rem 1rem;
+  padding: 0 1rem 5rem 1rem;
   text-align: center;
 }
 .section-about-main .about-content-container .about-item {
@@ -1096,20 +1105,29 @@
   animation: backgroundLigthen 1s linear forwards;
 }
 @media (max-width: 576px) {
+  .section-intro-main .logo-slogan-container {
+    padding-bottom: 25vh;
+  }
   .section-location-banner-main .location-banner-container .background-img {
-    height: 150px;
+    height: 220px !important;
     object-fit: cover;
   }
   .section-location-banner-main .location-banner-container .banner-content {
-    margin-top: 30px;
     padding-bottom: 2rem;
     grid-template-columns: 1fr;
   }
   .section-location-banner-main
     .location-banner-container
     .banner-content
-    span {
-    padding: 0;
+    .banner-text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .section-location-banner-main
+    .location-banner-container
+    .banner-content
+    .banner-text
+    .highlight {
     font-size: 18px;
   }
   .section-menu-main .menu-product-group-container:nth-of-type(1) {
@@ -1130,6 +1148,9 @@
   }
   .navbar-wrapper .offcanvas {
     width: 100%;
+  }
+  .section-gallery-main {
+    padding: 0;
   }
   #control-panel .select-products-container {
     flex-direction: column;
@@ -1156,12 +1177,13 @@
 }
 @media (max-width: 992px) {
   .section-location-banner-main .location-banner-container .background-img {
-    height: 150px;
+    height: 170px;
   }
   .section-location-banner-main .location-banner-container .banner-content {
     display: grid;
     grid-template-columns: 1fr;
-    font-size: 18px !important;
+    font-size: 14px !important;
+    padding: 1rem;
   }
   .section-location-banner-main
     .location-banner-container
@@ -1172,12 +1194,13 @@
 }
 @media (max-width: 1200px) {
   .section-location-banner-main .banner-content {
-    font-size: 18px !important;
+    font-size: 14px !important;
+    line-height: 1.9;
   }
 }
 @media (max-width: 1400px) {
   .section-location-banner-main .banner-content {
-    font-size: 20px;
+    font-size: 17px;
   }
 }
 .netlify-login-ui {

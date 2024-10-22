@@ -1,20 +1,29 @@
 @use "../abstracts/" as *;
 
 @media (max-width: 576px) {
+  .section-intro-main {
+    .logo-slogan-container {
+      padding-bottom: 25vh;
+    }
+  }
+
   .section-location-banner-main {
     .location-banner-container {
       .background-img {
-        height: 150px;
+        height: 220px !important;
         object-fit: cover;
       }
 
       .banner-content {
-        margin-top: 30px;
+        // margin-top: 30px;
         padding-bottom: 2rem;
         grid-template-columns: 1fr;
-        span {
-          padding: 0;
-          font-size: 18px;
+        .banner-text {
+          font-size: 14px;
+          line-height: 1.5;
+          .highlight {
+            font-size: 18px;
+          }
         }
       }
     }
@@ -40,6 +49,10 @@
     .offcanvas {
       width: 100%;
     }
+  }
+
+  .section-gallery-main {
+    padding: 0;
   }
 
   // print view

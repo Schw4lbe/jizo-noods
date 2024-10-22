@@ -7,13 +7,24 @@
         class="background-img"
       />
       <div @click="scrollToLocation" class="banner-content">
-        <span class="location-name">
+        <p class="banner-text">
+          Craving delicious noodles? <br />Join us at our
+          <span class="highlight">PopUp</span> in
+          <span class="highlight">Trekanten</span> every
+          <span class="highlight">Thursday</span> and
+          <span class="highlight">Friday</span> from
+          <span class="highlight">13:00</span> to
+          <span class="highlight">20:00</span>! <br />Dive into Jizo’s weekly
+          mind-blowing flavors that are sure to tantalize your taste buds.
+        </p>
+
+        <!-- <span class="location-name">
           {{ bannerContent.name }}
         </span>
         <span class="location-address">{{ bannerContent.address }}</span>
         <span class="location-business-hours">{{
           bannerContent.businessHours
-        }}</span>
+        }}</span> -->
       </div>
     </div>
   </section>
