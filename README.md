@@ -1,9 +1,17 @@
 # jizo-noods
 
+## to-dos today:
+
+- rework imprint privacy view
+- add active link to privacy popup
+- find solution to have privacy view vissible in front of popup
+- reconsider own view for privacy and imprint
+- optimize print view for mobile
+- add tiny feedback to printview for menu creation
+- make print view control panel collapseable
+
 ## dev-log to-dos:
 
-- remove login popup from first page
-- products in cms bool for is active
 - add netlify identity to print view
 - optimize print view for mobile
 - after cookie check in local storage state start loading sequence

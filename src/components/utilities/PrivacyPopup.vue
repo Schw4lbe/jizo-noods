@@ -12,7 +12,7 @@
       </p>
       <p class="cookie-description">
         For more transparency visit our
-        <a class="cookie-privacy-link" href="#">privacy</a> section.
+        <a class="cookie-privacy-link" href="/privacy">privacy</a> section.
       </p>
       <button @click="onClickSetPrivacyAccepted" class="privacy-accept-btn">
         Let's go!

@@ -2,18 +2,19 @@
 
 .section-privacy-main {
   width: 100%;
+  max-width: 1200px;
   height: max-content;
+  min-height: 100vh;
   padding: 100px 1rem 1rem 1rem;
-  background: $clr-primary-light-1;
-  color: $clr-secondary;
+  color: $clr-primary;
   text-align: center;
 
   .section-header {
-    color: lighten($clr-accent-b, 20%);
+    color: $clr-accent-b;
   }
 
   .section-subheader {
-    color: lighten($clr-accent-b, 30%);
+    color: $clr-accent-b;
     padding: 1rem;
   }
 
@@ -31,6 +32,13 @@
     list-style: none;
     .item {
       padding: 1rem;
+    }
+  }
+
+  .privacy-contact-container {
+    p {
+      padding: 0;
+      font-weight: 700;
     }
   }
 }
