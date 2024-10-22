@@ -3,6 +3,16 @@
 #control-panel {
   align-items: center;
 
+  .toggle-container {
+    max-height: 1000px;
+    overflow: hidden;
+    transition: all 0.5s;
+  }
+
+  .closed {
+    max-height: 0px;
+  }
+
   .btn-container {
     width: 100%;
     display: flex;
@@ -12,22 +22,49 @@
 
     button {
       padding: 0.5rem 1rem;
+      text-transform: uppercase;
+      margin: 5px;
+      border: none;
+      border-radius: 0.375rem;
+    }
+  }
+
+  .panel-control-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+
+    .btn-toggle {
+      // padding: 1rem;
+      font-size: 20px;
+      height: 40px;
+      width: 40px;
+      border-radius: 100%;
     }
   }
 
   .select-products-container {
     display: flex;
     justify-content: center;
-    align-items: center;
 
     #starters-container,
     #main-dishes-container {
       padding: 1rem;
       min-width: 250px;
-      width: max-content;
+
+      h5 {
+        color: lighten($clr-accent-b, 20%);
+      }
 
       input {
         margin-right: 10px;
+      }
+
+      input:checked + label {
+        font-weight: 700;
+        color: lighten($clr-accent-b, 40%);
+        transition: all 0.3s;
       }
     }
   }
@@ -194,7 +231,7 @@
   #control-panel {
     background: $clr-primary-light-1;
     color: $clr-secondary;
-    padding: 2rem;
+    padding: 0.5rem;
   }
 }
 

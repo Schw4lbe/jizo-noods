@@ -1,42 +1,49 @@
 <template>
   <div class="print-menu-option-control" id="control-panel">
-    <div class="select-products-container">
-      <!-- Starters Section -->
-      <div id="starters-container">
-        <h5>Starters</h5>
-        <div
-          v-for="(item, index) in starters"
-          :key="index"
-          class="starter-item"
-        >
-          <input
-            :id="item.name"
-            type="checkbox"
-            v-model="selectedStarterNames"
-            :value="item.name"
-          />
-          <label :for="item.name">{{ item.name }}</label>
+    <div class="toggle-container">
+      <div class="select-products-container">
+        <!-- Starters Section -->
+        <div id="starters-container">
+          <h5>Starters</h5>
+          <div
+            v-for="(item, index) in starters"
+            :key="index"
+            class="starter-item"
+          >
+            <input
+              :id="item.name"
+              type="checkbox"
+              v-model="selectedStarterNames"
+              :value="item.name"
+            />
+            <label :for="item.name">{{ item.name }}</label>
+          </div>
+        </div>
+
+        <!-- Main Dishes Section -->
+        <div id="main-dishes-container">
+          <h5>Main Dishes</h5>
+          <div v-for="(item, index) in mains" :key="index" class="main-item">
+            <input
+              :id="item.name"
+              type="checkbox"
+              v-model="selectedMainNames"
+              :value="item.name"
+            />
+            <label :for="item.name">{{ item.name }}</label>
+          </div>
         </div>
       </div>
-
-      <!-- Main Dishes Section -->
-      <div id="main-dishes-container">
-        <h5>Main Dishes</h5>
-        <div v-for="(item, index) in mains" :key="index" class="main-item">
-          <input
-            :id="item.name"
-            type="checkbox"
-            v-model="selectedMainNames"
-            :value="item.name"
-          />
-          <label :for="item.name">{{ item.name }}</label>
-        </div>
+      <!-- Button to create menu -->
+      <div class="btn-container">
+        <button @click="createMenu">Create Menu</button>
+        <button @click="saveAsPDF">Save as PDF</button>
       </div>
     </div>
-    <!-- Button to create menu -->
-    <div class="btn-container">
-      <button @click="createMenu">Create Menu</button>
-      <button @click="saveAsPDF">Save as PDF</button>
+    <div class="panel-control-container">
+      <button @click="toggleControlPanel" class="btn-toggle">
+        <i class="fa-solid fa-up-down"></i>
+      </button>
     </div>
   </div>
 
@@ -206,6 +213,11 @@ export default {
           container.classList.remove(cls);
         }
       });
+    },
+
+    toggleControlPanel() {
+      const panel = document.querySelector(".toggle-container");
+      panel.classList.toggle("closed");
     },
 
     setContent() {
