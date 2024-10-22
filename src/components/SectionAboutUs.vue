@@ -1,5 +1,5 @@
 <template>
-  <section class="section-about-main">
+  <section class="section-about-main" id="section-about-us">
     <h3 class="section-header">{{ sectionContent.header }}</h3>
     <div class="about-content-container">
       <div
