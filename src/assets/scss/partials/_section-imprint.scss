@@ -1,0 +1,20 @@
+@use "../abstracts/" as *;
+
+.section-imprint-main {
+  width: 100%;
+  max-width: 1200px;
+  height: max-content;
+  min-height: 100vh;
+  padding: 100px 1rem 1rem 1rem;
+  color: $clr-primary;
+  text-align: center;
+
+  .section-header {
+    color: $clr-accent;
+  }
+
+  .section-subheader {
+    color: $clr-accent;
+    padding: 1rem;
+  }
+}

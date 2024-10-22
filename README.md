@@ -2,13 +2,11 @@
 
 ## to-dos today:
 
-- rework imprint privacy view
-- add active link to privacy popup
 - find solution to have privacy view vissible in front of popup
-- reconsider own view for privacy and imprint
 - optimize print view for mobile
 - add tiny feedback to printview for menu creation
 - make print view control panel collapseable
+- navbar scroll into view homeview sections
 
 ## dev-log to-dos:
 
