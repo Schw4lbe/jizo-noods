@@ -9,7 +9,7 @@
       {
         "cat": "starter",
         "name": "Kimchi",
-        "price": 75,
+        "price": 70,
         "ingredients": [
           "Jizo´s special homemade Kimchii"
         ],
@@ -29,7 +29,7 @@
       {
         "cat": "starter",
         "name": "Edamame",
-        "price": 75,
+        "price": 80,
         "ingredients": [
           "Yuzu Ponzu"
         ],
@@ -71,17 +71,19 @@
       {
         "name": "\"Mazemen\" Udon",
         "cat": "main",
-        "price": 245,
+        "price": 240,
         "ingredients": [
           "Homemade Noodles",
           "Creamy Tonkotsu Tan Tan",
           "Pork Soboro",
           "Eggyolk",
           "Korn",
-          "Scallion"
+          "Pickled Bean Sprouts",
+          "Scallion",
+          "Black Garlic"
         ],
         "allergens": {
-          "hasNuts": true,
+          "hasNuts": false,
           "hasGluten": true,
           "hasGarlic": true,
           "hasShellfish": false,
@@ -125,19 +127,19 @@
         "price": 235,
         "ingredients": [
           "Homemade Noodles ",
-          "Baked Tempeh",
+          "Glazed Miso Tempeh",
           "Mushroom Dashi",
           "Eggyolk",
-          "Scallion",
           "Pok Choi",
+          "Scallion",
           "Toasted Garlic Oil "
         ],
         "allergens": {
           "hasNuts": false,
           "hasGluten": true,
           "hasGarlic": true,
-          "hasShellfish": true,
-          "hasOnion": true,
+          "hasShellfish": false,
+          "hasOnion": false,
           "hasFish": false,
           "hasSesame": false,
           "hasMushroom": true,
@@ -148,14 +150,13 @@
       {
         "cat": "main",
         "name": "\"Signature\" Shoyu Ramen",
-        "price": 245,
+        "price": 240,
         "ingredients": [
           "Homemade Tokyo style noodles",
           "Flamed Chicken Breast",
-          "Double chicken-broth",
+          "Chicken-pork Broth",
           "Ajitsuke-egg",
-          "pickled bean-sprouts",
-          "slow cooked Tomato",
+          "Slow baked Tomato",
           "Scallion"
         ],
         "allergens": {
@@ -174,14 +175,14 @@
       {
         "cat": "main",
         "name": "\"Thomas\" Shio Ramen",
-        "price": 240,
+        "price": 235,
         "ingredients": [
-          "Homemade Tokyo style noodles",
-          "choose Flamed Chicken breast or Mizo glazed Tempeh",
-          "Double chicken-broth",
+          "Homemade Tokyo style Noodles",
+          "Flamed Chicken breast ",
+          "Chicken-pork broth",
           "Ajitsuke-egg",
-          "Slow cooked Tomato",
           "Scallion",
+          "Pickled Bean Sprouts",
           "Aromatic Green Oil"
         ],
         "allergens": {
