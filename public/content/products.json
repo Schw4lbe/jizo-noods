@@ -76,7 +76,7 @@
           "Homeade Noodles",
           "Creamy Tonkotsu Tan Tan",
           "Pork Soboro",
-          "Egg yolk",
+          "Eggyolk",
           "Korn",
           "Scallion"
         ],
@@ -101,7 +101,7 @@
           "Homemade Noodles ",
           "Slow cooked chicken Breast",
           "Classic Dashi",
-          "Egg yolk",
+          "Eggyolk",
           "Pok Choi",
           "Scallion",
           "Katsuobushi"
@@ -127,7 +127,7 @@
           "Homemade Noodles ",
           "Baked Tempeh",
           "Mushroom Dashi",
-          "Egg yolk",
+          "Eggyolk",
           "Scallion",
           "Pok Choi",
           "Toasted Garlic Oil "
@@ -150,9 +150,9 @@
         "name": "\"Signature\" Shoyu Ramen",
         "price": 245,
         "ingredients": [
-          "Handmade Tokyo style noodles",
+          "Homemade Tokyo style noodles",
           "Flamed Chicken Breast",
-          "Chicken-broth",
+          "Double chicken-broth",
           "Ajitsuke-egg",
           "pickled bean-sprouts",
           "slow cooked Tomato",
@@ -176,11 +176,10 @@
         "name": "\"Thomas\" Shio Ramen",
         "price": 240,
         "ingredients": [
-          "Handmade Tokyo style noodles",
+          "Homemade Tokyo style noodles",
           "choose Flamed Chicken breast or Mizo glazed Tempeh",
-          "Double chicken broth",
+          "Double chicken-broth",
           "Ajitsuke-egg",
-          "Pickled Red Onion",
           "Slow cooked Tomato",
           "Scallion",
           "Aromatic Green Oil"
