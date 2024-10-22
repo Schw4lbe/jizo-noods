@@ -2,8 +2,6 @@
   "en": {
     "header01": "Starters",
     "header02": "Noodles",
-    "teaser01": "Come visit our Popups at Trekanten Oslo",
-    "teaser02": "",
     "allergenLabel": "Allergens",
     "items": [
       {
@@ -98,7 +96,7 @@
         "cat": "main",
         "price": 235,
         "ingredients": [
-          "Homemade Noodles ",
+          "Homemade Noodles",
           "Slow cooked chicken Breast",
           "Classic Dashi",
           "Egg yolk",
@@ -124,7 +122,7 @@
         "cat": "main",
         "price": 235,
         "ingredients": [
-          "Homemade Noodles ",
+          "Homemade Noodles",
           "Baked Tempeh",
           "Mushroom Dashi",
           "Egg yolk",

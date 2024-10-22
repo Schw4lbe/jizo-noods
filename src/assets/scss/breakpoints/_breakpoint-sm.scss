@@ -20,6 +20,29 @@
     }
   }
 
+  .section-menu-main {
+    .menu-product-group-container:nth-of-type(1) {
+      border-bottom: 1px solid $clr-accent-b;
+      padding: 0;
+
+      .items-container {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        .item {
+          padding-bottom: 2rem;
+        }
+      }
+    }
+  }
+
+  .navbar-wrapper {
+    .offcanvas {
+      width: 100%;
+    }
+  }
+
+  // print view
   #control-panel {
     .select-products-container {
       flex-direction: column;

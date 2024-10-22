@@ -33,7 +33,7 @@
           ></button>
         </div>
         <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+          <ul class="navbar-nav flex-grow-1">
             <li v-for="(item, index) in navContent.items" :key="index">
               <a
                 class="nav-item"
