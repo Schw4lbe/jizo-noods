@@ -185,6 +185,7 @@ collections:
               - label: "Teaser for Starters"
                 name: "teaser01"
                 widget: "string"
+                required: false
               - label: "Teaser for Main Dishes"
                 name: "teaser02"
                 widget: "string"
