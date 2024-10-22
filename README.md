@@ -3,7 +3,9 @@
 ## to-dos today:
 
 - find solution to have privacy view vissible in front of popup
+
 - optimize print view for mobile
+- optimize print view auto layouting for more artikles
 - add tiny feedback to printview for menu creation
 - make print view control panel collapseable
 - navbar scroll into view homeview sections

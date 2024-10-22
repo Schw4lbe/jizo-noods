@@ -106,11 +106,11 @@ export default {
       mains: [],
       desserts: [],
 
-      selectedStarterNames: [], // Tracks selected starter item names
+      selectedStarterNames: [], // Tracks selected starter item names as temp. ID
       selectedStarters: [],
       startersHeader: null,
 
-      selectedMainNames: [], // Tracks selected main item names
+      selectedMainNames: [], // Tracks selected main item names as temp. ID
       selectedMains: [],
       mainsHeader: null,
     };
@@ -163,16 +163,21 @@ export default {
       });
 
       // class assignment for layouting taking amount out of arrays
-      this.handleClassAssignment(this.selectedStarters);
+      this.handleClassAssignment(this.selectedStarters, this.selectedMains);
     },
 
-    handleClassAssignment(starters) {
+    handleClassAssignment(starters, mains) {
       const conStarters = document
         .querySelector(".starter-print-menu-container")
         .querySelector(".items-container");
 
+      const conMains = document
+        .querySelector(".mains-print-menu-container")
+        .querySelector(".items-container");
+
       // reset layout before reassigment
       this.resetLayout(conStarters);
+      this.resetLayout(conMains);
 
       if (starters.length === 1) {
         conStarters.classList.add("grid-layout-1");
@@ -183,18 +188,26 @@ export default {
       } else {
         return;
       }
+
+      if (mains.length < 4) {
+        conMains.classList.add("grid-layout-1");
+      } else if (mains.length >= 4) {
+        conMains.classList.add("grid-layout-2");
+      } else {
+        return;
+      }
     },
 
-    resetLayout(conSt) {
+    resetLayout(container) {
       const classToKeep = "items-container";
 
       // Create an array from the class list
-      const conStClasses = Array.from(conSt.classList);
+      const containerClasses = Array.from(container.classList);
 
       // Iterate over the classes and remove those that are not the one to keep
-      conStClasses.forEach((cls) => {
+      containerClasses.forEach((cls) => {
         if (cls !== classToKeep) {
-          conSt.classList.remove(cls);
+          container.classList.remove(cls);
         }
       });
     },
