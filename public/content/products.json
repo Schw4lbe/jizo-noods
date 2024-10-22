@@ -73,23 +73,23 @@
         "cat": "main",
         "price": 245,
         "ingredients": [
-          "Creamy Tonkotsu ",
+          "Homeade Noodles",
+          "Creamy Tonkotsu Tan Tan",
           "Pork Soboro",
           "Egg yolk",
           "Korn",
-          "Scallion",
-          "Pickle bean sprouts"
+          "Scallion"
         ],
         "allergens": {
           "hasNuts": true,
           "hasGluten": true,
           "hasGarlic": true,
-          "hasShellfish": true,
+          "hasShellfish": false,
           "hasOnion": true,
           "hasFish": true,
           "hasSesame": true,
           "hasMushroom": true,
-          "hasLemon": true,
+          "hasLemon": false,
           "hasSoya": true
         }
       },
@@ -98,6 +98,7 @@
         "cat": "main",
         "price": 235,
         "ingredients": [
+          "Homemade Noodles ",
           "Slow cooked chicken Breast",
           "Classic Dashi",
           "Egg yolk",
@@ -106,13 +107,13 @@
           "Katsuobushi"
         ],
         "allergens": {
-          "hasNuts": true,
+          "hasNuts": false,
           "hasGluten": true,
           "hasGarlic": true,
-          "hasShellfish": true,
+          "hasShellfish": false,
           "hasOnion": true,
           "hasFish": true,
-          "hasSesame": true,
+          "hasSesame": false,
           "hasMushroom": true,
           "hasLemon": true,
           "hasSoya": true
@@ -123,6 +124,7 @@
         "cat": "main",
         "price": 235,
         "ingredients": [
+          "Homemade Noodles ",
           "Baked Tempeh",
           "Mushroom Dashi",
           "Egg yolk",
@@ -131,13 +133,13 @@
           "Toasted Garlic Oil "
         ],
         "allergens": {
-          "hasNuts": true,
+          "hasNuts": false,
           "hasGluten": true,
           "hasGarlic": true,
           "hasShellfish": true,
           "hasOnion": true,
-          "hasFish": true,
-          "hasSesame": true,
+          "hasFish": false,
+          "hasSesame": false,
           "hasMushroom": true,
           "hasLemon": true,
           "hasSoya": true
@@ -172,13 +174,14 @@
       {
         "cat": "main",
         "name": "\"Thomas\" Shio Ramen",
-        "price": 235,
+        "price": 240,
         "ingredients": [
           "Handmade Tokyo style noodles",
-          "Miso glazed Tempeh or Flamed Chicke breast ",
+          "choose Flamed Chicken breast or Mizo glazed Tempeh",
+          "Double chicken broth",
           "Ajitsuke-egg",
-          "pickled Red Onion",
-          "slow cooked Tomato",
+          "Pickled Red Onion",
+          "Slow cooked Tomato",
           "Scallion",
           "Aromatic Green Oil"
         ],
@@ -188,31 +191,6 @@
           "hasGarlic": true,
           "hasShellfish": false,
           "hasOnion": false,
-          "hasFish": false,
-          "hasSesame": false,
-          "hasMushroom": true,
-          "hasLemon": false,
-          "hasSoya": true
-        }
-      },
-      {
-        "cat": "main",
-        "name": "Umami Mushroom Ramen",
-        "price": 235,
-        "ingredients": [
-          "handmade tokyo style noodles",
-          "Miso Tempeh",
-          "pickled beans sprouts",
-          "Enoki",
-          "Scallion",
-          "Green Aroma Oil"
-        ],
-        "allergens": {
-          "hasNuts": false,
-          "hasGluten": true,
-          "hasGarlic": true,
-          "hasShellfish": false,
-          "hasOnion": true,
           "hasFish": false,
           "hasSesame": false,
           "hasMushroom": true,
