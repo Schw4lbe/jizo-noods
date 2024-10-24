@@ -186,6 +186,15 @@
           "Caramelized Sugar"
         ],
         "allergens": {
+          "hasNuts": false,
+          "hasGluten": false,
+          "hasGarlic": false,
+          "hasShellfish": false,
+          "hasOnion": false,
+          "hasFish": false,
+          "hasSesame": false,
+          "hasMushroom": false,
+          "hasSoya": false,
           "hasLemon": true,
           "hasLactose": true
         }

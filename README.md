@@ -1,5 +1,11 @@
 # jizo-noods
 
+## IMPORTANT!
+
+- check allergen build in project
+- is it realy good to use index? index can varry due to different save settings on cms
+- check and find valid solution
+
 ## to-dos today:
 
 - find solution to have privacy view vissible in front of popup
