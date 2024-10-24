@@ -261,6 +261,10 @@ collections:
                         name: "hasLemon"
                         widget: "boolean"
                         required: false
+                      - label: "Has Lactose"
+                        name: "hasLactose"
+                        widget: "boolean"
+                        required: false
           - label: "Norwegian Content"
             name: "no"
             widget: "object"
@@ -346,6 +350,10 @@ collections:
                         required: false
                       - label: "Has Lemon"
                         name: "hasLemon"
+                        widget: "boolean"
+                        required: false
+                      - label: "Has Lactose"
+                        name: "hasLactose"
                         widget: "boolean"
                         required: false
 

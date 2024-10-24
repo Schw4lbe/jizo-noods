@@ -52,6 +52,11 @@
                 "id": "10",
                 "label": "Lemon",
                 "description": "Lime, Lemon or lemon-based ingredients are present in these dishes."
+            },
+            {
+                "id": "11",
+                "label": "Lactose",
+                "description": "Lactose or lactose-based ingredients are present in these dishes."
             }
         ]
     },

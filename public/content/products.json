@@ -2,6 +2,7 @@
   "en": {
     "header01": "Starters",
     "header02": "Noodles",
+    "header03": "Desserts",
     "allergenLabel": "Allergens",
     "items": [
       {
@@ -185,7 +186,8 @@
           "Caramelized Sugar"
         ],
         "allergens": {
-          "hasLemon": true
+          "hasLemon": true,
+          "hasLactose": true
         }
       }
     ],

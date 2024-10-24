@@ -4,6 +4,7 @@
       <div class="select-products-container">
         <!-- Starters Section -->
         <div id="starters-container">
+          <!-- Starters Dishes Section -->
           <h5>Starters</h5>
           <div
             v-for="(item, index) in starters"
@@ -33,7 +34,22 @@
             <label :for="item.name">{{ item.name }}</label>
           </div>
         </div>
+
+        <!-- Desserts Section -->
+        <div id="desserts-container">
+          <h5>Desserts</h5>
+          <div v-for="(item, index) in desserts" :key="index" class="main-item">
+            <input
+              :id="item.name"
+              type="checkbox"
+              v-model="selectedDessertNames"
+              :value="item.name"
+            />
+            <label :for="item.name">{{ item.name }}</label>
+          </div>
+        </div>
       </div>
+
       <!-- Button to create menu -->
       <div class="btn-container">
         <button @click="createMenu">Create Menu</button>
@@ -59,16 +75,22 @@
       <h3 class="print-menu-header">Popup Menu</h3>
     </div>
 
-    <div class="starter-print-menu-container">
+    <div class="starter-print-menu-container print-layout">
       <MenuProducts
         :product-content="selectedStarters"
         :productHeader="startersHeader"
       />
     </div>
-    <div class="mains-print-menu-container">
+    <div class="mains-print-menu-container print-layout">
       <MenuProducts
         :product-content="selectedMains"
         :productHeader="mainsHeader"
+      />
+    </div>
+    <div class="desserts-print-menu-container print-layout">
+      <MenuProducts
+        :product-content="selectedDesserts"
+        :productHeader="dessertHeader"
       />
     </div>
     <div class="allergens-print-container">
@@ -120,6 +142,10 @@ export default {
       selectedMainNames: [], // Tracks selected main item names as temp. ID
       selectedMains: [],
       mainsHeader: null,
+
+      selectedDessertNames: [], // Tracks selected desserts item names as temp. ID
+      selectedDesserts: [],
+      dessertHeader: null,
     };
   },
 
@@ -155,6 +181,7 @@ export default {
       // Clear previously selected
       this.selectedStarters = [];
       this.selectedMains = [];
+      this.selectedDesserts = [];
 
       // Filter starters and mains by selected names
       this.starters.forEach((item) => {
@@ -169,11 +196,23 @@ export default {
         }
       });
 
+      this.desserts.forEach((item) => {
+        if (this.selectedDessertNames.includes(item.name)) {
+          this.selectedDesserts.push(item);
+        }
+      });
+
+      console.log(this.selectedDessertNames, this.selectedDesserts);
+
       // class assignment for layouting taking amount out of arrays
-      this.handleClassAssignment(this.selectedStarters, this.selectedMains);
+      this.handleClassAssignment(
+        this.selectedStarters,
+        this.selectedMains,
+        this.selectedDesserts
+      );
     },
 
-    handleClassAssignment(starters, mains) {
+    handleClassAssignment(starters, mains, desserts) {
       const conStarters = document
         .querySelector(".starter-print-menu-container")
         .querySelector(".items-container");
@@ -182,9 +221,14 @@ export default {
         .querySelector(".mains-print-menu-container")
         .querySelector(".items-container");
 
+      const conDesserts = document
+        .querySelector(".desserts-print-menu-container")
+        .querySelector(".items-container");
+
       // reset layout before reassigment
       this.resetLayout(conStarters);
       this.resetLayout(conMains);
+      this.resetLayout(conDesserts);
 
       if (starters.length === 1) {
         conStarters.classList.add("grid-layout-1");
@@ -198,6 +242,14 @@ export default {
         conMains.classList.add("grid-layout-1");
       } else if (mains.length >= 4) {
         conMains.classList.add("grid-layout-2");
+      }
+
+      if (desserts.length === 1) {
+        conDesserts.classList.add("grid-layout-1");
+      } else if (desserts.length === 2) {
+        conDesserts.classList.add("grid-layout-2");
+      } else if (desserts.length === 3) {
+        conDesserts.classList.add("grid-layout-3");
       }
     },
 
@@ -223,6 +275,7 @@ export default {
     setContent() {
       this.startersHeader = productData[this.selectedLanguage].header01;
       this.mainsHeader = productData[this.selectedLanguage].header02;
+      this.dessertHeader = productData[this.selectedLanguage].header03;
       this.allergenData = allergenData[this.selectedLanguage];
     },
 
