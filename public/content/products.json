@@ -45,40 +45,18 @@
         }
       },
       {
-        "cat": "starter",
-        "name": "Nasu Dengaku",
-        "price": 75,
-        "ingredients": [
-          "Aubergine",
-          "Miso",
-          "Sesame"
-        ],
-        "allergens": {
-          "hasNuts": false,
-          "hasGluten": true,
-          "hasGarlic": false,
-          "hasShellfish": false,
-          "hasOnion": false,
-          "hasFish": false,
-          "hasSesame": true,
-          "hasMushroom": false,
-          "hasLemon": false,
-          "hasSoya": true
-        }
-      },
-      {
         "name": "\"Mazemen\" Udon",
         "cat": "main",
         "price": 240,
         "ingredients": [
           "Homemade Noodles",
-          "Creamy Tonkotsu Tan Tan",
+          "Creamy Pork Broth Tan Tan",
           "Pork Soboro",
           "Eggyolk",
           "Korn",
-          "Pok Choi",
           "Scallion",
-          "Black Garlic"
+          "Black Garlic",
+          "Pok Choi"
         ],
         "allergens": {
           "hasNuts": false,
@@ -173,7 +151,7 @@
       },
       {
         "cat": "main",
-        "name": "\"Thomas\" Shio Ramen",
+        "name": "Shio Ramen",
         "price": 235,
         "ingredients": [
           "Homemade Tokyo style Noodles",
@@ -196,6 +174,18 @@
           "hasMushroom": true,
           "hasLemon": false,
           "hasSoya": true
+        }
+      },
+      {
+        "name": "Yuzu Crème brûlée",
+        "cat": "dessert",
+        "price": 95,
+        "ingredients": [
+          "Bourbon Vanilla ",
+          "Caramelized Sugar"
+        ],
+        "allergens": {
+          "hasLemon": true
         }
       }
     ],
