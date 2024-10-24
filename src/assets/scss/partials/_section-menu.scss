@@ -37,10 +37,7 @@
       min-width: 350px;
       display: grid;
       align-items: center;
-      grid-template-columns: repeat(
-        auto-fit,
-        minmax(100px, 1fr)
-      ); /* Adjusts based on item count and stretches evenly */
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
   }
 

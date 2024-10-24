@@ -9,36 +9,39 @@
         />
       </a>
     </div>
-    <div class="location-address-container">
-      <h4 class="address-header">
-        {{ sectionContent.address.header }}
-      </h4>
-      <div class="location-address">
-        <p class="street">
-          {{ sectionContent.address.street }}
-          <span class="house-number">{{
-            sectionContent.address.houseNumber
-          }}</span>
-        </p>
-        <p class="zip-code">
-          {{ sectionContent.address.zipCode }}
-          <span class="city">{{ sectionContent.address.city }}</span>
-        </p>
+
+    <div class="layout-container">
+      <div class="location-address-container">
+        <h4 class="address-header">
+          {{ sectionContent.address.header }}
+        </h4>
+        <div class="location-address">
+          <p class="street">
+            {{ sectionContent.address.street }}
+            <span class="house-number">{{
+              sectionContent.address.houseNumber
+            }}</span>
+          </p>
+          <p class="zip-code">
+            {{ sectionContent.address.zipCode }}
+            <span class="city">{{ sectionContent.address.city }}</span>
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="social-media-container">
-      <h4 class="social-media-header">
-        {{ sectionContent.socialMediaHeader }}
-      </h4>
-      <div class="social-media-wrapper">
-        <div
-          v-for="(item, index) in sectionContent.socialMedia"
-          :key="index"
-          class="social-media-item"
-        >
-          <a :href="item.url" class="url" target="blank"
-            ><i :class="item.icon"></i>{{ item.name }}</a
+      <div class="social-media-container">
+        <h4 class="social-media-header">
+          {{ sectionContent.socialMediaHeader }}
+        </h4>
+        <div class="social-media-wrapper">
+          <div
+            v-for="(item, index) in sectionContent.socialMedia"
+            :key="index"
+            class="social-media-item"
           >
+            <a :href="item.url" class="url" target="blank"
+              ><i :class="item.icon"></i
+            ></a>
+          </div>
         </div>
       </div>
     </div>

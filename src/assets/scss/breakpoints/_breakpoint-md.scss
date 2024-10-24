@@ -31,4 +31,13 @@
       }
     }
   }
+
+  .section-location-main {
+    display: block;
+
+    .location-map-container,
+    .layout-container {
+      padding: 1rem;
+    }
+  }
 }

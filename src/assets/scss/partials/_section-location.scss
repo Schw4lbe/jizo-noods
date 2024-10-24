@@ -1,12 +1,22 @@
 @use "../abstracts/" as *;
 
 .section-location-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
   color: $clr-secondary;
   margin-top: -2rem;
   padding: 0 1rem 3rem 1rem;
   text-align: center;
+
+  .section-header {
+    padding: 1rem;
+    width: 100%;
+    grid-column: 1/3;
+  }
+
   .location-map-container {
-    padding: 1rem 2rem 2rem 2rem;
+    padding: 2rem;
 
     img {
       object-fit: cover;
@@ -24,35 +34,47 @@
     }
   }
 
-  .location-address-container {
-    .location-address {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
+  .layout-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
 
-      p {
-        margin: 0;
+    .location-address-container {
+      .location-address {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        p {
+          margin: 0;
+        }
       }
     }
-  }
 
-  .social-media-container {
-    padding-top: 2rem;
+    .social-media-container {
+      padding-top: 2rem;
 
-    .social-media-wrapper {
-      .social-media-item {
-        padding-bottom: 0.5rem;
-        .url {
-          padding: 5px;
-          text-decoration: none;
-          color: $clr-accent-a;
-          transition: all 0.5s;
-          &:hover {
-            color: $clr-accent;
-          }
+      .social-media-wrapper {
+        display: flex;
+        justify-content: center;
 
-          i {
+        .social-media-item {
+          padding-bottom: 0.5rem;
+          .url {
             padding: 5px;
+            text-decoration: none;
+            color: $clr-accent-a;
+            transition: all 0.5s;
+            &:hover {
+              color: $clr-accent;
+            }
+
+            i {
+              font-size: 2.5rem;
+              padding: 0.5rem;
+            }
           }
         }
       }
