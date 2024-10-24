@@ -2,7 +2,7 @@
   "en": {
     "header01": "Starters",
     "header02": "Noodles",
-    "header03": "Desserts",
+    "header03": "Sweets",
     "allergenLabel": "Allergens",
     "items": [
       {
@@ -13,16 +13,17 @@
           "Jizo´s special homemade Kimchii"
         ],
         "allergens": {
-          "hasNuts": false,
           "hasGluten": false,
-          "hasGarlic": true,
-          "hasShellfish": true,
-          "hasOnion": true,
+          "hasSoya": false,
           "hasFish": true,
-          "hasSesame": false,
+          "hasOnion": true,
+          "hasGarlic": true,
           "hasMushroom": false,
+          "hasShellfish": true,
+          "hasSesame": false,
+          "hasNuts": false,
           "hasLemon": false,
-          "hasSoya": false
+          "hasLactose": false
         }
       },
       {
@@ -33,16 +34,17 @@
           "Yuzu Ponzu"
         ],
         "allergens": {
-          "hasNuts": false,
           "hasGluten": false,
-          "hasGarlic": false,
-          "hasShellfish": false,
-          "hasOnion": false,
+          "hasSoya": true,
           "hasFish": false,
-          "hasSesame": false,
+          "hasOnion": false,
+          "hasGarlic": false,
           "hasMushroom": false,
+          "hasShellfish": false,
+          "hasSesame": false,
+          "hasNuts": false,
           "hasLemon": true,
-          "hasSoya": true
+          "hasLactose": false
         }
       },
       {
@@ -51,25 +53,26 @@
         "price": 240,
         "ingredients": [
           "Homemade Noodles",
+          "Infused Ginger-Oil",
           "Creamy Pork Broth Tan Tan",
           "Pork Soboro",
           "Eggyolk",
           "Korn",
           "Scallion",
-          "Black Garlic",
-          "Pok Choi"
+          "Bok Choi"
         ],
         "allergens": {
-          "hasNuts": false,
           "hasGluten": true,
-          "hasGarlic": true,
-          "hasShellfish": false,
-          "hasOnion": true,
+          "hasSoya": true,
           "hasFish": true,
-          "hasSesame": true,
+          "hasOnion": true,
+          "hasGarlic": true,
           "hasMushroom": true,
+          "hasShellfish": false,
+          "hasSesame": true,
+          "hasNuts": false,
           "hasLemon": false,
-          "hasSoya": true
+          "hasLactose": false
         }
       },
       {
@@ -81,21 +84,22 @@
           "Flamed Chicken Breast ",
           "Classic Dashi",
           "Eggyolk",
-          "Pok Choi",
+          "Bok Choi",
           "Scallion",
           "Katsuobushi"
         ],
         "allergens": {
-          "hasNuts": false,
           "hasGluten": true,
-          "hasGarlic": true,
-          "hasShellfish": false,
-          "hasOnion": true,
+          "hasSoya": true,
           "hasFish": true,
-          "hasSesame": false,
+          "hasOnion": true,
+          "hasGarlic": true,
           "hasMushroom": true,
+          "hasShellfish": false,
+          "hasSesame": false,
+          "hasNuts": false,
           "hasLemon": true,
-          "hasSoya": true
+          "hasLactose": false
         }
       },
       {
@@ -107,22 +111,23 @@
           "Miso glazed Tempeh",
           "Mushroom Dashi",
           "Eggyolk",
-          "Pok Choi",
+          "Bok Choi",
           "Enoki",
           "Scallion",
           "Toasted Garlic Oil "
         ],
         "allergens": {
-          "hasNuts": false,
           "hasGluten": true,
-          "hasGarlic": true,
-          "hasShellfish": false,
-          "hasOnion": false,
+          "hasSoya": true,
           "hasFish": false,
-          "hasSesame": false,
+          "hasOnion": false,
+          "hasGarlic": true,
           "hasMushroom": true,
+          "hasShellfish": false,
+          "hasSesame": false,
+          "hasNuts": false,
           "hasLemon": true,
-          "hasSoya": true
+          "hasLactose": false
         }
       },
       {
@@ -138,16 +143,17 @@
           "Scallion"
         ],
         "allergens": {
-          "hasNuts": false,
           "hasGluten": true,
-          "hasGarlic": true,
-          "hasShellfish": false,
-          "hasOnion": false,
+          "hasSoya": true,
           "hasFish": true,
-          "hasSesame": false,
+          "hasOnion": false,
+          "hasGarlic": true,
           "hasMushroom": true,
+          "hasShellfish": false,
+          "hasSesame": false,
+          "hasNuts": false,
           "hasLemon": false,
-          "hasSoya": true
+          "hasLactose": false
         }
       },
       {
@@ -165,22 +171,23 @@
           "Aromatic Green Oil"
         ],
         "allergens": {
-          "hasNuts": false,
           "hasGluten": true,
-          "hasGarlic": true,
-          "hasShellfish": false,
-          "hasOnion": false,
+          "hasSoya": true,
           "hasFish": false,
-          "hasSesame": false,
+          "hasOnion": false,
+          "hasGarlic": true,
           "hasMushroom": true,
+          "hasShellfish": false,
+          "hasSesame": false,
+          "hasNuts": false,
           "hasLemon": false,
-          "hasSoya": true
+          "hasLactose": false
         }
       },
       {
         "name": "Yuzu Crème brûlée",
         "cat": "dessert",
-        "price": 95,
+        "price": 135,
         "ingredients": [
           "Bourbon Vanilla ",
           "Caramelized Sugar"
