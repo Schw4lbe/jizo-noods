@@ -43,6 +43,7 @@
     padding: 2rem;
 
     .location-address-container {
+      color: $clr-accent-b;
       .location-address {
         display: flex;
         justify-content: center;
@@ -50,12 +51,17 @@
 
         p {
           margin: 0;
+          color: $clr-accent-a;
         }
       }
     }
 
     .social-media-container {
       padding-top: 2rem;
+
+      .social-media-header {
+        color: $clr-accent-b;
+      }
 
       .social-media-wrapper {
         display: flex;
@@ -66,10 +72,10 @@
           .url {
             padding: 5px;
             text-decoration: none;
-            color: $clr-accent-a;
+            color: $clr-secondary-light-2;
             transition: all 0.5s;
             &:hover {
-              color: $clr-accent;
+              color: $clr-accent-b;
             }
 
             i {
