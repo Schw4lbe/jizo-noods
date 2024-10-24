@@ -53,13 +53,13 @@
         "price": 240,
         "ingredients": [
           "Homemade Noodles",
-          "Infused Ginger-Oil",
           "Creamy Pork Broth Tan Tan",
           "Pork Soboro",
           "Eggyolk",
           "Korn",
+          "Bok Choi",
           "Scallion",
-          "Bok Choi"
+          "Infused Ginger-Oil"
         ],
         "allergens": {
           "hasGluten": true,
