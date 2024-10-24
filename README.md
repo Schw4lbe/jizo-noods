@@ -5,6 +5,7 @@
 - check allergen build in project
 - is it realy good to use index? index can varry due to different save settings on cms
 - check and find valid solution
+- add select all button on print view
 
 ## to-dos today:
 
