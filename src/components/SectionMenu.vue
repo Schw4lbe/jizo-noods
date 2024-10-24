@@ -16,12 +16,11 @@
     <MenuProducts
       :productContent="startersContent"
       :productHeader="startersHeader"
-      :productTeaser="startersTeaser"
     />
+    <MenuProducts :productContent="mainsContent" :productHeader="mainsHeader" />
     <MenuProducts
-      :productContent="mainsContent"
-      :productHeader="mainsHeader"
-      :productTeaser="mainsTeaser"
+      :productContent="dessertsContent"
+      :productHeader="dessertsHeader"
     />
     <MenuAllergens :allergenContent="allergenContent" />
   </section>
@@ -49,11 +48,15 @@ export default {
 
       startersContent: null,
       startersHeader: null,
-      startersTeaser: null,
+      // startersTeaser: null,
 
       mainsContent: null,
       mainsHeader: null,
-      mainsTeaser: null,
+      // mainsTeaser: null,
+
+      dessertsContent: null,
+      dessertsHeader: null,
+      // dessertsTeaser: null,
 
       allergenContent: null,
     };
@@ -74,25 +77,30 @@ export default {
       this.sectionDescription =
         content[this.selectedLanguage].sectionMenu.description;
       this.startersHeader = productContent[this.selectedLanguage].header01;
-      this.startersTeaser = productContent[this.selectedLanguage].teaser01;
+      // this.startersTeaser = productContent[this.selectedLanguage].teaser01;
       this.mainsHeader = productContent[this.selectedLanguage].header02;
-      this.mainsTeaser = productContent[this.selectedLanguage].teaser02;
+      // this.mainsTeaser = productContent[this.selectedLanguage].teaser02;
+      this.dessertsHeader = productContent[this.selectedLanguage].header03;
       this.allergenContent = allergenContent[this.selectedLanguage];
     },
 
     setContentByCategory(content) {
       let starters = [];
       let mains = [];
+      let desserts = [];
 
       content.forEach((item) => {
         if (item.cat === "starter") {
           starters.push(item);
         } else if (item.cat === "main") {
           mains.push(item);
+        } else if (item.cat === "dessert") {
+          desserts.push(item);
         }
       });
       this.startersContent = starters;
       this.mainsContent = mains;
+      this.dessertsContent = desserts;
     },
   },
 };

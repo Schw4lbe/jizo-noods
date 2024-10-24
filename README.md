@@ -5,16 +5,16 @@
 - check allergen build in project
 - is it realy good to use index? index can varry due to different save settings on cms
 - check and find valid solution
-- add select all button on print view
 
 ## to-dos today:
 
-- find solution to have privacy view vissible in front of popup
-- add tiny feedback to printview for menu creation
+- add select all button on print view
 - navbar scroll into view homeview sections
 
 ## dev-log to-dos:
 
+- add tiny feedback to printview for menu creation
+- find solution to have privacy view vissible in front of popup
 - add netlify identity to print view
 - optimize print view for mobile
 - after cookie check in local storage state start loading sequence
