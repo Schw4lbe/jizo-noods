@@ -105,7 +105,7 @@
   }
 
   .starter-print-menu-container {
-    border-top: 1px solid $clr-accent-b;
+    border-top: 1px solid $clr-accent;
   }
 
   .print-menu-top-container {
@@ -145,7 +145,7 @@
   }
 
   .menu-product-group-container:nth-of-type(1) {
-    border-bottom: 1px solid $clr-accent-b;
+    border-bottom: 1px solid $clr-accent;
   }
 
   .menu-product-group-container {
@@ -172,7 +172,7 @@
         flex-direction: column;
 
         .item-name {
-          color: $clr-accent-b;
+          color: $clr-accent;
           font-size: 1rem;
           font-weight: 700;
           text-transform: uppercase;
@@ -204,7 +204,7 @@
         .item-price {
           font-size: 1.6rem;
           font-weight: 200;
-          color: $clr-accent-b;
+          color: $clr-accent;
           // margin-bottom: 1rem;
         }
       }

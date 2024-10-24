@@ -10,11 +10,11 @@
   text-align: center;
 
   .section-header {
-    color: $clr-accent-b;
+    color: lighten($clr-accent, 10%);
   }
 
   .section-subheader {
-    color: $clr-accent-b;
+    color: lighten($clr-accent, 20%);
     padding: 1rem;
   }
 

@@ -5,7 +5,7 @@
       <PrivacyPopup />
       <div class="navbar-wrapper">
         <img
-          src="../public/img/paint-stroke.png"
+          src="../public/img/paint-stroke-variant-a.png"
           alt="dummy"
           class="background-img"
         />

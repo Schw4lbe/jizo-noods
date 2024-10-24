@@ -32,7 +32,13 @@
 
 // section color variants:
 .section-wrapper-variant-a {
-  background: $clr-accent-a;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(247, 235, 221, 1) 100%
+  );
+
+  // background: $clr-accent-a;
   margin-top: -60px;
 }
 
@@ -41,7 +47,7 @@
 }
 
 .section-wrapper-variant-c {
-  background: $clr-accent-b;
+  background: $clr-accent;
 }
 
 .section-wrapper-variant-d {
@@ -57,5 +63,5 @@
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  color: $clr-primary-dark-2;
+  color: $clr-accent-c;
 }

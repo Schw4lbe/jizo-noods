@@ -6,10 +6,14 @@
   padding: 1rem 0 5rem 0;
   text-align: center;
 
+  .section-header {
+    color: $clr-accent;
+  }
+
   .about-content-container {
     .content-subheader {
       padding: 1rem;
-      color: $clr-accent-b;
+      color: lighten($clr-accent, 20%);
       text-transform: uppercase;
     }
 
@@ -27,7 +31,7 @@
 
           .highlight {
             font-weight: 500;
-            color: $clr-accent-b;
+            color: lighten($clr-accent, 20%);
           }
         }
 

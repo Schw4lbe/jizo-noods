@@ -12,8 +12,8 @@
     justify-content: center;
     align-items: center;
     font-size: 18px;
-    color: $clr-secondary-light-2;
-    font-weight: 200;
+    color: $clr-primary;
+    font-weight: 400;
     letter-spacing: 1px;
 
     .background-img {
@@ -43,13 +43,13 @@
 
     @keyframes BannerPulse {
       0% {
-        color: $clr-secondary-light-2;
+        color: lighten($clr-accent, 0%);
       }
       50% {
-        color: $clr-accent-b;
+        color: lighten($clr-accent, 20%);
       }
       100% {
-        color: $clr-secondary-light-2;
+        color: lighten($clr-accent, 0%);
       }
     }
   }

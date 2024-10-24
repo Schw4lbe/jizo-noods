@@ -11,6 +11,10 @@
   align-items: center;
   text-align: center;
 
+  .section-header {
+    color: $clr-accent;
+  }
+
   .section-description {
     font-size: 20px;
     font-weight: 300;
@@ -19,7 +23,7 @@
     .highlight {
       font-weight: 800;
       text-transform: uppercase;
-      color: $clr-accent-b;
+      color: lighten($clr-accent, 20%);
       display: block;
       font-size: 22px;
       padding: 0.5rem;
@@ -76,7 +80,7 @@
         // padding: 2rem 0;
 
         .item-name {
-          color: $clr-accent-b;
+          color: lighten($clr-accent, 10%);
           text-transform: uppercase;
           font-size: 1.2rem;
           font-weight: 700;
@@ -85,7 +89,7 @@
 
         .item-ingredients {
           .ingredient {
-            color: $clr-primary-dark-2;
+            color: $clr-primary;
             font-size: 1rem;
             font-weight: 400;
           }
@@ -106,8 +110,8 @@
 
         .item-price {
           font-size: 1.6rem;
-          font-weight: 200;
-          color: $clr-accent-b;
+          font-weight: 100;
+          color: $clr-accent;
         }
       }
     }
