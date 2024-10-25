@@ -2,15 +2,17 @@
   <section class="section-about-main" id="section-about-us">
     <h3 class="section-header">{{ sectionContent.header }}</h3>
     <div class="about-content-container">
-      <h4 class="content-subheader">{{ sectionContent.subheader }}</h4>
+      <h4 class="content-subheader to-slide-in-bottom">
+        {{ sectionContent.subheader }}
+      </h4>
       <div class="content-grid">
         <div class="grid-item">
           <img
             src="../../public/img/about-us/500x1000_2.png"
             alt="Jizu Manga Art"
-            class="content-image"
+            class="content-image to-slide-in-bottom"
           />
-          <p class="content-text">
+          <p class="content-text to-slide-in-bottom">
             <span class="highlight">Jizo Noods</span> is all about celebrating
             the art of slurpin’ delicious noodle soups from Japan & South Korea.
             Since 2024 kicked off, we've been cooperating with folks across Oslo
@@ -21,7 +23,7 @@
         </div>
 
         <div class="grid-item">
-          <p class="content-text">
+          <p class="content-text to-slide-in-bottom">
             And now, guess what? We’re hyped to announce that we’re taking it up
             a notch! Thanks to our friends at Trekanten, we’ll be dishing out
             our soups and tasty plates
@@ -32,7 +34,7 @@
           <img
             src="../../public/img/about-us/500x1000_1.png"
             alt="Jizu Manga Art"
-            class="content-image"
+            class="content-image to-slide-in-bottom"
           />
         </div>
       </div>

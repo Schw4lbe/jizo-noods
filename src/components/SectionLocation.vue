@@ -36,7 +36,7 @@
           <div
             v-for="(item, index) in sectionContent.socialMedia"
             :key="index"
-            class="social-media-item"
+            class="social-media-item to-rubberband"
           >
             <a :href="item.url" class="url" target="blank"
               ><i :class="item.icon"></i

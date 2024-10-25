@@ -5,19 +5,19 @@
         {{ sectionHeader }}
       </h3>
 
-      <p class="section-teaser">What’s your favorite <b>Jizo</b> dish?</p>
+      <p class="section-teaser to-slide-in-bottom">
+        What’s your favorite <b>Jizo</b> dish?
+      </p>
       <img
         src="../../public/img/soup.png"
         alt="menu manga art background"
         class="menu-image"
       />
-      <p class="section-description">
+      <p class="section-description to-slide-in-bottom">
         We love exploring culinary variety and new flavors. If you want to know
         which homemade specialties we’ll be serving at our next PopUp, follow us
         on
-        <span class="highlight animate__animated animate__rubberBand"
-          >social media</span
-        >
+        <span class="highlight to-rubberband">social media</span>
         or stop by to enjoy our fresh offerings!
       </p>
     </div>

@@ -5,7 +5,11 @@
       {{ productTeaser }}
     </div>
     <div class="items-container">
-      <div v-for="(item, index) in productContent" :key="index" class="item">
+      <div
+        v-for="(item, index) in productContent"
+        :key="index"
+        class="item to-zoom-in"
+      >
         <p class="item-name">{{ item.name }}</p>
         <div class="item-ingredients">
           <span
