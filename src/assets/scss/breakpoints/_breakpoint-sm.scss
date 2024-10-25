@@ -3,14 +3,14 @@
 @media (max-width: 576px) {
   .section-intro-main {
     .logo-slogan-container {
-      padding-bottom: 25vh;
+      padding-bottom: 30vh;
     }
   }
 
   .section-location-banner-main {
     .location-banner-container {
       .background-img {
-        height: 350px !important;
+        height: 400px !important;
         object-fit: cover;
       }
 
@@ -19,8 +19,8 @@
         padding-bottom: 2rem;
         grid-template-columns: 1fr;
         .banner-text {
-          font-size: 18px;
-          line-height: 2;
+          font-size: 22px;
+          line-height: 1.8;
           .highlight {
             font-size: 18px;
           }

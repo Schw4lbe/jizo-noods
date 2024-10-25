@@ -1,5 +1,10 @@
 # jizo-noods
 
+## user feedback
+
+- make navigation stick on top
+- font on banner feels unatural
+
 ## IMPORTANT!
 
 - check allergen build in project
