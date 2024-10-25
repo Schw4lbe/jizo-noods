@@ -12,13 +12,13 @@
     justify-content: center;
     align-items: center;
     font-size: 18px;
-    color: $clr-primary;
-    font-weight: 500;
+    color: $clr-secondary;
+    font-weight: 300;
     letter-spacing: 1px;
 
     .background-img {
       position: relative;
-      height: 170px;
+      height: 190px;
       width: 100%;
     }
     .banner-content {
@@ -30,12 +30,13 @@
 
       .banner-text {
         margin: 0;
+        line-height: 1.9;
 
         .highlight {
           font-weight: 700;
           text-transform: uppercase;
           cursor: pointer;
-          animation: BannerPulse 2s ease-in-out infinite;
+          animation: BannerPulse 4s ease-in-out infinite;
           transition: all 0.5s;
         }
       }
@@ -43,13 +44,19 @@
 
     @keyframes BannerPulse {
       0% {
-        color: lighten($clr-secondary, 0%);
+        color: lighten($clr-secondary-light-2, 0%);
+      }
+      40% {
+        color: lighten($clr-secondary-light-2, 0%);
       }
       50% {
-        color: lighten($clr-accent-c, 20%);
+        color: lighten($clr-accent, 0%);
+      }
+      60% {
+        color: lighten($clr-secondary-light-2, 0%);
       }
       100% {
-        color: lighten($clr-secondary, 0%);
+        color: lighten($clr-secondary-light-2, 0%);
       }
     }
   }

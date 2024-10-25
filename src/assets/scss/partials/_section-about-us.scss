@@ -13,7 +13,7 @@
   .about-content-container {
     .content-subheader {
       padding: 1rem;
-      color: lighten($clr-accent, 20%);
+      color: lighten($clr-accent, 10%);
       text-transform: uppercase;
     }
 
@@ -31,7 +31,7 @@
 
           .highlight {
             font-weight: 500;
-            color: lighten($clr-accent, 20%);
+            color: lighten($clr-accent, 10%);
           }
         }
 

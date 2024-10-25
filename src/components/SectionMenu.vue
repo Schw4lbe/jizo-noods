@@ -1,18 +1,26 @@
 <template>
   <section class="section-menu-main" id="section-menu">
-    <h3 class="section-header">
-      {{ sectionHeader }}
-    </h3>
-    <p class="section-description">What’s your favorite <b>Jizo</b> dish?</p>
-    <p class="section-description">
-      We love exploring culinary variety and new flavors. If you want to know
-      which homemade specialties we’ll be serving at our next PopUp, follow us
-      on
-      <span class="highlight animate__animated animate__rubberBand"
-        >social media</span
-      >
-      or stop by to enjoy our fresh offerings!
-    </p>
+    <div class="section-menu-intro-container">
+      <h3 class="section-header">
+        {{ sectionHeader }}
+      </h3>
+
+      <p class="section-teaser">What’s your favorite <b>Jizo</b> dish?</p>
+      <img
+        src="../../public/img/soup.png"
+        alt="menu manga art background"
+        class="menu-image"
+      />
+      <p class="section-description">
+        We love exploring culinary variety and new flavors. If you want to know
+        which homemade specialties we’ll be serving at our next PopUp, follow us
+        on
+        <span class="highlight animate__animated animate__rubberBand"
+          >social media</span
+        >
+        or stop by to enjoy our fresh offerings!
+      </p>
+    </div>
     <MenuProducts
       :productContent="startersContent"
       :productHeader="startersHeader"

@@ -25,28 +25,28 @@
     height: max-content;
     max-width: 600px;
     padding: 2rem;
-    background: rgba($color: $clr-primary-dark-1, $alpha: 0.9);
+    background: rgba($color: $clr-secondary, $alpha: 0.9);
     border-radius: 0.375rem;
     box-shadow: 5px 5px 20px $clr-primary-dark-2;
     transform: translateY(1000px);
 
     .cookie-header {
-      color: lighten($clr-accent-b, 20%);
+      color: lighten($clr-accent, 10%);
       padding-bottom: 2rem;
       font-size: 1.4rem;
     }
 
     .cookie-description {
-      color: $clr-secondary-light-2;
+      color: $clr-primary;
 
       .cookie-privacy-link {
         text-decoration: none;
         font-weight: 800;
         letter-spacing: 1px;
-        color: lighten($clr-accent-b, 20%);
+        color: lighten($clr-accent, 10%);
         transition: all 0.5s;
         &:hover {
-          color: lighten($clr-accent-b, 10%);
+          color: lighten($clr-accent, 30%);
         }
       }
     }
@@ -55,13 +55,13 @@
       border: none;
       border-radius: 0.375rem;
       color: $clr-primary;
-      background: $clr-accent-a;
+      background: $clr-secondary;
       padding: 6px 18px;
       transition: all 0.5s;
       margin-top: 1rem;
       &:hover {
         color: $clr-primary-dark-2;
-        color: lighten($clr-accent-b, 30%);
+        background: $clr-secondary-dark-2;
       }
     }
   }

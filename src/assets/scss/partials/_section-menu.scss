@@ -1,6 +1,7 @@
 @use "../abstracts/" as *;
 
 .section-menu-main {
+  position: relative;
   max-width: 1000px;
   margin-top: 3rem;
   color: $clr-primary-dark-2;
@@ -11,14 +12,24 @@
   align-items: center;
   text-align: center;
 
+  .section-menu-intro-container {
+    .menu-image {
+      max-height: 350px;
+      margin: -1rem;
+      // transform: rotate(180deg);
+    }
+  }
+
   .section-header {
     color: $clr-accent;
   }
 
-  .section-description {
+  .section-description,
+  .section-teaser {
     font-size: 20px;
     font-weight: 300;
-    padding: 0.5rem 1rem 2rem 1rem;
+    padding: 0.5rem 1rem 0 1rem;
+    margin: 0;
 
     .highlight {
       font-weight: 800;
@@ -35,7 +46,7 @@
     justify-content: center;
     align-items: center;
 
-    border-bottom: 1px solid $clr-accent-b;
+    border-bottom: 1px solid $clr-primary-light-4;
 
     .items-container {
       min-width: 350px;
@@ -46,7 +57,7 @@
   }
 
   .menu-product-group-container:nth-of-type(2) {
-    border-bottom: 1px solid $clr-accent-b;
+    border-bottom: 1px solid $clr-primary-light-4;
 
     .item {
       padding-bottom: 2rem;

@@ -49,11 +49,16 @@
           line-height: 2.2;
           li .nav-item {
             text-decoration: none;
-            color: lighten($clr-accent, 20%);
+            color: lighten($clr-accent, 0%);
             font-size: 26px;
             font-weight: 600;
             padding: 1rem;
             text-transform: uppercase;
+            transition: all 0.3s;
+
+            &:hover {
+              color: lighten($clr-accent, 20%);
+            }
           }
 
           .nav-link {
@@ -64,7 +69,7 @@
     }
 
     .scrolling-wrapper {
-      color: $clr-primary;
+      color: lighten($clr-accent, 10%);
       text-transform: uppercase;
       align-items: center;
       padding: 8px 0 5px 0;

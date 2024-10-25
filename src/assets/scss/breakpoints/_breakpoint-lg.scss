@@ -4,13 +4,13 @@
   .section-location-banner-main {
     .location-banner-container {
       .background-img {
-        height: 170px;
+        height: 250px;
       }
 
       .banner-content {
         display: grid;
         grid-template-columns: 1fr;
-        font-size: 14px !important;
+        // font-size: 14px !important;
         padding: 1rem;
 
         span {
