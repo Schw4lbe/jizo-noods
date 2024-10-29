@@ -79,18 +79,21 @@
       <MenuProducts
         :product-content="selectedStarters"
         :productHeader="startersHeader"
+        :allergenData="allergenData.items"
       />
     </div>
     <div class="mains-print-menu-container print-layout">
       <MenuProducts
         :product-content="selectedMains"
         :productHeader="mainsHeader"
+        :allergenData="allergenData.items"
       />
     </div>
     <div class="desserts-print-menu-container print-layout">
       <MenuProducts
         :product-content="selectedDesserts"
         :productHeader="dessertHeader"
+        :allergenData="allergenData.items"
       />
     </div>
     <div class="allergens-print-container">

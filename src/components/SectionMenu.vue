@@ -53,7 +53,6 @@ export default {
   components: {
     MenuProducts,
     MenuAllergens,
-    // test
   },
 
   data() {
