@@ -24,13 +24,19 @@
     <MenuProducts
       :productContent="startersContent"
       :productHeader="startersHeader"
+      :allergenData="allergenData.items"
     />
-    <MenuProducts :productContent="mainsContent" :productHeader="mainsHeader" />
+    <MenuProducts
+      :productContent="mainsContent"
+      :productHeader="mainsHeader"
+      :allergenData="allergenData.items"
+    />
     <MenuProducts
       :productContent="dessertsContent"
       :productHeader="dessertsHeader"
+      :allergenData="allergenData.items"
     />
-    <MenuAllergens :allergenContent="allergenContent" />
+    <MenuAllergens :allergenData="allergenData" />
   </section>
 </template>
 
@@ -39,7 +45,7 @@ import { mapGetters } from "vuex";
 import MenuProducts from "./MenuProducts.vue";
 import MenuAllergens from "@/components/MenuAllergens.vue";
 import productContent from "../../public/content/products.json";
-import allergenContent from "../../public/content/allergens.json";
+import allergenData from "../../public/content/allergens.json";
 import content from "../../public/content/content.json";
 
 export default {
@@ -66,7 +72,7 @@ export default {
       dessertsHeader: null,
       // dessertsTeaser: null,
 
-      allergenContent: null,
+      allergenData: null,
     };
   },
 
@@ -89,7 +95,7 @@ export default {
       this.mainsHeader = productContent[this.selectedLanguage].header02;
       // this.mainsTeaser = productContent[this.selectedLanguage].teaser02;
       this.dessertsHeader = productContent[this.selectedLanguage].header03;
-      this.allergenContent = allergenContent[this.selectedLanguage];
+      this.allergenData = allergenData[this.selectedLanguage];
     },
 
     setContentByCategory(content) {

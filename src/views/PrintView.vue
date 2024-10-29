@@ -201,9 +201,6 @@ export default {
           this.selectedDesserts.push(item);
         }
       });
-
-      console.log(this.selectedDessertNames, this.selectedDesserts);
-
       // class assignment for layouting taking amount out of arrays
       this.handleClassAssignment(
         this.selectedStarters,

@@ -13,17 +13,17 @@
           "Jizo´s special homemade Kimchii"
         ],
         "allergens": {
-          "hasGluten": false,
-          "hasSoya": false,
-          "hasFish": true,
-          "hasOnion": true,
-          "hasGarlic": true,
-          "hasMushroom": false,
-          "hasShellfish": true,
-          "hasSesame": false,
           "hasNuts": false,
+          "hasLactose": false,
+          "hasGluten": false,
+          "hasGarlic": true,
+          "hasShellfish": true,
+          "hasOnion": true,
+          "hasFish": true,
+          "hasSesame": false,
+          "hasMushroom": false,
           "hasLemon": false,
-          "hasLactose": false
+          "hasSoya": false
         }
       },
       {
@@ -34,17 +34,17 @@
           "Yuzu Ponzu"
         ],
         "allergens": {
-          "hasGluten": false,
-          "hasSoya": true,
-          "hasFish": false,
-          "hasOnion": false,
-          "hasGarlic": false,
-          "hasMushroom": false,
-          "hasShellfish": false,
-          "hasSesame": false,
           "hasNuts": false,
+          "hasLactose": false,
+          "hasGluten": false,
+          "hasGarlic": false,
+          "hasShellfish": false,
+          "hasOnion": false,
+          "hasFish": false,
+          "hasSesame": false,
+          "hasMushroom": false,
           "hasLemon": true,
-          "hasLactose": false
+          "hasSoya": true
         }
       },
       {
@@ -62,17 +62,17 @@
           "Infused Ginger-Oil"
         ],
         "allergens": {
-          "hasGluten": true,
-          "hasSoya": true,
-          "hasFish": true,
-          "hasOnion": true,
-          "hasGarlic": true,
-          "hasMushroom": true,
-          "hasShellfish": false,
-          "hasSesame": true,
           "hasNuts": false,
+          "hasLactose": false,
+          "hasGluten": true,
+          "hasGarlic": true,
+          "hasShellfish": false,
+          "hasOnion": true,
+          "hasFish": true,
+          "hasSesame": true,
+          "hasMushroom": true,
           "hasLemon": false,
-          "hasLactose": false
+          "hasSoya": true
         }
       },
       {
@@ -89,17 +89,17 @@
           "Katsuobushi"
         ],
         "allergens": {
-          "hasGluten": true,
-          "hasSoya": true,
-          "hasFish": true,
-          "hasOnion": true,
-          "hasGarlic": true,
-          "hasMushroom": true,
-          "hasShellfish": false,
-          "hasSesame": false,
           "hasNuts": false,
+          "hasLactose": false,
+          "hasGluten": true,
+          "hasGarlic": true,
+          "hasShellfish": false,
+          "hasOnion": true,
+          "hasFish": true,
+          "hasSesame": false,
+          "hasMushroom": true,
           "hasLemon": true,
-          "hasLactose": false
+          "hasSoya": true
         }
       },
       {
@@ -117,17 +117,17 @@
           "Toasted Garlic Oil "
         ],
         "allergens": {
-          "hasGluten": true,
-          "hasSoya": true,
-          "hasFish": false,
-          "hasOnion": true,
-          "hasGarlic": true,
-          "hasMushroom": true,
-          "hasShellfish": false,
-          "hasSesame": false,
           "hasNuts": false,
+          "hasLactose": false,
+          "hasGluten": true,
+          "hasGarlic": true,
+          "hasShellfish": false,
+          "hasOnion": true,
+          "hasFish": false,
+          "hasSesame": false,
+          "hasMushroom": true,
           "hasLemon": true,
-          "hasLactose": false
+          "hasSoya": true
         }
       },
       {
@@ -143,17 +143,17 @@
           "Scallion"
         ],
         "allergens": {
-          "hasGluten": true,
-          "hasSoya": true,
-          "hasFish": true,
-          "hasOnion": true,
-          "hasGarlic": true,
-          "hasMushroom": true,
-          "hasShellfish": false,
-          "hasSesame": false,
           "hasNuts": false,
+          "hasLactose": false,
+          "hasGluten": true,
+          "hasGarlic": true,
+          "hasShellfish": false,
+          "hasOnion": true,
+          "hasFish": true,
+          "hasSesame": false,
+          "hasMushroom": true,
           "hasLemon": false,
-          "hasLactose": false
+          "hasSoya": true
         }
       },
       {
@@ -171,17 +171,17 @@
           "Aromatic Green Oil"
         ],
         "allergens": {
-          "hasGluten": true,
-          "hasSoya": true,
-          "hasFish": true,
-          "hasOnion": true,
-          "hasGarlic": true,
-          "hasMushroom": true,
-          "hasShellfish": false,
-          "hasSesame": false,
           "hasNuts": false,
+          "hasLactose": false,
+          "hasGluten": true,
+          "hasGarlic": true,
+          "hasShellfish": false,
+          "hasOnion": true,
+          "hasFish": true,
+          "hasSesame": false,
+          "hasMushroom": true,
           "hasLemon": false,
-          "hasLactose": false
+          "hasSoya": true
         }
       },
       {
@@ -194,6 +194,7 @@
         ],
         "allergens": {
           "hasNuts": false,
+          "hasLactose": true,
           "hasGluten": false,
           "hasGarlic": false,
           "hasShellfish": false,
@@ -201,9 +202,8 @@
           "hasFish": false,
           "hasSesame": false,
           "hasMushroom": false,
-          "hasSoya": false,
           "hasLemon": true,
-          "hasLactose": true
+          "hasSoya": false
         }
       }
     ],

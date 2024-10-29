@@ -1,4 +1,4 @@
-local_backend: false
+local_backend: true
 
 backend:
   name: git-gateway
@@ -225,46 +225,57 @@ collections:
                         name: "hasGluten"
                         widget: "boolean"
                         required: false
+                        default: false
                       - label: "Has Soya"
                         name: "hasSoya"
                         widget: "boolean"
                         required: false
+                        default: false
                       - label: "Has Fish"
                         name: "hasFish"
                         widget: "boolean"
                         required: false
+                        default: false
                       - label: "Has Onion"
                         name: "hasOnion"
                         widget: "boolean"
                         required: false
+                        default: false
                       - label: "Has Garlic"
                         name: "hasGarlic"
                         widget: "boolean"
                         required: false
+                        default: false
                       - label: "Has Mushroom"
                         name: "hasMushroom"
                         widget: "boolean"
                         required: false
+                        default: false
                       - label: "Has Shellfish"
                         name: "hasShellfish"
                         widget: "boolean"
                         required: false
+                        default: false
                       - label: "Has Sesame"
                         name: "hasSesame"
                         widget: "boolean"
                         required: false
+                        default: false
                       - label: "Has Nuts"
                         name: "hasNuts"
                         widget: "boolean"
                         required: false
+                        default: false
                       - label: "Has Lemon"
                         name: "hasLemon"
                         widget: "boolean"
                         required: false
+                        default: false
                       - label: "Has Lactose"
                         name: "hasLactose"
                         widget: "boolean"
                         required: false
+                        default: false
           - label: "Norwegian Content"
             name: "no"
             widget: "object"
@@ -316,46 +327,57 @@ collections:
                         name: "hasGluten"
                         widget: "boolean"
                         required: false
+                        default: false
                       - label: "Has Soya"
                         name: "hasSoya"
                         widget: "boolean"
                         required: false
+                        default: false
                       - label: "Has Fish"
                         name: "hasFish"
                         widget: "boolean"
                         required: false
+                        default: false
                       - label: "Has Onion"
                         name: "hasOnion"
                         widget: "boolean"
                         required: false
+                        default: false
                       - label: "Has Garlic"
                         name: "hasGarlic"
                         widget: "boolean"
                         required: false
+                        default: false
                       - label: "Has Mushroom"
                         name: "hasMushroom"
                         widget: "boolean"
                         required: false
+                        default: false
                       - label: "Has Shellfish"
                         name: "hasShellfish"
                         widget: "boolean"
                         required: false
+                        default: false
                       - label: "Has Sesame"
                         name: "hasSesame"
                         widget: "boolean"
                         required: false
+                        default: false
                       - label: "Has Nuts"
                         name: "hasNuts"
                         widget: "boolean"
                         required: false
+                        default: false
                       - label: "Has Lemon"
                         name: "hasLemon"
                         widget: "boolean"
                         required: false
+                        default: false
                       - label: "Has Lactose"
                         name: "hasLactose"
                         widget: "boolean"
                         required: false
+                        default: false
 
   - label: "Allergens Information"
     name: "allergens_information"

@@ -1,6 +1,6 @@
 <template>
   <div class="menu-allergen-container">
-    <h4 class="allergen-header">{{ allergenContent.header }}</h4>
+    <h4 class="allergen-header">{{ allergenData.header }}</h4>
     <div class="accordion-wrapper">
       <div class="accordion" id="allergensAccordion">
         <div class="accordion-item">
@@ -14,7 +14,7 @@
               aria-controls="#collapse-allergens"
             >
               <span class="allergen-description">{{
-                allergenContent.description
+                allergenData.description
               }}</span>
             </button>
           </h5>
@@ -26,7 +26,7 @@
             <div class="accordion-body">
               <ul class="allergens-list">
                 <li
-                  v-for="item in allergenContent.items"
+                  v-for="item in allergenData.items"
                   :key="item.id"
                   class="allergen-item"
                 >
@@ -47,7 +47,7 @@
 export default {
   name: "MenuAllergens",
   props: {
-    allergenContent: Object,
+    allergenData: Object,
   },
 };
 </script>

@@ -9,5 +9,3 @@ export default {
     MyComponent,
   },
 };
-
-console.log(jsonData);

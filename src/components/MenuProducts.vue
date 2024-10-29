@@ -29,12 +29,12 @@
             >{{ productContent.allergenLabel + ": " }}</span
           >
           <span v-else>Allergens: </span>
-          <span
-            v-for="(allItem, allIndex) in Object.values(item.allergens)"
-            :key="allIndex"
-            class="item-allergen-id"
-          >
-            <span v-if="allItem">{{ allIndex + 1 }}</span>
+
+          <span v-for="allergenId in getAllergenIds(item)" :key="allergenId">
+            {{ allergenId }}
+            <span v-if="allergenId !== getAllergenIds(item).slice(-1)[0]"
+              >,
+            </span>
           </span>
         </div>
         <div class="item-price">
@@ -53,12 +53,37 @@ export default {
     productContent: Object,
     productHeader: String,
     productTeaser: String,
+    allergenData: Array,
+  },
+
+  created() {
+    this.setAllergenData();
   },
 
   data() {
     return {
-      contentData: this.productContent,
+      allergens: null,
     };
+  },
+
+  methods: {
+    setAllergenData() {
+      this.allergens = this.allergenData;
+    },
+
+    getAllergenIds(item) {
+      // Iterate through the allergens object and collect IDs for the ones that are true
+      return Object.keys(item.allergens)
+        .filter((key) => item.allergens[key] === true)
+        .map((key) => {
+          const allergen = this.allergenData.find(
+            (allergenItem) => allergenItem.key === key
+          );
+          return allergen ? parseInt(allergen.id, 10) : null; // Convert to integer for sorting
+        })
+        .filter((id) => id !== null) // Filter out any null values
+        .sort((a, b) => a - b); // Sort IDs in ascending order
+    },
   },
 };
 </script>

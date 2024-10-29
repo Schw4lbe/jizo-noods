@@ -38,7 +38,6 @@ export default createStore({
 
     isPrivacyAccepted({ commit }) {
       const privacyIsAccepted = localStorage.getItem("privacyIsAccepted");
-      console.log(privacyIsAccepted);
       // set default privacy setting to false
       if (!privacyIsAccepted) {
         localStorage.setItem("privacyIsAccepted", "false");
