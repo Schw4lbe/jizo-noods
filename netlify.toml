@@ -1,0 +1,11 @@
+[build]
+publish = "dist"
+command = "npm run build"
+
+# Production settings for main branch
+[context.production]
+command = "npm run build --mode production"
+
+# Settings for stage branch
+[context.stage]
+command = "npm run build --mode stage"
