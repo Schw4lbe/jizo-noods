@@ -99,24 +99,18 @@ export default {
     handleIntersect(entries) {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          // Remove any class that is hiding the element before the animation
           entry.target.classList.remove("hide-before-animation");
 
-          // Apply different animations based on element type
           if (entry.target.classList.contains("section-header")) {
-            // Add animation classes for headlines
             entry.target.classList.add("animate__animated", "animate__fadeIn");
           } else if (entry.target.classList.contains("to-slide-in-bottom")) {
-            // Add animation classes for text sliding in from the right
             entry.target.classList.add(
               "animate__animated",
               "animate__fadeInUp"
             );
           } else if (entry.target.classList.contains("to-zoom-in")) {
-            // Add animation classes for text sliding in from the right
             entry.target.classList.add("animate__animated", "animate__zoomIn");
           } else if (entry.target.classList.contains("to-rubberband")) {
-            // Add animation classes for text sliding in from the right
             entry.target.classList.add(
               "animate__animated",
               "animate__rubberBand"
