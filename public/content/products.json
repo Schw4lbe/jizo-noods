@@ -76,33 +76,6 @@
         }
       },
       {
-        "name": "Jizo Udon",
-        "cat": "main",
-        "price": 235,
-        "ingredients": [
-          "Homemade Noodles",
-          "Flamed Chicken Breast ",
-          "Classic Dashi",
-          "Eggyolk",
-          "Bok Choi",
-          "Scallion",
-          "Katsuobushi"
-        ],
-        "allergens": {
-          "hasNuts": false,
-          "hasLactose": false,
-          "hasGluten": true,
-          "hasGarlic": true,
-          "hasShellfish": false,
-          "hasOnion": true,
-          "hasFish": true,
-          "hasSesame": false,
-          "hasMushroom": true,
-          "hasLemon": true,
-          "hasSoya": true
-        }
-      },
-      {
         "name": "Umami Udon (Vegetarian) ",
         "cat": "main",
         "price": 235,
@@ -205,6 +178,33 @@
           "hasLemon": true,
           "hasSoya": false
         }
+      },
+      {
+        "allergens": {
+          "hasNuts": false,
+          "hasLactose": false,
+          "hasGluten": true,
+          "hasGarlic": true,
+          "hasShellfish": false,
+          "hasOnion": true,
+          "hasFish": true,
+          "hasSesame": true,
+          "hasMushroom": true,
+          "hasLemon": false,
+          "hasSoya": true
+        },
+        "name": "Spicey \"Halloween\" Special",
+        "cat": "main",
+        "price": 240,
+        "ingredients": [
+          "Udon",
+          "Miced Pork",
+          "Pumpkin Miso",
+          "Korn",
+          "Onion",
+          "Slow cooked Tomato",
+          "Scallion"
+        ]
       }
     ],
     "teaser01": ""
