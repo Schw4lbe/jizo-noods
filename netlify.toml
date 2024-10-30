@@ -4,8 +4,8 @@ command = "npm run build"
 
 # Production settings for main branch
 [context.production]
-command = "npm run build --mode production"
+command = "npm run build"
 
 # Settings for stage branch
 [context.stage]
-command = "npm run build --mode stage"
+command = "npm run build:stage"
