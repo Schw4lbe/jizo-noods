@@ -1,8 +1,12 @@
 {
-    "en": {},
-    "no": {
-        "name": "Popup Trekanten",
-        "address": "Pilestredet 24, Oslo",
-        "businessHours": "Torsdag & Fredag 13:00 - 20:00"
-    }
+  "en": {
+    "name": "Popup Trekanten 🍜 First come - first served 🍜",
+    "address": "Pilestredet 24, Oslo",
+    "businessHours": "Thursday, Friday & Saturday 13:00 - 20:00 🥢 weekly new Dishes 🥢"
+  },
+  "no": {
+    "name": "Popup Trekanten",
+    "address": "Pilestredet 24, Oslo",
+    "businessHours": "Torsdag, Fredag & Lordag 13:00 - 20:00"
+  }
 }
