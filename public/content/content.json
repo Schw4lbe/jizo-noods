@@ -10,9 +10,6 @@
         "sectionMenu": {
             "header": "Our Menu"
         },
-        "sectionLocation": {
-            "header": "Location"
-        },
         "sectionGallery": {
             "header": "Gallery",
             "description": "Gallery Description",

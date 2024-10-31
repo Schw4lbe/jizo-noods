@@ -48,6 +48,9 @@
             "subheader4": "Disclaimer",
             "subheader5": "Liability for Links",
             "subheader6": "Copyright"
+        },
+        "sectionLocation": {
+            "header": "Location"
         }
     },
     "no": {
@@ -99,6 +102,9 @@
             "subheader4": "Disclaimer",
             "subheader5": "Liability for Links",
             "subheader6": "Copyright"
+        },
+        "sectionLocation": {
+            "header": "Location"
         }
     }
 }
