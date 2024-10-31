@@ -1,9 +1,5 @@
 {
     "en": {
-        "sectionAboutUs": {
-            "header": "About Us",
-            "subheader": "Our Story"
-        },
         "sectionFeedback": {
             "header": "Feedback",
             "description": "Feedback Description Lorem ipsum dolor sit amet consectetur adipisicing elit. labore atque libero.",

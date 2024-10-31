@@ -13,23 +13,19 @@
             class="content-image to-slide-in-bottom"
           />
           <p class="content-text to-slide-in-bottom">
-            <span class="highlight">Jizo Noods</span> is all about celebrating
-            the art of slurpin’ delicious noodle soups from Japan & South Korea.
-            Since 2024 kicked off, we've been cooperating with folks across Oslo
-            like,
-            <span class="highlight">Trekanten Sigurd Ramen & Fuglen Cafe </span
-            >for PopUps, bringing the magic of homemade dishes to the people.
+            <span class="highlight">{{ sectionContent.highlight01 }}</span>
+            {{ sectionContent.text01 }}
+            <span class="highlight">{{ sectionContent.highlight02 }}</span>
+            {{ sectionContent.text02 }}
           </p>
         </div>
 
         <div class="grid-item">
           <p class="content-text to-slide-in-bottom">
-            And now, guess what? We’re hyped to announce that we’re taking it up
-            a notch! Thanks to our friends at Trekanten, we’ll be dishing out
-            our soups and tasty plates
-            <span class="highlight">every Thursday and Friday</span>. So Oslo,
-            get your chopsticks ready - it’s time to dive into noodle heaven.
-            See ya there, slurp fam!
+            {{ sectionContent.text03 }}
+
+            <span class="highlight">{{ sectionContent.highlight03 }}</span>
+            {{ sectionContent.text04 }}
           </p>
           <img
             src="../../public/img/about-us/500x1000_1.png"
@@ -44,7 +40,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import content from "../../public/content/content.json";
+import content from "../../public/content/about-us.json";
 
 export default {
   name: "SectionAboutUs",
@@ -65,39 +61,8 @@ export default {
 
   methods: {
     setContent() {
-      this.sectionContent = content[this.selectedLanguage].sectionAboutUs;
+      this.sectionContent = content[this.selectedLanguage];
     },
   },
 };
 </script>
-
-<!-- <script lang="ts">
-import { defineComponent, computed } from "vue";
-import { useStore } from "vuex";
-import contentData from "../../public/content.json";
-
-interface AboutItem {
-  header: string;
-  description: string;
-}
-
-export default defineComponent({
-  name: "SectionAboutUs",
-  setup() {
-    const store = useStore();
-    const selectedLanguage = computed(() => store.getters.selectedLanguage);
-    const content = computed(() => {
-      return (
-        (contentData as Record<string, any>)[selectedLanguage.value] ||
-        contentData["en"]
-      );
-    });
-
-    const items = computed(
-      () => content.value.sectionAboutUs.items as AboutItem[]
-    );
-
-    return { content, items };
-  },
-});
-</script> -->
