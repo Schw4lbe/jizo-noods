@@ -210,14 +210,12 @@
           "hasSoya": false
         }
       }
-    ],
-    "teaser01": ""
+    ]
   },
   "no": {
-    "header01": "test",
-    "header02": "test",
-    "teaser01": "test",
-    "teaser02": "test",
-    "allergenLabel": "test"
+    "header01": "Starters",
+    "header02": "Noodles",
+    "header03": "Sweets",
+    "allergenLabel": "Allergens"
   }
 }

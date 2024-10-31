@@ -2,11 +2,11 @@
   <section class="section-menu-main" id="section-menu">
     <div class="section-menu-intro-container">
       <h3 class="section-header">
-        {{ sectionHeader }}
+        {{ sectionContent.header }}
       </h3>
 
       <p class="section-teaser to-slide-in-bottom">
-        What’s your favorite <b>Jizo</b> dish?
+        {{ sectionContent.text01 }}
       </p>
       <img
         src="../../public/img/soup.png"
@@ -14,11 +14,11 @@
         class="menu-image"
       />
       <p class="section-description to-slide-in-bottom">
-        We love exploring culinary variety and new flavors. If you want to know
-        which homemade specialties we’ll be serving at our next PopUp, follow us
-        on
-        <span class="highlight to-rubberband">social media</span>
-        or stop by to enjoy our fresh offerings!
+        {{ sectionContent.text02 }}
+        <span class="highlight to-rubberband"
+          >{{ sectionContent.highlight }}
+        </span>
+        {{ sectionContent.text02 }}
       </p>
     </div>
     <MenuProducts
@@ -44,9 +44,9 @@
 import { mapGetters } from "vuex";
 import MenuProducts from "./MenuProducts.vue";
 import MenuAllergens from "@/components/MenuAllergens.vue";
+import content from "../../public/content/menu.json";
 import productContent from "../../public/content/products.json";
 import allergenData from "../../public/content/allergens.json";
-import content from "../../public/content/content.json";
 
 export default {
   name: "SectionMenu",
@@ -57,20 +57,14 @@ export default {
 
   data() {
     return {
-      sectionHeader: null,
-      sectionDescription: null,
+      sectionContent: null,
 
       startersContent: null,
       startersHeader: null,
-      // startersTeaser: null,
-
       mainsContent: null,
       mainsHeader: null,
-      // mainsTeaser: null,
-
       dessertsContent: null,
       dessertsHeader: null,
-      // dessertsTeaser: null,
 
       allergenData: null,
     };
@@ -86,15 +80,13 @@ export default {
 
   methods: {
     setContent() {
+      this.sectionContent = content[this.selectedLanguage];
       this.setContentByCategory(productContent[this.selectedLanguage].items);
-      this.sectionHeader = content[this.selectedLanguage].sectionMenu.header;
-      this.sectionDescription =
-        content[this.selectedLanguage].sectionMenu.description;
+
       this.startersHeader = productContent[this.selectedLanguage].header01;
-      // this.startersTeaser = productContent[this.selectedLanguage].teaser01;
       this.mainsHeader = productContent[this.selectedLanguage].header02;
-      // this.mainsTeaser = productContent[this.selectedLanguage].teaser02;
       this.dessertsHeader = productContent[this.selectedLanguage].header03;
+
       this.allergenData = allergenData[this.selectedLanguage];
     },
 
