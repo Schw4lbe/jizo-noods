@@ -48,15 +48,45 @@
         }
       },
       {
+        "allergens": {
+          "hasNuts": false,
+          "hasLactose": false,
+          "hasGluten": true,
+          "hasGarlic": true,
+          "hasShellfish": false,
+          "hasOnion": true,
+          "hasFish": true,
+          "hasSesame": true,
+          "hasMushroom": true,
+          "hasLemon": false,
+          "hasSoya": true
+        },
+        "name": "Spicey \"Halloween\" Special",
+        "cat": "main",
+        "price": 240,
+        "ingredients": [
+          "Homemade Udon",
+          "Pork Soboro",
+          "Pumpkin Miso",
+          "Eggyolk",
+          "Korn",
+          "Onion",
+          "Slow cooked Tomato",
+          "Scallion",
+          "toasted Chili Oil "
+        ]
+      },
+      {
         "name": "\"Mazemen\" Udon",
         "cat": "main",
         "price": 240,
         "ingredients": [
           "Homemade Noodles",
-          "Creamy Pork Broth Tan Tan",
+          "Creamy Tan Tan",
           "Pork Soboro",
           "Eggyolk",
           "Korn",
+          "Pickled Bean Sprouts",
           "Bok Choi",
           "Scallion",
           "Infused Ginger-Oil"
@@ -72,33 +102,6 @@
           "hasSesame": true,
           "hasMushroom": true,
           "hasLemon": false,
-          "hasSoya": true
-        }
-      },
-      {
-        "name": "Jizo Udon",
-        "cat": "main",
-        "price": 235,
-        "ingredients": [
-          "Homemade Noodles",
-          "Flamed Chicken Breast ",
-          "Classic Dashi",
-          "Eggyolk",
-          "Bok Choi",
-          "Scallion",
-          "Katsuobushi"
-        ],
-        "allergens": {
-          "hasNuts": false,
-          "hasLactose": false,
-          "hasGluten": true,
-          "hasGarlic": true,
-          "hasShellfish": false,
-          "hasOnion": true,
-          "hasFish": true,
-          "hasSesame": false,
-          "hasMushroom": true,
-          "hasLemon": true,
           "hasSoya": true
         }
       },
