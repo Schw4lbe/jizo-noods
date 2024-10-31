@@ -39,19 +39,41 @@
                 "icon": "fa-brands fa-tiktok",
                 "url": "https://www.tiktok.com/@jizo.noods"
             }
-        ]
+        ],
+        "sectionImprint": {
+            "header": "Imprint and Company Information",
+            "subheader1": "Company Information",
+            "subheader2": "Legal Representation",
+            "subheader3": "Regulatory Authority",
+            "subheader4": "Disclaimer",
+            "subheader5": "Liability for Links",
+            "subheader6": "Copyright"
+        }
     },
     "no": {
-        "header": "Sted",
+        "header": "Location",
         "googleMapsUrl": "https://g.co/kgs/k95yiQK",
+        "companyName": "Jizo Noods",
         "address": {
-            "header": "Adresse",
+            "header": "Address",
             "street": " Pilestredet",
             "houseNumber": "24",
             "zipCode": "0165",
             "city": "Oslo"
         },
-        "socialMediaHeader": "Følg oss på sosiale medier",
+        "contact": {
+            "email": "some@one.de",
+            "legalRep": "John Doe"
+        },
+        "regulatoryAuthority": {
+            "chamberOfCommerce": "Registered with the Noodle City Chamber of Commerce",
+            "registrationNumber": "12345678",
+            "VATID": "DE123456789"
+        },
+        "disclaimer": "The contents of this website have been created with the utmost care. However, we cannot guarantee the accuracy, completeness, or timeliness of the content. If you notice any errors or issues, please contact us.",
+        "liabilityForLinks": "Our site may contain links to external websites over which we have no control. Therefore, we cannot accept any liability for the content of those external sites. The respective provider or operator is always responsible for the content of linked pages.",
+        "copyright": "The content and works on this website are subject to copyright law. Any duplication, processing, distribution, or any form of utilization beyond the scope of copyright law requires the prior written consent of Jizo Noods. This also applies to the works and contributions of actors working for us, which are likewise protected under copyright enforcement.",
+        "socialMediaHeader": "Follow us on Social Media",
         "socialMedia": [
             {
                 "name": "Facebook",
@@ -68,6 +90,15 @@
                 "icon": "fa-brands fa-tiktok",
                 "url": "https://www.tiktok.com/@jizo.noods"
             }
-        ]
+        ],
+        "sectionImprint": {
+            "header": "Imprint and Company Information",
+            "subheader1": "Company Information",
+            "subheader2": "Legal Representation",
+            "subheader3": "Regulatory Authority",
+            "subheader4": "Disclaimer",
+            "subheader5": "Liability for Links",
+            "subheader6": "Copyright"
+        }
     }
 }
