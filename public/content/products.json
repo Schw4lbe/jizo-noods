@@ -10,7 +10,7 @@
         "name": "Kimchi",
         "price": 70,
         "ingredients": [
-          "Jizo´s special homemade Kimchii"
+          "Jizo´s special homemade Kimchi"
         ],
         "allergens": {
           "hasNuts": false,
@@ -61,15 +61,14 @@
           "hasLemon": false,
           "hasSoya": true
         },
-        "name": "Spicey \"Halloween\" Special",
+        "name": "Spicy Miso Udon",
         "cat": "main",
         "price": 240,
         "ingredients": [
-          "Homemade Udon",
+          "Homemade Noodles",
           "Pork Soboro",
           "Pumpkin Miso",
-          "Eggyolk",
-          "Korn",
+          "Egg yolk",
           "Onion",
           "Slow cooked Tomato",
           "Pickled Bean Spouts ",
@@ -85,7 +84,7 @@
           "Homemade Noodles",
           "Creamy Tan Tan",
           "Pork Soboro",
-          "Eggyolk",
+          "Egg yolk",
           "Korn",
           "Onion",
           "Bok Choi",
@@ -114,7 +113,7 @@
           "Homemade Noodles",
           "Miso glazed Tempeh",
           "Mushroom Dashi",
-          "Eggyolk",
+          "Egg yolk",
           "Bok Choi",
           "Enoki",
           "Scallion",
@@ -145,34 +144,6 @@
           "Ajitsuke-egg",
           "Slow baked Tomato",
           "Scallion"
-        ],
-        "allergens": {
-          "hasNuts": false,
-          "hasLactose": false,
-          "hasGluten": true,
-          "hasGarlic": true,
-          "hasShellfish": false,
-          "hasOnion": true,
-          "hasFish": true,
-          "hasSesame": false,
-          "hasMushroom": true,
-          "hasLemon": false,
-          "hasSoya": true
-        }
-      },
-      {
-        "cat": "main",
-        "name": "Shio Ramen",
-        "price": 235,
-        "ingredients": [
-          "Homemade Tokyo style Noodles",
-          "Flamed Chicken Breast ",
-          "Chicken-pork Broth",
-          "Ajitsuke-egg",
-          "Pickled Bean Sprouts",
-          "Enoki",
-          "Scallion",
-          "Aromatic Green Oil"
         ],
         "allergens": {
           "hasNuts": false,
