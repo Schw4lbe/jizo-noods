@@ -2,8 +2,8 @@
   <nav class="navbar">
     <div class="scrolling-wrapper">
       <div class="marquee">
-        <p>{{ navContent.scrollingText }}</p>
-        <p>{{ navContent.scrollingText }}</p>
+        <p>{{ navContent.scrollingText + " -" }}</p>
+        <p>{{ navContent.scrollingText + " -" }}</p>
       </div>
     </div>
     <div class="container-fluid">

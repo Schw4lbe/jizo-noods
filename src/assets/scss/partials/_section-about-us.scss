@@ -15,6 +15,13 @@
       transform: scaleX(-1) !important;
     }
 
+    .content-container:nth-child(2) {
+      margin-top: 40px;
+      .grid-item {
+        grid-template-columns: 1fr !important;
+      }
+    }
+
     .content-subheader {
       padding: 1rem;
       color: lighten($clr-accent, 10%);

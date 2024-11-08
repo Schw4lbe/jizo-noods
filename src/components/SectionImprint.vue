@@ -5,15 +5,15 @@
       {{ companyData.sectionImprint.subheader1 }}
     </h5>
     <p>{{ companyData.companyName }}</p>
-    <p>
+    <!-- <p>
       {{ companyData.address.header + ": "
       }}{{ companyData.address.street + ", "
       }}{{ companyData.address.houseNumber + " "
       }}{{ companyData.address.zipCode + " " }}
       {{ companyData.address.city }}
-    </p>
+    </p> -->
     <p>{{ "Email: " + companyData.contact.email }}</p>
-    <h5 class="section-subheader">
+    <!-- <h5 class="section-subheader">
       {{ companyData.sectionImprint.subheader2 }}
     </h5>
     <p>{{ companyData.contact.legalRep }}</p>
@@ -22,7 +22,7 @@
     </h5>
     <p>{{ companyData.regulatoryAuthority.chamberOfCommerce }}</p>
     <p>{{ companyData.regulatoryAuthority.registrationNumber }}</p>
-    <p>{{ companyData.regulatoryAuthority.VATID }}</p>
+    <p>{{ companyData.regulatoryAuthority.VATID }}</p> -->
     <h5 class="section-subheader">
       {{ companyData.sectionImprint.subheader4 }}
     </h5>

@@ -25,6 +25,13 @@
         data transmission to third-party servers and ensures better privacy.
       </li>
       <li class="item">
+        <b>Animate.css: </b>Animate.css is a CSS-only animation library that
+        enhances web page visuals. It does not collect, store, or process any
+        personal data, as it solely adds animations through CSS classes with no
+        JavaScript tracking or user data interaction. Your privacy remains
+        entirely secure while using Animate.css on our site.
+      </li>
+      <li class="item">
         <b>Hosting (Netlify): </b>Our website is hosted via Netlify, a secure
         and reliable hosting service, which also helps improve website
         performance. The hosting is encrypted with a certificate to ensure
@@ -40,6 +47,9 @@
       <li class="item">
         Google Fonts: To ensure that the website has a unique and consistent
         appearance, without relying on external servers for fonts.
+      </li>
+      <li class="item">
+        Animate.css: To deliver cross plattform compatible element animations.
       </li>
       <li class="item">
         Netlify Hosting: To ensure our website remains fast, secure, and
@@ -83,13 +93,13 @@
     </p>
     <div class="privacy-contact-container">
       <h5 class="section-subheader">Contact</h5>
-      <p>
+      <!-- <p>
         {{ contactData.address.header + ": "
         }}{{ contactData.address.street + ", "
         }}{{ contactData.address.houseNumber + " "
         }}{{ contactData.address.zipCode + " " }}
         {{ contactData.address.city }}
-      </p>
+      </p> -->
       <p>{{ "Email: " + contactData.contact.email }}</p>
     </div>
   </section>
