@@ -4,8 +4,6 @@
 
 ### prio 0:
 
-- general content updates send
-- BUG: if page is scrolled down a certain amount popup not vissible always in center of screen -> leads to user not beeing able to accept cookies and therefore cant navigate on page
 - navbar items privacy/imprint back to home mechanic missing -> user stuck on privacy via menu
 - navbar current item selected highlighted
 
