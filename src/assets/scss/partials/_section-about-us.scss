@@ -11,6 +11,10 @@
   }
 
   .about-content-container {
+    .content-image:nth-child(1) {
+      transform: scaleX(-1) !important;
+    }
+
     .content-subheader {
       padding: 1rem;
       color: lighten($clr-accent, 10%);

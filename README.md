@@ -4,9 +4,13 @@
 
 ### prio 0:
 
+- general content updates send
+- BUG: if page is scrolled down a certain amount popup not vissible always in center of screen -> leads to user not beeing able to accept cookies and therefore cant navigate on page
+- navbar items privacy/imprint back to home mechanic missing -> user stuck on privacy via menu
+- navbar current item selected highlighted
+
 ### prio 1:
 
-- find solution to have privacy view vissible in front of popup
 - add netlify identity to print view
 - final check page on SEO features and tweeks
 - embedd SEO baseline to all content parts
@@ -19,18 +23,14 @@
 - add missing CMS features
 - missing cms parts per discussion: banner lauftext, adresse location section, adresse top section, about us
 - advance / rework existing definitions to give clear info for sections
-- location banner bigger text
-- logo more on top to avoid getting cut of from banner
-- jizo 1. img rotate to face the text instead of outside of screen
 
 ### prio 3:
 
 - navbar top right globe to change language
-- give order to translage content to norwegian
+- give order to translate content to norwegian
 - output fonts on phone raphi strangly thick -> check font weight
 - add select all button on print view
 - add tiny feedback to printview for menu creation
-- BUG: if page is scrolled down a certain amount popup not vissible always in center of screen -> leads to user not beeing able to accept cookies and therefore cant navigate on page
 - netlify login process shows unwanted behaviour due to non persistant user call on logout button as well as some strange bugs regarding credentials
 - Document / automate a merge and deployment process to ensure clarity for both you and the customer
 - Optional: Introduce branch protection rules and CI/CD testing workflows to ensure quality and stability
