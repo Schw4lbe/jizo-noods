@@ -14,7 +14,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import content from "../../../public/content/content.json";
+import content from "../../../public/content/footer.json";
 
 export default {
   name: "FooterMain",
@@ -35,7 +35,7 @@ export default {
 
   methods: {
     setContent() {
-      this.footerContent = content[this.selectedLanguage].footerMain;
+      this.footerContent = content[this.selectedLanguage];
     },
   },
 };

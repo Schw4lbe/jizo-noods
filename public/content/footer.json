@@ -1,0 +1,26 @@
+{
+    "en": {
+        "items": [
+            {
+                "label": "Privacy",
+                "url": "/privacy"
+            },
+            {
+                "label": "Imprint",
+                "url": "/imprint"
+            }
+        ]
+    },
+    "no": {
+        "items": [
+            {
+                "label": "Privacy",
+                "url": "/privacy"
+            },
+            {
+                "label": "Imprint",
+                "url": "/imprint"
+            }
+        ]
+    }
+}

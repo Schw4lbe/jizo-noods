@@ -28,18 +28,6 @@
                 }
             ]
         },
-        "footerMain": {
-            "items": [
-                {
-                    "label": "Privacy",
-                    "url": "/privacy"
-                },
-                {
-                    "label": "Imprint",
-                    "url": "/imprint"
-                }
-            ]
-        },
         "sectionRamenKit": {
             "header": "Ramen Kits",
             "teaser": "Ramen Kits Info Teaser get in contanct!",
