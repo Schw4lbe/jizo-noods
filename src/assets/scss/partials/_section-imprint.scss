@@ -9,12 +9,8 @@
   color: $clr-primary;
   text-align: center;
 
-  .section-header {
-    color: $clr-accent;
-  }
-
   .section-subheader {
-    color: $clr-accent;
+    color: lighten($clr-accent, 20%);
     padding: 1rem;
   }
 }
