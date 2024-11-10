@@ -13,6 +13,11 @@
                 "isSection": true
             },
             {
+                "label": "Gallery",
+                "url": "section-gallery",
+                "isSection": true
+            },
+            {
                 "label": "About Us",
                 "url": "section-about-us",
                 "isSection": true

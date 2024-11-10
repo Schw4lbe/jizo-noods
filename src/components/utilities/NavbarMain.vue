@@ -86,7 +86,7 @@ export default {
             if (currentPath.endsWith("/")) {
               this.scrollIntoView(item);
             } else if (
-              // add additional views here for navigation
+              // add additional views here for navigaton
               currentPath.endsWith("/imprint") ||
               currentPath.endsWith("/privacy")
             ) {
@@ -114,6 +114,7 @@ export default {
           targetElement.scrollIntoView({
             behavior: "smooth",
             block: "start",
+            inline: "nearest",
           });
         }
       }, 300);

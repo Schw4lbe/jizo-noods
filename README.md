@@ -4,11 +4,12 @@
 
 ### prio 0:
 
-- navbar current item selected highlighted
 - about us on separate area on homepage own view
 - teaser content and teaser graphic comming from raphi
 - font-size check on location banner
 - check ios compability on scrolling text
+- scrolling text is jiggering on IOS
+- srolling text should be bold
 - marquee bold
 - navbar borders to the edge with navbar wrapper background color
 - env var for config.yml test for stage and live separate branches for stage testing
@@ -16,7 +17,7 @@
 - add netlify identity to print view on stage
 - remove print view rendering via env variable on live
 - make offset fit for scroll into view method
-- gallery is missing on navbar
+- navbar current item selected highlighted
 
 ### prio 1:
 
