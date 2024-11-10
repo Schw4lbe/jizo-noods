@@ -1,0 +1,59 @@
+@use "../abstracts/" as *;
+
+.section-about-secondary {
+  max-width: 1200px;
+  color: $clr-primary;
+  padding: 100px 0 5rem 0;
+  text-align: center;
+
+  .about-content-container {
+    .content-image:nth-child(1) {
+      transform: scaleX(-1) !important;
+    }
+
+    .content-container:nth-child(2) {
+      margin-top: 40px;
+      .grid-item {
+        grid-template-columns: 1fr !important;
+      }
+    }
+
+    .content-subheader {
+      padding: 1rem;
+      color: lighten($clr-accent, 10%);
+      text-transform: uppercase;
+    }
+
+    .content-grid {
+      .grid-item {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+
+        .content-text {
+          padding: 1rem;
+          font-size: 22px;
+          font-weight: 200;
+          line-height: 1.8;
+
+          .highlight {
+            font-weight: 500;
+            color: lighten($clr-accent, 10%);
+          }
+        }
+
+        .content-image {
+          object-fit: cover;
+          max-height: 400px;
+        }
+      }
+
+      .grid-item:nth-of-type(1) {
+        grid-template-columns: 1fr 2fr;
+      }
+      .grid-item:nth-of-type(2) {
+        grid-template-columns: 2fr 1fr;
+      }
+    }
+  }
+}

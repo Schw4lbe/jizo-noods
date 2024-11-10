@@ -88,7 +88,8 @@ export default {
             } else if (
               // add additional views here for navigaton
               currentPath.endsWith("/imprint") ||
-              currentPath.endsWith("/privacy")
+              currentPath.endsWith("/privacy") ||
+              currentPath.endsWith("/about-us")
             ) {
               this.$router.push("/");
               this.scrollIntoView(item);

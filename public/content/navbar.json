@@ -18,14 +18,14 @@
                 "isSection": true
             },
             {
-                "label": "About Us",
-                "url": "section-about-us",
-                "isSection": true
-            },
-            {
                 "label": "Location",
                 "url": "location",
                 "isSection": true
+            },
+            {
+                "label": "About Us",
+                "url": "/about-us",
+                "isSection": false
             },
             {
                 "label": "Privacy",
