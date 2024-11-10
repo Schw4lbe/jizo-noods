@@ -6,10 +6,19 @@
 
 - navbar items privacy/imprint back to home mechanic missing -> user stuck on privacy via menu
 - navbar current item selected highlighted
+- about us on separate area on homepage own view
+- teaser content and teaser graphic comming from raphi
+- font-size check on location banner
+- check ios compability on scrolling text
+- marquee bold
+- navbar borders to the edge with navbar wrapper background color
+- env var for config.yml test for stage and live separate branches for stage testing
+- make cms accessable on stage and live environment
+- add netlify identity to print view on stage
+- remove print view rendering via env variable on live
 
 ### prio 1:
 
-- add netlify identity to print view
 - final check page on SEO features and tweeks
 - embedd SEO baseline to all content parts
 - find image optimization workflow for staging
