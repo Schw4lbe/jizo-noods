@@ -4,7 +4,6 @@
 
 ### prio 0:
 
-- navbar items privacy/imprint back to home mechanic missing -> user stuck on privacy via menu
 - navbar current item selected highlighted
 - about us on separate area on homepage own view
 - teaser content and teaser graphic comming from raphi
@@ -16,6 +15,8 @@
 - make cms accessable on stage and live environment
 - add netlify identity to print view on stage
 - remove print view rendering via env variable on live
+- make offset fit for scroll into view method
+- gallery is missing on navbar
 
 ### prio 1:
 

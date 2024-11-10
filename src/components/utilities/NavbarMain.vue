@@ -80,19 +80,19 @@ export default {
         menuItems.forEach((item) => {
           item.addEventListener("click", (event) => {
             event.preventDefault();
-
-            const targetId = item.getAttribute("href");
-            const targetElement = document.getElementById(targetId);
+            const currentPath = window.location.pathname;
             offcanvas.hide();
 
-            setTimeout(() => {
-              if (targetElement) {
-                targetElement.scrollIntoView({
-                  behavior: "smooth",
-                  block: "start",
-                });
-              }
-            }, 300);
+            if (currentPath.endsWith("/")) {
+              this.scrollIntoView(item);
+            } else if (
+              // add additional views here for navigation
+              currentPath.endsWith("/imprint") ||
+              currentPath.endsWith("/privacy")
+            ) {
+              this.$router.push("/");
+              this.scrollIntoView(item);
+            }
           });
         });
       }
@@ -102,6 +102,21 @@ export default {
   methods: {
     setContent() {
       this.navContent = content[this.selectedLanguage];
+    },
+
+    scrollIntoView(item) {
+      setTimeout(() => {
+        const targetId = item.getAttribute("href");
+        const targetElement = document.getElementById(targetId);
+        console.log(targetElement);
+
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      }, 300);
     },
   },
 };
