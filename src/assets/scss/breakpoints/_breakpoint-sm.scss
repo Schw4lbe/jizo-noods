@@ -7,6 +7,25 @@
     }
   }
 
+  .section-about-main {
+    .about-content-container {
+      .content-grid {
+        .grid-item:nth-child(2) {
+          .text-on-image-container {
+            max-height: 150px;
+            max-width: 150px;
+
+            .teaser-text {
+              padding: 25px;
+              margin-top: 10px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .section-location-banner-main {
     .location-banner-container {
       .background-img {
@@ -15,7 +34,6 @@
       }
 
       .banner-content {
-        // margin-top: 30px;
         padding-bottom: 2rem;
         grid-template-columns: 1fr;
         .banner-text {
@@ -56,9 +74,9 @@
     }
   }
 
-  .section-gallery-main {
-    padding: 0;
-  }
+  // .section-gallery-main {
+  //   padding: 0;
+  // }
 
   // print view
   #control-panel {

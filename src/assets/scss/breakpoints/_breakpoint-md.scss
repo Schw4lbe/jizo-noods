@@ -1,7 +1,7 @@
 @use "../abstracts/" as *;
 
 @media (max-width: 768px) {
-  .section-about-main {
+  .section-about-secondary {
     .about-content-container {
       .content-grid {
         .grid-item {
@@ -12,7 +12,6 @@
 
             .highlight {
               font-weight: 500;
-              // color: $clr-accent-b;
             }
           }
 
@@ -40,12 +39,4 @@
       padding: 1rem;
     }
   }
-
-  // .section-location-banner-main {
-  //   .location-banner-container {
-  //     .background-img {
-  //       // height: 200px !important;
-  //     }
-  //   }
-  // }
 }

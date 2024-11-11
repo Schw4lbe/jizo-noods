@@ -3,9 +3,10 @@
 .section-menu-main {
   position: relative;
   max-width: 1000px;
+  width: 100%;
   margin-top: 3rem;
   color: $clr-primary-dark-2;
-  padding: 11rem 1rem 2rem 1rem;
+  padding: 200px 1rem 2rem 1rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -15,9 +16,13 @@
   .section-menu-intro-container {
     padding-bottom: 2rem;
     .menu-image {
+      width: 100%;
+      height: auto;
       max-height: 350px;
+      max-width: 350px;
       margin: -1rem;
       transform: translateX(20px);
+      object-fit: cover;
     }
   }
 
@@ -35,6 +40,12 @@
       display: block;
       font-size: 22px;
       padding: 0.5rem;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        color: lighten($clr-accent, 40%);
+      }
     }
   }
 

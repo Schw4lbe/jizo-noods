@@ -1,0 +1,38 @@
+{
+    "sectionGallery": {
+        "header": "Gallery",
+        "description": "Gallery Description",
+        "items": [
+            {
+                "label": "",
+                "description": "",
+                "url": "/img/gallery/Mazemen udon pic 2.jpg"
+            },
+            {
+                "label": "",
+                "description": "",
+                "url": "/img/gallery/TW-JizoNoods-13.jpg"
+            },
+            {
+                "label": "",
+                "description": "",
+                "url": "/img/gallery/Noodle Machine 1.jpg"
+            },
+            {
+                "label": "",
+                "description": "",
+                "url": "/img/gallery/Thomas Plaiting 1.jpg"
+            },
+            {
+                "label": "",
+                "description": "",
+                "url": "/img/gallery/Thomas Plaiting 2.jpg"
+            },
+            {
+                "label": "",
+                "description": "",
+                "url": "/img/gallery/Trekanten Full Guests top view.jpg"
+            }
+        ]
+    }
+}

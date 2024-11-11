@@ -4,7 +4,7 @@
     <h5 class="section-subheader">
       {{ companyData.sectionImprint.subheader1 }}
     </h5>
-    <p>{{ companyData.companyName }}</p>
+    <p class="info-important">{{ companyData.companyName }}</p>
     <!-- <p>
       {{ companyData.address.header + ": "
       }}{{ companyData.address.street + ", "
@@ -12,7 +12,7 @@
       }}{{ companyData.address.zipCode + " " }}
       {{ companyData.address.city }}
     </p> -->
-    <p>{{ "Email: " + companyData.contact.email }}</p>
+    <p class="info-important">{{ "Email: " + companyData.contact.email }}</p>
     <!-- <h5 class="section-subheader">
       {{ companyData.sectionImprint.subheader2 }}
     </h5>

@@ -4,13 +4,7 @@
 
 ### prio 0:
 
-- about us on separate area on homepage own view
-- teaser content and teaser graphic comming from raphi
-- font-size check on location banner
 - check ios compability on scrolling text
-- scrolling text is jiggering on IOS
-- srolling text should be bold
-- marquee bold
 - navbar borders to the edge with navbar wrapper background color
 - env var for config.yml test for stage and live separate branches for stage testing
 - make cms accessable on stage and live environment

@@ -4,7 +4,7 @@
   <div class="section-wrapper section-wrapper-variant-a">
     <SectionMenu />
   </div>
-  <div class="section-wrapper section-wrapper-variant-b">
+  <div class="section-wrapper section-wrapper-variant-d">
     <SectionGallery />
   </div>
   <div class="section-wrapper section-wrapper-variant-b">

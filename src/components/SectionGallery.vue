@@ -22,7 +22,7 @@
           :class="{ active: index === 0 }"
         >
           <img class="d-block w-100" :src="item.url" alt="dummy" />
-          <div class="carousel-caption">
+          <div class="carousel-caption d-none">
             <h5>{{ item.label }}</h5>
             <p>{{ item.description }}</p>
           </div>
@@ -52,7 +52,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import content from "../../public/content/content.json";
+import content from "../../public/content/gallery.json";
 
 export default {
   name: "SectionGallery",
@@ -75,7 +75,7 @@ export default {
 
   methods: {
     setContent() {
-      this.sectionContent = content[this.selectedLanguage].sectionGallery;
+      this.sectionContent = content.sectionGallery;
     },
 
     setGalleryItemCount() {

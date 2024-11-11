@@ -28,7 +28,7 @@
           </p>
         </div>
       </div>
-      <div class="social-media-container">
+      <div class="social-media-container" id="social-media">
         <h4 class="social-media-header">
           {{ sectionContent.socialMediaHeader }}
         </h4>

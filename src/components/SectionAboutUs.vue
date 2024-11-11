@@ -20,7 +20,7 @@
               alt="dialogue bubble"
               class="teaser-graphic"
             />
-            <p class="teaser-text">Teaser to About Us Section...</p>
+            <p class="teaser-text">Wanna hear our story?</p>
           </a>
         </div>
       </div>

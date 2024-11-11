@@ -15,7 +15,7 @@
       />
       <p class="section-description to-slide-in-bottom">
         {{ sectionContent.text02 }}
-        <span class="highlight to-rubberband"
+        <span @click="onClickShowSocialMedia" class="highlight to-rubberband"
           >{{ sectionContent.highlight }}
         </span>
         {{ sectionContent.text02 }}
@@ -107,6 +107,15 @@ export default {
       this.startersContent = starters;
       this.mainsContent = mains;
       this.dessertsContent = desserts;
+    },
+
+    onClickShowSocialMedia() {
+      const target = document.querySelector("#social-media");
+      target.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
     },
   },
 };

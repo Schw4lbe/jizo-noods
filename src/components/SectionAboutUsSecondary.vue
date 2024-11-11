@@ -54,6 +54,11 @@
         <h4 class="content-subheader to-slide-in-bottom">Meet the Chef</h4>
         <div class="content-grid">
           <div class="grid-item">
+            <img
+              src="../../public/img/about-us/TW-JizoNoods-11.jpg"
+              alt="Image of Chef"
+              class="content-image to-slide-in-bottom"
+            />
             <p class="content-text to-slide-in-bottom">
               <span class="highlight">Thomas, </span>
               one of the founders of

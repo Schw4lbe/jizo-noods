@@ -7,27 +7,6 @@
             "urlText": "Link to Feedback Page",
             "media": ""
         },
-        "sectionGallery": {
-            "header": "Gallery",
-            "description": "Gallery Description",
-            "items": [
-                {
-                    "label": "Ramen Sample 01",
-                    "description": "Ramen Sample Description 01",
-                    "url": "/img/gallery/TW-JizoNoods-6.jpg"
-                },
-                {
-                    "label": "Ramen Sample 02",
-                    "description": "Ramen Sample Description 02",
-                    "url": "/img/gallery/TW-JizoNoods-11.jpg"
-                },
-                {
-                    "label": "Ramen Sample 03",
-                    "description": "Ramen Sample Description 03",
-                    "url": "/img/gallery/TW-JizoNoods-13.jpg"
-                }
-            ]
-        },
         "sectionRamenKit": {
             "header": "Ramen Kits",
             "teaser": "Ramen Kits Info Teaser get in contanct!",
