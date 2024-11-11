@@ -74,7 +74,7 @@ export default {
     createObserver() {
       const options = {
         root: null, // Observes relative to the viewport
-        rootMargin: "0px 0px -20% 0px", // 20% before the bottom of the viewport
+        rootMargin: "0px 0px -10% 0px", // 20% before the bottom of the viewport
         threshold: 0.1, // Trigger when 10% of the element is visible
       };
 

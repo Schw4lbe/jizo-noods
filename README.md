@@ -10,11 +10,15 @@
 - make cms accessable on stage and live environment
 - add netlify identity to print view on stage
 - remove print view rendering via env variable on live
-- make offset fit for scroll into view method
-- navbar current item selected highlighted
+- fix slight flicker on gallery image change
+- about us landing slide up image
+- sloud out left small and maybe small infinite bump on dialogue
+- text bigger in dialogue
+- animate about us view
 
 ### prio 1:
 
+- navbar current item selected highlighted
 - final check page on SEO features and tweeks
 - embedd SEO baseline to all content parts
 - find image optimization workflow for staging
