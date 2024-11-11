@@ -1,5 +1,7 @@
 <template>
-  <SectionAboutUsSecondary />
+  <div class="section-wrapper section-wrapper-variant-d">
+    <SectionAboutUsSecondary />
+  </div>
 </template>
 
 <script>
