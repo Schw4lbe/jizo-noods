@@ -181,6 +181,28 @@
           "hasLemon": true,
           "hasSoya": false
         }
+      },
+      {
+        "allergens": {
+          "hasNuts": false,
+          "hasLactose": false,
+          "hasGluten": true,
+          "hasGarlic": false,
+          "hasShellfish": false,
+          "hasOnion": false,
+          "hasFish": true,
+          "hasSesame": false,
+          "hasMushroom": false,
+          "hasLemon": false,
+          "hasSoya": true
+        },
+        "name": "test",
+        "cat": "starter",
+        "price": 3000,
+        "ingredients": [
+          "test",
+          "test"
+        ]
       }
     ]
   },
@@ -188,6 +210,8 @@
     "header01": "Starters",
     "header02": "Noodles",
     "header03": "Sweets",
-    "allergenLabel": "Allergens"
+    "allergenLabel": "Allergens",
+    "teaser01": "test",
+    "teaser02": "test"
   }
 }
