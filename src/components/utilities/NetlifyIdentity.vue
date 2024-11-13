@@ -1,7 +1,7 @@
 <template>
   <div v-if="!user" class="netlify-login-ui">
     <img src="../../../public/img/logo.png" alt="logo" class="login-logo" />
-    <h3 class="login-header">Jizo Noods Website Preview</h3>
+    <h3 class="login-header">Jizo Noods Member Login</h3>
     <button @click="openLogin" class="netlify-login-btn">Login</button>
   </div>
   <button v-if="user" @click="logout" class="netlify-logout-btn">Logout</button>
