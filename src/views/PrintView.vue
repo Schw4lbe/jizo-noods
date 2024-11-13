@@ -160,6 +160,7 @@ export default {
   },
 
   created() {
+    this.checkUserStatus();
     this.setProductData();
     this.setContent();
   },
@@ -169,6 +170,12 @@ export default {
   },
 
   methods: {
+    checkUserStatus() {
+      const user = localStorage.getItem("gotrue.user");
+      // double !! converts value to bool
+      this.isUserLoggedIn = !!user;
+    },
+
     setProductData() {
       const products = productData[this.selectedLanguage];
       this.productData = products;
