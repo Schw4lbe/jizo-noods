@@ -4,7 +4,6 @@
 
 ### prio 0:
 
-- check ios compability on scrolling text
 - env var for config.yml test for stage and live separate branches for stage testing
 - make cms accessable on stage and live environment
 - add netlify identity to print view on stage
