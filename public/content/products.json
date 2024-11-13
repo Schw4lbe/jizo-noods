@@ -181,28 +181,6 @@
           "hasLemon": true,
           "hasSoya": false
         }
-      },
-      {
-        "allergens": {
-          "hasNuts": true,
-          "hasLactose": false,
-          "hasGluten": false,
-          "hasGarlic": false,
-          "hasShellfish": false,
-          "hasOnion": false,
-          "hasFish": false,
-          "hasSesame": true,
-          "hasMushroom": false,
-          "hasLemon": false,
-          "hasSoya": true
-        },
-        "name": "stage test",
-        "cat": "starter",
-        "price": 4000,
-        "ingredients": [
-          "test",
-          "test"
-        ]
       }
     ]
   },
