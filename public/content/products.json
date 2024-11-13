@@ -184,21 +184,21 @@
       },
       {
         "allergens": {
-          "hasNuts": false,
+          "hasNuts": true,
           "hasLactose": false,
-          "hasGluten": true,
+          "hasGluten": false,
           "hasGarlic": false,
           "hasShellfish": false,
           "hasOnion": false,
-          "hasFish": true,
-          "hasSesame": false,
+          "hasFish": false,
+          "hasSesame": true,
           "hasMushroom": false,
           "hasLemon": false,
           "hasSoya": true
         },
-        "name": "test",
+        "name": "stage test",
         "cat": "starter",
-        "price": 3000,
+        "price": 4000,
         "ingredients": [
           "test",
           "test"
