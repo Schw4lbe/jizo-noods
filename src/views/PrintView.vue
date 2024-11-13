@@ -1,5 +1,10 @@
 <template>
-  <div class="print-menu-option-control" id="control-panel">
+  <NetlifyIdentity v-if="!isUserLoggedIn" />
+  <div
+    v-if="isUserLoggedIn"
+    class="print-menu-option-control"
+    id="control-panel"
+  >
     <div class="toggle-container">
       <div class="select-products-container">
         <!-- Starters Section -->
@@ -122,15 +127,19 @@ import { mapGetters } from "vuex";
 import productData from "../../public/content/products.json";
 import allergenData from "../../public/content/allergens.json";
 import MenuProducts from "../components/MenuProducts.vue";
+import NetlifyIdentity from "../components/utilities/NetlifyIdentity.vue";
 
 export default {
   name: "PrintView",
   components: {
     MenuProducts,
+    NetlifyIdentity,
   },
 
   data() {
     return {
+      isUserLoggedIn: false,
+
       productData: [],
       allergenData: null,
 
@@ -153,6 +162,7 @@ export default {
   },
 
   created() {
+    this.checkUserStatus();
     this.setProductData();
     this.setContent();
   },
@@ -162,6 +172,12 @@ export default {
   },
 
   methods: {
+    checkUserStatus() {
+      const user = localStorage.getItem("gotrue.user");
+      // double !! converts value to bool
+      this.isUserLoggedIn = !!user;
+    },
+
     setProductData() {
       const products = productData[this.selectedLanguage];
       this.productData = products;
