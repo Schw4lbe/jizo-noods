@@ -138,6 +138,8 @@ export default {
 
   data() {
     return {
+      isUserLoggedIn: false,
+
       productData: [],
       allergenData: null,
 
