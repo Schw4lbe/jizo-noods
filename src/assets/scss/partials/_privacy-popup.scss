@@ -54,8 +54,8 @@
     .privacy-accept-btn {
       border: none;
       border-radius: 0.375rem;
-      color: $clr-primary;
-      background: $clr-secondary;
+      color: $clr-secondary;
+      background: lighten($clr-accent, 20%);
       padding: 6px 18px;
       transition: all 0.5s;
       margin-top: 1rem;

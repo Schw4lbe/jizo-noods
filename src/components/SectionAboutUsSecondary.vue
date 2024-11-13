@@ -57,7 +57,7 @@
             <img
               src="../../public/img/about-us/TW-JizoNoods-11.jpg"
               alt="Image of Chef"
-              class="content-image to-slide-in-bottom"
+              class="content-image"
             />
             <p class="content-text to-slide-in-bottom">
               <span class="highlight">Thomas, </span>
@@ -101,9 +101,11 @@
 <script>
 import { mapGetters } from "vuex";
 import content from "../../public/content/about-us.json";
+import animation from "@/scripts/animation";
 
 export default {
   name: "SectionAboutUsSecondary",
+  mixins: [animation],
 
   data() {
     return {

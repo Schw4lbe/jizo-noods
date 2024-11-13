@@ -14,13 +14,17 @@
           />
         </div>
         <div class="grid-item">
-          <a href="/about-us" class="text-on-image-container">
+          <a href="/about-us" class="text-on-image-container to-slide-in-left">
             <img
               src="../../public/img/about-us/dialogue-bubble.png"
               alt="dialogue bubble"
               class="teaser-graphic"
             />
-            <p class="teaser-text">{{ sectionContent.teaser }}</p>
+            <p
+              class="teaser-text animate__pulse animate__animated animate__infinite"
+            >
+              {{ sectionContent.teaser }}
+            </p>
           </a>
         </div>
       </div>

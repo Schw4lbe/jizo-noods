@@ -31,12 +31,6 @@
         JavaScript tracking or user data interaction. Your privacy remains
         entirely secure while using Animate.css on our site.
       </li>
-      <li class="item">
-        <b>Hosting (Netlify): </b>Our website is hosted via Netlify, a secure
-        and reliable hosting service, which also helps improve website
-        performance. The hosting is encrypted with a certificate to ensure
-        secure data transmission.
-      </li>
     </ul>
     <h5 class="section-subheader">Why We Use These Technologies</h5>
     <ul class="list">
@@ -52,8 +46,8 @@
         Animate.css: To deliver cross plattform compatible element animations.
       </li>
       <li class="item">
-        Netlify Hosting: To ensure our website remains fast, secure, and
-        accessible.
+        Hosting: To ensure our website remains fast, secure, and accessible, we
+        use latest web standards as well as SSL encryption.
       </li>
     </ul>
     <h5 class="section-subheader">Data Collection and Sharing</h5>

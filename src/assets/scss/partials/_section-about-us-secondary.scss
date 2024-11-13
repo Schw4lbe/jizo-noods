@@ -12,12 +12,10 @@
 
       .content-image {
         width: 100%;
+        max-width: 850px;
         max-height: 100% !important;
+        padding: 2rem;
       }
-    }
-
-    .content-image:nth-child(1) {
-      transform: scaleX(-1) !important;
     }
 
     .content-container:nth-child(2) {

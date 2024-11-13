@@ -1,6 +1,9 @@
 <template>
   <section class="section-gallery-main" id="section-gallery">
-    <div id="carouselExampleCaptions" class="carousel slide">
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide carousel-fade to-zoom-in"
+    >
       <div class="carousel-indicators">
         <button
           v-for="count in itemCount"

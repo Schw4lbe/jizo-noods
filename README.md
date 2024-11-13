@@ -9,15 +9,10 @@
 - make cms accessable on stage and live environment
 - add netlify identity to print view on stage
 - remove print view rendering via env variable on live
-- fix slight flicker on gallery image change
-- about us landing slide up image
-- slide out left small and maybe small infinite bump on dialogue
-- animate about us view
-- about us dialog graphic add animation
-- make text pop out and animate to click on it
 
 ### prio 1:
 
+- back up button on bottom of every view with smooth scroll back to top
 - navbar borders to the edge with navbar wrapper background color
 - navbar current item selected highlighted
 - final check page on SEO features and tweeks
