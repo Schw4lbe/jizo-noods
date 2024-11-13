@@ -7,7 +7,7 @@
   <div class="section-wrapper section-wrapper-variant-d">
     <SectionGallery />
   </div>
-  <div class="section-wrapper section-wrapper-variant-b">
+  <div class="section-wrapper section-wrapper-variant-d">
     <SectionAboutUs />
   </div>
   <div class="section-wrapper section-wrapper-variant-c">
