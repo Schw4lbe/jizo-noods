@@ -2,6 +2,7 @@
     "en": {
         "header": "Allergens",
         "description": "Open for details on allergens...",
+        "description2": "Our noodles are egg free.",
         "items": [
             {
                 "id": "1",

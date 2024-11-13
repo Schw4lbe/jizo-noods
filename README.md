@@ -5,19 +5,20 @@
 ### prio 0:
 
 - check ios compability on scrolling text
-- navbar borders to the edge with navbar wrapper background color
 - env var for config.yml test for stage and live separate branches for stage testing
 - make cms accessable on stage and live environment
 - add netlify identity to print view on stage
 - remove print view rendering via env variable on live
 - fix slight flicker on gallery image change
 - about us landing slide up image
-- sloud out left small and maybe small infinite bump on dialogue
-- text bigger in dialogue
+- slide out left small and maybe small infinite bump on dialogue
 - animate about us view
+- about us dialog graphic add animation
+- make text pop out and animate to click on it
 
 ### prio 1:
 
+- navbar borders to the edge with navbar wrapper background color
 - navbar current item selected highlighted
 - final check page on SEO features and tweeks
 - embedd SEO baseline to all content parts

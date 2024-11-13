@@ -2,7 +2,7 @@
   <section class="section-intro-main">
     <img
       class="intro-background"
-      src="../../public/img/intro/intro-sample.jpg"
+      src="../../public/img/intro/placeholder.jpg"
       alt="dummy"
     />
     <div class="logo-slogan-container">

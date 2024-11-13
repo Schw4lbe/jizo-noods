@@ -24,6 +24,7 @@
             data-bs-parent="#allergensAccordion"
           >
             <div class="accordion-body">
+              <p class="allergen-info">{{ allergenData.description2 }}</p>
               <ul class="allergens-list">
                 <li
                   v-for="item in allergenData.items"

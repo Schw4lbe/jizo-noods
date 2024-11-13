@@ -3,7 +3,7 @@
     <h3 class="section-header">{{ sectionContent.header }}</h3>
     <div class="about-content-container">
       <h4 class="content-subheader to-slide-in-bottom">
-        Curious about our origins?
+        {{ sectionContent.subheader }}
       </h4>
       <div class="content-grid">
         <div class="grid-item">
@@ -20,7 +20,7 @@
               alt="dialogue bubble"
               class="teaser-graphic"
             />
-            <p class="teaser-text">Wanna hear our story?</p>
+            <p class="teaser-text">{{ sectionContent.teaser }}</p>
           </a>
         </div>
       </div>

@@ -76,7 +76,7 @@
           <div class="grid-item">
             <p class="content-text to-slide-in-bottom">
               He then continued his journey by joining the team at
-              <span class="highlight"> Monoqule, </span>
+              <span class="highlight"> Mon Oncle, </span>
               where he elevated the world of French cuisine and fine dining,
               growing his expertise and sharpening his chef skills to the next
               level. With this wealth of unique experience, Thomas brings a
