@@ -36,13 +36,13 @@ export default {
     netlifyIdentity.on("login", (user) => {
       this.user = user;
       this.emitUserStatus();
-      // window.location.reload();
+      window.location.reload();
     });
 
     netlifyIdentity.on("logout", () => {
       this.user = null;
       this.emitUserStatus();
-      // window.location.reload();
+      window.location.reload();
     });
   },
   methods: {
