@@ -2,13 +2,6 @@
 
 ## to-dos with prio
 
-### prio 0:
-
-- env var for config.yml test for stage and live separate branches for stage testing
-- make cms accessable on stage and live environment
-- add netlify identity to print view on stage
-- remove print view rendering via env variable on live
-
 ### prio 1:
 
 - back up button on bottom of every view with smooth scroll back to top
