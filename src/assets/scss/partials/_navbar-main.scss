@@ -72,29 +72,22 @@
     .scrolling-wrapper {
       color: lighten($clr-accent, 10%);
       text-transform: uppercase;
-      align-items: center;
       padding: 8px 0 5px 0;
+      display: flex;
+      overflow: hidden;
+      white-space: nowrap;
+      max-width: 100%;
+      align-items: center;
+
       .marquee {
+        display: flex;
+        gap: 2rem; /* Adjust as needed for spacing */
+        animation: scroll 60s linear infinite;
         p {
           margin: 0;
           padding-top: 2px;
           font-size: 18px;
-        }
-      }
-    }
-
-    .scrolling-wrapper {
-      max-width: 100%;
-      overflow: hidden;
-
-      .marquee {
-        white-space: nowrap;
-        overflow: hidden;
-        display: inline-block;
-        animation: marquee 18s linear infinite;
-        font-weight: 600;
-        p {
-          display: inline-block;
+          font-weight: 500;
         }
       }
     }
