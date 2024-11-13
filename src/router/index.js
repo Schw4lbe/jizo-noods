@@ -25,16 +25,12 @@ const routes = [
     name: "imprint",
     component: ImprintView,
   },
-];
-
-// Conditionally add the /print route
-if (process.env.VUE_APP_INCLUDE_PRINT === "true") {
-  routes.push({
+  {
     path: "/print",
     name: "print",
     component: () => import("@/views/PrintView.vue"),
-  });
-}
+  },
+];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
