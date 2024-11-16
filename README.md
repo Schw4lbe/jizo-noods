@@ -2,6 +2,24 @@
 
 ## to-dos with prio
 
+### prio 0 (CMS):
+
+##### basic:
+
+- add missing CMS features that are easy to realize out of the box
+- missing cms parts per discussion: banner lauftext, adresse location section, adresse top section, about us
+- advance / rework existing CMS-definitions to give clear info for sections
+- advance template to resolve stage and go live config file
+
+##### advanced:
+
+- find way to highlight random text areas via import
+  -> idea: mark to highlight text with **TEXT**
+- filter out those passages with javascript and pack them into an array
+- filter out the regular text as well and pack them into an array (maybe the same? tbd) as well
+- combine them into text and highlighted text elements in conditional rendering in template
+- gives user the ability to use highlighted text in any case
+
 ### prio 1:
 
 - back up button on bottom of every view with smooth scroll back to top
@@ -15,12 +33,6 @@
 
 ### prio 2:
 
-- add missing CMS features
-- missing cms parts per discussion: banner lauftext, adresse location section, adresse top section, about us
-- advance / rework existing definitions to give clear info for sections
-
-### prio 3:
-
 - navbar top right globe to change language
 - give order to translate content to norwegian
 - output fonts on phone raphi strangly thick -> check font weight
@@ -30,7 +42,7 @@
 - Document / automate a merge and deployment process to ensure clarity for both you and the customer
 - Optional: Introduce branch protection rules and CI/CD testing workflows to ensure quality and stability
 
-### prio 4:
+### prio 3:
 
 - replace dummy img on opening with actuall video content
 - after cookie check in local storage state start loading sequence
@@ -42,7 +54,6 @@
 - tiktok / instagram content via click open in app
 - unicode check for japanese / chinese
 - research for table booking software / api
-
 - feedback after consumption in location
 - incentivize feedback with direct contact
 - feedback data accessable and easy to understand / process
