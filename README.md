@@ -7,9 +7,7 @@
 ##### basic:
 
 - add missing CMS features that are easy to realize out of the box
-- missing cms parts per discussion: banner lauftext, adresse location section, adresse top section, about us
-- advance / rework existing CMS-definitions to give clear info for sections
-- advance template to resolve stage and go live config file
+- missing cms parts per discussion: adresse top section
 
 ##### advanced:
 

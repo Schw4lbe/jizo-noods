@@ -188,8 +188,6 @@
     "header01": "Starters",
     "header02": "Noodles",
     "header03": "Sweets",
-    "allergenLabel": "Allergens",
-    "teaser01": "test",
-    "teaser02": "test"
+    "allergenLabel": "Allergens"
   }
 }

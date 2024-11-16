@@ -25,17 +25,14 @@
         "socialMediaHeader": "Follow us on Social Media",
         "socialMedia": [
             {
-                "name": "Facebook",
                 "icon": "fa-brands fa-square-facebook",
                 "url": "https://www.facebook.com"
             },
             {
-                "name": "Instagram",
                 "icon": "fa-brands fa-instagram",
                 "url": "https://www.instagram.com/jizo_noods/"
             },
             {
-                "name": "TikTok",
                 "icon": "fa-brands fa-tiktok",
                 "url": "https://www.tiktok.com/@jizo.noods"
             }
@@ -79,17 +76,14 @@
         "socialMediaHeader": "Follow us on Social Media",
         "socialMedia": [
             {
-                "name": "Facebook",
                 "icon": "fa-brands fa-square-facebook",
                 "url": "https://www.facebook.com"
             },
             {
-                "name": "Instagram",
                 "icon": "fa-brands fa-instagram",
                 "url": "https://www.instagram.com/jizo_noods/"
             },
             {
-                "name": "TikTok",
                 "icon": "fa-brands fa-tiktok",
                 "url": "https://www.tiktok.com/@jizo.noods"
             }
