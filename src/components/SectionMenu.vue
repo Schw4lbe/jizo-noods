@@ -18,7 +18,7 @@
         <span @click="onClickShowSocialMedia" class="highlight to-rubberband"
           >{{ sectionContent.highlight }}
         </span>
-        {{ sectionContent.text02 }}
+        {{ sectionContent.text03 }}
       </p>
     </div>
     <MenuProducts
