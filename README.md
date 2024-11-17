@@ -2,21 +2,6 @@
 
 ## to-dos with prio
 
-### prio 0 (CMS):
-
-##### basic:
-
-- missing cms parts per discussion: adresse top section
-
-##### advanced:
-
-- find way to highlight random text areas via import
-  -> idea: mark to highlight text with **TEXT**
-- filter out those passages with javascript and pack them into an array
-- filter out the regular text as well and pack them into an array (maybe the same? tbd) as well
-- combine them into text and highlighted text elements in conditional rendering in template
-- gives user the ability to use highlighted text in any case
-
 ### prio 1:
 
 - back up button on bottom of every view with smooth scroll back to top
