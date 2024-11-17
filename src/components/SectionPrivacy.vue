@@ -120,6 +120,15 @@ export default {
     this.setContent();
   },
 
+  watch: {
+    selectedLanguage: {
+      handler() {
+        this.setContent(); // Re-run setContent when selectedLanguage changes
+      },
+      immediate: true, // Ensures the watcher runs once on initialization
+    },
+  },
+
   methods: {
     setContent() {
       this.contactData = infoData[this.selectedLanguage];

@@ -32,6 +32,7 @@
 
 ## Backlog
 
+- Print view not in norwegian, wanted?
 - check social media account connections for statistics
 - tiktok / instagram content via click open in app
 - unicode check for japanese / chinese

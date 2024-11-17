@@ -2,7 +2,7 @@ import { createStore } from "vuex";
 
 export default createStore({
   state: {
-    language: "en",
+    language: localStorage.getItem("selectedLanguage") || "en",
     privacyAccepted: localStorage.getItem("privacyIsAccepted") === "true",
   },
 

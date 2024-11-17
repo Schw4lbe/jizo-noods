@@ -40,35 +40,42 @@
         ]
     },
     "no": {
-        "scrollingText": "Dummy",
+        "scrollingText": " Dummy for Norsk. Dummy for Norsk. Dummy for Norsk. Dummy for Norsk. Dummy for Norsk. Dummy for Norsk. Dummy for Norsk. ",
         "items": [
             {
-                "label": "navItem 01",
-                "url": "#"
+                "label": "Hjem",
+                "url": "/",
+                "isSection": false
             },
             {
-                "label": "navItem 02",
-                "url": "#"
+                "label": "Meny",
+                "url": "section-menu",
+                "isSection": true
             },
             {
-                "label": "navItem 03",
-                "url": "#"
+                "label": "Galleri",
+                "url": "section-gallery",
+                "isSection": true
             },
             {
-                "label": "navItem 04",
-                "url": "#"
+                "label": "Beliggenhet",
+                "url": "location",
+                "isSection": true
             },
             {
-                "label": "navItem 05",
-                "url": "#"
+                "label": "Om Oss",
+                "url": "/about-us",
+                "isSection": false
             },
             {
-                "label": "navItem 06",
-                "url": "#"
+                "label": "Personvern",
+                "url": "/privacy",
+                "isSection": false
             },
             {
-                "label": "navItem 06",
-                "url": "#"
+                "label": "Impressum",
+                "url": "/imprint",
+                "isSection": false
             }
         ]
     }

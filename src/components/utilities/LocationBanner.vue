@@ -34,7 +34,16 @@ export default {
   },
 
   created() {
-    this.prepareContent();
+    this.setContent();
+  },
+
+  watch: {
+    selectedLanguage: {
+      handler() {
+        this.setContent(); // Re-run setContent when selectedLanguage changes
+      },
+      immediate: true, // Ensures the watcher runs once on initialization
+    },
   },
 
   computed: {
@@ -42,7 +51,7 @@ export default {
   },
 
   methods: {
-    prepareContent() {
+    setContent() {
       const bannerContent = content[this.selectedLanguage].text;
       const splitArr = [];
       let orderCounter = 0;
