@@ -8,17 +8,12 @@
       />
       <div class="banner-content">
         <p class="banner-text">
-          Craving delicious noodles? <br />Join us at our
-          <span @click="scrollToLocation" class="highlight">PopUp</span> in
-          <span @click="scrollToLocation" class="highlight">Trekanten</span>
-          every
-          <span @click="scrollToLocation" class="highlight">Thursday</span>,
-          <span @click="scrollToLocation" class="highlight">Friday</span> and
-          <span @click="scrollToLocation" class="highlight">Saturday</span> from
-          <span @click="scrollToLocation" class="highlight">13:00</span> to
-          <span @click="scrollToLocation" class="highlight">20:00</span>!
-          <br />Dive into Jizo’s weekly mind-blowing flavors that are sure to
-          tantalize your taste buds.
+          <span
+            v-for="item in bannerTextElements"
+            :key="item.order"
+            :class="item.isHighlighted ? 'highlight' : 'text'"
+            >{{ item.text }}</span
+          >
         </p>
       </div>
     </div>
@@ -34,12 +29,12 @@ export default {
 
   data() {
     return {
-      bannerContent: null,
+      bannerTextElements: [],
     };
   },
 
   created() {
-    this.setContent();
+    this.prepareContent();
   },
 
   computed: {
@@ -47,8 +42,33 @@ export default {
   },
 
   methods: {
-    setContent() {
-      this.bannerContent = content[this.selectedLanguage];
+    prepareContent() {
+      const bannerContent = content[this.selectedLanguage].text;
+      const splitArr = [];
+      let orderCounter = 0;
+
+      // Use a regular expression to capture highlighted and non-highlighted text, preserving whitespace
+      const regex = /\*\*(.*?)\*\*|([^*]+)/g;
+      let match;
+
+      while ((match = regex.exec(bannerContent)) !== null) {
+        if (match[1]) {
+          // Text inside ** (highlighted)
+          splitArr.push({
+            order: orderCounter++,
+            isHighlighted: true,
+            text: match[1], // Preserve whitespace as-is
+          });
+        } else if (match[2]) {
+          // Text outside ** (regular text)
+          splitArr.push({
+            order: orderCounter++,
+            isHighlighted: false,
+            text: match[2], // Preserve whitespace as-is
+          });
+        }
+      }
+      this.bannerTextElements = splitArr;
     },
 
     scrollToLocation() {

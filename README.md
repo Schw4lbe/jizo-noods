@@ -6,7 +6,6 @@
 
 ##### basic:
 
-- add missing CMS features that are easy to realize out of the box
 - missing cms parts per discussion: adresse top section
 
 ##### advanced:
