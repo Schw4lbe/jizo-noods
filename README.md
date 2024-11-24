@@ -6,7 +6,6 @@
 
 - embedd SEO baseline to all content parts
 - Events teaser + subsection on page own view own cms entrie
-- Allergens
 
 ### prio 1:
 

@@ -69,6 +69,66 @@
                 "key": "hasLactose",
                 "label": "Lactose",
                 "description": "Lactose or lactose-based ingredients are present in these dishes."
+            },
+            {
+                "id": "12",
+                "key": "hasCelery",
+                "label": "Celery",
+                "description": "Celery or Celery-based ingredients are present in these dishes."
+            },
+            {
+                "id": "13",
+                "key": "hasMustard",
+                "label": "Mustard",
+                "description": "Mustard or Mustard-based ingredients are present in these dishes."
+            },
+            {
+                "id": "14",
+                "key": "hasMilk",
+                "label": "Milk",
+                "description": "Milk or Milk-based ingredients are present in these dishes."
+            },
+            {
+                "id": "15",
+                "key": "hasEggs",
+                "label": "Eggs",
+                "description": "Eggs or Eggs-based ingredients are present in these dishes."
+            },
+            {
+                "id": "16",
+                "key": "hasPeanuts",
+                "label": "Peanuts",
+                "description": "Peanuts or Peanuts-based ingredients are present in these dishes."
+            },
+            {
+                "id": "17",
+                "key": "hasSulfur",
+                "label": "Sulfur Dioxide and Sulfites",
+                "description": "Sulfur Dioxide and Sulfites or Sulfur Dioxide and Sulfites-based ingredients are present in these dishes."
+            },
+            {
+                "id": "18",
+                "key": "hasLupine",
+                "label": "Lupine",
+                "description": "Lupine or Lupine-based ingredients are present in these dishes."
+            },
+            {
+                "id": "19",
+                "key": "hasMolluscs",
+                "label": "Molluscs",
+                "description": "Molluscs or Molluscs-based ingredients are present in these dishes."
+            },
+            {
+                "id": "20",
+                "key": "hasSucrose",
+                "label": "Sucrose",
+                "description": "Sucrose or Sucrose-based ingredients are present in these dishes."
+            },
+            {
+                "id": "21",
+                "key": "hasCheese",
+                "label": "Cheese",
+                "description": "Cheese or Cheese-based ingredients are present in these dishes."
             }
         ]
     },

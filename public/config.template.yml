@@ -316,6 +316,56 @@ collections:
                         widget: "boolean"
                         required: false
                         default: false
+                      - label: "Has Celery"
+                        name: "hasCelery"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Mustard"
+                        name: "hasMustard"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Milk"
+                        name: "hasMilk"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Eggs"
+                        name: "hasEggs"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Peanuts"
+                        name: "hasPeanuts"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Sulfur"
+                        name: "hasSulfur"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Lupine"
+                        name: "hasLupine"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Molluscs"
+                        name: "hasMolluscs"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Sucrose"
+                        name: "hasSucrose"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Cheese"
+                        name: "hasCheese"
+                        widget: "boolean"
+                        required: false
+                        default: false
           - label: "Norwegian Content"
             name: "no"
             widget: "object"
@@ -412,6 +462,56 @@ collections:
                         default: false
                       - label: "Has Lactose"
                         name: "hasLactose"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Celery"
+                        name: "hasCelery"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Mustard"
+                        name: "hasMustard"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Milk"
+                        name: "hasMilk"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Eggs"
+                        name: "hasEggs"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Peanuts"
+                        name: "hasPeanuts"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Sulfur"
+                        name: "hasSulfur"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Lupine"
+                        name: "hasLupine"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Molluscs"
+                        name: "hasMolluscs"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Sucrose"
+                        name: "hasSucrose"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Cheese"
+                        name: "hasCheese"
                         widget: "boolean"
                         required: false
                         default: false
