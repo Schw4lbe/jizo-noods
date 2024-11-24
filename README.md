@@ -2,13 +2,18 @@
 
 ## to-dos with prio
 
+### prio 0:
+
+- embedd SEO baseline to all content parts
+- Events teaser + subsection on page own view own cms entrie
+- Allergens
+
 ### prio 1:
 
 - back up button on bottom of every view with smooth scroll back to top
 - navbar borders to the edge with navbar wrapper background color
 - navbar current item selected highlighted
 - final check page on SEO features and tweeks
-- embedd SEO baseline to all content parts
 - find image optimization workflow for staging
 - define image order with additional value in data structure
 - find a way to link the image to the data object to preserve consistency
