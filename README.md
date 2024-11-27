@@ -4,6 +4,8 @@
 
 ### prio 0:
 
+- netlify identity only on stage first page for account resets
+- do before push on production
 - embedd SEO baseline to all content parts
 - Events teaser + subsection on page own view own cms entrie
 
