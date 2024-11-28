@@ -1,0 +1,517 @@
+local_backend: true
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/img"
+public_folder: "/img"
+
+collections:
+  - label: "Navigation Items"
+    name: "navigation"
+    files:
+      - label: "Edit Headers of Navigation Items. Please DO NOT DELETE OR ADD Items!"
+        name: "navbar"
+        file: "public/content/navbar.json"
+        fields:
+          - label: "English Content"
+            name: "en"
+            widget: "object"
+            fields:
+              - label: "Scrolling Text"
+                name: "scrollingText"
+                widget: "text"
+              - label: "Navbar Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - label: "Item Label"
+                    name: "label"
+                    widget: "string"
+          - label: "Norwegian Content"
+            name: "no"
+            widget: "object"
+            fields:
+              - label: "Scrolling Text"
+                name: "scrollingText"
+                widget: "text"
+              - label: "Navbar Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - label: "Item Label"
+                    name: "label"
+                    widget: "string"
+
+  - label: "Section Location Banner"
+    name: "location_banner"
+    files:
+      - label: "Edit Banner Content on DARK paint stroke. Add ** before and after word to highlight it."
+        name: "location_banner_content"
+        file: "public/content/locationBanner.json"
+        fields:
+          - label: "English Content"
+            name: "en"
+            widget: "object"
+            fields:
+              - label: "Text on Banner"
+                name: "text"
+                widget: "string"
+          - label: "Norwegian Content"
+            name: "no"
+            widget: "object"
+            fields:
+              - label: "Text on Banner"
+                name: "text"
+                widget: "string"
+
+  - label: "Section Menu Content"
+    name: "sectionMenu"
+    files:
+      - label: "Edit content in section Menu (header, texts and social media button)."
+        name: "sectionMenu"
+        file: "public/content/menu.json"
+        fields:
+          - label: "English Content"
+            name: "en"
+            widget: "object"
+            fields:
+              - label: "Section Header"
+                name: "header"
+                widget: "text"
+              - label: "Opening Question"
+                name: "text01"
+                widget: "text"
+              - label: "Follow up Text Part 1"
+                name: "text02"
+                widget: "text"
+              - label: "Social Media Button"
+                name: "highlight"
+              - label: "Follow up Text Part 2"
+                name: "text03"
+                widget: "text"
+          - label: "Norwegian Content"
+            name: "no"
+            widget: "object"
+            fields:
+              - label: "Section Header"
+                name: "header"
+                widget: "text"
+              - label: "Opening Question"
+                name: "text01"
+                widget: "text"
+              - label: "Follow up Text Part 1"
+                name: "text02"
+                widget: "text"
+              - label: "Social Media Button"
+                name: "highlight"
+              - label: "Follow up Text Part 2"
+                name: "text03"
+                widget: "text"
+
+  - label: "Section About Us Content"
+    name: "sectionAboutUs"
+    files:
+      - label: "Edit content from section About Us on the Landing Page (not details on separate view)."
+        name: "sectionAboutUs"
+        file: "public/content/about-us.json"
+        fields:
+          - label: "English Content"
+            name: "en"
+            widget: "object"
+            fields:
+              - label: "Section Header"
+                name: "header"
+                widget: "text"
+              - label: "Section Subheader"
+                name: "subheader"
+                widget: "text"
+              - label: "Teaser Text in Bubble"
+                name: "teaser"
+                widget: "text"
+          - label: "Norwegian Content"
+            name: "no"
+            widget: "object"
+            fields:
+              - label: "Section Header"
+                name: "header"
+                widget: "text"
+              - label: "Section Subheader"
+                name: "subheader"
+                widget: "text"
+              - label: "Teaser Text in Bubble"
+                name: "teaser"
+                widget: "text"
+
+  - label: "Section Location Content"
+    name: "sectionLocation"
+    files:
+      - label: "Edit section location content like headers, as well as address info."
+        name: "location_content"
+        file: "public/content/company-info.json"
+        fields:
+          - label: "English Content"
+            name: "en"
+            widget: "object"
+            fields:
+              - label: "Section Header"
+                name: "header"
+                widget: "string"
+              - label: "Address"
+                name: "address"
+                widget: "object"
+                fields:
+                  - label: "Address Subheader"
+                    name: "header"
+                    widget: "string"
+                  - label: "Street"
+                    name: "street"
+                    widget: "string"
+                  - label: "House Number"
+                    name: "houseNumber"
+                    widget: "string"
+                  - label: "Zip Code"
+                    name: "zipCode"
+                    widget: "string"
+                  - label: "City"
+                    name: "city"
+                    widget: "string"
+              - label: "Social Media Subheader"
+                name: "socialMediaHeader"
+                widget: "string"
+          - label: "Norwegian Content"
+            name: "no"
+            widget: "object"
+            fields:
+              - label: "Section Header"
+                name: "header"
+                widget: "string"
+              - label: "Address"
+                name: "address"
+                widget: "object"
+                fields:
+                  - label: "Address Subheader"
+                    name: "header"
+                    widget: "string"
+                  - label: "Street"
+                    name: "street"
+                    widget: "string"
+                  - label: "House Number"
+                    name: "houseNumber"
+                    widget: "string"
+                  - label: "Zip Code"
+                    name: "zipCode"
+                    widget: "string"
+                  - label: "City"
+                    name: "city"
+                    widget: "string"
+              - label: "Social Media Subheader"
+                name: "socialMediaHeader"
+                widget: "string"
+
+  - label: "Menu Items"
+    name: "menu_items_information"
+    files:
+      - label: "Add, edit or delete Menu Items and define ingredients, price and allergens."
+        name: "menu_items_content"
+        file: "public/content/products.json"
+        fields:
+          - label: "English Content"
+            name: "en"
+            widget: "object"
+            fields:
+              - label: "Header for Starters"
+                name: "header01"
+                widget: "string"
+              - label: "Header for Main Dishes"
+                name: "header02"
+                widget: "string"
+              - label: "Header for Main Desserts"
+                name: "header03"
+                widget: "string"
+              - label: "Allergen Label"
+                name: "allergenLabel"
+                widget: "string"
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - label: "Name"
+                    name: "name"
+                    widget: "string"
+                  - label: "Category"
+                    name: "cat"
+                    widget: "select"
+                    options:
+                      - "starter"
+                      - "main"
+                      - "dessert"
+                  - label: "Price"
+                    name: "price"
+                    widget: "number"
+                  - label: "Ingredients"
+                    name: "ingredients"
+                    widget: "list"
+                    field:
+                      label: "Ingredient"
+                      name: "ingredient"
+                      widget: "string"
+                  - label: "Allergens"
+                    name: "allergens"
+                    widget: "object"
+                    fields:
+                      - label: "Has Gluten"
+                        name: "hasGluten"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Soya"
+                        name: "hasSoya"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Fish"
+                        name: "hasFish"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Onion"
+                        name: "hasOnion"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Garlic"
+                        name: "hasGarlic"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Mushroom"
+                        name: "hasMushroom"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Shellfish"
+                        name: "hasShellfish"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Sesame"
+                        name: "hasSesame"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Nuts"
+                        name: "hasNuts"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Lemon"
+                        name: "hasLemon"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Lactose"
+                        name: "hasLactose"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Celery"
+                        name: "hasCelery"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Mustard"
+                        name: "hasMustard"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Milk"
+                        name: "hasMilk"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Eggs"
+                        name: "hasEggs"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Peanuts"
+                        name: "hasPeanuts"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Sulfur"
+                        name: "hasSulfur"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Lupine"
+                        name: "hasLupine"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Molluscs"
+                        name: "hasMolluscs"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Sucrose"
+                        name: "hasSucrose"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Cheese"
+                        name: "hasCheese"
+                        widget: "boolean"
+                        required: false
+                        default: false
+          - label: "Norwegian Content"
+            name: "no"
+            widget: "object"
+            fields:
+              - label: "Header for Starters"
+                name: "header01"
+                widget: "string"
+              - label: "Header for Main Dishes"
+                name: "header02"
+                widget: "string"
+              - label: "Header for Main Desserts"
+                name: "header03"
+                widget: "string"
+              - label: "Allergen Label"
+                name: "allergenLabel"
+                widget: "string"
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - label: "Name"
+                    name: "name"
+                    widget: "string"
+                  - label: "Category"
+                    name: "cat"
+                    widget: "select"
+                    options:
+                      - "starter"
+                      - "main"
+                      - "dessert"
+                  - label: "Price"
+                    name: "price"
+                    widget: "number"
+                  - label: "Ingredients"
+                    name: "ingredients"
+                    widget: "list"
+                    field:
+                      label: "Ingredient"
+                      name: "ingredient"
+                      widget: "string"
+                  - label: "Allergens"
+                    name: "allergens"
+                    widget: "object"
+                    fields:
+                      - label: "Has Gluten"
+                        name: "hasGluten"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Soya"
+                        name: "hasSoya"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Fish"
+                        name: "hasFish"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Onion"
+                        name: "hasOnion"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Garlic"
+                        name: "hasGarlic"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Mushroom"
+                        name: "hasMushroom"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Shellfish"
+                        name: "hasShellfish"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Sesame"
+                        name: "hasSesame"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Nuts"
+                        name: "hasNuts"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Lemon"
+                        name: "hasLemon"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Lactose"
+                        name: "hasLactose"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Celery"
+                        name: "hasCelery"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Mustard"
+                        name: "hasMustard"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Milk"
+                        name: "hasMilk"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Eggs"
+                        name: "hasEggs"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Peanuts"
+                        name: "hasPeanuts"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Sulfur"
+                        name: "hasSulfur"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Lupine"
+                        name: "hasLupine"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Molluscs"
+                        name: "hasMolluscs"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Sucrose"
+                        name: "hasSucrose"
+                        widget: "boolean"
+                        required: false
+                        default: false
+                      - label: "Has Cheese"
+                        name: "hasCheese"
+                        widget: "boolean"
+                        required: false
+                        default: false
