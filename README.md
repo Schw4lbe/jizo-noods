@@ -4,8 +4,15 @@
 
 ### prio 0:
 
+- Prepar Page for Video Import
+- create opening scene to load data on page
+- check for load option for data when visiting
 - netlify identity only on stage first page for account resets
 - do before push on production
+
+##### secondary:
+
+- about us accessable in cms / integrate highlighting here
 - embedd SEO baseline to all content parts
 - Events teaser + subsection on page own view own cms entrie
 
