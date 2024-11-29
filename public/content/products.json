@@ -244,18 +244,16 @@
           "hasCelery": false,
           "hasSoya": false
         },
-        "name": "\"Spicy Miso\" Ramen",
+        "name": "\"Spicy Miso\" Ramen (Vegetarian Option)",
         "cat": "main",
         "price": 240,
         "ingredients": [
           "Homemade Tokyo style noodles",
-          "Flamed Chicken Breast",
-          "Chicken-pork Miso Broth",
+          "Flamed Chicken Breast or Glaze Tempeh ",
+          "Chicken-pork or Mushroom Miso Broth",
           "Ajitsuke-egg",
           "Slow cooked Tomato",
-          "Korn",
-          "Scallion",
-          "Aromatic Chili Oil"
+          "Korn"
         ]
       },
       {
