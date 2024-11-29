@@ -259,34 +259,6 @@
         ]
       },
       {
-        "allergens": {
-          "hasNuts": false,
-          "hasLactose": false,
-          "hasGluten": true,
-          "hasEggs": false,
-          "hasGarlic": true,
-          "hasMolluscs": false,
-          "hasShellfish": false,
-          "hasOnion": false,
-          "hasMustard": false,
-          "hasCheese": false,
-          "hasFish": false,
-          "hasSesame": false,
-          "hasMushroom": true,
-          "hasLupine": false,
-          "hasSulfur": false,
-          "hasMilk": false,
-          "hasSucrose": false,
-          "hasPeanuts": false,
-          "hasLemon": false,
-          "hasCelery": false,
-          "hasSoya": true
-        },
-        "name": "\"Spicy Veg Miso\" Ramen ",
-        "cat": "main",
-        "price": 235
-      },
-      {
         "name": "Yuzu Crème brûlée",
         "cat": "dessert",
         "price": 135,
