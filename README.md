@@ -2,9 +2,17 @@
 
 ## to-dos with prio
 
+### prio 0:
+
+- menu print view more then 4 items make skalable
+- qr code instagram on menu
+- display bug on macos
+- put logo on banner level to avoid sinking behind content
+- cms about us
+- back up button on bottom of every view with smooth scroll back to top
+
 ### prio 1:
 
-- back up button on bottom of every view with smooth scroll back to top
 - navbar borders to the edge with navbar wrapper background color
 - navbar current item selected highlighted
 - final check page on SEO features and tweeks
