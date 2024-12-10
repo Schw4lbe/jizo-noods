@@ -23,7 +23,7 @@
       >
         <i class="fa-sharp fa-solid fa-bars navbar-toggler-button"></i>
       </button>
-      <button @click="openToggleLanguageMenu" class="toggle-language">
+      <!-- <button @click="openToggleLanguageMenu" class="toggle-language">
         <i class="fa-solid fa-earth-americas"></i>
       </button>
       <div
@@ -42,7 +42,7 @@
         >
           Norsk
         </button>
-      </div>
+      </div> -->
       <div
         class="offcanvas offcanvas-end"
         tabindex="-1"

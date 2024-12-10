@@ -250,14 +250,16 @@ export default {
         conStarters.classList.add("grid-layout-1");
       } else if (starters.length === 2) {
         conStarters.classList.add("grid-layout-2");
-      } else if (starters.length === 3) {
+      } else if (starters.length >= 3) {
         conStarters.classList.add("grid-layout-3");
       }
 
-      if (mains.length < 4) {
+      if (mains.length < 3) {
         conMains.classList.add("grid-layout-1");
-      } else if (mains.length >= 4) {
+      } else if (mains.length >= 3 && mains.length <= 5) {
         conMains.classList.add("grid-layout-2");
+      } else if (mains.length > 5) {
+        conMains.classList.add("grid-layout-3");
       }
 
       if (desserts.length === 1) {
