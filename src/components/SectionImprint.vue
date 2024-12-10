@@ -55,6 +55,15 @@ export default {
     this.setCompanyData();
   },
 
+  watch: {
+    selectedLanguage: {
+      handler() {
+        this.setContent(); // Re-run setContent when selectedLanguage changes
+      },
+      immediate: true, // Ensures the watcher runs once on initialization
+    },
+  },
+
   computed: {
     ...mapGetters(["selectedLanguage"]),
   },

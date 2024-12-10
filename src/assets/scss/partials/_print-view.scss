@@ -113,7 +113,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 1rem;
+    padding: 0.5rem;
 
     img {
       height: 60px;
@@ -128,17 +128,17 @@
   }
 
   .allergens-print-container {
+    line-height: 0.8;
     padding-top: 1rem;
     .allergens-items-container {
-      // padding: 0 1rem;
       .item {
-        font-size: 10px;
+        font-size: 8px;
         font-weight: 300;
 
         .separator {
-          font-size: 12px;
+          font-size: 10px;
           font-weight: 100;
-          padding: 0 5px;
+          padding: 0 2px;
         }
       }
     }
@@ -159,7 +159,7 @@
       text-transform: uppercase;
       color: $clr-accent;
       font-weight: 700;
-      font-size: 26px;
+      font-size: 1.1rem;
       padding: 0 1rem 1rem 1rem;
       letter-spacing: 4px;
     }
@@ -173,17 +173,17 @@
 
         .item-name {
           color: $clr-accent;
-          font-size: 1rem;
+          font-size: 0.9rem;
           font-weight: 700;
           text-transform: uppercase;
           margin: 0;
         }
 
         .item-ingredients {
-          line-height: 1.2;
+          line-height: 1;
           .ingredient {
             color: $clr-primary-dark-2;
-            font-size: 1rem;
+            font-size: 0.8rem;
             font-weight: 400;
           }
         }
@@ -202,8 +202,8 @@
         }
 
         .item-price {
-          font-size: 1.6rem;
-          font-weight: 200;
+          font-size: 1.1rem;
+          font-weight: 600;
           color: $clr-accent;
           // margin-bottom: 1rem;
         }
@@ -215,17 +215,17 @@
   .grid-layout-1 {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 30px;
   }
   .grid-layout-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 30px;
   }
   .grid-layout-3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 30px;
   }
 }
 

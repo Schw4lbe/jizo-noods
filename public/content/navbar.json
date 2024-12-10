@@ -1,71 +1,82 @@
 {
-    "en": {
-        "scrollingText": "\u00A0The Wait is Over! Oslo’s First Handmade Udon Noodles Have Arrived! Every Thursday, Friday, and Saturday from 13:00 to 20:00. And yes, we also serve Ramen. Our Passion, Your Perfect Bowl. See You at the Counter, Slurp Fam!",
-        "items": [
-            {
-                "label": "Home",
-                "url": "/",
-                "isSection": false
-            },
-            {
-                "label": "Menu",
-                "url": "section-menu",
-                "isSection": true
-            },
-            {
-                "label": "Gallery",
-                "url": "section-gallery",
-                "isSection": true
-            },
-            {
-                "label": "Location",
-                "url": "location",
-                "isSection": true
-            },
-            {
-                "label": "About Us",
-                "url": "/about-us",
-                "isSection": false
-            },
-            {
-                "label": "Privacy",
-                "url": "/privacy",
-                "isSection": false
-            },
-            {
-                "label": "Imprint",
-                "url": "/imprint",
-                "isSection": false
-            }
-        ]
-    },
-    "no": {
-        "scrollingText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat, ante eu bibendum tincidunt, sem lacus vehicula augue, utsuscipit.",
-        "items": [
-            {
-                "label": "navItem 01",
-                "url": "#"
-            },
-            {
-                "label": "navItem 02",
-                "url": "#"
-            },
-            {
-                "label": "navItem 03",
-                "url": "#"
-            },
-            {
-                "label": "navItem 01",
-                "url": "#"
-            },
-            {
-                "label": "navItem 02",
-                "url": "#"
-            },
-            {
-                "label": "navItem 03",
-                "url": "#"
-            }
-        ]
-    }
+  "en": {
+    "scrollingText": " The Wait is Over! Oslo’s First Handmade Udon Noodles Have Arrived! Every Thursday, Friday, and Saturday from 13:00 to 20:00. And yes, we also serve Ramen. Our Passion, Your Perfect Bowl. This week new on the Menu spicy Miso Ramen. See You at the Counter, Slurp Fam! ",
+    "items": [
+      {
+        "label": "Home",
+        "url": "/",
+        "isSection": false
+      },
+      {
+        "label": "Menu",
+        "url": "section-menu",
+        "isSection": true
+      },
+      {
+        "label": "Gallery",
+        "url": "section-gallery",
+        "isSection": true
+      },
+      {
+        "label": "Location",
+        "url": "location",
+        "isSection": true
+      },
+      {
+        "label": "About Us",
+        "url": "/about-us",
+        "isSection": false
+      },
+      {
+        "label": "Privacy",
+        "url": "/privacy",
+        "isSection": false
+      },
+      {
+        "label": "Imprint",
+        "url": "/imprint",
+        "isSection": false
+      }
+    ]
+  },
+  "no": {
+    "scrollingText": " Dummy for Norsk. Dummy for Norsk. Dummy for Norsk. Dummy for Norsk. Dummy for Norsk. Dummy for Norsk. Dummy for Norsk. ",
+    "items": [
+      {
+        "label": "Hjem",
+        "url": "/",
+        "isSection": false
+      },
+      {
+        "label": "Meny",
+        "url": "section-menu",
+        "isSection": true
+      },
+      {
+        "label": "Galleri",
+        "url": "section-gallery",
+        "isSection": true
+      },
+      {
+        "label": "Beliggenhet",
+        "url": "location",
+        "isSection": true
+      },
+      {
+        "label": "Om Oss",
+        "url": "/about-us",
+        "isSection": false
+      },
+      {
+        "label": "Personvern",
+        "url": "/privacy",
+        "isSection": false
+      },
+      {
+        "label": "Impressum",
+        "url": "/imprint",
+        "isSection": false
+      }
+    ]
+  }
 }

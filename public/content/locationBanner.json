@@ -1,12 +1,8 @@
 {
   "en": {
-    "name": "Popup Trekanten 🍜 First come - first served 🍜",
-    "address": "Pilestredet 24, Oslo",
-    "businessHours": "Thursday, Friday & Saturday 13:00 - 20:00 🥢 weekly new Dishes 🥢"
+    "text": "Craving Authentic Japanese noodles in Oslo? Join us at our **PopUp** in **Trekanten** every **Thursday**, **Friday** and **Saturday** from **13:00** to **20:00**! "
   },
   "no": {
-    "name": "Popup Trekanten",
-    "address": "Pilestredet 24, Oslo",
-    "businessHours": "Torsdag, Fredag & Lordag 13:00 - 20:00"
+    "text": "Dummy for Norsk. **Highlight Test**"
   }
 }

@@ -1,16 +1,16 @@
 {
-    "en": {
-        "header": "Our Menu",
-        "highlight": "social media",
-        "text01": "What’s your favorite Jizo dish?",
-        "text02": "We love exploring culinary variety and new flavors. If you want to know which homemade specialties we’ll be serving at our next PopUp, follow us on",
-        "text03": "or stop by to enjoy our fresh offerings!"
-    },
-    "no": {
-        "header": "Our Menu",
-        "highlight": "social media",
-        "text01": "What’s your favorite Jizo dish?",
-        "text02": "We love exploring culinary variety and new flavors. If you want to know which homemade specialties we’ll be serving at our next PopUp, follow us on",
-        "text03": "or stop by to enjoy our fresh offerings!"
-    }
+  "en": {
+    "header": "Our Menu",
+    "highlight": "social media",
+    "text01": "What’s your favorite Jizo dish?\nEnjoy a selection of fresh, Handmade Authentic Japanese Noodle Bowls, crafted with care to bring you the best of Umami-filled flavors.",
+    "text02": "We offer a range of Udon and Ramen dishes, including favorites like Spicy Miso, Shoyu, Mazemen, Kimchi and other beloved classics. \nStay updated on our latest menu specials, hours, and exclusive news by following us on social media.\n",
+    "text03": "or stop by to enjoy our fresh offerings!"
+  },
+  "no": {
+    "header": "Our Menu",
+    "highlight": "social media",
+    "text01": "What’s your favorite Jizo dish?",
+    "text02": "We love exploring culinary variety and new flavors. If you want to know which homemade specialties we’ll be serving at our next PopUp, follow us on",
+    "text03": "or stop by to enjoy our fresh offerings!"
+  }
 }

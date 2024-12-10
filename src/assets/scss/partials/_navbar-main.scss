@@ -14,15 +14,76 @@
       padding: 0;
       flex-wrap: nowrap;
       align-items: center;
-    }
 
-    .navbar-toggler {
-      padding: 0.5rem 1.5rem;
-      border: none;
-      box-shadow: none;
-      .navbar-toggler-button {
-        font-size: 1.6rem;
-        color: $clr-primary;
+      .navbar-toggler {
+        padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+        border: none;
+        box-shadow: none;
+        .navbar-toggler-button {
+          font-size: 1.6rem;
+          color: $clr-primary;
+        }
+      }
+
+      .toggle-language {
+        border: none;
+        padding: 0.5rem 1rem 0.5rem 0.5rem;
+        background: transparent;
+        transition: all 0.3s;
+        &:hover {
+          color: lighten($clr-accent, 20%);
+        }
+
+        i {
+          font-size: 1.4rem;
+        }
+      }
+
+      .toggle-language-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: fixed;
+        top: 35px;
+        right: 0;
+        height: 120px;
+        width: 150px;
+        opacity: 1;
+        padding: 1rem;
+        background: rgba($color: #f5f5f5, $alpha: 0.7);
+        border-radius: 0.375rem;
+        transition: all 0.3s;
+
+        button {
+          display: block;
+          padding: 0.2rem 0.4rem;
+          margin: 5px;
+          border: 1px solid $clr-accent;
+          border-radius: 0.375rem;
+          font-weight: 300;
+          transition: all 0.3s;
+          &:hover {
+            background: $clr-secondary;
+          }
+        }
+
+        .btn-lang-active {
+          background: $clr-accent;
+          color: $clr-secondary-light-1;
+          font-weight: bold;
+          &:hover {
+            background: $clr-accent;
+          }
+        }
+      }
+
+      .container-hidden {
+        height: 0px;
+        opacity: 0;
+
+        button {
+          display: none;
+        }
       }
     }
 
@@ -81,7 +142,7 @@
 
       .marquee {
         display: flex;
-        gap: 2rem; /* Adjust as needed for spacing */
+        gap: 2rem;
         animation: scroll 60s linear infinite;
         p {
           margin: 0;
