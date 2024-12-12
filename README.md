@@ -9,6 +9,7 @@
 - check for load option for data when visiting
 - netlify identity only on stage first page for account resets
 - do before push on production
+- create trello workspace and organize it communicate later to launch
 
 ##### secondary:
 
@@ -25,6 +26,7 @@
 - find image optimization workflow for staging
 - define image order with additional value in data structure
 - find a way to link the image to the data object to preserve consistency
+- consider replace images in webp format for better performance
 
 ### prio 2:
 
@@ -62,3 +64,8 @@
 - www.mochi-ramen.com
 - www.genji.no
 - www.momiji-ramen.de
+
+### time accounting
+
+- 10.12.2024 120min Image update in gallery. Prepare stage for merge with live. update print view to include more items on printed card. minor styling changes. deployment on live and testing.
+- 12.12.2024 60min analyze webpage performance. check dns resolving. research optimazation methods. activate netlify dns services. update godaddy nameserver entries due to high latency on live page (21.3sec on document query)
