@@ -6,6 +6,42 @@
     "allergenLabel": "Allergens",
     "items": [
       {
+        "allergens": {
+          "hasNuts": false,
+          "hasLactose": false,
+          "hasGluten": true,
+          "hasEggs": false,
+          "hasGarlic": true,
+          "hasMolluscs": false,
+          "hasShellfish": true,
+          "hasOnion": true,
+          "hasMustard": false,
+          "hasCheese": false,
+          "hasFish": true,
+          "hasSesame": true,
+          "hasMushroom": true,
+          "hasLupine": false,
+          "hasSulfur": false,
+          "hasMilk": false,
+          "hasSucrose": false,
+          "hasPeanuts": false,
+          "hasLemon": false,
+          "hasCelery": false,
+          "hasSoya": true
+        },
+        "name": "\"Dumpling Queen\" Signature Pork Dumplings",
+        "cat": "starter",
+        "price": 125,
+        "ingredients": [
+          "Juicy Pork filling",
+          "Ginger",
+          "Sesame ",
+          "Scallion",
+          "Napa Cabbage",
+          "Chinese Chives "
+        ]
+      },
+      {
         "cat": "starter",
         "name": "Kimchi",
         "price": 70,
