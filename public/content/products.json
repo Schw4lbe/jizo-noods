@@ -222,7 +222,7 @@
       {
         "cat": "main",
         "name": "\"Signature\" Shoyu Ramen",
-        "price": 240,
+        "price": 245,
         "ingredients": [
           "Homemade Tokyo style noodles",
           "Flamed Chicken Breast",
@@ -281,7 +281,7 @@
         },
         "name": "\"Spicy Miso\" Ramen (Vegetarian Option)",
         "cat": "main",
-        "price": 240,
+        "price": 245,
         "ingredients": [
           "Homemade Tokyo style noodles",
           "Flamed Chicken Breast or Glaze Tempeh ",
