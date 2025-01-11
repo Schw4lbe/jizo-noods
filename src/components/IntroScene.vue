@@ -2,11 +2,11 @@
   <section class="section-intro-main">
     <img
       class="intro-background"
-      src="../../public/img/intro/placeholder.jpg"
+      src="../../public/img/intro/placeholder.webp"
       alt="dummy"
     />
     <div class="logo-slogan-container">
-      <img class="logo" src="../../public/img/logo.png" alt="dummy" />
+      <img class="logo" src="../../public/img/logo.webp" alt="dummy" />
     </div>
   </section>
 </template>

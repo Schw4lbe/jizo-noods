@@ -7,7 +7,7 @@
         <div class="content-grid">
           <div class="grid-item">
             <img
-              src="../../public/img/about-us/500x1000_2.png"
+              src="../../public/img/about-us/anime2.webp"
               alt="Jizu Manga Art"
               class="content-image to-slide-in-bottom"
             />
@@ -42,7 +42,7 @@
               taste of noodle heaven. See you there!
             </p>
             <img
-              src="../../public/img/about-us/500x1000_1.png"
+              src="../../public/img/about-us/anime.webp"
               alt="Jizu Manga Art"
               class="content-image to-slide-in-bottom"
             />
@@ -55,7 +55,7 @@
         <div class="content-grid">
           <div class="grid-item">
             <img
-              src="../../public/img/about-us/TW-JizoNoods-11.jpg"
+              src="../../public/img/about-us/TW-JizoNoods-11.webp"
               alt="Image of Chef"
               class="content-image"
             />

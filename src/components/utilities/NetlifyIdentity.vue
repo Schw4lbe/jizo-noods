@@ -1,6 +1,6 @@
 <template>
   <div v-if="!user" class="netlify-login-ui">
-    <img src="../../../public/img/logo.png" alt="logo" class="login-logo" />
+    <img src="../../../public/img/logo.webp" alt="logo" class="login-logo" />
     <h3 class="login-header">Jizo Noods Member Login</h3>
     <h3 class="login-header">Page is under construction...</h3>
     <button @click="openLogin" class="netlify-login-btn">Login</button>

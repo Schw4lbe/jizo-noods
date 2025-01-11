@@ -9,7 +9,7 @@
         {{ sectionContent.text01 }}
       </p>
       <img
-        src="../../public/img/soup.png"
+        src="../../public/img/soup.webp"
         alt="menu manga art background"
         class="menu-image"
       />

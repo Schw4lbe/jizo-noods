@@ -8,7 +8,7 @@
       <div class="content-grid">
         <div class="grid-item">
           <img
-            src="../../public/img/about-us/500x1000_2.png"
+            src="../../public/img/about-us/anime2.webp"
             alt="Jizu Manga Art"
             class="content-image to-slide-in-bottom"
           />
@@ -16,7 +16,7 @@
         <div class="grid-item">
           <a href="/about-us" class="text-on-image-container to-slide-in-left">
             <img
-              src="../../public/img/about-us/dialogue-bubble.png"
+              src="../../public/img/about-us/dialogue-bubble.webp"
               alt="dialogue bubble"
               class="teaser-graphic"
             />

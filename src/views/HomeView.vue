@@ -12,7 +12,7 @@
   </div>
   <div class="section-wrapper section-wrapper-variant-c">
     <img
-      src="../../public/img/paint-stroke-variant-b.png"
+      src="../../public/img/paint-stroke-variant-b.webp"
       alt="dummy"
       class="background-img"
     />

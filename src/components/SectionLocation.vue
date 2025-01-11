@@ -4,7 +4,7 @@
     <div class="location-map-container">
       <a :href="sectionContent.googleMapsUrl" class="map-link" target="blank">
         <img
-          src="../../public/img/location/gmaps-dummy-screenshot.jpg"
+          src="../../public/img/location/gmaps-dummy-screenshot.webp"
           alt="dummy"
         />
       </a>

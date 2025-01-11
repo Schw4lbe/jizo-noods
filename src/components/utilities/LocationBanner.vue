@@ -2,7 +2,7 @@
   <section class="section-location-banner-main">
     <div class="location-banner-container">
       <img
-        src="../../../public/img/paint-stroke.png"
+        src="../../../public/img/paint-stroke.webp"
         alt="dummy"
         class="background-img"
       />
