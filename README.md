@@ -19,7 +19,6 @@
 
 ### prio 1:
 
-- back up button on bottom of every view with smooth scroll back to top
 - navbar borders to the edge with navbar wrapper background color
 - navbar current item selected highlighted
 - final check page on SEO features and tweeks
