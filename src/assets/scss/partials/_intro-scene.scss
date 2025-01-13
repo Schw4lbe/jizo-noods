@@ -10,14 +10,14 @@
 
   .intro-background {
     position: fixed;
-    top: 50%;
+    top: 40%;
     left: 50%;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     object-fit: cover;
-    transform: translate(-50%, -60%) scale(1); /* Moves focal point down */
+    transform: translate(-50%, -50%) scale(1); /* Moves focal point down */
     z-index: -2;
-    animation: demoEndlessMovement 40s ease-in-out infinite;
+    // animation: demoEndlessMovement 40s ease-in-out infinite;
   }
 
   .logo-slogan-container {
